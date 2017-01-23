@@ -1,0 +1,12 @@
+&-card {
+  margin: $spacing;
+  border: 1px solid $border;
+  padding: $vspacing*4 $vspacing*3;
+  box-shadow: 5px 5px 0 lighten($border, 80%);
+  margin-bottom: $componentVSpacing;
+  +above(m) {
+    margin-left: 0;
+    margin-right: 0;
+    col(1/2, cycle:2);
+  }
+}

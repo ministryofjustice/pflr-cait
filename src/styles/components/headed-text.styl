@@ -1,0 +1,23 @@
+&-headed-text {
+  padding: $vspacing*2;
+  +above(l) {
+    padding: $vspacing 0;
+  }
+  h1 {
+    font-size: $mantle;
+    margin-bottom: $vspacing*3.5;
+  }
+
+  p {
+    ff-body();
+  }
+  .u-primary & {
+    h1 {
+      font-size: $crust;
+    }
+    // refactor this when you have time
+    +below(l) {
+      margin-bottom: 0;
+    }
+  }
+}

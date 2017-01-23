@@ -1,0 +1,40 @@
+ff-title() {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+ff-body() {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal;
+  font-size: $bodyCopy;
+  line-height: $bodyCopyLineHeight;
+  margin-bottom: $bodyCopy;
+}
+
+button(bgc) {
+  display: inline-block;
+  color: $light;
+  background-color: bgc;
+  padding: $vspacing $hspacing*3;
+  border: 0;
+  font-size: $outerCore;
+  cursor: pointer;
+  text-decoration:none;
+  border-radius: $brad;
+  &:hover {
+    color: $light;
+    background-color: lighten(bgc, 20%);
+    i {
+      transform: rotate(20deg);
+    }
+  }
+  &.disabled {
+    cursor: auto;
+    background: desaturate(bgc, 60%);
+    opacity: .6;
+  }
+  i {
+    transition: transform .5s ease-in-out;
+    margin-right: $hspacing;
+  }
+}

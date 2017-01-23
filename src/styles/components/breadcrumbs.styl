@@ -1,0 +1,22 @@
+&-breadcrumbs {
+  .u-primary & {
+    margin-left:0;
+    list-style: none;
+  }
+  padding-top: $vspacing;
+
+  li {
+    display:inline-block;
+    &:not(:last-of-type) {
+      &:after {
+        content: ">";
+        color: rgba($dark, .6);
+        display:inline-block;
+        margin: 0 ($hspacing/2) 0 $hspacing;
+      }
+    }
+    a {
+      color: $dark;
+    }
+  }
+}

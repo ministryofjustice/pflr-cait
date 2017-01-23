@@ -1,0 +1,9 @@
+<div class="c c-quick-links">
+  <ul>
+    <% page.quicklinks.forEach(function(ql) { %>
+      <li>
+        <a class="notworking" href="<%= ql.url%>"><%= ql.name %></a>
+      </li>
+    <% }) %>
+  </ul>
+</div>

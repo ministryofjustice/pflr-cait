@@ -1,0 +1,14 @@
+&-usp-callout {
+  blockquote {
+    font-size: $smallCopy;
+    line-height: $lineHeight * 1.6;
+    padding: $vspacing $hspacing*2;
+    background-color: $boxbg;
+  }
+
+  // If the component is preceded immediately by a headed-text component then
+  // change margins to match it.
+  .c-headed-text + & {
+    margin-top: -($vspacing*4);
+  }
+}

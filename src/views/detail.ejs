@@ -1,0 +1,91 @@
+<% include layouts/header.ejs %>
+<article class="c-details">
+  <section class="u-primary">
+    <ul class="c c-breadcrumbs">
+      <li><a href="/">Home</a></li>
+      <li><%= page.title %></li>
+    </ul>
+    <div class="c c-headed-text divider">
+      <h1><%= page.title %></h1>
+      <div class="c c-body-copy">
+        <%- page.body_copy %>
+      </div>
+    </div>
+    <% if(page.video.title || page.process_image_link.full) { %>
+    <div class="two-columns-uneven divider">
+      <% if(page.video.title) { %>
+        <div class="c c-video-player">
+          <h2><%= page.video.title %></h2>
+          <div class="c-video-player__container c-video-player__lightbox">
+            <img data-youtube="<%= page.video.youtube_code %>" src="<%= page.video.thumbnail %>" alt="<%= page.video.title %>">
+          </div>
+        </div>
+      <% } %>
+      <% if(page.process_image_link.full) { %>
+      <div class="c c-process-chart">
+        <h2><%= page.title %> process chart</h2>
+        <a class="c-process-chart__lightbox" href="<%= page.process_image_link.full %>">
+          <img src="<%= page.process_image_link.thumbnail %>" alt="<%= page.title %> process chart" />
+          <%= page.title %> process chart
+        </a>
+      </div>
+      <% } %>
+    </div>
+    <% } %>
+    <% if (page.resources.info) { %>
+    <div class="c c-resources divider">
+      <h2><%= page.short_title ? page.short_title : page.title %> resources</h2>
+      <div class="info">
+        <%- page.resources.info %>
+      </div>
+    </div>
+    <% } %>
+    <% if (page.case_study.length > 0) { %>
+    <section class="c c-case-studies">
+      <h1>Case studies</h1>
+      <% page.case_study.forEach(function(cs) { %>
+        <div class="c-case-studies__container">
+          <div class="c-case-studies__stub">
+            <h2><%= cs.title %></h2>
+            <%- cs.summary %>
+          </div>
+          <div class="c-case-studies__toggle_visible js-toggle-visible">
+            <%- cs.copy %>
+            <% if(cs.quote) { %>
+              <blockquote class="c-case-studies__quote">
+                <div class="quote_body"><%= cs.quote %></div>
+                <div class="quote_author"><%= cs.quote_author %></div>
+              </blockquote>
+            <% } %>
+          </div>
+        </div>
+      <% }) %>
+    </section>
+    <% } %>
+  </section>
+  <aside class="u-secondary">
+    <div class="c c-share">
+      <ul>
+        <li class="c-share__icon c-share__icon--print"><a href="#">Print this page</a></li>
+        <li class="c-share__icon c-share__icon--share"><a href="#">Share this page</a></li>
+      </ul>
+    </div>
+    <% if (page.pros.length > 0 || page.cons.length > 0) { %>
+      <% include components/pros-cons.ejs %>
+    <% } %>
+    <% if (page.cost.info) { %>
+    <div class="c c-cost">
+      <h2>Cost<span>(per person):</span></h2>
+      <div class="c-cost__scale">
+        <img src="<%= page.cost.image_link %>" alt="The scale can range from quite low to very high"/>
+        <span class="c-cost__scale__label">0</span>
+        <span class="c-cost__scale__label">&pound;100k</span>
+      </div>
+      <div class="c-cost__info">
+        <%- page.cost.info %>
+      </div>
+    </div>
+    <% } %>
+  </aside>
+</article>
+<% include layouts/footer.ejs %>

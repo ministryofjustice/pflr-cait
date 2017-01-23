@@ -1,0 +1,23 @@
+&-share {
+  li {
+    span(1/2);
+    font-size: $smallCopy;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__icon {
+    padding-left: $hspacing*2.5;
+    background-size: contain;
+    background-repeat: no-repeat;
+    &--print {
+      background-image: url(/static/images/ico-print.svg);
+    }
+    &--share {
+      background-image: url(/static/images/ico-share.svg);
+    }
+  }
+}

@@ -1,0 +1,51 @@
+&-who-is-involved {
+  clear:both;
+  text-align: center;
+  +above(l) {
+    text-align: left;
+  }
+  .u-card & {
+    margin-bottom: 0;
+  }
+  padding: $spacing;
+  li {
+    span(1/2, cycle: 2);
+    +above(m) {
+      span(1, uncycle: 2);
+    }
+    +above(l) {
+      span(1/2, cycle: 2);
+    }
+    position: relative;
+    height: $vspacing*4;
+    background-size: contain;
+    background-repeat: no-repeat;
+    line-height: $lineHeight*2.5;
+    padding-left: $hspacing*5;
+
+    &:before {
+      position: absolute;
+      left: $hspacing;
+      top: $vspacing;
+      font-size: 25px //px value used to size icon font
+    }
+
+    .lozenge {
+      position: absolute;
+      bottom: -($vspacing);
+      left: $hspacing*2.5;
+      background-color: $light;
+      width: 20px;
+      height: 20px;
+      line-height: 1;
+      text-align: center;
+      border-radius: 100%;
+      font-size: $smallCopy;
+      font-weight: bold;
+      &:before {
+        content: "x";
+      }
+    }
+  }
+
+}

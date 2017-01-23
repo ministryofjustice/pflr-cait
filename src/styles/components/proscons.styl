@@ -1,0 +1,33 @@
+&-proscons {
+  border: 1px solid lighten($dark, 30%);
+  border-radius: $brad;
+  padding: $vspacing*2 $hspacing*2;
+  h2 {
+    margin-bottom: $vspacing*3;
+  }
+  li {
+    position:relative;
+    padding-left: $hspacing*2.5;
+    margin-bottom: $vspacing*1;
+    font-size: $smallCopy;
+    line-height: $lineHeight*1.5;
+    &:before {
+      position:absolute;
+      left: 0;
+      top: ($vspacing/3);
+      margin-right: $hspacing;
+    }
+  }
+  &__pros {
+    li:before {
+      color: #65C001;
+    }
+  }
+
+  &__cons {
+    margin-top: $vspacing*3;
+    li:before {
+      color: #D0021B;
+    }
+  }
+}

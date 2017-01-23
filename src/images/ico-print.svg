@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>printer</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Triage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Negotiating-detail" transform="translate(-689.000000, -186.000000)" stroke="#666666">
+            <g id="Print-and-Share" transform="translate(690.000000, 184.000000)">
+                <g id="printer" transform="translate(0.000000, 3.000000)">
+                    <polygon id="Path" points="4.62256599 11.8417035 15.2317338 11.8417035 15.2317338 19.9323084 4.62256599 19.9323084"></polygon>
+                    <polygon id="Path" points="15.2317338 8.16415585 4.62256599 8.16415585 4.62256599 0.0735509536 12.5794419 0.0735509536 15.2317338 2.64783433"></polygon>
+                    <path d="M4.62256599,6.69313678 L1.21247633,6.69313678 C0.584640928,6.69313678 0.0757797704,7.18703143 0.0757797704,7.79640108 L0.0757797704,14.4159869 C0.0757797704,15.0253566 0.584640928,15.5192512 1.21247633,15.5192512 L4.62256599,15.5192512" id="Path"></path>
+                    <path d="M15.2317338,15.5192512 L18.6418235,15.5192512 C19.2696589,15.5192512 19.7785201,15.0253566 19.7785201,14.4159869 L19.7785201,7.79640108 C19.7785201,7.18703143 19.2696589,6.69313678 18.6418235,6.69313678 L15.2317338,6.69313678" id="Path"></path>
+                    <polyline id="Path" points="12.200543 0.0735509536 12.200543 3.0155891 15.2317338 3.0155891"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,472 @@
+[
+    {
+      "id" : 1,
+      "template" : "detail",
+      "slug" : "negotiation-between-parents",
+      "title" : "Use negotiation tools and services",
+      "short_title" : "Negotiation",
+      "introduction" : "<p>If the parents still communicate, the cheapest and easiest way for them to make child arrangements is to negotiate with each other. There are tools and services that can help.</p>",
+      "body_copy" : "<p>There are free online tools and services that can help parents negotiate an agreement for their children without having to go to court.</p><strong>Parenting plans</strong></p><p>A parenting plan is a written or online plan that parents can use to prepare, discuss and agree child arrangements. It’s not legally binding and can be adapted if someone’s situation changes.</p><p>Using a parent plan:</p><ul><li>helps parents know what’s expected of them</li><li>clarifies what’s been agreed (for example, where the children will live)</li><li>works as a reference for parents to go back to</li></ul><p>Parents can choose to use an <a href=\"http://www.splittingup-putkidsfirst.org.uk/home\">online parenting plan</a> or a plan they <a href=\"http://www.separatedfamilies.info/home/parenting-apart/parenting-agreements\">can print out</a>.</p><p><strong>Negotiating tools</strong></p><p><a href=\"http://www.separatedfamilies.info/home/parenting-apart/negotiations/\">The Negotiations Cycle tool</a> helps parents break down their negotiations into four stages.</p><p><strong>Letter templates</strong></p><p>Child Law Advice has a useful <a href=\"http://childlawadvice.org.uk/wp-content/uploads/Residence-template-letter.pdf\">letter template</a> if parents prefer to negotiate with each other by letter or email.</p><p><strong>Separated Parents Information Programme (SPIP)</strong></p><p>The <a href=\"https://www.cafcass.gov.uk/grown-ups/separated-parents-information-programme-(spip).aspx\">Separated Parents Information Programme</a> is a course which helps parents understand how to put their children first while separating.</p>",
+      "cost" : {
+        "scale" : {
+          "min" : 0,
+          "max" : 10
+        },
+        "image_link" : "",
+        "info" : ""
+      },
+      "who_is_involved" : [
+          {
+            "slug" : "parentguardian",
+            "key" : "Parent/Guardian",
+            "value" : 2
+          },
+          {
+            "slug" : "mediator",
+            "key" : "Mediator",
+            "value" : 0
+          },
+          {
+            "slug" : "lawyersolicitor",
+            "key" : "Lawyer/Solicitor",
+            "value" : 0
+          },
+          {
+            "slug" : "judgecourt",
+            "key" : "Judge/Court",
+            "value" : 0
+          }
+      ],
+      "video" : {
+        "title" : "",
+        "thumbnail" : "",
+        "youtube_code" : ""
+      },
+      "case_study" : [
+	      {
+	        "title" : "Louise and John",
+	        "summary" : "<ul><li>Separated</li><li>Children aged 6 months</li><li>Combined total cost: Free</li></ul>",
+	        "copy" : "<p>Things came to a head when John told Louise that he didn’t love her anymore. It soon became clear that while he hadn’t had an affair there was someone else on the scene who he’d developed a good friendship with.</p><p>Since John and Louise separated they’ve done their best to put their own feelings aside. They want to keep things as amicable as possible for the sake of their 6 month old daughter.</p><p>Louise says it helps she was so unhappy and agreed to the separation. However, being replaced by a “younger prettier model” so quickly still really hurts her. She says if she can put those feelings aside for the sake of their daughter then they can build a new partnership as parents rather than partners.</p><p>They decided to use an online parenting plan to help reach an agreement. John said the plan was a great way of keeping track of their progress. “We never lost focus of what was important - which is the welfare of our daughter”.</p><p>John and Louise still communicate regularly by text and their daughter stays at John’s house on every Tuesday and Thursday.</p>",
+	        "quote" : "",
+	        "quote_author" : ""
+	      }
+      ],
+      "usp_callout" : "<p><strong>Parents should consider this if</strong> they already agree on the majority of issues but may benefit from using a tool or service such as a parenting plan.</p>",
+      "resources" : {
+        "info" : "<p>GOV.UK has information on <a href=\"https://www.gov.uk/arranging-child-maintenance-yourself\">arranging child maintenance yourself</a> that includes a <a href=\"https://www.gov.uk/calculate-your-child-maintenance\">child maintenance calculator</a>.</p><p>Gingerbread has an <a href=\"https://gingerbread.org.uk/factsheet/4/Making-arrangements-for-your-children\">arrangements factsheet</a> that includes tips on making negotiations work.</p>"
+      },
+      "process_image_link" :  {
+        "full" : "",
+        "thumbnail" : ""
+      },
+      "pros" : [
+        {
+          "text" : "cheapest and quickest process"
+        },
+        {
+          "text" : "parents are in control"
+        },
+        {
+          "text" : "helps children continue family relationships"
+        },
+        {
+          "text" : "agreements are flexible"
+        }
+      ],
+      "cons" : [
+        {
+          "text" : "agreements aren’t legally binding"
+        },
+        {
+          "text" : "process heavily relies on parent co-operation"
+        }
+      ],
+      "other" : ""
+    },
+  {
+    "id" : 2,
+    "template" : "detail",
+    "slug" : "mediation",
+    "title" : "Mediation",
+    "short_title" : "",
+    "introduction" : "<p>Parents can choose to attend mediation if they can't agree on every child arrangement issue. A mediator is an impartial trained professional who helps parents resolve disputes.</p>",
+    "body_copy" : "<p>Parents should first meet with a mediator to check if the process is right for them. This is called a Mediation Information and Assessment meeting (MIAM).</p><p>The mediator will explain:<ul><li>how mediation works</li><li>the benefits</li><li>the likely costs</li><li>if the parents are eligible for free mediation through <a href=\"https://checklegalaid.service.gov.uk/\">legal aid</a></li><li>whether it's right for the parents</li></ul></p><blockquote>Mediation is a voluntary process unless a parent wants to <a href=\"/going-to-court\">go to court</a>. In this situation they must show they've considered mediation first.</blockquote><p><strong>Attending mediation sessions</strong></p><p>Mediation usually takes place over several sessions, each lasting about 90 minutes.</p><p>Parents can choose to have mediation sessions:<ul><li>in the same room</li><li>in different rooms (shuttle mediation)</li><li>on different days</li></ul></p><p>If the parents reach an agreement the mediator will write it down. Parents can ask a solicitor to make the agreement legally binding.</p><p>GOV.UK has more information about <a href=\"https://www.gov.uk/looking-after-children-divorce/mediation\">making your agreement legally binding</a>.</p><p>Agreements don't have to be legally binding, although it can be useful if the arrangements are long and complex.</p><p><strong>When mediation isn't suitable</strong></p><p>Mediation isn't suitable in every case. Parents should seek alternative options if:<ul><li>one of the parents has been a victim of domestic abuse or violence</li><li>there's a perceived risk to the child</li><li>the relationship between the parents has broken down completely (for example there's no contact)</li></ul></p><p><a class=\"u-btn\" href=\"http://www.familymediationcouncil.org.uk/find-local-mediator/\">Find a mediator</a></p>",
+    "cost" : {
+      "scale" : {
+        "min" : 0,
+        "max" : 10
+      },
+      "image_link" : "",
+      "info" : ""
+    },
+    "process_image_link" :  {
+      "full" : "static/images/process-charts/process-full-mediation.jpg",
+      "thumbnail" : "static/images/process-charts/process-thumb-mediation.png"
+    },
+    "who_is_involved" : [
+        {
+          "slug" : "parentguardian",
+          "key" : "Parent/Guardian",
+          "value" : 2
+        },
+        {
+          "slug" : "mediator",
+          "key" : "Mediator",
+          "value" : 1
+        },
+        {
+          "slug" : "lawyersolicitor",
+          "key" : "Lawyer/Solicitor",
+          "value" : 0
+        },
+        {
+          "slug" : "judgecourt",
+          "key" : "Judge/Court",
+          "value" : 0
+        }
+    ],
+    "video" : {
+      "title" : "The Mediation process",
+      "thumbnail" : "static/images/video-thumbnails/mediation-thumb.png",
+      "youtube_code" : "zYhWdwazCZA"
+    },
+    "case_study" : [
+      {
+        "title" : "Maria and Levi",
+        "summary" : "<ul><li>Separated</li><li>Children aged 8 years and 10 years</li><li>Combined total cost: £375</li><li>Total length of mediation: 2 weeks (2 sessions)</li></ul>",
+        "copy" : "<p>Having experienced the devastating effect of her sister’s acrimonious divorce, Maria decided mediation was worth investigating when she and her partner, Levi, separated.</p><p>She wanted to try it for the sake of their children – 8 year old Isabella and 10 year old Cora. Friends who had been through separation had also recommended the process.</p><p>After a series of sessions they came to an agreement that allowed Levi to regularly see Isabella and Cora even though he no longer lives at the family home.</p><p>They also made agreements about the family finances. These included the mortgage they had taken on their three-bed home, and what would happen to their joint savings.</p>",
+        "quote" : "The kids seem much happier now they have accepted life has changed, but mum and dad are still both there for them.",
+        "quote_author" : "Levi"
+      },
+      {
+        "title" : "Bryony and Tom",
+        "summary" : "<ul><li>Divorced</li><li>Children aged 7 years and 5 years</li><li>Combined total cost: £480</li><li>Total length of mediation: 2 weeks (3 sessions)</li></ul>",
+        "copy" : "<p>Things came to a head when 37 year-old Tom moved out of the family home and into his new girlfriend’s flat. Tom and his wife Bryony, 35, both acknowledged that their relationship was over but arguments about contact with the children escalated to a point where both 7 year-old Declan and Luci-Anne, 5, were clearly being affected by the conflict.</p><p>Declan’s teacher had noticed he was being unusually disruptive and sullen at school, while Luci-Anne was having difficulty sleeping at night.</p><p>As part of his bid to ensure continuing contact with the children, Tom had approached a solicitor and it was she who had suggested mediation.</p><p>Although Bryony admitted she had been sceptical about the idea of mediation at first, she and Tom agreed to try it as a means of breaking the deadlock.</p><p>Their mediator, Elaine, helped them to understand each other’s position and the needs of their children. After three meetings they managed to arrive at an amicable solution, which meant Declan and Luci-Anne were able to spend time with both mum and dad.</p><p>Tom and Bryony also agreed to schedule a review of arrangements every six months to see how things are going.</p>",
+        "quote" : "Elaine helped us to get on with making things work on a practical level. To some extent we had to put aside the angry feelings we had towards each other. This wasn't easy, but we both felt that doing so would be best for the children.",
+        "quote_author" : "Bryony"
+      }
+    ],
+    "usp_callout" : "<p><strong>Parents should consider this if</strong> they want to reach an agreement together but need help from someone who is independent.</p>",
+    "resources" : {
+      "info" : "<p>National Family Mediation has more information on the <a href=\"http://www.nfm.org.uk/index.php/family-mediation/about-family-mediation\">mediation process</a> and the <a href=\"http://www.nfm.org.uk/index.php/family-mediation/mediation-information-meeting-miam\"> Mediation Information and Assessment Meeting</a> (MIAM).</p><p>The <a href=\"https://www.cafcass.gov.uk/grown-ups/separated-parents-information-programme-(spip).aspx\">Separated Parents Information Programme</a> is a course which helps parents understand how to put their children first while separating.</p><p>Download a <a href=\"https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/489124/family-mediation-leaflet.pdf\">mediation information pack</a> from the Ministry of Justice.</p><p>Advice Now has a <a href=\"http://www.advicenow.org.uk/guides/survival-guide-using-family-mediation-after-break\">guide to using mediation</a> following separation.</p>"
+    },
+    "pros" : [
+      {
+        "text" : "high rate of success"
+      },
+      {
+        "text" : "quicker and cheaper than court"
+      },
+      {
+        "text" : "less parent conflict"
+      },
+      {
+        "text" : "helps children continue family relationships"
+      },
+      {
+        "text" : "can adapt plans if situation changes"
+      }
+    ],
+    "cons" : [
+      {
+        "text" : "process heavily relies on parent co-operation"
+      },
+      {
+        "text" : "agreements aren’t legally binding"
+      }
+    ],
+    "other" : ""
+  },
+  {
+    "id" : 5,
+    "template" : "detail",
+    "slug" : "lawyer-mediation",
+    "title" : "Lawyer mediation",
+    "short_title" : "",
+    "introduction" : "<p>Both parents appoint their own lawyers who attend mediation with them. The mediator is in charge of the process and tries to help both parties resolve their issues.</p>",
+    "body_copy" : "<p>Both parents will need to appoint their own lawyer before attending lawyer assisted mediation.</p><p>Parents can <a href=\"http://www.familymediationcouncil.org.uk/find-local-mediator\">find a mediator</a> themselves or ask their lawyers to recommend one.</p><p>This method of mediation usually takes place over one long session. The mediator will run the session and remain impartial.</p><p>As mediators can't offer legal advice one of the benefits of this approach is that parents have legal advice throughout.</p><p>The process usually begins with each parent explaining what they want to achieve from the meeting. The mediator will then set an agenda.</p><p>How the mediator runs the session will depend on the situation but may involve:<ul><li>everyone sitting in the same room discussing the issues</li><li>both parties in separate rooms with the mediator moving between the two (known as 'shuttle mediation')</li></ul></p><p><strong>When to consider lawyer mediation</strong></p><p>This type of mediation is useful if the parents want:<ul><li>agreements made into a court order</li><li>to avoid court</li><li>to resolve their issues quickly</li><li>help because the issues are long or complex</li></ul></p>",
+    "cost" : {
+      "scale" : {
+        "min" : 0,
+        "max" : 10
+      },
+      "image_link" : "",
+      "info" : ""
+    },
+    "process_image_link" :  {
+      "full" : "",
+      "thumbnail" : ""
+    },
+    "who_is_involved" : [
+        {
+          "slug" : "parentguardian",
+          "key" : "Parent/Guardian",
+          "value" : 2
+        },
+        {
+          "slug" : "mediator",
+          "key" : "Mediator",
+          "value" : 1
+        },
+        {
+          "slug" : "lawyersolicitor",
+          "key" : "Lawyer/Solicitor",
+          "value" : 2
+        }
+    ],
+    "video" : {
+      "title" : "",
+      "thumbnail" : "",
+      "youtube_code" : ""
+    },
+    "case_study" : [],
+    "usp_callout" : "<p><strong>Parents should consider this if</strong> they need help negotiating or there are a lot of complex issues to resolve.</p>",
+    "resources" : {
+      "info" : "<p>Read more about <a href=\"http://www.divorce.co.uk/divorce-approaches/mediation-with-lawyers\">lawyer mediation</a></p><p><a href=\"http://www.familymediationcouncil.org.uk/find-local-mediator\">Find a local mediator</a></p>"
+    },
+    "pros" : [
+	  {
+        "text" : "quicker than court"
+      },
+      {
+        "text" : "lawyer present throughout process"
+      },
+      {
+        "text" : "useful in complex cases"
+      },
+      {
+        "text" : "lawyers draw up agreement"
+      }
+  ],
+    "cons" : [
+  	  {
+          "text" : "presence of lawyers make it expensive"
+      }
+    ],
+    "other" : ""
+  },
+  {
+    "id" : 6,
+    "template" : "detail",
+    "slug" : "solicitor-negotiation",
+    "title" : "Solicitor negotiation",
+    "short_title" : "",
+    "introduction" : "<p>Parents won't have to deal with each other directly in this process. They both instruct lawyers who negotiate for them.</p>",
+    "body_copy" : "<p>Parents might use solicitor negotiation if their separation was particularly difficult and they no longer talk.</p><p>During this process the parents won’t have to deal with each other directly. They’ll instruct their solicitors who will negotiate for them.</p><p>The parents must first appoint their own solicitor. Each solicitor will set then up an initial meeting with their client so they can discuss the case.</p><p>Parents will need to explain what their issues are and the outcome they want to achieve.</p><p>After receiving instructions from the parents, the solicitors will begin negotiations face-to-face.</p><p>As in <a href=\"collaborative-law\">collaborative law</a> both parties will try and keep the case from going to court.</p>",
+    "cost" : {
+      "scale" : {
+        "min" : 0,
+        "max" : 10
+      },
+      "image_link" : "",
+      "info" : ""
+    },
+    "process_image_link" :  {
+      "full" : "",
+      "thumbnail" : ""
+    },
+    "who_is_involved" : [
+        {
+          "slug" : "lawyersolicitor",
+          "key" : "Lawyer/Solicitor",
+          "value" : 2
+        }
+    ],
+    "video" : {
+      "title" : "",
+      "thumbnail" : "",
+      "youtube_code" : ""
+    },
+    "case_study" : [],
+    "usp_callout" : "<p><strong>Parents should consider this if </strong>their relationship is still difficult and they’d prefer not to meet, or there's a lack of trust.</p>",
+    "resources" : {
+      "info" : "<p><a href=\"http://www.resolution.org.uk/findamember\">Find a local solicitor</a></p>"
+    },
+    "pros" : [
+  	   {
+          "text" : "everyone is committed to not going to court"
+       },
+  	   {
+          "text" : "solicitor is present throughout"
+       },
+  	   {
+          "text" : "quicker than going to court"
+       },
+  	   {
+          "text" : "parents don't have to deal directly with each other"
+       }
+    ],
+    "cons" : [
+   	   {
+           "text" : "can be seen as a confrontational approach"
+       },
+  	   {
+          "text" : "parents can sometimes feel they're not in control"
+       },
+  	   {
+          "text" : "it can be expensive"
+       }
+    ],
+    "other" : ""
+  },
+  {
+    "id" : 3,
+    "template" : "detail",
+    "slug" : "collaborative-law",
+    "title" : "Collaborative law",
+    "short_title" : "",
+    "introduction" : "<p>Collaborative lawyers work with both parents to try and resolve their issues out of court. Each parent appoints a lawyer and everyone meets to negotiate face to face.</p>",
+    "body_copy" : "<p>Both parents must appoint a lawyer before the first meeting (also known as a four-way meeting).</p><p>Each lawyer will set up an initial meeting with their client so they can discuss the case and begin preparations.</p><p><strong>At the first meeting</strong></p><p>Everyone must sign an agreement that commits both parties to resolving the issues out of court.</p><p>The agreement also states that if the case does go to court both parents must find new lawyers.</p><p>This means it’s in everyone’s interests to make sure the negotiations don’t break down</p><p>If both parents reach an agreement the lawyers draw up an agreed document which they submit to court for approval. The parents won’t have to attend court.</p><p><strong>If there's no agreement at the first meeting</strong></p><p>Both parents must meet with their lawyers to discuss the unresolved issues. A date is then set for a second meeting.</p>",
+    "cost" : {
+      "scale" : {
+        "min" : 0,
+        "max" : 10
+      },
+      "image_link" : "",
+      "info" : ""
+    },
+    "process_image_link" :  {
+      "full" : "static/images/process-charts/process-full-collaborative-law.jpg",
+      "thumbnail" : "static/images/process-charts/process-thumb-collaborative-law.png"
+    },
+    "who_is_involved" : [
+        {
+          "slug" : "parentguardian",
+          "key" : "Parent/Guardian",
+          "value" : 2
+        },
+        {
+          "slug" : "lawyersolicitor",
+          "key" : "Lawyer/Solicitor",
+          "value" : 2
+        }
+    ],
+    "video" : {
+      "title" : "Collaborative Law process",
+      "thumbnail" : "static/images/video-thumbnails/collaborative-law-thumb.png",
+      "youtube_code" : "Cb2NcCNDJvg"
+    },
+    "case_study" : [],
+    "usp_callout" : "<p><strong>Parents should consider this if </strong>they can still communicate with each other and are open to working together to resolve their issues.</p>",
+    "resources" : {
+      "info" : "<p>Read more about the <a href=\"http://www.resolution.org.uk/editorial.asp?page_id=1164\">collaborative law process</a></p><p><a href=\"http://www.resolution.org.uk/memberCollections.asp?page_id=57\">Find a collaborative lawyer</a></p>"
+    },
+    "pros" : [
+   	   {
+           "text" : "everyone is committed to not going to court"
+       },
+  	   {
+          "text" : "quicker and less stressful than court"
+       },
+  	   {
+          "text" : "parents set the agenda"
+       },
+  	   {
+          "text" : "lawyers are present throughout"
+       },
+  	   {
+          "text" : "good for children to see their parents working together"
+       }
+    ],
+    "cons" : [
+   	   {
+           "text" : "expensive process"
+       },
+  	   {
+          "text" : "won't work unless parents equally trust each other"
+       }
+    ],
+    "other" : ""
+  },
+  {
+    "id" : 7,
+    "template" : "detail",
+    "slug" : "going-to-court",
+    "title" : "Going to court",
+    "short_title" : "",
+    "introduction" : "<p>Parents can go to court if they can't agree on arrangements. A judge will assess their case and make a decision for them.</p>",
+    "body_copy" : "<p>Parents will need to apply for a court order if they can't agree arrangements. Before applying they should attend a <a href=\"http://www.nfm.org.uk/index.php/family-mediation/mediation-information-meeting-miam\">Mediation Information and Assessment Meeting</a> (MIAM), unless there's been domestic abuse.</p><p>To book a MIAM, parents must <a href=\"http://www.familymediationcouncil.org.uk/find-local-mediator\">find a mediator</a>.</p><h2>Applying for a court order</h2><p>GOV.UK has more information on how to <a href=\"https://www.gov.uk/looking-after-children-divorce/apply-for-court-order\">apply for a court order</a>.</p><p>When applying, each parent should give a brief summary of their own position and what they want to achieve from the hearing. This is sometimes known as a 'position statement'.</p><p>The court will set a date for a First Dispute Resolution Appointment (FHDRA). It takes around 4 weeks to get a date after applying for a court order.</p><h2>First Hearing and Dispute Resolution Appointment (FHDRA)</h2><p>The court will ask an advisor from the <a href=\"https://www.cafcass.gov.uk/default.aspx\">Children and Family Court Advisory and Support Service</a> (Cafcass) to provide a report before the FHDRA.</p><p>A Cafcass report includes:</p><ul><li>a social services and criminal record check on the parents</li><li>details of current arrangements (this may include a record of how the child is feeling)</li><li>a summary of any other issues the court needs to be aware of</li></ul><p>At the first hearing the court will see if there's still a chance of the parents reaching an agreement.</p><p>If the parents can reach an agreement the judge will write a final order setting out the details.</p><h2>If there's no agreement at the first hearing</h2><p>If the parents can't reach an agreement the judge will look at the issues they disagree on and set out a timetable for what will happen next.</p><p>GOV.UK has more information on <a href=\"https://www.gov.uk/looking-after-children-divorce/after-you-apply-for-a-court-order\">what happens if there's no agreement</a> at the first hearing.</p>",
+    "cost" : {
+      "scale" : {
+        "min" : 0,
+        "max" : 10
+      },
+      "image_link" : "",
+      "info" : ""
+    },
+    "process_image_link" :  {
+      "full" : "static/images/process-charts/process-full-court.jpg",
+      "thumbnail" : "static/images/process-charts/process-thumb-court.png"
+    },
+    "who_is_involved" : [
+        {
+          "slug" : "parentguardian",
+          "key" : "Parent/Guardian",
+          "value" : 2
+        },
+        {
+          "slug" : "mediator",
+          "key" : "Mediator",
+          "value" : 1
+        },
+        {
+          "slug" : "lawyersolicitor",
+          "key" : "Lawyer/Solicitor",
+          "value" : 2
+        },
+        {
+          "slug" : "judgecourt",
+          "key" : "Judge/Court",
+          "value" : 1
+        }
+    ],
+    "video" : {
+      "title" : "Going to court",
+      "thumbnail" : "static/images/video-thumbnails/court-thumb.png",
+      "youtube_code" : "wUi7CsoeOE8"
+    },
+    "case_study" : [
+      {
+        "title" : "Child arrangement order",
+        "summary" : "<ul><li>Parents separated</li><li>Children aged 7 years and 5 years</li><li>Combined total cost: £14,080</li><li>Legal representation: Mother - child law Barrister (used legal aid); Father - Solicitor</li></ul>",
+        "copy" : "<p>Previously the parents had agreed to share the living arrangements of the children. However, the father refused to consent to the mother having contact with the children (other than indirect or supervised contact) following an isolated incident.</p><p>The father issued an application for a child arrangement order so the children could live with him. It would also prevent the mother from removing the children from his care and permit the her to only supervised contact with her children. An urgent court hearing was listed within a week.</p><p>The father’s concerns were identified and the mother was advised what steps she could take to ensure she was reunited with her children as soon as possible.</p><p>Negotiation started with the father’s solicitors and they were able to agree arrangements for the children to stay overnight with their mother with safeguarding measures put in place. This was successful and paved the way for future contact arrangements.</p><p>Arrangements were made for the mother to be represented at the court hearing by a barrister who specialised in child law. The purpose of the hearing was to put in place short-term arrangements for the children with a further court hearing listed in a couple of months to make longer term arrangements.</p><p>The short-term living arrangements were for the mother to have the children stay with her overnight each week, which was what she wanted.</p>",
+        "quote" : "",
+        "quote_author" : ""
+      },
+      {
+        "title" : "Stepfather",
+        "summary" : "<ul><li>Parents separated</li><li>Children aged 8 years and 10 years</li><li>Combined total cost: £450</li><li>Legal representation: both parents represented themselves</li></ul>",
+        "copy" : "<p>The father was concerned about the contact he was having with his child and step-child. He had always been the father to the step-child who did not know his own birth father.</p><p>The parties had separated 2 years previously and initially the arrangements for the children had gone well. However, the mother then became difficult about contact with both children, changing arrangements at the last moment and dealing with things in a generally unsatisfactory way. She refused to go to mediation.</p><p>An immediate court application was made including a parental responsibility order in respect of the step-child. The matter came before the court and a parental responsibility order for the step-child was secured almost immediately with the Court welfare service (Cafcass) being instructed to prepare a report on the difficulties with contact.</p><p>Negotiations followed and a proper contact routine was agreed, taking into account both parties’ work arrangements (which were complicated as the mother worked shifts). The father is now able to see both the children on a regular basis and has retained a full role in their lives.</p>",
+        "quote" : "",
+        "quote_author" : ""
+      }
+    ],
+    "usp_callout" : "<p><strong>Parents should consider this if</strong> they've tried other options, such as mediation, and still can't agree on child arrangements.</p>",
+    "resources" : {
+      "info" : "<p>01689 820272 (Resolution) <br /><a href=\"https://checklegalaid.service.gov.uk\">Check if you can get legal aid</a><br /><a href=\"https://www.gov.uk/find-a-legal-adviser\">Find a legal adviser</a></p>"
+    },
+    "pros" : [
+      {
+        "text" : "legally binding decision"
+      }
+    ],
+    "cons" : [
+      {
+        "text" : "can be expensive"
+      },
+      {
+        "text" : "court process takes a long time"
+      },
+      {
+        "text" : "less parental control - a judge will make the decision"
+      },
+      {
+        "text" : "can be more stressful for children"
+      },
+      {
+        "text" : "increased chance of parent conflict"
+      }
+    ],
+    "other" : ""
+  }
+]
