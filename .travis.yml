@@ -9,8 +9,6 @@ deploy:
   api_key:
     secure: AAbQtq1iXwdggA6XGdrMTA0F5tkFc3ld9mqLrUbqsiIuqR3/R9DWSka/ZvHPsm+umCHKSD5t2i85dhCcCfHyeeWzTTHvYCydz/1T+w/YSiSNS25rfqDlnUP399Ld+kxenJkA6ChPEk6wpCjT5ViHzBora+7JVBuFtvIjB220B6+7LCReN2iAPwbLnroeDg+vTKIntrn4OZZRdyKppxNUv5T/mRVGCPuAnYSZ+IZ2X2EFRkW8ZfjU1pN+UvrijEi/SGvuxHH+QDWKDHqotOtWtNz5aNYfvbzyq1o7b5F8z5Jak91wxdNqAFIdaqzrothp+w0thCZpYct+Gyamyd56M07adnypPfVwtm/Sx0KmcYUTQ8s7fcwDHCFY46AmRHQyGUEt8b45OgCT8DQ42/wcm8O4GAwdnryuJ7wTZLXi3kkNJ35Rcn/BNIWDnzvLNAd/ku8aeG0B1kt5MufMB1RzKDKzjtZTqvu1T438tjEFDXiXC/KGLF4W5cWW2dF1v7CxFwd8lGcr9ijbTTcea+/TQT6p+8JG5ur10k376qOqKp7AycktDQAodTWfE+mWX8L5/9IYdygsGubbXryshTNja4ebCmsWi1MUMWWwFEQwCiZehZexjSr55qJZcdjQiDCb2VzeSsEALM+IRtfnluUAqTJ1+2G17VSApGvGFMQIYMQ=
   app:
-    master: oocp-compare
-    dev: oocp-compare-dev
-    content-editing: oocp-compare-content
+    master: oocp-cait
   on:
-    repo: ministryofjustice/oocp-compare
+    repo: ministryofjustice/oocp-cait
