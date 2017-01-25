@@ -1,0 +1,20 @@
+&-skiplink-container {
+  text-align: center;
+  background: #0b0c0c;
+  div {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 1020px;
+    a {
+      position: absolute;
+      left: -9999em;
+      display: -moz-inline-stack;
+      display: inline-block;
+      margin: 0.75em 0 0 30px;
+      &:focus {
+        left: 0;
+        z-index: 1;
+      }
+    }
+  }
+}

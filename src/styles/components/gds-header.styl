@@ -1,0 +1,55 @@
+&-global-header {
+  cf();
+  background-color: #0b0c0c;
+  width: 100%;
+  .header-wrapper {
+    cf();
+    background-color: #0b0c0c;
+    max-width: 990px;
+    margin: 0 auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    +above(m) {
+      padding-right: 15px;
+    }
+    .header-logo {
+      margin-top: 2px;
+      float: left;
+      +above(l) {
+        width: 33.33%;
+      }
+      .logo {
+        float: left;
+        overflow: visible;
+        color: white;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 1;
+        text-decoration: none;
+        text-rendering: optimizeLegibility;
+        border-bottom: 1px solid transparent;
+        background: url(https://assets.publishing.service.gov.uk/static/images/gov.uk_logotype_crown-ea874a79e09423d63420aff44f016fd0b92dc6dec0cc2668d63b150c8669875e.png) no-repeat;
+        background-size: 36px 32px;
+        background-position: 0 0;
+        img {
+          margin: 2px 1px 0 0;
+          vertical-align: bottom;
+          visibility: hidden;
+        }
+      }
+    }
+  }
+  &-bar {
+    height: 10px;
+    background-color: #005ea5;
+    max-width: 960px;
+    margin: 0 15px;
+    +above(l) {
+      margin: 0 auto;
+    }
+    +above(m) {
+      margin: 0 30px;
+    }
+  }
+}

@@ -21,6 +21,10 @@ a {
     text-decoration: none;
     color: darken($links, 10%);
   }
+  &:focus {
+    background-color: #ffbf47;
+    outline: 3px solid #ffbf47;
+  }
 }
 
 .skip--navigation {
@@ -58,7 +62,7 @@ a {
 }
 
 .wrapper {
-  center(1020px);
+  center(960px);
   min-height:100vh;
 }
 
@@ -74,7 +78,7 @@ a {
     padding: $spacing;
     +above(l) {
       col(2/3, cycle: 2);
-      padding: $vspacing*5 5% 0 0;
+      padding: 0 5% 0 0;
     }
 
     h1 {
