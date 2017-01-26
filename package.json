@@ -56,5 +56,8 @@
     "node-notifier": "^4.6.1",
     "rupture": "^0.6.1",
     "serve-favicon": "^2.3.2"
+  },
+  "devDependencies": {
+    "webpack": "^1.14.0"
   }
 }
