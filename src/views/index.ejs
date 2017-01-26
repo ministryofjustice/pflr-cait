@@ -1,31 +1,28 @@
 <% include layouts/header.ejs %>
 <div class="full">
-  <div class="u-primary">
-    <% include components/headed-text.ejs %>
-  </div>
-  <div class="u-secondary">
-    <% include components/quick-links.ejs %>
+  <div class="centralise">
+    <div class="u-primary">
+      <% include components/headed-text.ejs %>
+    </div>
+    <div class="u-secondary">
+      <% include components/quick-links.ejs %>
+    </div>
   </div>
 </div>
 <div class="full">
-  <ul class="c c-article-list">
-    <% pages.forEach(function(page, i) { %>
-      <li class="u-card">
-        <% if (page.introduction) { %>
-          <% include components/headed-text-linked.ejs %>
-        <% } %>
-        <% if (page.usp_callout) { %>
-          <% include components/usp-callout.ejs %>
-        <% } %>
-        <% include components/read-more-link.ejs %>
-        <% if (page.pros.length > 0 || page.cons.length > 0) { %>
-          <% include components/pros-cons.ejs %>
-        <% } %>
-        <% if (page.who_is_involved.length > 0) { %>
-          <% include components/who-is-involved.ejs %>
-        <% } %>
-      </li>
-    <%}) %>
-   </ul>
+  <section class="c c-article-list">
+    <div class="centralise">
+      <h2>Preparing yourself</h2>
+      <ul>
+        <% pages.forEach(function(page, i) { %>
+          <li class="u-card template-<%= page.template %>">
+            <% if (page.template === 'compare') { %>
+              <% include templates/compare.ejs %>
+            <% } %>
+          </li>
+        <%}) %>
+      </ul>
+    </div>
+  </section>
 </div>
 <% include layouts/footer.ejs %>

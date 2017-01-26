@@ -1,7 +1,7 @@
 [
     {
       "id" : 1,
-      "template" : "detail",
+      "template" : "compare",
       "slug" : "negotiation-between-parents",
       "title" : "Use negotiation tools and services",
       "short_title" : "Negotiation",
@@ -85,7 +85,7 @@
     },
   {
     "id" : 2,
-    "template" : "detail",
+    "template" : "compare",
     "slug" : "mediation",
     "title" : "Mediation",
     "short_title" : "",
@@ -179,7 +179,7 @@
   },
   {
     "id" : 5,
-    "template" : "detail",
+    "template" : "compare",
     "slug" : "lawyer-mediation",
     "title" : "Lawyer mediation",
     "short_title" : "",
@@ -247,7 +247,7 @@
   },
   {
     "id" : 6,
-    "template" : "detail",
+    "template" : "compare",
     "slug" : "solicitor-negotiation",
     "title" : "Solicitor negotiation",
     "short_title" : "",
@@ -311,7 +311,7 @@
   },
   {
     "id" : 3,
-    "template" : "detail",
+    "template" : "compare",
     "slug" : "collaborative-law",
     "title" : "Collaborative law",
     "short_title" : "",
@@ -380,7 +380,7 @@
   },
   {
     "id" : 7,
-    "template" : "detail",
+    "template" : "compare",
     "slug" : "going-to-court",
     "title" : "Going to court",
     "short_title" : "",
