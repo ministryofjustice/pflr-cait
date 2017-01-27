@@ -11,6 +11,14 @@ ff-body() {
   margin-bottom: $bodyCopy;
 }
 
+real-list() {
+  ff-body();
+  margin-left: $hspacing*2;
+  li {
+    list-style: disc;
+  }
+}
+
 button(bgc) {
   display: inline-block;
   color: $light;

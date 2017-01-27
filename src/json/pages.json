@@ -468,5 +468,27 @@
       }
     ],
     "other" : ""
+  },
+  {
+    "id" : 8,
+    "template" : "prepare-3",
+    "slug" : "emotional-support",
+    "title" : "Emotional support",
+    "short_title" : "",
+    "introduction" : "<p>Separation can be a stressful experience and some people may find they need emotional support to help them cope.</p>",
+    "columns" : [
+      {
+        "title" : "Talking to friends and family",
+        "html" : "<p>Talking to friends and family can help you:</p><ul><li>make sense of what’s happening</li><li>put the situation into perspective</li><li>ease any stress you’re feeling</li></ul>"
+      },
+      {
+        "title" : "Getting counselling",
+        "html" : "<p>You should consider speaking to a counsellor if you’re struggling to cope or if you want to understand the effect it’s having on your children.</p><p>A counsellor can help you understand why your relationship ended and allow you to make progress emotionally.</p><a href=\"\">Find out more about counselling</a>"
+      },
+      {
+        "title" : "Using online forums",
+        "html" : "<p>Every separation is unique. However, there may be people who have been through a similar experience to you who will be able to offer advice.</p><p>Online forums allow you to share your story, tell people how you’re feeling and discuss any concerns you have.<p><a href=\"\">Link to online forums resource goes here</a>"
+      }
+    ]
   }
 ]
