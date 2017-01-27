@@ -19,22 +19,26 @@
           {
             "slug" : "parentguardian",
             "key" : "Parent/Guardian",
-            "value" : 2
+            "value" : 2,
+            "cost" : "N/A"
           },
           {
             "slug" : "mediator",
             "key" : "Mediator",
-            "value" : 0
+            "value" : 0,
+            "cost" : "<p>Mediation Information and Assessment (MIAM) <strong>&pound;70</strong> per person Single mediation session <strong>&pound;65</strong> per person</p>"
           },
           {
             "slug" : "lawyersolicitor",
             "key" : "Lawyer/Solicitor",
-            "value" : 0
+            "value" : 0,
+            "cost" : "<p><strong>&pound;110 - &pound;410</strong> hourly rate</p>"
           },
           {
             "slug" : "judgecourt",
             "key" : "Judge/Court",
-            "value" : 0
+            "value" : 0,
+            "cost" : "<p>C100 Court order <strong>&pound;215</strong></p>"
           }
       ],
       "video" : {

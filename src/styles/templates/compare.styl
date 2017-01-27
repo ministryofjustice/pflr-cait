@@ -1,11 +1,18 @@
 &-compare {
-  > div {
-    col(2/3);
+    position: relative;
     padding: $vspacing*2 $vspacing*3;
-  }
+    +above(m) {
+      padding: $vspacing*2 30% $vspacing*2 $vspacing*3;
+    }
   > aside {
+    +above(m) {
+      position: absolute;
+      top: 0;
+      right:0;
+      width: 30%;
+    }
+
     height: 100%;
-    col(1/3);
     padding: $vspacing*2 $vspacing*3;
     background-color: $boxbg;
   }
