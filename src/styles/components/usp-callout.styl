@@ -3,7 +3,14 @@
     font-size: $smallCopy;
     line-height: $lineHeight * 1.6;
     padding: $vspacing $hspacing*2;
-    background-color: $boxbg;
+    border-left: 8px solid #BFC1C3;
+
+    strong {
+      display: block;
+      &:after {
+        content: "...";
+      }
+    }
   }
 
   // If the component is preceded immediately by a headed-text component then
