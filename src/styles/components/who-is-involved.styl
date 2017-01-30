@@ -13,42 +13,50 @@
     margin-bottom: 0;
   }
   padding: $spacing;
-  li {
-    span(1/2, cycle: 2);
-    +above(m) {
-      span(1, uncycle: 2);
-    }
-    +above(l) {
-      span(1/2, cycle: 2);
-    }
-    position: relative;
-    height: $vspacing*4;
-    background-size: contain;
-    background-repeat: no-repeat;
-    line-height: $lineHeight*2.5;
-    padding-left: $hspacing*5;
 
-    &:before {
-      position: absolute;
-      left: $hspacing;
-      top: $vspacing;
-      font-size: 25px //px value used to size icon font
+  table {
+    width: 100%;
+    caption-side: bottom;
+    font-size: $innerCore;
+    th {
+      span {
+        span(1/2);
+        padding: $vspacing*1.5 $hspacing;
+        font-weight: bold;
+      }
     }
-
-    .lozenge {
-      position: absolute;
-      bottom: -($vspacing);
-      left: $hspacing*2.5;
-      background-color: $light;
-      width: 20px;
-      height: 20px;
-      line-height: 1;
-      text-align: center;
-      border-radius: 100%;
-      font-size: $smallCopy;
-      font-weight: bold;
+    td {
+      span(1/2);
+      text-align: left;
+      position: relative;
+      word-wrap: break-word;
+      padding: $vspacing*1.5 $hspacing;
       &:before {
-        content: "x";
+        position: absolute;
+        left: $hspacing;
+        top: $vspacing;
+        font-size: 25px //px value used to size icon font
+      }
+      &:nth-of-type(odd) {
+        padding-left: $hspacing*5;
+      }
+
+      .lozenge {
+        position: absolute;
+        bottom: $vspacing;
+        left: $hspacing*2.5;
+        background-color: $light;
+        width: 20px;
+        height: 20px;
+        line-height: 1;
+        text-align: center;
+        border-radius: 100%;
+        font-size: $smallCopy;
+        font-weight: bold;
+        &:before {
+          display: inline;
+          content: "x";
+        }
       }
     }
   }

@@ -1,10 +1,23 @@
 <div class="c c-who-is-involved">
-  <h2>Who's involved</h2>
-  <ul>
-    <% page.who_is_involved.forEach(function(wii) { %>
-      <% if (wii.value > 0) {%>
-        <li class="icon-<%= wii.slug %>"><%= wii.key %><% if(wii.value > 1) { %><span class="lozenge"><%= wii.value %></span> <% } %></li>
-      <% }%>
-    <% })%>
-  </ul>
+    <table>
+      <caption>
+        Cost will vary dependent on location and the experience of the legal representative. The number of hours required will be dependent on your situation.
+      </caption>
+      <th colspan="2">
+        <span>Who's involved</span>
+        <span>Associated costs</span>
+      </th>
+      <% page.who_is_involved.forEach(function(wii) { %>
+        <tr>
+        <% if (wii.value > 0) {%>
+          <td class="icon-<%= wii.slug %>">
+            <%= wii.key %><% if(wii.value > 1) { %><span class="lozenge"><%= wii.value %></span> <% } %>
+          </td>
+          <td>
+            <%- wii.cost %>
+          </td>
+        <% }%>
+      <% })%>
+        </tr>
+    </table>
 </div>
