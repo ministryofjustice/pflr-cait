@@ -1,4 +1,6 @@
 &-usp-callout {
+  margin-top: $vspacing;
+  margin-bottom: $vspacing;
   blockquote {
     font-size: $smallCopy;
     line-height: $lineHeight * 1.6;
@@ -13,9 +15,4 @@
     }
   }
 
-  // If the component is preceded immediately by a headed-text component then
-  // change margins to match it.
-  .c-headed-text + & {
-    margin-top: -($vspacing*4);
-  }
 }

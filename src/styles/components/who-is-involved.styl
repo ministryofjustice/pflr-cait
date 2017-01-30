@@ -12,12 +12,17 @@
   .u-card & {
     margin-bottom: 0;
   }
-  padding: $spacing;
 
   table {
-    width: 100%;
+    width: 96%;
     caption-side: bottom;
     font-size: $innerCore;
+    caption {
+      padding: $spacing
+    }
+    tr {
+      border-bottom: 1px solid $border;
+    }
     th {
       span {
         span(1/2);
@@ -31,6 +36,7 @@
       position: relative;
       word-wrap: break-word;
       padding: $vspacing*1.5 $hspacing;
+
       &:before {
         position: absolute;
         left: $hspacing;
