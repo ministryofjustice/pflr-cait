@@ -17,4 +17,4 @@ let toggleClass = function(event) {
   }
 }
 
-filter.on('click', { origClass: 'collapse', altClass: 'expand', needle: form },  toggleClass);
+filter.find('.title').on('click', { origClass: 'collapse', altClass: 'expand', needle: form },  toggleClass);
