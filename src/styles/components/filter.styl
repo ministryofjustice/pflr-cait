@@ -10,6 +10,7 @@
       float:right;
       margin-left:$hspacing*2;
       margin-top:3px;
+      transition: transform .5s ease-in-out;
     }
   }
   li {
@@ -22,12 +23,20 @@
   }
   form {
     overflow: hidden;
-    transition: max-height 1s;
+    transition: max-height .8s linear;
+    max-height: 0;
+    &.expand {
+      max-height: 9999px;
+    }
   }
-  .collapse {
-    max-height: 0px;
+
+  input {
+    display: none;
   }
+
   .expand {
-    max-height: 9999px;
+    &:before {
+      transform: rotate(180deg);
+    }
   }
 }
