@@ -1,9 +1,9 @@
-<% if (page.introduction) { %>
-  <% include ../components/headed-text.ejs %>
-<% } %>
+<% include ../components/headed-text.ejs %>
 <% page.columns.forEach(function(col, i) { %>
   <div class="col col-<%= i %>">
-    <h2><%= col.title %></h2>
+    <% if (col.title) { %>
+      <h2><%= col.title %></h2>
+    <% } %>
     <%- col.html %>
   </div>
 <% }) %>

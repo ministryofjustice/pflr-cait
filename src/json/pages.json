@@ -442,5 +442,23 @@
         "html" : "<p>Every separation is unique. However, there may be people who have been through a similar experience to you who will be able to offer advice.</p><p>Online forums allow you to share your story, tell people how you’re feeling and discuss any concerns you have.<p><a href=\"\">Link to online forums resource goes here</a>"
       }
     ]
+  },
+  {
+    "id" : 9,
+    "template" : "prepare-2",
+    "slug" : "rights-and-responsibilities",
+    "title" : "Rights and responsibilities",
+    "short_title" : "",
+    "introduction" : "",
+    "columns" : [
+      {
+        "title" : "",
+        "html" : "<p>Separation can be a stressful experience and some people may find they need emotional support to help them cope. Separation can be a stressful experience and some people may find they need emotional support to help them cope. Separation can be a stressful experience and some people may find they need emotional support to help them cope.</p>"
+      },
+      {
+        "title" : "Using online forums",
+        "html" : "<p>Every separation is unique. However, there may be people who have been through a similar experience to you who will be able to offer advice.</p><a href=\"\">Link to online forums resource goes here</a>"
+      }
+    ]
   }
 ]
