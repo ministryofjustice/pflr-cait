@@ -47,17 +47,16 @@ button(bgc) {
   }
 }
 
+// Must be used inside a :before or :after selector
 icon(unicode) {
-  &:before {
-    content: unicode !important;
-    font-family: "oocp-compare" !important;
-    font-style: normal !important;
-    font-weight: normal !important;
-    font-variant: normal !important;
-    text-transform: none !important;
-    speak: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  content: unicode !important;
+  font-family: "oocp-compare" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

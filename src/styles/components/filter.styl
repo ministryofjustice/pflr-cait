@@ -4,22 +4,53 @@
   margin-bottom:0;
   > span {
     display:inline-block;
-    padding: $spacing*2 $spacing*4 $spacing*2 $spacing*2;
-    icon("\61");
+    padding: $spacing*2 $spacing*4 $spacing*2 $spacing;
+    font-weight: bold;
     &:before {
+      icon("\61");
       float:right;
       margin-left:$hspacing*2;
       margin-top:3px;
       transition: transform .5s ease-in-out;
+    }
+    +above(m) {
+      font-size: $outerCore*1.2;
+    }
+  }
+  ul {
+    +above(m) {
+      padding: $spacing;
     }
   }
   li {
     border-top: 1px solid $light;
     border-bottom: 1px solid $light;
     padding: $spacing;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba($light, 20%);
+    }
+    &.checked {
+      background-color: $dark;
+      &:after {
+        icon("\79");
+        line-height: 0;
+        display: inline-block;
+        margin-left: $hspacing;
+      }
+      +above(m) {
+        padding: $spacing;
+      }
+    }
+    +above(m) {
+      display: inline-block;
+      margin: ($spacing/2);
+      padding: $vspacing $hspacing*2.45;
+      border: 1px solid $light;
+    }
   }
   label {
-    display:block;
+    display:inline-block;
   }
   form {
     overflow: hidden;
@@ -27,6 +58,9 @@
     max-height: 0;
     &.expand {
       max-height: 9999px;
+    }
+    +above(m) {
+      border-top: 1px solid $light;
     }
   }
 
