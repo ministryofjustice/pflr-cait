@@ -25,17 +25,48 @@
     }
     th {
       span {
-        span(1/2);
         padding: $vspacing*1.5 $hspacing;
         font-weight: bold;
+        &:first-of-type {
+          &:after {
+            content: "&";
+            display: inline;
+            margin-left: $hspacing;
+          }
+        }
+        &:last-of-type {
+          padding-left: 0;
+        }
+        +above(m) {
+          span(1/2);
+          &:first-of-type {
+            &:after {
+              display: none;
+            }
+          }
+          &:last-of-type {
+            padding-left: $hspacing;
+          }
+        }
       }
     }
     td {
-      span(1/2);
+      display: block;
       text-align: left;
       position: relative;
       word-wrap: break-word;
-      padding: $vspacing*1.5 $hspacing;
+      padding: $vspacing;
+      &:first-of-type {
+        font-weight: bold;
+      }
+      +above(m) {
+        span(1/2);
+        padding: $vspacing*1.5 $hspacing;
+        text-align: left;
+        &:first-of-type {
+          font-weight: normal;
+        }
+      }
 
       &:before {
         position: absolute;
@@ -54,10 +85,10 @@
         background-color: $light;
         width: 20px;
         height: 20px;
-        line-height: 1;
+        line-height: 1.6;
         text-align: center;
         border-radius: 100%;
-        font-size: $smallCopy;
+        font-size: $baseFont*1.2;
         font-weight: bold;
         &:before {
           display: inline;
