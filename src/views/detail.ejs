@@ -1,4 +1,6 @@
 <% include layouts/header.ejs %>
+<div class="full">
+<div class="centralise">
 <article class="c-details">
   <section class="u-primary">
     <ul class="c c-breadcrumbs">
@@ -11,9 +13,9 @@
         <%- page.body_copy %>
       </div>
     </div>
-    <% if(page.video.title || page.process_image_link.full) { %>
+    <% if(page.video && page.video.title || page.process_image_link && page.process_image_link.full) { %>
     <div class="two-columns-uneven divider">
-      <% if(page.video.title) { %>
+      <% if(page.video && page.video.title) { %>
         <div class="c c-video-player">
           <h2><%= page.video.title %></h2>
           <div class="c-video-player__container c-video-player__lightbox">
@@ -64,16 +66,19 @@
     <% } %>
   </section>
   <aside class="u-secondary">
-    <div class="c c-share">
+    <!-- <div class="c c-share">
       <ul>
         <li class="c-share__icon c-share__icon--print"><a href="#">Print this page</a></li>
         <li class="c-share__icon c-share__icon--share"><a href="#">Share this page</a></li>
       </ul>
-    </div>
+    </div> -->
     <% if (page.pros.length > 0 || page.cons.length > 0) { %>
       <% include components/pros-cons.ejs %>
     <% } %>
-    <% if (page.cost.info) { %>
+    <% if (page.who_is_involved.length > 0) { %>
+      <% include components/who-is-involved.ejs %>
+    <% } %>
+    <% if (page.cost && page.cost.info) { %>
     <div class="c c-cost">
       <h2>Cost<span>(per person):</span></h2>
       <div class="c-cost__scale">
@@ -88,4 +93,6 @@
     <% } %>
   </aside>
 </article>
+</div>
+</div>
 <% include layouts/footer.ejs %>
