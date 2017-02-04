@@ -2,14 +2,21 @@
     position: relative;
     padding: $vspacing*2 $vspacing*3;
     +above(m) {
-      padding: $vspacing*2 30% $vspacing*2 $vspacing*3;
+      padding: $vspacing*2 33% $vspacing*2 $vspacing*3;
+    }
+    .c-headed-text {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      p:last-of-type {
+        margin-bottom: 0;
+      }
     }
   > aside {
     +above(m) {
       position: absolute;
       top: 0;
       right:0;
-      width: 30%;
+      width: 33%;
     }
 
     height: 100%;
