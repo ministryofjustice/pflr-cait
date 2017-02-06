@@ -42,7 +42,7 @@
       </div>
     </div>
     <% } %>
-    <% if (page.case_study.length > 0) { %>
+    <% if (page.case_study && page.case_study.length > 0) { %>
     <section class="c c-case-studies">
       <h1>Case studies</h1>
       <% page.case_study.forEach(function(cs) { %>
