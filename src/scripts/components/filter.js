@@ -50,7 +50,11 @@ let doFilter = function(event) {
     articleContainer.find('article').show();
   }
 
-
+  $('.u-cards').each(function(){
+    var $cards = $(this);
+    var cardMethod = $cards.find('.u-card').is(':visible') ? 'show' : 'hide'
+    $cards.find('h2')[cardMethod]()
+  })
 }
 
 filter.find('.title').on('click', { origClass: 'collapse', altClass: 'expand', needle: form },  toggleClass);

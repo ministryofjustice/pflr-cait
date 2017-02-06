@@ -3,6 +3,7 @@
 	"template": "compare",
 	"slug": "negotiation-between-parents",
 	"title": "Use negotiation tools and services",
+	"more_link": "negotiation tools and services",
 	"short_title": "Negotiation",
 	"introduction": "<p>If the parents still communicate, the cheapest and easiest way for them to make child arrangements is to negotiate with each other. There are tools and services that can help.</p>",
 	"body_copy": "<p>There are free online tools and services that can help parents negotiate an agreement for their children without having to go to court.</p><strong>Parenting plans</strong></p><p>A parenting plan is a written or online plan that parents can use to prepare, discuss and agree child arrangements. It’s not legally binding and can be adapted if someone’s situation changes.</p><p>Using a parent plan:</p><ul><li>helps parents know what’s expected of them</li><li>clarifies what’s been agreed (for example, where the children will live)</li><li>works as a reference for parents to go back to</li></ul><p>Parents can choose to use an <a href=\"http://www.splittingup-putkidsfirst.org.uk/home\">online parenting plan</a> or a plan they <a href=\"http://www.separatedfamilies.info/home/parenting-apart/parenting-agreements\">can print out</a>.</p><p><strong>Negotiating tools</strong></p><p><a href=\"http://www.separatedfamilies.info/home/parenting-apart/negotiations/\">The Negotiations Cycle tool</a> helps parents break down their negotiations into four stages.</p><p><strong>Letter templates</strong></p><p>Child Law Advice has a useful <a href=\"http://childlawadvice.org.uk/wp-content/uploads/Residence-template-letter.pdf\">letter template</a> if parents prefer to negotiate with each other by letter or email.</p><p><strong>Separated Parents Information Programme (SPIP)</strong></p><p>The <a href=\"https://www.cafcass.gov.uk/grown-ups/separated-parents-information-programme-(spip).aspx\">Separated Parents Information Programme</a> is a course which helps parents understand how to put their children first while separating.</p>",
@@ -10,22 +11,7 @@
 		"slug": "parents",
 		"key": "Both parents",
 		"value": 2,
-		"cost": "Separated Parents Information Programme (SPIP) <strong>&pound;150</strong> per person"
-	}, {
-		"slug": "mediator",
-		"key": "Mediator",
-		"value": 0,
-		"cost": "<p>Mediation Information and Assessment (MIAM) <strong>&pound;95</strong> per person Single mediation session <strong>&pound;65</strong> per person</p>"
-	}, {
-		"slug": "lawyersolicitor",
-		"key": "Lawyer for each parent",
-		"value": 0,
-		"cost": "<p><strong>&pound;110 - &pound;410</strong> hourly rate</p>"
-	}, {
-		"slug": "judgecourt",
-		"key": "Judge/Court",
-		"value": 0,
-		"cost": "<p>C100 Court order <strong>&pound;215</strong></p>"
+		"cost": "<span class=\"cost-type\">Separated Parents Information Programme (SPIP)</span> <span class=\"cost-amount\"><strong>&pound;150</strong> per person</span>"
 	}],
 	"usp_callout": "<p><strong>Consider this if</strong> You already agree on the majority of issues but may benefit from using a tool such as a parenting plan.</p>",
 	"resources": {
@@ -63,17 +49,7 @@
 		"slug": "mediator",
 		"key": "Mediator",
 		"value": 1,
-		"cost": "<p>Mediation Information and Assessment (MIAM) <strong>&pound;95</strong> per person Single mediation session <strong>&pound;65</strong> per person</p>"
-	}, {
-		"slug": "lawyersolicitor",
-		"key": "Lawyer for each parent",
-		"value": 0,
-		"cost": "<p><strong>&pound;110 - &pound;410</strong> hourly rate</p>"
-	}, {
-		"slug": "judgecourt",
-		"key": "Judge/Court",
-		"value": 0,
-		"cost": "<p>C100 Court order <strong>&pound;215</strong></p>"
+		"cost": "<p><span class=\"cost-type\">Mediation Information and Assessment (MIAM)</span> <span class=\"cost-amount\"><strong>&pound;95</strong> per person</span></p><p><span class=\"cost-type\">Single mediation session</span> <span class=\"cost-amount\"><strong>&pound;65</strong> per person</span></p>"
 	}],
 	"who_is_involved_caption": "Cost will vary dependent on location and the experience of the mediator. How many mediation sessions you need will depend on how complex your situation is.",
 	"usp_callout": "<p><strong>Consider this if</strong> You want to reach an agreement together but need help from someone who is independent.</p>",
@@ -106,28 +82,13 @@
 	"introduction": "<p>You don’t have to deal with the other parent if you choose this option. You both need to instruct a lawyer who will negotiate arrangements for you. </p>",
 	"body_copy": "<p>Parents might use solicitor negotiation if their separation was particularly difficult and they no longer talk.</p><p>During this process the parents won’t have to deal with each other directly. They’ll instruct their solicitors who will negotiate for them.</p><p>The parents must first appoint their own solicitor. Each solicitor will set then up an initial meeting with their client so they can discuss the case.</p><p>Parents will need to explain what their issues are and the outcome they want to achieve.</p><p>After receiving instructions from the parents, the solicitors will begin negotiations face-to-face.</p><p>As in <a href=\"collaborative-law\">collaborative law</a> both parties will try and keep the case from going to court.</p>",
 	"who_is_involved": [{
-		"slug": "parents",
-		"key": "Both parents",
-		"value": 0,
-		"cost": "N/A"
-	}, {
-		"slug": "mediator",
-		"key": "Mediator",
-		"value": 0,
-		"cost": "<p>Mediation Information and Assessment (MIAM) <strong>&pound;95</strong> per person Single mediation session <strong>&pound;65</strong> per person</p>"
-	}, {
 		"slug": "lawyersolicitor",
 		"key": "Lawyer for each parent",
 		"value": 2,
 		"cost": "<p><strong>&pound;110 - &pound;410</strong> hourly rate</p>"
-	}, {
-		"slug": "judgecourt",
-		"key": "Judge/Court",
-		"value": 0,
-		"cost": "<p>C100 Court order <strong>&pound;215</strong></p>"
 	}],
 	"who_is_involved_caption": "Cost will vary dependent on location and the experience of the legal representative. How many hours you need will depend on how complex your situation is.",
-	"usp_callout": "<p><strong>Consider this if </strong>Your relationship is still difficult and you’d prefer not to meet, or there’s a lack of trust. < /p > ",
+	"usp_callout": "<p><strong>Consider this if </strong>Your relationship is still difficult and you’d prefer not to meet, or there’s a lack of trust. </p> ",
 	"resources": {
 		"info": "<p><a href=\"http://www.resolution.org.uk/findamember\">Find a local solicitor</a></p>"
 	},
@@ -162,20 +123,10 @@
 		"value": 2,
 		"cost": "N/A"
 	}, {
-		"slug": "mediator",
-		"key": "Mediator",
-		"value": 0,
-		"cost": "<p>Mediation Information and Assessment (MIAM) <strong>&pound;95</strong> per person Single mediation session <strong>&pound;65</strong> per person</p>"
-	}, {
 		"slug": "lawyersolicitor",
 		"key": "Lawyer/Solicitor for each parent",
 		"value": 2,
 		"cost": "<p><strong>&pound;110 - &pound;410</strong> hourly rate</p>"
-	}, {
-		"slug": "judgecourt",
-		"key": "Judge/Court",
-		"value": 0,
-		"cost": "<p>C100 Court order <strong>&pound;215</strong></p>"
 	}],
 	"who_is_involved_caption": "Costs may vary depending on your location and the experience of your legal representative. How many hours you need will depend on how complex your situation is.",
 	"usp_callout": "<p><strong>Consider this if </strong>You can still communicate with the other parent but have complex legal issues to resolve.</p>",
@@ -216,7 +167,7 @@
 		"slug": "mediator",
 		"key": "Mediator",
 		"value": 1,
-		"cost": "<p>Mediation Information and Assessment (MIAM) <strong>&pound;95</strong> per person Single mediation session <strong>&pound;65</strong> per person</p>"
+		"cost": "<p><span class=\"cost-type\">Mediation Information and Assessment (MIAM)</span> <span class=\"cost-amount\"><strong>&pound;95</strong> per person</span></p><p><span class=\"cost-type\">Single mediation session</span> <span class=\"cost-amount\"><strong>&pound;65</strong> per person</span></p>"
 	}, {
 		"slug": "lawyersolicitor",
 		"key": "Lawyer for each parent",
@@ -226,7 +177,7 @@
 		"slug": "judgecourt",
 		"key": "Judge/Court",
 		"value": 1,
-		"cost": "<p>C100 Court order <strong>&pound;215</strong></p>"
+		"cost": "<p><span class=\"cost-type\">C100 Court order</span> <span class=\"cost-amount\"><strong>&pound;215</strong></span></p>"
 	}],
 	"who_is_involved_caption": "Costs may vary depending on your location and the experience of your legal representative. How many hours you need will depend on how complex your situation is.",
 	"usp_callout": "<p><strong>Consider this if</strong> You’ve tried all other options, such as mediation, and still can’t agree on child arrangements.</p>",

@@ -13,22 +13,26 @@
   <% include components/filter.ejs %>
   <section class="c c-article-list js-article-list">
     <div class="centralise">
-      <h2>Preparing yourself</h2>
-      <% pages.forEach(function(page, i) { %>
-        <% if (page.template === 'prepare-3' || page.template === 'prepare-2') { %>
-          <article class="u-card template-<%= page.template %>" data-slug="<%= page.slug %>">
-            <% include templates/prepare.ejs %>
-          </article>
-        <% } %>
-      <% }) %>
-      <h2>Reaching an agreement</h2>
-      <% pages.forEach(function(page, i) { %>
-        <% if (page.template === 'compare') { %>
-          <article class="u-card template-<%= page.template %>" data-slug="<%= page.slug %>">
-            <% include templates/compare.ejs %>
-          </article>
-        <% } %>
-      <% }) %>
+      <div class="u-cards cards-preparing">
+        <h2>Preparing yourself</h2>
+        <% pages.forEach(function(page, i) { %>
+          <% if (page.template === 'prepare-3' || page.template === 'prepare-2') { %>
+            <article class="u-card template-<%= page.template %>" data-slug="<%= page.slug %>">
+              <% include templates/prepare.ejs %>
+            </article>
+          <% } %>
+        <% }) %>
+      </div>
+      <div class="u-cards cards-preparing">
+        <h2>Reaching an agreement</h2>
+        <% pages.forEach(function(page, i) { %>
+          <% if (page.template === 'compare') { %>
+            <article class="u-card template-<%= page.template %>" data-slug="<%= page.slug %>">
+              <% include templates/compare.ejs %>
+            </article>
+          <% } %>
+        <% }) %>
+      </div>
     </div>
   </section>
 </div>

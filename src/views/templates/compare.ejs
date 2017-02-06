@@ -1,14 +1,14 @@
 <% if (page.introduction) { %>
   <% include ../components/headed-text-linked.ejs %>
 <% } %>
+<% if (page.usp_callout) { %>
+  <% include ../components/usp-callout.ejs %>
+<% } %>
 <aside>
   <% if (page.pros.length > 0 || page.cons.length > 0) { %>
     <% include ../components/pros-cons.ejs %>
   <% } %>
 </aside>
-<% if (page.usp_callout) { %>
-  <% include ../components/usp-callout.ejs %>
-<% } %>
 <% if (page.who_is_involved.length > 0) { %>
   <% include ../components/who-is-involved.ejs %>
 <% } %>
