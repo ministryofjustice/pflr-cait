@@ -24,15 +24,8 @@ var auth = function (req, res, next) {
   };
 };
 
-var errorPage = function(req, res) {
-  res.render('error', {
-    type: 'error',
-    page: {
-      code: '404',
-      title: 'Error 404: No page found at \'' + req.url +'\'',
-      message : 'You seem to have to hit his page in error.'
-    }
-  });
+var errorPage = function(err) {
+  throw new Error(err)
 }
 
 router.get('/', auth, (req, res) => {
@@ -66,13 +59,13 @@ router.get('/*', auth, (req, res) => {
   if (pageExists) {
     renderPage(slug)
   } else {
-    errorPage(req, res);
+    errorPage(404);
   }
 });
 
 // if the user hits a non-existing route, then show a 404 error on the utility template.
 router.get('*', (req, res) => {
-  errorPage(req, res);
+  errorPage(404);
 });
 
 module.exports = router;

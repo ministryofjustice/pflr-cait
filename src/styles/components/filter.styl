@@ -1,17 +1,30 @@
 &-filter {
+  position: relative;
   background-color: $tertiary;
   color: $light;
   margin-bottom:0;
   > span {
+    cursor: pointer;
     display:inline-block;
-    padding: $spacing*2 $spacing*4 $spacing*2 $spacing;
+    padding: $spacing*2 0 $spacing*2 5rem;
     font-weight: bold;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
     &:before {
-      icon("\61");
-      float:right;
+      position: absolute;
+      left: 0;
+      display: inline-block;
+      content: "▶";
       margin-left:$hspacing*2;
-      margin-top:3px;
-      transition: transform .5s ease-in-out;
+      margin-top:0;
+      transition: transform .1s ease-in-out;
+      width: 2rem;
+    }
+    &.expand:before {
+      transform: rotate(90deg);
+      margin-left: $hspacing*1.5;
     }
     +above(m) {
       font-size: $outerCore*1.2;
@@ -23,24 +36,21 @@
     }
   }
   li {
+    +above(m) {
+      display: inline-block;
+    }
+  }
+  label {
+    display: block;
+    +above(m) {
+      display: inline-block;
+    }
     border-top: 1px solid $light;
     border-bottom: 1px solid $light;
     padding: $spacing;
     cursor: pointer;
     &:hover {
       background-color: rgba($light, 20%);
-    }
-    &.checked {
-      background-color: $dark;
-      &:after {
-        icon("\79");
-        line-height: 0;
-        display: inline-block;
-        margin-left: $hspacing;
-      }
-      +above(m) {
-        padding: $spacing;
-      }
     }
     +above(m) {
       display: inline-block;
@@ -49,12 +59,21 @@
       border: 1px solid $light;
     }
   }
-  label {
-    display:inline-block;
+  .checked label {
+    background-color: $dark;
+    &:after {
+      icon("\79");
+      line-height: 0;
+      display: inline-block;
+      margin-left: $hspacing;
+    }
+    +above(m) {
+      padding: $spacing;
+    }
   }
   form {
     overflow: hidden;
-    transition: max-height .8s linear;
+    transition: max-height .2s linear;
     max-height: 0;
     &.expand {
       max-height: 9999px;
@@ -68,9 +87,10 @@
     display: none;
   }
 
-  .expand {
-    &:before {
-      transform: rotate(180deg);
-    }
-  }
+  // .expand {
+  //   &:before {
+  //     content: "▼"
+  //     transform: rotate(180deg);
+  //   }
+  // }
 }

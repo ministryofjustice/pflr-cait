@@ -96,6 +96,18 @@
         }
       }
     }
+    .cost-amount {
+      display: block;
+    }
+    +above(m) {
+      .cost-type {
+        padding-right: 0.5rem;
+      }
+      .cost-amount {
+        display: inline-block;
+        white-space: no-wrap;
+      }
+    }
   }
 
 }
