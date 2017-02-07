@@ -6,12 +6,22 @@
     "npm": "2.15.5"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "postinstall": "gulp build"
+    "build": "gulp build",
+    "githooks": "git config core.hooksPath .githooks",
+    "githooksUnset": "git config --unset core.hooksPath",
+    "lint": "yarn run lint:app && yarn run lint:client && yarn run lint:spec",
+    "lintparallel": "sh ./parallel.sh",
+    "lint:app": "eslint scripts lib",
+    "lint:client": "eslint src/scripts",
+    "lint:spec": "eslint spec",
+    "postinstall": "yarn run build",
+    "preinstall": "if [ -x \"$(command -v git)\" ]; then yarn run githooks; else echo 'git not installed'; fi;",
+    "start": "node scripts/server.js",
+    "test": "yarn run test:unit",
+    "test:unit": "ava **/*.unit.spec.js"
   },
   "description": "Child Arrangements Informational Tool",
-  "main": "server.js",
+  "main": "scripts/server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ministryofjustice/oocp-cait.git"
@@ -58,6 +68,12 @@
     "serve-favicon": "^2.3.2"
   },
   "devDependencies": {
+    "ava": "^0.18.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-config-standard-jsdoc": "^0.2.0",
+    "eslint-plugin-jsdoc": "^2.4.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
     "webpack": "^1.14.0"
   }
 }

@@ -9,16 +9,21 @@ RUN apt-get update
 RUN apt-get --assume-yes install yarn
 
 # Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir -p /usr/app
+WORKDIR /usr/app
 
-COPY . /usr/src/app
-# TODO - only copy package.json yarn.lock gulpfile.babel.js now and bundle app files later
+# Install node modules
+COPY package.json yarn.lock /usr/app/
+RUN yarn install --ignore-scripts --ignore-optional
 
-RUN yarn install
+# Copy app
+COPY lib /usr/app/lib
+COPY scripts /usr/app/scripts
 
-# Bundle app source
-# COPY . /usr/src/app
+# Build static files
+COPY gulpfile.babel.js .babelrc /usr/app/
+COPY src /usr/app/src
+RUN yarn run build
 
 EXPOSE 3000
-CMD [ "node", "server.js" ]
+CMD [ "node", "scripts/server.js" ]
