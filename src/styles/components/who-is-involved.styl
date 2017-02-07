@@ -18,34 +18,37 @@
     caption-side: bottom;
     font-size: $innerCore;
     caption {
-      padding: $spacing
+      padding: $spacing 0;
     }
     tr {
       border-bottom: 1px solid $border;
     }
     th {
       span {
-        padding: $vspacing*1.5 $hspacing;
+        padding: $vspacing*1.5 0;
         font-weight: bold;
         &:first-of-type {
           &:after {
             content: "&";
             display: inline;
-            margin-left: $hspacing;
+            padding: 0 0.25rem 0 0.5rem;
           }
         }
         &:last-of-type {
           padding-left: 0;
+          text-transform: lowercase;
         }
-        +above(m) {
-          span(1/2);
-          &:first-of-type {
-            &:after {
-              display: none;
+        .u-card & {
+          +above(m) {
+            span(1/2);
+            &:first-of-type {
+              &:after {
+                display: none;
+              }
             }
-          }
-          &:last-of-type {
-            padding-left: $hspacing;
+            &:last-of-type {
+              text-transform: none;
+            }
           }
         }
       }
@@ -60,8 +63,10 @@
         font-weight: bold;
       }
       +above(m) {
-        span(1/2);
-        padding: $vspacing*1.5 $hspacing;
+        .u-card & {
+          span(1/2);
+          padding: $vspacing*1.5 $hspacing $vspacing*1.5;
+        }
         text-align: left;
         &:first-of-type {
           font-weight: normal;
@@ -70,7 +75,7 @@
 
       &:before {
         position: absolute;
-        left: $hspacing;
+        left: 0;
         top: $vspacing;
         font-size: 25px //px value used to size icon font
       }
@@ -81,7 +86,7 @@
       .lozenge {
         position: absolute;
         bottom: $vspacing;
-        left: $hspacing*2.5;
+        left: $hspacing*1.5;
         background-color: $light;
         width: 20px;
         height: 20px;
@@ -99,13 +104,27 @@
     .cost-amount {
       display: block;
     }
-    +above(m) {
-      .cost-type {
-        padding-right: 0.5rem;
-      }
-      .cost-amount {
-        display: inline-block;
-        white-space: no-wrap;
+    .wii-icon {
+      padding-left: 5rem !important;
+    }
+    .wii-cost {
+      padding-left: 5rem;
+      padding-right: 0;
+      margin-top: -1.5rem;
+    }
+    .u-card & {
+      +above(m) {
+        .wii-cost {
+          padding-left: 0 !important;
+          margin-top: 0;
+        }
+        .cost-type {
+          padding-right: 0.5rem;
+        }
+        .cost-amount {
+          display: inline-block;
+          white-space: no-wrap;
+        }
       }
     }
   }
