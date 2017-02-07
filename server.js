@@ -34,7 +34,7 @@ app.use(compression());
 app.use(favicon(__dirname + '/dist/static/images/site-icons/favicon.ico'));
 
 // Set a static files folder (css, images etc...)
-app.use('/static', express.static('dist/static'));
+app.use('/', express.static('dist'));
 
 app.use('/', routes);
 
@@ -76,4 +76,4 @@ app.use(errorHandler)
 
 app.listen(port);
 
-console.log('Go Compare is running on localhost:'+port);
+console.log('CAIT is running on localhost:'+port);

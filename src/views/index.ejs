@@ -27,7 +27,7 @@
         <h2>Reaching an agreement</h2>
         <% pages.forEach(function(page, i) { %>
           <% if (page.template === 'compare') { %>
-            <article class="u-card template-<%= page.template %>" data-slug="<%= page.slug %>">
+            <article class="u-card template-<%= page.template %>" data-slug="<%= page.filter_group || page.slug %>">
               <% include templates/compare.ejs %>
             </article>
           <% } %>
