@@ -29,17 +29,20 @@ var errorPage = function(err) {
 }
 
 router.get('/', auth, (req, res) => {
+  let groupIds = [... new Set(pages.map(p => p.filter_group || p.slug))]
+  let groups = pages.filter(p => groupIds.includes(p.slug))
   res.render('index', {
     type: 'index',
     page: index,
-    pages: pages
+    pages,
+    groups
   })
 });
 
 router.get('/*', auth, (req, res) => {
   var slug = req.url.replace('/','');
-  var renderPage = function(page) {
-    pages.some(function (p) {
+  var renderPage = page => {
+    pages.some(p => {
       if (p.slug === page) {
         res.render (
           'detail', {

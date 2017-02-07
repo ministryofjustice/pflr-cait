@@ -2,8 +2,8 @@
   <span class="title">Choose the topics you'd like advice on</span>
   <form action="" method="get">
     <ul class="c-filter__list">
-      <% pages.forEach(function(page, i) { %>
-      <li><label><input type="checkbox" name="<%= page.slug %>" value="true"/><%= page.title %></label></li>
+      <% groups.forEach(function(page, i) { %>
+      <li><label><input type="checkbox" name="<%= page.slug %>" value="true"/><%= page.filter_title || page.title %></label></li>
       <% }); %>
     </ul>
   </form>

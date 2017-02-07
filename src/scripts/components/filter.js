@@ -50,9 +50,10 @@ let doFilter = function(event) {
     articleContainer.find('article').show();
   }
 
+  // If a card group has no visible cards, hide its heading
   $('.u-cards').each(function(){
-    var $cards = $(this);
-    var cardMethod = $cards.find('.u-card').is(':visible') ? 'show' : 'hide'
+    let $cards = $(this);
+    let cardMethod = $cards.find('.u-card').is(':visible') ? 'show' : 'hide'
     $cards.find('h2')[cardMethod]()
   })
 }

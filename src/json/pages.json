@@ -1,267 +1,373 @@
-[{
-	"id": 1,
-	"template": "compare",
-	"slug": "negotiation-between-parents",
-	"title": "Use negotiation tools and services",
-	"more_link": "negotiation tools and services",
-	"short_title": "Negotiation",
-	"introduction": "<p>If the parents still communicate, the cheapest and easiest way for them to make child arrangements is to negotiate with each other. There are tools and services that can help.</p>",
-	"body_copy": "<p>There are free online tools and services that can help parents negotiate an agreement for their children without having to go to court.</p><strong>Parenting plans</strong></p><p>A parenting plan is a written or online plan that parents can use to prepare, discuss and agree child arrangements. It’s not legally binding and can be adapted if someone’s situation changes.</p><p>Using a parent plan:</p><ul><li>helps parents know what’s expected of them</li><li>clarifies what’s been agreed (for example, where the children will live)</li><li>works as a reference for parents to go back to</li></ul><p>Parents can choose to use an <a href=\"http://www.splittingup-putkidsfirst.org.uk/home\">online parenting plan</a> or a plan they <a href=\"http://www.separatedfamilies.info/home/parenting-apart/parenting-agreements\">can print out</a>.</p><p><strong>Negotiating tools</strong></p><p><a href=\"http://www.separatedfamilies.info/home/parenting-apart/negotiations/\">The Negotiations Cycle tool</a> helps parents break down their negotiations into four stages.</p><p><strong>Letter templates</strong></p><p>Child Law Advice has a useful <a href=\"http://childlawadvice.org.uk/wp-content/uploads/Residence-template-letter.pdf\">letter template</a> if parents prefer to negotiate with each other by letter or email.</p><p><strong>Separated Parents Information Programme (SPIP)</strong></p><p>The <a href=\"https://www.cafcass.gov.uk/grown-ups/separated-parents-information-programme-(spip).aspx\">Separated Parents Information Programme</a> is a course which helps parents understand how to put their children first while separating.</p>",
-	"who_is_involved": [{
-		"slug": "parents",
-		"key": "Both parents",
-		"value": 2,
-		"cost": "<span class=\"cost-type\">Separated Parents Information Programme (SPIP)</span> <span class=\"cost-amount\"><strong>&pound;150</strong> per person</span>"
-	}],
-	"usp_callout": "<p><strong>Consider this if</strong> You already agree on the majority of issues but may benefit from using a tool such as a parenting plan.</p>",
-	"resources": {
-		"info": "<p>GOV.UK has information on <a href=\"https://www.gov.uk/arranging-child-maintenance-yourself\">arranging child maintenance yourself</a> that includes a <a href=\"https://www.gov.uk/calculate-your-child-maintenance\">child maintenance calculator</a>.</p><p>Gingerbread has an <a href=\"https://gingerbread.org.uk/factsheet/4/Making-arrangements-for-your-children\">arrangements factsheet</a> that includes tips on making negotiations work.</p>"
+[
+	{
+		"id": 1,
+		"template": "prepare-3",
+		"slug": "emotional-support",
+		"title": "Getting emotional support",
+		"filter_title": "",
+		"short_title": "",
+		"introduction": "<p>Separation can be a stressful experience and you may find you need emotional support to help you cope. Getting emotional support can prepare you for negotiating child arrangements with the other parent.</p>",
+		"columns": [
+			{
+				"title": "Talking to your friends and family",
+				"html": "<p>Talking to your friends and family can help you make sense of what’s happening. It can also put your situation into perspective and ease any stress you may be feeling.</p>"
+			},
+			{
+				"title": "Getting counselling",
+				"html": "<p>You should consider speaking to a counsellor if you’re struggling to cope or if you want to understand the effect it’s having on your children.</p><p>A counsellor can help you understand why your relationship ended and allow you to make progress emotionally.</p><p><a href=\"\">Find out more about counselling</a></p>"
+			},
+			{
+				"title": "Using online forums",
+				"html": "<p>Every separation is unique. However, there may be people who have been through a similar experience to you who will be able to offer advice.</p><p>Online forums allow you to share your story, tell people how you’re feeling and discuss any concerns you have.</p><p><a href=\"\">Visit the Parent Connection forum</a></p>"
+			}
+		]
 	},
-	"pros": [{
-		"text": "cheapest and quickest option"
-	}, {
-		"text": "you and the other parent are in control"
-	}, {
-		"text": "helps children continue family relationships"
-	}, {
-		"text": "agreements are flexible"
-	}],
-	"cons": [{
-		"text": "you’ll need a lawyer to make the agreement legally binding"
-	}, {
-		"text": "process heavily relies on parent co-operation"
-	}],
-	"other": ""
-}, {
-	"id": 2,
-	"template": "compare",
-	"slug": "mediation",
-	"title": "Mediation",
-	"short_title": "",
-	"introduction": "<p>You can attend mediation if you can’t agree on every issue. A mediator is an impartial trained professional who helps resolve disputes.</p>",
-	"body_copy": "<p>Parents should first meet with a mediator to check if the process is right for them. This is called a Mediation Information and Assessment meeting (MIAM).</p><p>The mediator will explain:<ul><li>how mediation works</li><li>the benefits</li><li>the likely costs</li><li>if the parents are eligible for free mediation through <a href=\"https://checklegalaid.service.gov.uk/\">legal aid</a></li><li>whether it's right for the parents</li></ul></p><blockquote>Mediation is a voluntary process unless a parent wants to <a href=\"/going-to-court\">go to court</a>. In this situation they must show they've considered mediation first.</blockquote><p><strong>Attending mediation sessions</strong></p><p>Mediation usually takes place over several sessions, each lasting about 90 minutes.</p><p>Parents can choose to have mediation sessions:<ul><li>in the same room</li><li>in different rooms (shuttle mediation)</li><li>on different days</li></ul></p><p>If the parents reach an agreement the mediator will write it down. Parents can ask a solicitor to make the agreement legally binding.</p><p>GOV.UK has more information about <a href=\"https://www.gov.uk/looking-after-children-divorce/mediation\">making your agreement legally binding</a>.</p><p>Agreements don't have to be legally binding, although it can be useful if the arrangements are long and complex.</p><p><strong>When mediation isn't suitable</strong></p><p>Mediation isn't suitable in every case. Parents should seek alternative options if:<ul><li>one of the parents has been a victim of domestic abuse or violence</li><li>there's a perceived risk to the child</li><li>the relationship between the parents has broken down completely (for example there's no contact)</li></ul></p><p><a class=\"u-btn\" href=\"http://www.familymediationcouncil.org.uk/find-local-mediator/\">Find a mediator</a></p>",
-	"who_is_involved": [{
-		"slug": "parents",
-		"key": "Both parents",
-		"value": 2,
-		"cost": "N/A"
-	}, {
-		"slug": "mediator",
-		"key": "Mediator",
-		"value": 1,
-		"cost": "<p><span class=\"cost-type\">Mediation Information and Assessment (MIAM)</span> <span class=\"cost-amount\"><strong>&pound;95</strong> per person</span></p><p><span class=\"cost-type\">Single mediation session</span> <span class=\"cost-amount\"><strong>&pound;65</strong> per person</span></p>"
-	}],
-	"who_is_involved_caption": "Cost will vary dependent on location and the experience of the mediator. How many mediation sessions you need will depend on how complex your situation is.",
-	"usp_callout": "<p><strong>Consider this if</strong> You want to reach an agreement together but need help from someone who is independent.</p>",
-	"resources": {
-		"info": "<p>National Family Mediation has more information on the <a href=\"http://www.nfm.org.uk/index.php/family-mediation/about-family-mediation\">mediation process</a> and the <a href=\"http://www.nfm.org.uk/index.php/family-mediation/mediation-information-meeting-miam\"> Mediation Information and Assessment Meeting</a> (MIAM).</p><p>The <a href=\"https://www.cafcass.gov.uk/grown-ups/separated-parents-information-programme-(spip).aspx\">Separated Parents Information Programme</a> is a course which helps parents understand how to put their children first while separating.</p><p>Download a <a href=\"https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/489124/family-mediation-leaflet.pdf\">mediation information pack</a> from the Ministry of Justice.</p><p>Advice Now has a <a href=\"http://www.advicenow.org.uk/guides/survival-guide-using-family-mediation-after-break\">guide to using mediation</a> following separation.</p>"
+	{
+		"id": 10,
+		"template": "prepare-3",
+		"slug": "involving-children",
+		"title": "Involving your children",
+		"filter_title": "Involving my children",
+		"short_title": "",
+		"introduction": "<p>If your children can understand what’s happening you should involve them in the decision-making process from the beginning. It’s also important they continue to see both parents while negotiations take place. If this is difficult you can arrange visits at a child contact centre.</p>",
+		"columns": [
+			{
+				"title": "When and how to involve your children",
+				"html": "<p>The physical separation has the biggest impact on children so talk to them about it before it happens.</p><p>You must also make sure you discuss child arrangements with them at the earliest opportunity. Children who contribute will feel more prepared for their new routine.</p><p><a href=\"\">Find out more about involving your children</a></p>"
+			},
+			{
+				"title": "Making sure your children see both parents",
+				"html": "<p>If there are no safety concerns, your children should continue to see both parents during negotiations.</p><p>Non-resident parents can use a child contact centre if they can’t find somewhere to see their children.</p><p>There are around 350 child contact centres across the UK and Ireland.</p><p><a href=\"\">Find out more about contact centres</a></p>"
+			},
+			{
+				"title": "Get support to help your children cope",
+				"html": "<p>Your children may need extra support if they’re finding it hard dealing with your separation.</p><p>Many schools have professionals they can talk to, but some might need further help from a counsellor.</p><p>The type of counselling varies depending on your child’s age and if they have any learning difficulties.</p><p><a href=\"\">Find out more about support for your children</a></p>"
+			}
+		]
 	},
-	"pros": [{
-		"text": "high rate of success"
-	}, {
-		"text": "quicker and cheaper than court"
-	}, {
-		"text": "less conflict between parents"
-	}, {
-		"text": "helps children continue family relationships"
-	}, {
-		"text": "agreements are flexible"
-	}],
-	"cons": [{
-		"text": "you’ll need a lawyer to make the agreement legally binding"
-	}, {
-		"text": "process heavily relies on parent co-operation"
-	}],
-	"other": ""
-}, {
-	"id": 6,
-	"template": "compare",
-	"slug": "solicitor-negotiation",
-	"title": "Lawyer negotiation",
-	"short_title": "",
-	"introduction": "<p>You don’t have to deal with the other parent if you choose this option. You both need to instruct a lawyer who will negotiate arrangements for you. </p>",
-	"body_copy": "<p>Parents might use solicitor negotiation if their separation was particularly difficult and they no longer talk.</p><p>During this process the parents won’t have to deal with each other directly. They’ll instruct their solicitors who will negotiate for them.</p><p>The parents must first appoint their own solicitor. Each solicitor will set then up an initial meeting with their client so they can discuss the case.</p><p>Parents will need to explain what their issues are and the outcome they want to achieve.</p><p>After receiving instructions from the parents, the solicitors will begin negotiations face-to-face.</p><p>As in <a href=\"collaborative-law\">collaborative law</a> both parties will try and keep the case from going to court.</p>",
-	"who_is_involved": [{
-		"slug": "lawyersolicitor",
-		"key": "Lawyer for each parent",
-		"value": 2,
-		"cost": "<p><strong>&pound;110 - &pound;410</strong> hourly rate</p>"
-	}],
-	"who_is_involved_caption": "Cost will vary dependent on location and the experience of the legal representative. How many hours you need will depend on how complex your situation is.",
-	"usp_callout": "<p><strong>Consider this if </strong>Your relationship is still difficult and you’d prefer not to meet, or there’s a lack of trust. </p> ",
-	"resources": {
-		"info": "<p><a href=\"http://www.resolution.org.uk/findamember\">Find a local solicitor</a></p>"
+	{
+		"id": 20,
+		"template": "prepare-3",
+		"slug": "protecting-children",
+		"title": "Protecting you and your children",
+		"filter_title": "Protecting me and my children",
+		"short_title": "",
+		"introduction": "<p>It’s important you know how to identify the different forms of domestic violence and child abuse. You must report the other parent if their behaviour, or the behaviour of those around them, is concerning you.</p>",
+		"columns": [
+			{
+				"title": "Identifying and reporting domestic violence",
+				"html": "<p>Domestic violence can range from abuse that’s physical or emotional to abuse that’s financial, psychological or sexual.</p><p>You must report any concerns straight away. If you’re in immediate danger, call 999 and ask for the police. They take domestic violence seriously and will be able to help and protect you.</p><p><a href=\"\">Find out more about domestic violence</a></p>"
+			},
+			{
+				"title": "Identifying and reporting child abuse or neglect",
+				"html": "<p>Child abuse can be physical, sexual or emotional. Child neglect includes the lack of love, care and attention.</p><p>You must contact social services if you have concerns that your child is being abused or neglected by the other parent.</p><p>You should also tell your children about Childline so they can report abuse themselves.</p><p><a href=\"\">Find out more about child abuse and neglect</a></p>"
+			},
+			{
+				"title": "Preventing your children being taken out of the country",
+				"html": "<p>If you think your children may be taken out of the country without your permission, you should keep their passports safe with you.</p><p>If you don’t have their passports you can go to court to ask for a ‘prohibited steps order’ to prevent the other parent taking your children abroad.</p><p><a href=\"\">Find out more a prohibited steps order</a></p>"
+			}
+		]
 	},
-	"pros": [{
-		"text": "everyone is committed to not going to court"
-	}, {
-		"text": "lawyers are present throughout"
-	}, {
-		"text": "quicker and less stressful than court"
-	}, {
-		"text": "you don't have to deal directly with the other parent"
-	}],
-	"cons": [{
-		"text": "expensive process"
-	}, {
-		"text": "can be seen as a confrontational approach"
-	}, {
-		"text": "you may feel you're not in control"
-	}],
-	"other": ""
-}, {
-	"id": 3,
-	"template": "compare",
-	"slug": "collaborative-law",
-	"title": "Collaborative law",
-	"short_title": "",
-	"introduction": "<p>Collaborative lawyers will work with you and the other parent to resolve your issues out of court. After you both appoint a lawyer you’ll all meet to negotiate face to face.</p>",
-	"body_copy": "<p>Both parents must appoint a lawyer before the first meeting (also known as a four-way meeting).</p><p>Each lawyer will set up an initial meeting with their client so they can discuss the case and begin preparations.</p><p><strong>At the first meeting</strong></p><p>Everyone must sign an agreement that commits both parties to resolving the issues out of court.</p><p>The agreement also states that if the case does go to court both parents must find new lawyers.</p><p>This means it’s in everyone’s interests to make sure the negotiations don’t break down</p><p>If both parents reach an agreement the lawyers draw up an agreed document which they submit to court for approval. The parents won’t have to attend court.</p><p><strong>If there's no agreement at the first meeting</strong></p><p>Both parents must meet with their lawyers to discuss the unresolved issues. A date is then set for a second meeting.</p>",
-	"who_is_involved": [{
-		"slug": "parents",
-		"key": "Both parents",
-		"value": 2,
-		"cost": "N/A"
-	}, {
-		"slug": "lawyersolicitor",
-		"key": "Lawyer/Solicitor for each parent",
-		"value": 2,
-		"cost": "<p><strong>&pound;110 - &pound;410</strong> hourly rate</p>"
-	}],
-	"who_is_involved_caption": "Costs may vary depending on your location and the experience of your legal representative. How many hours you need will depend on how complex your situation is.",
-	"usp_callout": "<p><strong>Consider this if </strong>You can still communicate with the other parent but have complex legal issues to resolve.</p>",
-	"resources": {
-		"info": "<p>Read more about the <a href=\"http://www.resolution.org.uk/editorial.asp?page_id=1164\">collaborative law process</a></p><p><a href=\"http://www.resolution.org.uk/memberCollections.asp?page_id=57\">Find a collaborative lawyer</a></p>"
+	{
+		"id": 30,
+		"template": "prepare-2",
+		"slug": "rights-and-responsibilities",
+		"title": "Learning about your parental responsibility",
+		"filter_title": "Learning about my parental responsibility",
+		"short_title": "",
+		"introduction": "",
+		"columns": [
+			{
+				"title": "",
+				"html": "<p>All mothers and most fathers have legal rights and responsibilities as parents. This is known as ‘parental responsibility’.</p><p>If you have parental responsibility your main role is to protect your child and provide a home for them.</p><p>You’re also responsible for issues such as choosing their schools, the type of medical care they receive and how you discipline them.</p><p>You must financially support your child even if you don’t have parental responsibility.</p>"
+			},
+			{
+				"title": "",
+				"html": "<p><a href=\"\">Find out more about parental responsibility</a></p>"
+			}
+		]
 	},
-	"pros": [{
-		"text": "everyone is committed to not going to court"
-	}, {
-		"text": "quicker and less stressful than court"
-	}, {
-		"text": "you and the other parent set the agenda"
-	}, {
-		"text": "lawyers are present throughout"
-	}, {
-		"text": "good for your children to see their parents working together"
-	}],
-	"cons": [{
-		"text": "expensive process"
-	}, {
-		"text": "won't work unless you and the other parent trust each equally"
-	}],
-	"other": ""
-}, {
-	"id": 7,
-	"template": "compare",
-	"slug": "going-to-court",
-	"title": "Going to court",
-	"short_title": "",
-	"introduction": "<p>You can go to court if you can't agree on arrangements. A judge will assess your case and make a decision for you.</p>",
-	"body_copy": "<p>Parents will need to apply for a court order if they can't agree arrangements. Before applying they should attend a <a href=\"http://www.nfm.org.uk/index.php/family-mediation/mediation-information-meeting-miam\">Mediation Information and Assessment Meeting</a> (MIAM), unless there's been domestic abuse.</p><p>To book a MIAM, parents must <a href=\"http://www.familymediationcouncil.org.uk/find-local-mediator\">find a mediator</a>.</p><h2>Applying for a court order</h2><p>GOV.UK has more information on how to <a href=\"https://www.gov.uk/looking-after-children-divorce/apply-for-court-order\">apply for a court order</a>.</p><p>When applying, each parent should give a brief summary of their own position and what they want to achieve from the hearing. This is sometimes known as a 'position statement'.</p><p>The court will set a date for a First Dispute Resolution Appointment (FHDRA). It takes around 4 weeks to get a date after applying for a court order.</p><h2>First Hearing and Dispute Resolution Appointment (FHDRA)</h2><p>The court will ask an advisor from the <a href=\"https://www.cafcass.gov.uk/default.aspx\">Children and Family Court Advisory and Support Service</a> (Cafcass) to provide a report before the FHDRA.</p><p>A Cafcass report includes:</p><ul><li>a social services and criminal record check on the parents</li><li>details of current arrangements (this may include a record of how the child is feeling)</li><li>a summary of any other issues the court needs to be aware of</li></ul><p>At the first hearing the court will see if there's still a chance of the parents reaching an agreement.</p><p>If the parents can reach an agreement the judge will write a final order setting out the details.</p><h2>If there's no agreement at the first hearing</h2><p>If the parents can't reach an agreement the judge will look at the issues they disagree on and set out a timetable for what will happen next.</p><p>GOV.UK has more information on <a href=\"https://www.gov.uk/looking-after-children-divorce/after-you-apply-for-a-court-order\">what happens if there's no agreement</a> at the first hearing.</p>",
-	"who_is_involved": [{
-		"slug": "parents",
-		"key": "Both parents",
-		"value": 2,
-		"cost": "N/A"
-	}, {
-		"slug": "mediator",
-		"key": "Mediator",
-		"value": 1,
-		"cost": "<p><span class=\"cost-type\">Mediation Information and Assessment (MIAM)</span> <span class=\"cost-amount\"><strong>&pound;95</strong> per person</span></p><p><span class=\"cost-type\">Single mediation session</span> <span class=\"cost-amount\"><strong>&pound;65</strong> per person</span></p>"
-	}, {
-		"slug": "lawyersolicitor",
-		"key": "Lawyer for each parent",
-		"value": 2,
-		"cost": "<p><strong>&pound;110 - &pound;410</strong> hourly rate</p>"
-	}, {
-		"slug": "judgecourt",
-		"key": "Judge/Court",
-		"value": 1,
-		"cost": "<p><span class=\"cost-type\">C100 Court order</span> <span class=\"cost-amount\"><strong>&pound;215</strong></span></p>"
-	}],
-	"who_is_involved_caption": "Costs may vary depending on your location and the experience of your legal representative. How many hours you need will depend on how complex your situation is.",
-	"usp_callout": "<p><strong>Consider this if</strong> You’ve tried all other options, such as mediation, and still can’t agree on child arrangements.</p>",
-	"resources": {
-		"info": "<p>01689 820272 (Resolution) <br /><a href=\"https://checklegalaid.service.gov.uk\">Check if you can get legal aid</a><br /><a href=\"https://www.gov.uk/find-a-legal-adviser\">Find a legal adviser</a></p>"
-	},
-	"pros": [{
-		"text": "legally binding decision"
-	}],
-	"cons": [{
-		"text": "can be expensive"
-	}, {
-		"text": "court process takes a long time"
-	}, {
-		"text": "you’re not in control - a judge will make the decision"
-	}, {
-		"text": "can be more stressful for your children"
-	}, {
-		"text": "increased chance of conflict between you and the other parent"
-	}],
-	"other": ""
-}, {
-	"id": 8,
-	"template": "prepare-3",
-	"slug": "emotional-support",
-	"title": "Getting emotional support",
-	"short_title": "",
-	"introduction": "<p>Separation can be a stressful experience and you may find you need emotional support to help you cope. Getting emotional support can prepare you for negotiating child arrangements with the other parent.</p>",
-	"columns": [{
-		"title": "Talking to your friends and family",
-		"html": "<p>Talking to your friends and family can help you make sense of what’s happening. It can also put your situation into perspective and ease any stress you may be feeling.</p>"
-	}, {
-		"title": "Getting counselling",
-		"html": "<p>You should consider speaking to a counsellor if you’re struggling to cope or if you want to understand the effect it’s having on your children.</p><p>A counsellor can help you understand why your relationship ended and allow you to make progress emotionally.</p><p><a href=\"\">Find out more about counselling</a></p>"
-	}, {
-		"title": "Using online forums",
-		"html": "<p>Every separation is unique. However, there may be people who have been through a similar experience to you who will be able to offer advice.</p><p>Online forums allow you to share your story, tell people how you’re feeling and discuss any concerns you have.</p><p><a href=\"\">Visit the Parent Connection forum</a></p>"
-	}]
-}, {
-	"id": 10,
-	"template": "prepare-3",
-	"slug": "involving-children",
-	"title": "Involving your children",
-	"short_title": "",
-	"introduction": "<p>If your children can understand what’s happening you should involve them in the decision-making process from the beginning. It’s also important they continue to see both parents while negotiations take place. If this is difficult you can arrange visits at a child contact centre.</p>",
-	"columns": [{
-		"title": "When and how to involve your children",
-		"html": "<p>The physical separation has the biggest impact on children so talk to them about it before it happens.</p><p>You must also make sure you discuss child arrangements with them at the earliest opportunity. Children who contribute will feel more prepared for their new routine.</p><p><a href=\"\">Find out more about involving your children</a></p>"
-	}, {
-		"title": "Making sure your children see both parents",
-		"html": "<p>If there are no safety concerns, your children should continue to see both parents during negotiations.</p><p>Non-resident parents can use a child contact centre if they can’t find somewhere to see their children.</p><p>There are around 350 child contact centres across the UK and Ireland.</p><p><a href=\"\">Find out more about contact centres</a></p>"
-	}, {
-		"title": "Get support to help your children cope",
-		"html": "<p>Your children may need extra support if they’re finding it hard dealing with your separation.</p><p>Many schools have professionals they can talk to, but some might need further help from a counsellor.</p><p>The type of counselling varies depending on your child’s age and if they have any learning difficulties.</p><p><a href=\"\">Find out more about support for your children</a></p>"
-	}]
-}, {
-	"id": 11,
-	"template": "prepare-3",
-	"slug": "protecting-children",
-	"title": "Protecting you and your children",
-	"short_title": "",
-	"introduction": "<p>It’s important you know how to identify the different forms of domestic violence and child abuse. You must report the other parent if their behaviour, or the behaviour of those around them, is concerning you.</p>",
-	"columns": [{
-		"title": "Identifying and reporting domestic violence",
-		"html": "<p>Domestic violence can range from abuse that’s physical or emotional to abuse that’s financial, psychological or sexual.</p><p>You must report any concerns straight away. If you’re in immediate danger, call 999 and ask for the police. They take domestic violence seriously and will be able to help and protect you.</p><p><a href=\"\">Find out more about domestic violence</a></p>"
-	}, {
-		"title": "Identifying and reporting child abuse or neglect",
-		"html": "<p>Child abuse can be physical, sexual or emotional. Child neglect includes the lack of love, care and attention.</p><p>You must contact social services if you have concerns that your child is being abused or neglected by the other parent.</p><p>You should also tell your children about Childline so they can report abuse themselves.</p><p><a href=\"\">Find out more about child abuse and neglect</a></p>"
-	}, {
-		"title": "Preventing your children being taken out of the country",
-		"html": "<p>If you think your children may be taken out of the country without your permission, you should keep their passports safe with you.</p><p>If you don’t have their passports you can go to court to ask for a ‘prohibited steps order’ to prevent the other parent taking your children abroad.</p><p><a href=\"\">Find out more a prohibited steps order</a></p>"
-	}]
-}, {
-	"id": 9,
-	"template": "prepare-2",
-	"slug": "rights-and-responsibilities",
-	"title": "Learning about your parental responsibility",
-	"short_title": "",
-	"introduction": "",
-	"columns": [{
+	{
+		"id": 39,
+		"type": "page-group",
+		"slug": "negotiating",
 		"title": "",
-		"html": "<p>All mothers and most fathers have legal rights and responsibilities as parents. This is known as ‘parental responsibility’.</p><p>If you have parental responsibility your main role is to protect your child and provide a home for them.</p><p>You’re also responsible for issues such as choosing their schools, the type of medical care they receive and how you discipline them.</p><p>You must financially support your child even if you don’t have parental responsibility.</p>"
-	}, {
+		"filter_title": "Negotiating with the other parent"
+	},
+	{
+		"id": 40,
+		"template": "compare",
+		"slug": "negotiation-between-parents",
+		"title": "Use negotiation tools and services",
+		"filter_group": "negotiating",
+		"more_link": "negotiation tools and services",
+		"short_title": "Negotiation",
+		"introduction": "<p>If the parents still communicate, the cheapest and easiest way for them to make child arrangements is to negotiate with each other. There are tools and services that can help.</p>",
+		"body_copy": "<p>There are free online tools and services that can help parents negotiate an agreement for their children without having to go to court.</p><strong>Parenting plans</strong></p><p>A parenting plan is a written or online plan that parents can use to prepare, discuss and agree child arrangements. It’s not legally binding and can be adapted if someone’s situation changes.</p><p>Using a parent plan:</p><ul><li>helps parents know what’s expected of them</li><li>clarifies what’s been agreed (for example, where the children will live)</li><li>works as a reference for parents to go back to</li></ul><p>Parents can choose to use an <a href=\"http://www.splittingup-putkidsfirst.org.uk/home\">online parenting plan</a> or a plan they <a href=\"http://www.separatedfamilies.info/home/parenting-apart/parenting-agreements\">can print out</a>.</p><p><strong>Negotiating tools</strong></p><p><a href=\"http://www.separatedfamilies.info/home/parenting-apart/negotiations/\">The Negotiations Cycle tool</a> helps parents break down their negotiations into four stages.</p><p><strong>Letter templates</strong></p><p>Child Law Advice has a useful <a href=\"http://childlawadvice.org.uk/wp-content/uploads/Residence-template-letter.pdf\">letter template</a> if parents prefer to negotiate with each other by letter or email.</p><p><strong>Separated Parents Information Programme (SPIP)</strong></p><p>The <a href=\"https://www.cafcass.gov.uk/grown-ups/separated-parents-information-programme-(spip).aspx\">Separated Parents Information Programme</a> is a course which helps parents understand how to put their children first while separating.</p>",
+		"who_is_involved": [
+			{
+				"slug": "parents",
+				"key": "Both parents",
+				"value": 2,
+				"cost": "<span class=\"cost-type\">Separated Parents Information Programme (SPIP)</span> <span class=\"cost-amount\"><strong>&pound;150</strong> per person</span>"
+			}
+		],
+		"usp_callout": "<p><strong>Consider this if</strong> You already agree on the majority of issues but may benefit from using a tool such as a parenting plan.</p>",
+		"resources": {
+			"info": "<p>GOV.UK has information on <a href=\"https://www.gov.uk/arranging-child-maintenance-yourself\">arranging child maintenance yourself</a> that includes a <a href=\"https://www.gov.uk/calculate-your-child-maintenance\">child maintenance calculator</a>.</p><p>Gingerbread has an <a href=\"https://gingerbread.org.uk/factsheet/4/Making-arrangements-for-your-children\">arrangements factsheet</a> that includes tips on making negotiations work.</p>"
+		},
+		"pros": [
+			{
+				"text": "cheapest and quickest option"
+			},
+			{
+				"text": "you and the other parent are in control"
+			},
+			{
+				"text": "helps children continue family relationships"
+			},
+			{
+				"text": "agreements are flexible"
+			}
+		],
+		"cons": [
+			{
+				"text": "you’ll need a lawyer to make the agreement legally binding"
+			},
+			{
+				"text": "process heavily relies on parent co-operation"
+			}
+		],
+		"other": ""
+	},
+	{
+		"id": 50,
+		"template": "compare",
+		"slug": "mediation",
+		"title": "Mediation",
+		"filter_group": "negotiating",
+		"short_title": "",
+		"introduction": "<p>You can attend mediation if you can’t agree on every issue. A mediator is an impartial trained professional who helps resolve disputes.</p>",
+		"body_copy": "<p>Parents should first meet with a mediator to check if the process is right for them. This is called a Mediation Information and Assessment meeting (MIAM).</p><p>The mediator will explain:<ul><li>how mediation works</li><li>the benefits</li><li>the likely costs</li><li>if the parents are eligible for free mediation through <a href=\"https://checklegalaid.service.gov.uk/\">legal aid</a></li><li>whether it's right for the parents</li></ul></p><blockquote>Mediation is a voluntary process unless a parent wants to <a href=\"/going-to-court\">go to court</a>. In this situation they must show they've considered mediation first.</blockquote><p><strong>Attending mediation sessions</strong></p><p>Mediation usually takes place over several sessions, each lasting about 90 minutes.</p><p>Parents can choose to have mediation sessions:<ul><li>in the same room</li><li>in different rooms (shuttle mediation)</li><li>on different days</li></ul></p><p>If the parents reach an agreement the mediator will write it down. Parents can ask a solicitor to make the agreement legally binding.</p><p>GOV.UK has more information about <a href=\"https://www.gov.uk/looking-after-children-divorce/mediation\">making your agreement legally binding</a>.</p><p>Agreements don't have to be legally binding, although it can be useful if the arrangements are long and complex.</p><p><strong>When mediation isn't suitable</strong></p><p>Mediation isn't suitable in every case. Parents should seek alternative options if:<ul><li>one of the parents has been a victim of domestic abuse or violence</li><li>there's a perceived risk to the child</li><li>the relationship between the parents has broken down completely (for example there's no contact)</li></ul></p><p><a class=\"u-btn\" href=\"http://www.familymediationcouncil.org.uk/find-local-mediator/\">Find a mediator</a></p>",
+		"who_is_involved": [
+			{
+				"slug": "parents",
+				"key": "Both parents",
+				"value": 2,
+				"cost": "N/A"
+			},
+			{
+				"slug": "mediator",
+				"key": "Mediator",
+				"value": 1,
+				"cost": "<p><span class=\"cost-type\">Mediation Information and Assessment (MIAM)</span> <span class=\"cost-amount\"><strong>&pound;95</strong> per person</span></p><p><span class=\"cost-type\">Single mediation session</span> <span class=\"cost-amount\"><strong>&pound;65</strong> per person</span></p>"
+			}
+		],
+		"who_is_involved_caption": "Cost will vary dependent on location and the experience of the mediator. How many mediation sessions you need will depend on how complex your situation is.",
+		"usp_callout": "<p><strong>Consider this if</strong> You want to reach an agreement together but need help from someone who is independent.</p>",
+		"resources": {
+			"info": "<p>National Family Mediation has more information on the <a href=\"http://www.nfm.org.uk/index.php/family-mediation/about-family-mediation\">mediation process</a> and the <a href=\"http://www.nfm.org.uk/index.php/family-mediation/mediation-information-meeting-miam\"> Mediation Information and Assessment Meeting</a> (MIAM).</p><p>The <a href=\"https://www.cafcass.gov.uk/grown-ups/separated-parents-information-programme-(spip).aspx\">Separated Parents Information Programme</a> is a course which helps parents understand how to put their children first while separating.</p><p>Download a <a href=\"https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/489124/family-mediation-leaflet.pdf\">mediation information pack</a> from the Ministry of Justice.</p><p>Advice Now has a <a href=\"http://www.advicenow.org.uk/guides/survival-guide-using-family-mediation-after-break\">guide to using mediation</a> following separation.</p>"
+		},
+		"pros": [
+			{
+				"text": "high rate of success"
+			},
+			{
+				"text": "quicker and cheaper than court"
+			},
+			{
+				"text": "less conflict between parents"
+			},
+			{
+				"text": "helps children continue family relationships"
+			},
+			{
+				"text": "agreements are flexible"
+			}
+		],
+		"cons": [
+			{
+				"text": "you’ll need a lawyer to make the agreement legally binding"
+			},
+			{
+				"text": "process heavily relies on parent co-operation"
+			}
+		],
+		"other": ""
+	},
+	{
+		"id": 59,
+		"type": "page-group",
+		"slug": "legal-help",
 		"title": "",
-		"html": "<p><a href=\"\">Find out more about parental responsibility</a></p>"
-	}]
-}]
+		"filter_title": "Getting legal help"
+	},
+	{
+		"id": 60,
+		"template": "compare",
+		"slug": "solicitor-negotiation",
+		"title": "Lawyer negotiation",
+		"filter_group": "legal-help",
+		"short_title": "",
+		"introduction": "<p>You don’t have to deal with the other parent if you choose this option. You both need to instruct a lawyer who will negotiate arrangements for you. </p>",
+		"body_copy": "<p>Parents might use solicitor negotiation if their separation was particularly difficult and they no longer talk.</p><p>During this process the parents won’t have to deal with each other directly. They’ll instruct their solicitors who will negotiate for them.</p><p>The parents must first appoint their own solicitor. Each solicitor will set then up an initial meeting with their client so they can discuss the case.</p><p>Parents will need to explain what their issues are and the outcome they want to achieve.</p><p>After receiving instructions from the parents, the solicitors will begin negotiations face-to-face.</p><p>As in <a href=\"collaborative-law\">collaborative law</a> both parties will try and keep the case from going to court.</p>",
+		"who_is_involved": [
+			{
+				"slug": "lawyersolicitor",
+				"key": "Lawyer for each parent",
+				"value": 2,
+				"cost": "<p><strong>&pound;110 - &pound;410</strong> hourly rate</p>"
+			}
+		],
+		"who_is_involved_caption": "Cost will vary dependent on location and the experience of the legal representative. How many hours you need will depend on how complex your situation is.",
+		"usp_callout": "<p><strong>Consider this if </strong>Your relationship is still difficult and you’d prefer not to meet, or there’s a lack of trust. </p> ",
+		"resources": {
+			"info": "<p><a href=\"http://www.resolution.org.uk/findamember\">Find a local solicitor</a></p>"
+		},
+		"pros": [
+			{
+				"text": "everyone is committed to not going to court"
+			},
+			{
+				"text": "lawyers are present throughout"
+			},
+			{
+				"text": "quicker and less stressful than court"
+			},
+			{
+				"text": "you don't have to deal directly with the other parent"
+			}
+		],
+		"cons": [
+			{
+				"text": "expensive process"
+			},
+			{
+				"text": "can be seen as a confrontational approach"
+			},
+			{
+				"text": "you may feel you're not in control"
+			}
+		],
+		"other": ""
+	},
+	{
+		"id": 70,
+		"template": "compare",
+		"slug": "collaborative-law",
+		"title": "Collaborative law",
+		"filter_group": "legal-help",
+		"short_title": "",
+		"introduction": "<p>Collaborative lawyers will work with you and the other parent to resolve your issues out of court. After you both appoint a lawyer you’ll all meet to negotiate face to face.</p>",
+		"body_copy": "<p>Both parents must appoint a lawyer before the first meeting (also known as a four-way meeting).</p><p>Each lawyer will set up an initial meeting with their client so they can discuss the case and begin preparations.</p><p><strong>At the first meeting</strong></p><p>Everyone must sign an agreement that commits both parties to resolving the issues out of court.</p><p>The agreement also states that if the case does go to court both parents must find new lawyers.</p><p>This means it’s in everyone’s interests to make sure the negotiations don’t break down</p><p>If both parents reach an agreement the lawyers draw up an agreed document which they submit to court for approval. The parents won’t have to attend court.</p><p><strong>If there's no agreement at the first meeting</strong></p><p>Both parents must meet with their lawyers to discuss the unresolved issues. A date is then set for a second meeting.</p>",
+		"who_is_involved": [
+			{
+				"slug": "parents",
+				"key": "Both parents",
+				"value": 2,
+				"cost": "N/A"
+			},
+			{
+				"slug": "lawyersolicitor",
+				"key": "Lawyer/Solicitor for each parent",
+				"value": 2,
+				"cost": "<p><strong>&pound;110 - &pound;410</strong> hourly rate</p>"
+			}
+		],
+		"who_is_involved_caption": "Costs may vary depending on your location and the experience of your legal representative. How many hours you need will depend on how complex your situation is.",
+		"usp_callout": "<p><strong>Consider this if </strong>You can still communicate with the other parent but have complex legal issues to resolve.</p>",
+		"resources": {
+			"info": "<p>Read more about the <a href=\"http://www.resolution.org.uk/editorial.asp?page_id=1164\">collaborative law process</a></p><p><a href=\"http://www.resolution.org.uk/memberCollections.asp?page_id=57\">Find a collaborative lawyer</a></p>"
+		},
+		"pros": [
+			{
+				"text": "everyone is committed to not going to court"
+			},
+			{
+				"text": "quicker and less stressful than court"
+			},
+			{
+				"text": "you and the other parent set the agenda"
+			},
+			{
+				"text": "lawyers are present throughout"
+			},
+			{
+				"text": "good for your children to see their parents working together"
+			}
+		],
+		"cons": [
+			{
+				"text": "expensive process"
+			},
+			{
+				"text": "won't work unless you and the other parent trust each equally"
+			}
+		],
+		"other": ""
+	},
+	{
+		"id": 80,
+		"template": "compare",
+		"slug": "going-to-court",
+		"title": "Going to court",
+		"filter_title": "",
+		"short_title": "",
+		"introduction": "<p>You can go to court if you can't agree on arrangements. A judge will assess your case and make a decision for you.</p>",
+		"body_copy": "<p>Parents will need to apply for a court order if they can't agree arrangements. Before applying they should attend a <a href=\"http://www.nfm.org.uk/index.php/family-mediation/mediation-information-meeting-miam\">Mediation Information and Assessment Meeting</a> (MIAM), unless there's been domestic abuse.</p><p>To book a MIAM, parents must <a href=\"http://www.familymediationcouncil.org.uk/find-local-mediator\">find a mediator</a>.</p><h2>Applying for a court order</h2><p>GOV.UK has more information on how to <a href=\"https://www.gov.uk/looking-after-children-divorce/apply-for-court-order\">apply for a court order</a>.</p><p>When applying, each parent should give a brief summary of their own position and what they want to achieve from the hearing. This is sometimes known as a 'position statement'.</p><p>The court will set a date for a First Dispute Resolution Appointment (FHDRA). It takes around 4 weeks to get a date after applying for a court order.</p><h2>First Hearing and Dispute Resolution Appointment (FHDRA)</h2><p>The court will ask an advisor from the <a href=\"https://www.cafcass.gov.uk/default.aspx\">Children and Family Court Advisory and Support Service</a> (Cafcass) to provide a report before the FHDRA.</p><p>A Cafcass report includes:</p><ul><li>a social services and criminal record check on the parents</li><li>details of current arrangements (this may include a record of how the child is feeling)</li><li>a summary of any other issues the court needs to be aware of</li></ul><p>At the first hearing the court will see if there's still a chance of the parents reaching an agreement.</p><p>If the parents can reach an agreement the judge will write a final order setting out the details.</p><h2>If there's no agreement at the first hearing</h2><p>If the parents can't reach an agreement the judge will look at the issues they disagree on and set out a timetable for what will happen next.</p><p>GOV.UK has more information on <a href=\"https://www.gov.uk/looking-after-children-divorce/after-you-apply-for-a-court-order\">what happens if there's no agreement</a> at the first hearing.</p>",
+		"who_is_involved": [
+			{
+				"slug": "parents",
+				"key": "Both parents",
+				"value": 2,
+				"cost": "N/A"
+			},
+			{
+				"slug": "mediator",
+				"key": "Mediator",
+				"value": 1,
+				"cost": "<p><span class=\"cost-type\">Mediation Information and Assessment (MIAM)</span> <span class=\"cost-amount\"><strong>&pound;95</strong> per person</span></p><p><span class=\"cost-type\">Single mediation session</span> <span class=\"cost-amount\"><strong>&pound;65</strong> per person</span></p>"
+			},
+			{
+				"slug": "lawyersolicitor",
+				"key": "Lawyer for each parent",
+				"value": 2,
+				"cost": "<p><strong>&pound;110 - &pound;410</strong> hourly rate</p>"
+			},
+			{
+				"slug": "judgecourt",
+				"key": "Judge/Court",
+				"value": 1,
+				"cost": "<p><span class=\"cost-type\">C100 Court order</span> <span class=\"cost-amount\"><strong>&pound;215</strong></span></p>"
+			}
+		],
+		"who_is_involved_caption": "Costs may vary depending on your location and the experience of your legal representative. How many hours you need will depend on how complex your situation is.",
+		"usp_callout": "<p><strong>Consider this if</strong> You’ve tried all other options, such as mediation, and still can’t agree on child arrangements.</p>",
+		"resources": {
+			"info": "<p>01689 820272 (Resolution) <br /><a href=\"https://checklegalaid.service.gov.uk\">Check if you can get legal aid</a><br /><a href=\"https://www.gov.uk/find-a-legal-adviser\">Find a legal adviser</a></p>"
+		},
+		"pros": [
+			{
+				"text": "legally binding decision"
+			}
+		],
+		"cons": [
+			{
+				"text": "can be expensive"
+			},
+			{
+				"text": "court process takes a long time"
+			},
+			{
+				"text": "you’re not in control - a judge will make the decision"
+			},
+			{
+				"text": "can be more stressful for your children"
+			},
+			{
+				"text": "increased chance of conflict between you and the other parent"
+			}
+		],
+		"other": ""
+	}
+]
