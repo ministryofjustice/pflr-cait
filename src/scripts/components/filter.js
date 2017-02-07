@@ -23,7 +23,7 @@ $(document).ready(() => {
   }
 
   // This is a generic function that can be moved to a utility if it is needed another component. All it does is swap one class for another on both the clicked target and an optional additional target.
-  const toggleClass = function (event) {
+  const toggleClass = event => {
     const needle = event.data.needle
     const element = needle.length ? needle : $(event.currentTarget)
     const origClass = event.data.origClass
@@ -43,7 +43,7 @@ $(document).ready(() => {
 
   // Takes the event from a form update and shows or hides the appropriate sections on the page.
   // Note: This doesn't save the state between sessions or page refreshes.
-  const doFilter = function (event) {
+  const doFilter = event => {
     articleContainer.find('article').hide()
     if (event) {
       const el = $(event.currentTarget)

@@ -10,7 +10,8 @@ const compression = require('compression')
 // Route loader
 const routes = require('../lib/routes')
 
-const dist = '../dist'
+const distDir = '../dist'
+const getDirPath = srcDir => path.join(__dirname, distDir, srcDir)
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -19,9 +20,9 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.set('view engine', 'ejs')
-app.set('views', path.join(__dirname, dist, 'views'))
+app.set('views', getDirPath('views'))
 
-app.use(function (req, res, next) {
+app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST')
   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, content-type, Authorization')
@@ -34,10 +35,10 @@ app.use(morgan('dev'))
 app.use(compression())
 
 // Set Favicon
-app.use(favicon(path.join(__dirname, dist, 'static/images/site-icons/favicon.ico')))
+app.use(favicon(getDirPath('static/images/site-icons/favicon.ico')))
 
 // Set a static files folder (css, images etc...)
-app.use('/', express.static(path.join(__dirname, dist)))
+app.use('/', express.static(getDirPath('')))
 
 app.use('/', routes)
 
