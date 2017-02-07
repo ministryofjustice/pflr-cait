@@ -36,9 +36,20 @@
     }
   }
   li {
+    position: relative;
     +above(m) {
       display: inline-block;
     }
+  }
+  li.updating:after {
+    content: '';
+    position: absolute;
+    right: 6px;
+    top: 15px;
+    width: 25px;
+    height: 25px;
+    background-image: url(/static/images/loader.svg);
+    background-size: contain;
   }
   label {
     -webkit-touch-callout: none;
@@ -72,10 +83,17 @@
       line-height: 0;
       display: inline-block;
       margin-left: $hspacing;
+      width: 1.9rem;
     }
     +above(m) {
       padding: $spacing;
     }
+  }
+  .updating label:after {
+    content: '' !important;
+  }
+  label.updating {
+    background: red !important;
   }
   form {
     overflow: hidden;

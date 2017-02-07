@@ -27,6 +27,14 @@ let toggleClass = function(event) {
 // Note: This doesn't save the state between sessions or page refreshes.
 let doFilter = function(event) {
   let el = $(event.currentTarget);
+  let elLabel = el.closest('li')
+  let articleList = $('.c-article-list')
+  elLabel.addClass('updating')
+  articleList.addClass('updating')
+  setTimeout(() => {
+    elLabel.removeClass('updating')
+    articleList.removeClass('updating')
+  }, 300)
   let needle = el.attr('name');
   articleContainer.find('article').hide();
 
