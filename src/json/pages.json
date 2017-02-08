@@ -326,7 +326,8 @@
 				"slug": "mediator",
 				"key": "Mediator",
 				"value": 1,
-				"cost": "<p><span class=\"cost-type\">Mediation Information and Assessment (MIAM)</span> <span class=\"cost-amount\"><strong>&pound;95</strong> per person</span></p><p><span class=\"cost-type\">Single mediation session</span> <span class=\"cost-amount\"><strong>&pound;85</strong> per person</span></p>"
+				"cost": "<p><span class=\"cost-type\">Mediation Information and Assessment (MIAM)</span> <span class=\"cost-amount\"><strong>&pound;95</strong> per person</span></p>",
+				"xcost": "<p><span class=\"cost-type\">Mediation Information and Assessment (MIAM)</span> <span class=\"cost-amount\"><strong>&pound;95</strong> per person</span></p><p><span class=\"cost-type\">Single mediation session</span> <span class=\"cost-amount\"><strong>&pound;85</strong> per person</span></p>"
 			},
 			{
 				"slug": "lawyersolicitor",
