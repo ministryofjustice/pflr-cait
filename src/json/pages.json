@@ -29,7 +29,7 @@
 		"title": "Involving your children",
 		"filter_title": "Involving my children",
 		"short_title": "",
-		"introduction": "<p>You should involve your children in the decision-making process if they understand what’s happening. It’s important they see both of you during negotiations. If this is difficult you can arrange visits at a child contact centre.</p>",
+		"introduction": "<p>You should involve your children in the decision-making process if they understand what’s happening. It’s important they see both of you during negotiations. Arrange visits at a child contact centre if it’s easier.</p>",
 		"columns": [
 			{
 				"title": "When and how to involve your children",
@@ -213,8 +213,12 @@
 		"title": "Lawyer negotiation",
 		"filter_group": "legal-help",
 		"short_title": "",
-		"introduction": "<p>You don’t have to deal with the other parent if you choose this option. You each instruct a lawyer to negotiate arrangements for you.</p>",
-		"body_copy": "<p>You might use lawyer negotiation (also known as solicitor negotiation) if your separation was difficult and you no longer talk to the other parent.</p><p>During this process you won’t have to deal with them directly. You’ll both instruct a lawyer who will negotiate for you.</p><p>Your lawyer will set up an initial meeting with you to discuss the case. You’ll need to explain what the issues are and the outcome you want to achieve.</p><p>After receiving instructions from you and the other parent, the lawyers will begin negotiations face-to-face.</p><p>As in <a href=\"collaborative-law\">collaborative law</a> both parties will try and keep the case from going to court.</p>",
+		"introduction": "<p>You don’t have to deal with the other parent if you choose this option. You each hire a lawyer to negotiate arrangements for you.</p>",
+		"body_copy": "<p>You might use lawyer negotiation (also known as solicitor negotiation) if your separation was difficult and you no longer talk to the other parent.</p><p>During this process you won’t have to deal with them directly. You’ll both hire a lawyer who will negotiate for you.</p><p>Your lawyer will set up an initial meeting with you to discuss the case. You’ll need to explain what the issues are and the outcome you want to achieve.</p><p>After receiving instructions from you and the other parent, the lawyers will begin negotiations face-to-face.</p><p>As in <a href=\"collaborative-law\">collaborative law</a> both parties will try and keep the case from going to court.</p>",
+		"video": {
+			"title": "What is solicitor led negotiation?",
+			"youtube_code": "vGGDIsUJHNY"
+		},
 		"who_is_involved": [
 			{
 				"slug": "lawyersolicitor",
@@ -262,8 +266,8 @@
 		"title": "Collaborative law",
 		"filter_group": "legal-help",
 		"short_title": "",
-		"introduction": "<p>Collaborative lawyers will work with you and the other parent to resolve your issues out of court. You each appoint a lawyer then all meet to negotiate together.</p>",
-		"body_copy": "<p>You and the other parent will need to appoint a lawyer each. Before the first collaborative meeting (also known as a four-way meeting) your lawyer will want to discuss the case with you.</p><h2>At the first meeting</h2><p>Everyone must sign an agreement that commits both parties to resolving the issues out of court.</p><p>The agreement also states that if the case does go to court both you and the other parent must find new lawyers.</p><p>This means it’s in everyone’s interests to make sure the negotiations don’t break down.</p><p>If you and the other parent reach an agreement the lawyers draw up a document which they submit to court for approval. You won’t have to attend court.</p><h2>If there's no agreement at the first meeting</h2><p>You and the other parent must meet with your lawyers to discuss the unresolved issues. A date is then set for a second meeting.</p>",
+		"introduction": "<p>Collaborative lawyers will work with you and the other parent to resolve your issues out of court. You each hire a lawyer then all meet to negotiate together.</p>",
+		"body_copy": "<p>You and the other parent will need to hire a lawyer each. Before the first collaborative meeting (also known as a four-way meeting) your lawyer will want to discuss the case with you.</p><h2>At the first meeting</h2><p>Everyone must sign an agreement that commits both parties to resolving the issues out of court.</p><p>The agreement also states that if the case does go to court both you and the other parent must hire new lawyers.</p><p>This means it’s in everyone’s interests to make sure the negotiations don’t break down.</p><p>If you and the other parent reach an agreement the lawyers draw up a document which they submit to court for approval. You won’t have to attend court.</p><h2>If there's no agreement at the first meeting</h2><p>You and the other parent must meet with your lawyers to discuss the unresolved issues. A date is then set for a second meeting.</p>",
 		"video": {
 			"title": "Collaborative law in practice",
 			"youtube_code": "Cb2NcCNDJvg"
@@ -285,7 +289,7 @@
 		"who_is_involved_caption": "Costs may vary depending on your location and the experience of your legal representative. How many hours you need will depend on how complex your situation is.",
 		"usp_callout": "<p><strong>Consider this if </strong>you can still communicate with the other parent but have complex legal issues to resolve.</p>",
 		"resources": {
-			"info": "<p>Read more about the <a href=\"http://www.resolution.org.uk/editorial.asp?page_id=1164\">collaborative law process</a></p><p><a href=\"http://www.resolution.org.uk/memberCollections.asp?page_id=57\">Find a collaborative lawyer</a></p>"
+			"info": "<p>Read more about the <a href=\"http://www.resolution.org.uk/editorial.asp?page_id=1164\">collaborative law process</a></p><p><a href=\"http://www.resolution.org.uk/memberSearch.asp?page_id=64\">Find a collaborative lawyer</a></p>"
 		},
 		"pros": [
 			{
@@ -309,7 +313,7 @@
 				"text": "expensive process"
 			},
 			{
-				"text": "won't work unless you and the other parent trust each equally"
+				"text": "won't work unless you and the other parent trust each other equally"
 			}
 		],
 		"other": ""
