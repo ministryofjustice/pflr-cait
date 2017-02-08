@@ -336,7 +336,7 @@
 			{
 				"icon_class": "step-attend-miam",
 				"title": "Attend a Mediation Information and Assessment Meeting (MIAM)",
-				"body": "<p>Before applying for a court order you must attend a <a href=\"http://www.nfm.org.uk/index.php/family-mediation/mediation-information-meeting-miam\">MIAM</a>, unless there’s been domestic abuse or social services are involved.</p><p>The meeting will assess whether mediation is right you and if you can agree arrangements out of court.</p><p>You will need to <a href=\"http://www.familymediationcouncil.org.uk/find-local-mediator/\">find a mediator</a> to book a MIAM.</p>"
+				"body": "<p>Before applying for a court order you must attend a <a href=\"https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam\">MIAM</a>, unless there’s been domestic abuse or social services are involved.</p><p>The meeting will assess whether mediation is right you and if you can agree arrangements out of court.</p><p>You will need to <a href=\"http://www.familymediationcouncil.org.uk/find-local-mediator/\">find a mediator</a> to book a MIAM.</p>"
 			},
 			{
 				"icon_class": "step-apply-order",
