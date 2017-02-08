@@ -57,6 +57,7 @@ function errorHandler (err, req, res, next) {
     return next(err)
   }
   if (err) {
+    console.log(err)
     let errCode = Number(err.message.toString())
     if (isNaN(errCode)) {
       errCode = 500
