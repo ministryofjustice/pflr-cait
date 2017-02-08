@@ -72,12 +72,6 @@
           &:first-of-type {
             font-weight: normal;
           }
-          &.wii-icon {
-            width: 40%;
-          }
-          &.wii-amount {
-            width: 60%;
-          }
         }
       }
 
@@ -123,9 +117,13 @@
     }
     .u-card & {
       +above(m) {
+        .wii-icon {
+          width: 40%;
+        }
         .wii-cost {
           padding-left: 0 !important;
           margin-top: 0;
+          width: 60%;
         }
         .cost-type {
           padding-right: 0.5rem;
