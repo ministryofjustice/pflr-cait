@@ -1,8 +1,9 @@
 &-compare {
     position: relative;
-    padding: $vspacing*2 $vspacing*3;
+    padding: $vspacing*2 0;
     +above(m) {
-      padding: $vspacing*2 33% $vspacing*2 $vspacing*3;
+      padding: $vspacing*3 33% 0 0;
+      min-height: 48rem;
     }
     .c-headed-text {
       padding-bottom: 0;
@@ -12,17 +13,17 @@
       }
     }
   > aside {
-    margin: 2rem -3rem;
+    margin: 2rem 0 0;
+    height: 100%;
+    padding: $vspacing*2 0 0;
     +above(m) {
       position: absolute;
+      padding: $vspacing*1 0 $vspacing*2 $vspacing*3;
       top: 0;
       right:0;
       width: 33%;
       margin: 0;
     }
 
-    height: 100%;
-    padding: $vspacing*2 $vspacing*3;
-    background-color: $boxbg;
   }
 }

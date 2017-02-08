@@ -29,11 +29,14 @@
       color: #D0021B;
     }
   }
-  .c-details > aside & {
-    padding: 1.5rem 1.5rem 0;
-    background: #f6f6f6;
-    border-top: solid 10px #005ea5;
-    border-bottom: solid 1px #b4b4b4;
-    margin-bottom: 3rem;
+  padding: 1.5rem 1.5rem 1rem;
+  background: #f8f8f8;
+  border-top: solid 10px #005ea5;
+  border-bottom: solid 1px #b4b4b4;
+
+  .c-usp-callout + aside & {
+    +above(m) {
+      margin-top: 2rem;
+    }
   }
 }

@@ -1,12 +1,17 @@
 &-breadcrumbs {
+  margin-bottom: 0;
   .u-primary & {
     margin-left:0;
     list-style: none;
+    & li {
+      margin-bottom: 0;
+    }
   }
   padding-top: $vspacing;
 
   li {
     display:inline-block;
+    margin-bottom: 0;
     &:not(:last-of-type) {
       &:after {
         content: ">";
