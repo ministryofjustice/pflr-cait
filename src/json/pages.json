@@ -321,8 +321,30 @@
 		"title": "Going to court",
 		"filter_title": "",
 		"short_title": "",
-		"introduction": "<p>You can go to court if you can't agree on arrangements. A judge will assess your case and make a decision for you.</p>",
-		"body_copy": "<p>You and the other parent will need to apply for a court order if you can’t agree arrangements. Before applying you must attend a <a href=\"http://www.nfm.org.uk/index.php/family-mediation/mediation-information-meeting-miam\">Mediation Information and Assessment Meeting</a> (MIAM), unless there's been domestic abuse.</p><p>You will need to <a href=\"http://www.familymediationcouncil.org.uk/find-local-mediator\">find a mediator</a> to book a MIAM.</p><h2>Applying for a court order</h2><p>GOV.UK has more information on how to <a href=\"https://www.gov.uk/looking-after-children-divorce/apply-for-court-order\">apply for a court order</a>.</p><p>When applying, you must give a brief summary of your position and what you want to achieve from the hearing. This is sometimes known as a ‘position statement’.</p><p>The court will set a date for a First Hearing Dispute Resolution Appointment (FHDRA). Your date will be about 4 weeks after you apply.</p><h2>First Hearing and Dispute Resolution Appointment (FHDRA)</h2><p>The court will ask an advisor from the <a href=\"https://www.cafcass.gov.uk/default.aspx\">Children and Family Court Advisory and Support Service (Cafcass)</a> to provide a report before the FHDRA.</p><p>A Cafcass report includes:</p><ul><li>a social services and criminal record check on you and the other parent</li><li>details of current arrangements (this may include a record of how the child is feeling)</li><li>a summary of any other issues the court needs to be aware of</li></ul><p>At the first hearing the court will see if there’s still a chance you can reach an agreement. If you can, the judge will write a final order setting out the details.</p><h2>If there's no agreement at the first hearing</h2><p>If you can’t reach an agreement the judge will look at the issues you disagree on and set out a timetable for what will happen next.</p><p>GOV.UK has more information on <a href=\"https://www.gov.uk/looking-after-children-divorce/after-you-apply-for-a-court-order\">what happens if there's no agreement</a> at the first hearing.</p>",
+		"introduction": "<p>You can go to court if you can't agree on arrangements. A judge will assess your case and make a decision for you</p>",
+		"body_copy": "<p>You and the other parent will need to apply for a court order if you can’t agree on child arrangements.</p><p>The court process can take a long time and involves several steps.</p>",
+		"steps": [
+			{
+				"icon_class": "step-hire-lawyer",
+				"title": "Consider hiring a lawyer",
+				"body": "<p>A lawyer will be expensive but they’ll handle the legal aspects of the case and represent you in court.</p><p>They may try and negotiate a deal with the other parent out of court or recommend moving to step 2 straight away.</p><p>You’ll need to find out <a href=\"https://www.gov.uk/represent-yourself-in-court/overview\">how to represent yourself</a> in court if you decide you don’t want to hire a lawyer.</p>"
+			},
+			{
+				"icon_class": "step-attend-miam",
+				"title": "Attend a Mediation Information and Assessment Meeting (MIAM)",
+				"body": "<p>Before applying for a court order you must attend a <a href=\"http://www.nfm.org.uk/index.php/family-mediation/mediation-information-meeting-miam\">MIAM</a>, unless there’s been domestic abuse or social services are involved.</p><p>The meeting will assess whether mediation is right you and if you can agree arrangements out of court.</p><p>You will need to <a href=\"http://www.familymediationcouncil.org.uk/find-local-mediator/\">find a mediator</a> to book a MIAM.</p>"
+			},
+			{
+				"icon_class": "step-apply-order",
+				"title": "Apply for a court order",
+				"body": "<p>GOV.UK has more information on how to apply for a court order.</p>You must give a brief summary of your position and what you want to achieve from the hearing. This is sometimes known as a ‘position statement’.</p><p>The court will set a date for a First Hearing Dispute Resolution Appointment (FHDRA). Your date will be about 4 weeks after you apply.</p><p>The court will ask an advisor from the <a href=\"http://www.cafcass.gov.uk/default.aspx\">Children and Family Court Advisory and Support Service (Cafcass)</a> to provide a report before the FHDRA.</p><p>A Cafcass report includes:</p><ul class=\"list\"><li>a social services and criminal record check on you and the other parent</li><li>details of current arrangements (this may include a record of how the child is feeling)</li><li>a summary of any other issues the court needs to be aware of</li></ul><p><a href=\"#c_video_player\">Watch video for more details</a></p>"
+			},
+			{
+				"icon_class": "step-attend-court",
+				"title": "Go to court",
+				"body": "<p>At the FHDRA the court will see if there’s still a chance you can reach an agreement with the other parent. If you can, the judge will write a final order setting out the details.</p><p><strong>If there’s no agreement at the first hearing</strong></p><p>If you can’t reach an agreement the judge will look at the issues you disagree on and set out a timetable for what will happen next.</p><p>GOV.UK has more information on <a href=\"https://www.gov.uk/looking-after-children-divorce/after-you-apply-for-a-court-order\">what happens if there’s no agreement</a> at the first hearing.</p>"
+			}
+		],
 		"video": {
 			"title": "Making your application to court",
 			"youtube_code": "wUi7CsoeOE8"

@@ -13,10 +13,13 @@
         <%- page.body_copy %>
       </div>
     </div>
+    <% if(page.steps) { %>
+      <% include components/steps.ejs %>
+    <% } %>
     <% if(page.video && page.video.title || page.process_image_link && page.process_image_link.full) { %>
     <!-- <div class="two-columns-uneven divider"> -->
       <% if(page.video && page.video.title) { %>
-        <div class="c c-video-player">
+        <div class="c c-video-player" id="c_video_player">
           <h2><%= page.video.title %></h2>
           <div class="c-video-player__container c-video-player__lightbox">
             <iframe src="https://www.youtube.com/embed/<%= page.video.youtube_code %>" frameborder="0" allowfullscreen></iframe>
