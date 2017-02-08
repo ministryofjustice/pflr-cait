@@ -13,17 +13,21 @@
         <%- page.body_copy %>
       </div>
     </div>
+    <% if(page.steps) { %>
+      <% include components/steps.ejs %>
+    <% } %>
     <% if(page.video && page.video.title || page.process_image_link && page.process_image_link.full) { %>
-    <div class="two-columns-uneven divider">
+    <!-- <div class="two-columns-uneven divider"> -->
       <% if(page.video && page.video.title) { %>
-        <div class="c c-video-player">
+        <div class="c c-video-player" id="c_video_player">
           <h2><%= page.video.title %></h2>
           <div class="c-video-player__container c-video-player__lightbox">
-            <img data-youtube="<%= page.video.youtube_code %>" src="<%= page.video.thumbnail %>" alt="<%= page.video.title %>">
+            <iframe src="https://www.youtube.com/embed/<%= page.video.youtube_code %>" frameborder="0" allowfullscreen></iframe>
+            <!-- <img data-youtube="<%= page.video.youtube_code %>" src="<%= page.video.thumbnail %>" alt="<%= page.video.title %>"> -->
           </div>
         </div>
       <% } %>
-      <% if(page.process_image_link.full) { %>
+      <% if(page.process_image_link && page.process_image_link.full) { %>
       <div class="c c-process-chart">
         <h2><%= page.title %> process chart</h2>
         <a class="c-process-chart__lightbox" href="<%= page.process_image_link.full %>">
@@ -32,7 +36,7 @@
         </a>
       </div>
       <% } %>
-    </div>
+    <!-- </div> -->
     <% } %>
     <% if (page.resources.info) { %>
     <div class="c c-resources divider">

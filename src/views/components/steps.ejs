@@ -1,0 +1,35 @@
+<div class="c c-steps">
+<% page.steps.forEach(function(step, i) { %>
+  <div class="c-step c-step-<%= i %>">
+    <p class="c-step-count <%= step.icon_class %>">Step <%= i + 1 %></p>
+    <h2><%= step.title %></h2>
+    <div class="c-step-content">
+      <%- step.body %>
+    </div>
+  </div>
+<% }) %>
+
+
+
+<!--
+  <% if (page.pros) { %>
+  <div class="c-proscons__pros">
+    <h2>Pros:</h2>
+    <ul>
+      <% page.pros.forEach(function(pro, i) { %>
+        <li class="icon-tick"><%- pro.text %></li>
+      <% }) %>
+    </ul>
+  </div>
+  <% } if (page.cons) { %>
+  <div class="c-proscons__cons">
+    <h2>Cons:</h2>
+    <ul>
+      <% page.cons.forEach(function(con, i) { %>
+        <li class="icon-cross"><%- con.text %></li>
+      <% }) %>
+    </ul>
+  </div>
+<% } %>
+-->
+</div>

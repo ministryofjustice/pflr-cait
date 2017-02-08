@@ -149,6 +149,10 @@
 		"short_title": "",
 		"introduction": "<p>You can attend mediation if you can’t agree on every issue. A mediator is an impartial trained professional who helps resolve disputes.</p>",
 		"body_copy": "<p>You must first meet with a mediator to check if mediation is right for you. This is called a <a href=\"http://www.nfm.org.uk/index.php/family-mediation/mediation-information-meeting-miam\">Mediation Information and Assessment Meeting</a> (MIAM).</p><p>The mediator will explain:<ul><li>how mediation works</li><li>the benefits</li><li>the likely costs</li><li>if you're eligible for free mediation through <a href=\"https://checklegalaid.service.gov.uk/\">legal aid</a></li><li>whether it's right for you</li></ul></p><blockquote>Mediation is a voluntary process unless you or the other parent wants to <a href=\"/going-to-court\">go to court</a>. In this situation you both must show you've considered mediation first.</blockquote><h2>Attending mediation sessions</h2><p>Mediation usually takes place over several sessions, each lasting about 90 minutes.</p><p>You can choose to have mediation sessions:<ul><li>in the same room</li><li>in different rooms (shuttle mediation)</li><li>on different days</li><li>with lawyers present (lawyer-assisted mediation)</li></ul></p><p>If you both reach an agreement the mediator will write down all the details.</p><p>The agreement isn’t legally binding unless you ask a lawyer to draft a consent order. This can be if useful if the arrangements are long and complex.</p><p>GOV.UK has more information about <a href=\"https://www.gov.uk/looking-after-children-divorce/mediation\">making your agreement legally binding</a>.</p><h2>Lawyer-assisted mediation</h2><p>This is different to standard mediation because you and the other parent both hire lawyers who attend the sessions with you.</p><p>If you have a lot of complex legal issues to resolve this may be a good option because mediators can’t offer legal advice.</p><h2>When mediation isn't suitable</h2><p>Mediation isn't suitable in every case. You should seek alternative options if:<ul><li>you or the other parent has been a victim of domestic abuse or violence</li><li>there's a perceived risk to your children</li><li>the relationship between you and the other parent has broken down completely (for example there's no contact)</li></ul></p><p><a class=\"u-btn\" href=\"http://www.familymediationcouncil.org.uk/find-local-mediator/\">Find a mediator</a></p>",
+		"video": {
+			"title": "Understanding Family Mediation",
+			"youtube_code": "zYhWdwazCZA"
+		},
 		"who_is_involved": [
 			{
 				"slug": "parents",
@@ -260,6 +264,10 @@
 		"short_title": "",
 		"introduction": "<p>Collaborative lawyers will work with you and the other parent to resolve your issues out of court. You each appoint a lawyer then all meet to negotiate together.</p>",
 		"body_copy": "<p>You and the other parent will need to appoint a lawyer each. Before the first collaborative meeting (also known as a four-way meeting) your lawyer will want to discuss the case with you.</p><h2>At the first meeting</h2><p>Everyone must sign an agreement that commits both parties to resolving the issues out of court.</p><p>The agreement also states that if the case does go to court both you and the other parent must find new lawyers.</p><p>This means it’s in everyone’s interests to make sure the negotiations don’t break down.</p><p>If you and the other parent reach an agreement the lawyers draw up a document which they submit to court for approval. You won’t have to attend court.</p><h2>If there's no agreement at the first meeting</h2><p>You and the other parent must meet with your lawyers to discuss the unresolved issues. A date is then set for a second meeting.</p>",
+		"video": {
+			"title": "Collaborative law in practice",
+			"youtube_code": "Cb2NcCNDJvg"
+		},
 		"who_is_involved": [
 			{
 				"slug": "parents",
@@ -313,8 +321,34 @@
 		"title": "Going to court",
 		"filter_title": "",
 		"short_title": "",
-		"introduction": "<p>You can go to court if you can't agree on arrangements. A judge will assess your case and make a decision for you.</p>",
-		"body_copy": "<p>You and the other parent will need to apply for a court order if you can’t agree arrangements. Before applying you must attend a <a href=\"http://www.nfm.org.uk/index.php/family-mediation/mediation-information-meeting-miam\">Mediation Information and Assessment Meeting</a> (MIAM), unless there's been domestic abuse.</p><p>You will need to <a href=\"http://www.familymediationcouncil.org.uk/find-local-mediator\">find a mediator</a> to book a MIAM.</p><h2>Applying for a court order</h2><p>GOV.UK has more information on how to <a href=\"https://www.gov.uk/looking-after-children-divorce/apply-for-court-order\">apply for a court order</a>.</p><p>When applying, you must give a brief summary of your position and what you want to achieve from the hearing. This is sometimes known as a ‘position statement’.</p><p>The court will set a date for a First Hearing Dispute Resolution Appointment (FHDRA). Your date will be about 4 weeks after you apply.</p><h2>First Hearing and Dispute Resolution Appointment (FHDRA)</h2><p>The court will ask an advisor from the <a href=\"https://www.cafcass.gov.uk/default.aspx\">Children and Family Court Advisory and Support Service (Cafcass)</a> to provide a report before the FHDRA.</p><p>A Cafcass report includes:</p><ul><li>a social services and criminal record check on you and the other parent</li><li>details of current arrangements (this may include a record of how the child is feeling)</li><li>a summary of any other issues the court needs to be aware of</li></ul><p>At the first hearing the court will see if there’s still a chance you can reach an agreement. If you can, the judge will write a final order setting out the details.</p><h2>If there's no agreement at the first hearing</h2><p>If you can’t reach an agreement the judge will look at the issues you disagree on and set out a timetable for what will happen next.</p><p>GOV.UK has more information on <a href=\"https://www.gov.uk/looking-after-children-divorce/after-you-apply-for-a-court-order\">what happens if there's no agreement</a> at the first hearing.</p>",
+		"introduction": "<p>You can go to court if you can't agree on arrangements. A judge will assess your case and make a decision for you</p>",
+		"body_copy": "<p>You and the other parent will need to apply for a court order if you can’t agree on child arrangements.</p><p>The court process can take a long time and involves several steps.</p>",
+		"steps": [
+			{
+				"icon_class": "step-hire-lawyer",
+				"title": "Consider hiring a lawyer",
+				"body": "<p>A lawyer will be expensive but they’ll handle the legal aspects of the case and represent you in court.</p><p>They may try and negotiate a deal with the other parent out of court or recommend moving to step 2 straight away.</p><p>You’ll need to find out <a href=\"https://www.gov.uk/represent-yourself-in-court/overview\">how to represent yourself</a> in court if you decide you don’t want to hire a lawyer.</p>"
+			},
+			{
+				"icon_class": "step-attend-miam",
+				"title": "Attend a Mediation Information and Assessment Meeting (MIAM)",
+				"body": "<p>Before applying for a court order you must attend a <a href=\"http://www.nfm.org.uk/index.php/family-mediation/mediation-information-meeting-miam\">MIAM</a>, unless there’s been domestic abuse or social services are involved.</p><p>The meeting will assess whether mediation is right you and if you can agree arrangements out of court.</p><p>You will need to <a href=\"http://www.familymediationcouncil.org.uk/find-local-mediator/\">find a mediator</a> to book a MIAM.</p>"
+			},
+			{
+				"icon_class": "step-apply-order",
+				"title": "Apply for a court order",
+				"body": "<p>GOV.UK has more information on how to apply for a court order.</p>You must give a brief summary of your position and what you want to achieve from the hearing. This is sometimes known as a ‘position statement’.</p><p>The court will set a date for a First Hearing Dispute Resolution Appointment (FHDRA). Your date will be about 4 weeks after you apply.</p><p>The court will ask an advisor from the <a href=\"http://www.cafcass.gov.uk/default.aspx\">Children and Family Court Advisory and Support Service (Cafcass)</a> to provide a report before the FHDRA.</p><p>A Cafcass report includes:</p><ul class=\"list\"><li>a social services and criminal record check on you and the other parent</li><li>details of current arrangements (this may include a record of how the child is feeling)</li><li>a summary of any other issues the court needs to be aware of</li></ul><p><a href=\"#c_video_player\">Watch video for more details</a></p>"
+			},
+			{
+				"icon_class": "step-attend-court",
+				"title": "Go to court",
+				"body": "<p>At the FHDRA the court will see if there’s still a chance you can reach an agreement with the other parent. If you can, the judge will write a final order setting out the details.</p><p><strong>If there’s no agreement at the first hearing</strong></p><p>If you can’t reach an agreement the judge will look at the issues you disagree on and set out a timetable for what will happen next.</p><p>GOV.UK has more information on <a href=\"https://www.gov.uk/looking-after-children-divorce/after-you-apply-for-a-court-order\">what happens if there’s no agreement</a> at the first hearing.</p>"
+			}
+		],
+		"video": {
+			"title": "Making your application to court",
+			"youtube_code": "wUi7CsoeOE8"
+		},
 		"who_is_involved": [
 			{
 				"slug": "parents",
