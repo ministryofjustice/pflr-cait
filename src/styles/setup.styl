@@ -131,7 +131,10 @@ a {
 .u-secondary {
   +above(l) {
     col(1/3, cycle: 2);
-    margin-top:$vspacing*6;
+    margin-top:$vspacing*13;
+    .details-page & {
+      margin-top:$vspacing*7;
+    }
     &--no-top-margin {
       margin-top: 0;
     }
@@ -140,4 +143,9 @@ a {
   h2 {
     margin-bottom: $vspacing;
   }
+}
+
+.c-video-player__container iframe {
+  width: 100%;
+  height: 315px;
 }
