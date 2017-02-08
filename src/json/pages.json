@@ -103,7 +103,7 @@
 		"more_link": "negotiation tools and services",
 		"short_title": "Negotiation",
 		"introduction": "<p>There are free online tools and services that can help you negotiate an agreement for your children without having to go to court.</p>",
-		"body_copy": "<p>There are free online tools and services that can help parents negotiate an agreement for their children without having to go to court.</p><h2>Parenting plans</h2></p><p>A parenting plan is a written or online plan that you can use to prepare, discuss and agree child arrangements. It’s not legally binding and can be adapted if someone’s situation changes.</p><p>Using a parent plan:</p><ul><li>helps you know what’s expected of you</li><li>confirms what you agree (for example, where your children will live)</li><li>works as a record for you to go back to</li></ul><p>You can choose to use an <a href=\"http://www.splittingup-putkidsfirst.org.uk/home\">online parenting plan</a> or a plan you <a href=\"http://www.separatedfamilies.info/home/parenting-apart/parenting-agreements\">can print out</a>.</p><h2>Negotiating tools</h2><p><a href=\"http://www.separatedfamilies.info/home/parenting-apart/negotiations/\">The Negotiations Cycle tool</a> helps you break down your negotiations into 4 stages.</p><h2>Letter templates</h2><p>Child Law Advice has a useful <a href=\"http://childlawadvice.org.uk/wp-content/uploads/Residence-template-letter.pdf\">letter template</a> if you prefer to negotiate by letter or email.</p><h2>Separated Parents Information Programme (SPIP)</h2><p>The <a href=\"https://www.cafcass.gov.uk/grown-ups/separated-parents-information-programme-(spip).aspx\">Separated Parents Information Programme</a> is a course that helps parents understand how to put their children first while separating.</p>",
+		"body_copy": "<p>There are free online tools and services that can help you negotiate an agreement for your children without having to go to court.</p><h2>Parenting plan</h2></p><p>A parenting plan is a written or online plan that you can use to prepare, discuss and agree child arrangements. It’s not legally binding and you can adjust the details if your situation changes.</p><p>Using a parent plan:</p><ul><li>helps you know what’s expected of you</li><li>confirms what you agree (for example, where your children will live)</li><li>works as a record for you to go back to</li></ul><p>You can choose to use an <a href=\"http://www.splittingup-putkidsfirst.org.uk/home\">online parenting plan</a> or a plan you <a href=\"http://www.separatedfamilies.info/home/parenting-apart/parenting-agreements\">can print out</a>.</p><h2>Negotiating tools</h2><p><a href=\"http://www.separatedfamilies.info/home/parenting-apart/negotiations/\">The Negotiations Cycle tool</a> lets you break down your negotiations into 4 stages.</p><h2>Letter templates</h2><p>Child Law Advice has a useful <a href=\"http://childlawadvice.org.uk/wp-content/uploads/Residence-template-letter.pdf\">letter template</a> if you prefer to negotiate by letter or email.</p><h2>Separated Parents Information Programme (SPIP)</h2><p>The <a href=\"https://www.cafcass.gov.uk/grown-ups/separated-parents-information-programme-(spip).aspx\">Separated Parents Information Programme</a> is a course that will help you and the other parent understand how to put your children first when separating.</p>",
 		"who_is_involved": [
 			{
 				"slug": "parents",
@@ -160,7 +160,7 @@
 				"slug": "mediator",
 				"key": "Mediator",
 				"value": 1,
-				"cost": "<p><span class=\"cost-type\">Mediation Information and Assessment (MIAM)</span> <span class=\"cost-amount\"><strong>&pound;95</strong> per person</span></p><p><span class=\"cost-type\">Single mediation session</span> <span class=\"cost-amount\"><strong>&pound;65</strong> per person</span></p>"
+				"cost": "<p><span class=\"cost-type\">Mediation Information and Assessment (MIAM)</span> <span class=\"cost-amount\"><strong>&pound;95</strong> per person</span></p><p><span class=\"cost-type\">Single mediation session</span> <span class=\"cost-amount\"><strong>&pound;85</strong> per person</span></p>"
 			}
 		],
 		"who_is_involved_caption": "Cost will vary dependent on location and the experience of the mediator. How many mediation sessions you need will depend on how complex your situation is.",
@@ -209,7 +209,7 @@
 		"title": "Lawyer negotiation",
 		"filter_group": "legal-help",
 		"short_title": "",
-		"introduction": "<p>You don’t have to deal with the other parent if you choose this option. You both need to instruct a lawyer who will negotiate arrangements for you. </p>",
+		"introduction": "<p>You don’t have to deal with the other parent if you choose this option. You each instruct a lawyer to negotiate arrangements for you.</p>",
 		"body_copy": "<p>You might use lawyer negotiation (also known as solicitor negotiation) if your separation was difficult and you no longer talk to the other parent.</p><p>During this process you won’t have to deal with them directly. You’ll both instruct a lawyer who will negotiate for you.</p><p>Your lawyer will set up an initial meeting with you to discuss the case. You’ll need to explain what the issues are and the outcome you want to achieve.</p><p>After receiving instructions from you and the other parent, the lawyers will begin negotiations face-to-face.</p><p>As in <a href=\"collaborative-law\">collaborative law</a> both parties will try and keep the case from going to court.</p>",
 		"who_is_involved": [
 			{
@@ -258,7 +258,7 @@
 		"title": "Collaborative law",
 		"filter_group": "legal-help",
 		"short_title": "",
-		"introduction": "<p>Collaborative lawyers will work with you and the other parent to resolve your issues out of court. After you both appoint a lawyer you’ll all meet to negotiate face to face.</p>",
+		"introduction": "<p>Collaborative lawyers will work with you and the other parent to resolve your issues out of court. You each appoint a lawyer then all meet to negotiate together.</p>",
 		"body_copy": "<p>You and the other parent will need to appoint a lawyer each. Before the first collaborative meeting (also known as a four-way meeting) your lawyer will want to discuss the case with you.</p><h2>At the first meeting</h2><p>Everyone must sign an agreement that commits both parties to resolving the issues out of court.</p><p>The agreement also states that if the case does go to court both you and the other parent must find new lawyers.</p><p>This means it’s in everyone’s interests to make sure the negotiations don’t break down.</p><p>If you and the other parent reach an agreement the lawyers draw up a document which they submit to court for approval. You won’t have to attend court.</p><h2>If there's no agreement at the first meeting</h2><p>You and the other parent must meet with your lawyers to discuss the unresolved issues. A date is then set for a second meeting.</p>",
 		"who_is_involved": [
 			{
@@ -269,7 +269,7 @@
 			},
 			{
 				"slug": "lawyersolicitor",
-				"key": "Lawyer/Solicitor for each parent",
+				"key": "Lawyer for each parent",
 				"value": 2,
 				"cost": "<p><strong>&pound;110 - &pound;410</strong> hourly rate</p>"
 			}
@@ -326,7 +326,7 @@
 				"slug": "mediator",
 				"key": "Mediator",
 				"value": 1,
-				"cost": "<p><span class=\"cost-type\">Mediation Information and Assessment (MIAM)</span> <span class=\"cost-amount\"><strong>&pound;95</strong> per person</span></p><p><span class=\"cost-type\">Single mediation session</span> <span class=\"cost-amount\"><strong>&pound;65</strong> per person</span></p>"
+				"cost": "<p><span class=\"cost-type\">Mediation Information and Assessment (MIAM)</span> <span class=\"cost-amount\"><strong>&pound;95</strong> per person</span></p><p><span class=\"cost-type\">Single mediation session</span> <span class=\"cost-amount\"><strong>&pound;85</strong> per person</span></p>"
 			},
 			{
 				"slug": "lawyersolicitor",
