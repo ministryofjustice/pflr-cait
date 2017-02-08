@@ -1,19 +1,19 @@
 {
   "template" :  "index",
   "title" : "Get help with child arrangements",
-  "introduction" : "<p>Parents may need to agree child arrangements (also known as custody) if they divorce or separate. For example, they may need to decide where the children will live and how much time they spend with each parent.</p><p>There are ways parents can prepare themselves before they begin negotiating arrangements. The process will be easier if parents know their legal rights, where they can get support and how to involve their children.</p>",
+  "introduction" : "<p>You and the other parent may need to agree child arrangements (also known as custody) if you divorce or separate. For example, you may need to decide where your children will live and how much time they spend with each of you.</p><p>There are ways you can both prepare before you begin negotiating arrangements. This guide contains information about your legal rights, where to get support and how to involve your children. It also explains the different ways you can reach an agreement, for example by attending mediation or using a parenting plan.</p>",
   "quicklinks" : [
     {
-      "name" : "Help me to involve my ex in childcare arrangements",
-      "url" : ""
+      "name" : "Arrange child maintenance yourself on GOV.UK",
+      "url" : "https://www.gov.uk/arranging-child-maintenance-yourself"
     },
     {
-      "name" : "Find out whether you can apply for legal aid",
-      "url" : ""
+      "name" : "Find out whether you can apply for legal aid on GOV.UK",
+      "url" : "https://checklegalaid.service.gov.uk/"
     },
     {
-      "name" : "Find a children’s counsellor",
-      "url" : ""
+      "name" : "Find information about domestic abuse on Refuge",
+      "url" : "http://www.refuge.org.uk/get-help-now/what-is-domestic-violence/"
     }
   ]
 }
