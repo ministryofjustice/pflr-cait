@@ -27,7 +27,7 @@
 		"template": "prepare-3",
 		"slug": "involving-children",
 		"title": "Involving your children",
-		"filter_title": "Involving my children",
+		"filter_title": "Involving your children",
 		"short_title": "",
 		"introduction": "<p>You should involve your children in the decision-making process if they understand what’s happening. It’s important they see both of you during negotiations. Arrange visits at a child contact centre if it’s easier.</p>",
 		"columns": [
@@ -50,7 +50,7 @@
 		"template": "prepare-3",
 		"slug": "protecting-children",
 		"title": "Protecting you and your children",
-		"filter_title": "Protecting me and my children",
+		"filter_title": "Protecting you and your children",
 		"short_title": "",
 		"introduction": "<p>It’s important you know how to identify the different forms of domestic violence and child abuse. You must report the other parent if their behaviour, or the behaviour of those around them, is concerning you.</p>",
 		"columns": [
@@ -73,7 +73,7 @@
 		"template": "prepare-2",
 		"slug": "rights-and-responsibilities",
 		"title": "Learning about parental responsibility",
-		"filter_title": "Learning about my parental responsibility",
+		"filter_title": "Learning about parental responsibility",
 		"short_title": "",
 		"introduction": "",
 		"columns": [
