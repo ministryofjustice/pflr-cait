@@ -21,7 +21,7 @@ COPY lib /usr/app/lib
 COPY scripts /usr/app/scripts
 
 # Build static files
-COPY gulpfile.babel.js .babelrc /usr/app/
+COPY .babelrc /usr/app/
 COPY src /usr/app/src
 RUN yarn run build
 
