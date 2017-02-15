@@ -2,8 +2,8 @@
   "name": "oocp-cait",
   "version": "1.0.0",
   "engines": {
-    "node": "4.4.5",
-    "npm": "2.15.5"
+    "node": "6.9.1",
+    "npm": "3.10.8"
   },
   "scripts": {
     "build": "npm-run-all -s cleanbuild -p build:scripts build:styles build:static build:views",
@@ -19,11 +19,11 @@
     "githooks": "git config core.hooksPath .githooks",
     "githooksUnset": "git config --unset core.hooksPath",
     "lint": "npm-run-all -p lint:*",
-    "lint:app": "eslint scripts lib gulpfile.babel.js",
+    "lint:app": "eslint scripts lib",
     "lint:client": "eslint src/scripts",
     "lint:spec": "eslint spec",
     "postinstall": "npm-run-all build",
-    "preinstall": "if [ -x \"$(command -v git)\" ]; then yarn githooks; else echo 'git not installed'; fi;",
+    "preinstall": "if [ -d .git ] && [ -x \"$(command -v git)\" ]; then npm run githooks; else echo 'git not installed'; fi;",
     "start": "node scripts/server.js",
     "test": "npm-run-all test:unit",
     "test:unit": "ava **/*.unit.spec.js"
