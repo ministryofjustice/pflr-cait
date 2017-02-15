@@ -44,12 +44,12 @@ app.use('/', routes)
 
 let errs = {
   404: {
-    title: 'Sorry, this page doesn’t exist',
-    message: 'Please return to the <a href="/">Help with Child Arangements</a> page and try again.'
+    title: 'This page can’t be found',
+    message: 'Please check you’ve entered the correct web address.'
   },
   500: {
-    title: 'This service is temporarily unavailable',
-    message: '<p>This service is not available right now, but we’re working hard to get things up and running again.</p>\n<p>Please return to the <a href="/">Help with Child Arangements</a> page and try again.</p>'
+    title: 'Sorry, we’re currently experiencing technical difficulties',
+    message: 'Please try again later.'
   }
 }
 function errorHandler (err, req, res, next) {
