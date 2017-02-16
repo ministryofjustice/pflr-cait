@@ -1,5 +1,12 @@
     </div> <%# wrapper %>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+    <% if (GA_TRACKING_ID) { %>
+    <script src="/static/scripts/govuk_frontend_toolkit/google-analytics-universal-tracker.js" charset="utf-8"></script>
+    <script src="/static/scripts/govuk_frontend_toolkit/analytics.js" charset="utf-8"></script>
+    <script src="/static/scripts/govuk_frontend_toolkit/external-link-tracker.js" charset="utf-8"></script>
+    <script>var GA_TRACKING_ID = '<%= GA_TRACKING_ID %>'</script>
+    <script src="/static/scripts/app/analytics.js" charset="utf-8"></script>
+    <% } %>
     <script src="/static/scripts/components/filter.js" charset="utf-8"></script>
   </body>
 </html>
