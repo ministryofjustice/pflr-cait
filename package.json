@@ -6,13 +6,13 @@
     "npm": "3.10.8"
   },
   "scripts": {
-    "build": "npm-run-all -s cleanbuild -p build:scripts build:styles build:static build:views",
+    "build": "npm-run-all -s cleanbuild -p build:scripts build:styles build:static",
     "build:scripts": "babel src/scripts --out-dir dist/static/scripts --presets=es2015",
-    "build:static": "npm-run-all -p build:static:fonts build:static:images",
+    "build:static": "npm-run-all -p build:static:fonts build:static:images build:static:robot",
     "build:static:fonts": "mkdir -p dist/static && cp -rp src/fonts dist/static/",
     "build:static:images": "mkdir -p dist/static && cp -rp src/images dist/static/",
+    "build:static:robot": "mkdir -p dist && cp -rp src/robots.txt dist/",
     "build:styles": "mkdir -p dist/static/styles && stylus --compress -p src/styles/start.styl > dist/static/styles/core.min.css",
-    "build:views": "mkdir -p dist && cp -rp src/views dist/",
     "cleanbuild": "rm -rf dist",
     "docker:build": "docker build -t familylaw-cait .",
     "docker:run": "docker run -p 44444:3000 -d familylaw-cait",

@@ -10,8 +10,8 @@ const compression = require('compression')
 // Route loader
 const routes = require('../lib/routes')
 
-const distDir = '../dist'
-const getDirPath = srcDir => path.join(__dirname, distDir, srcDir)
+const rootDir = path.join(__dirname, '..')
+const getDistPath = srcDir => path.join(rootDir, 'dist', srcDir)
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -20,12 +20,13 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.set('view engine', 'ejs')
-app.set('views', getDirPath('views'))
+app.set('views', path.join(rootDir, 'src', 'views'))
 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST')
   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, content-type, Authorization')
+  res.setHeader('X-Robots-Tag', 'noindex,nofollow')
   next()
 })
 
@@ -34,14 +35,36 @@ app.use(morgan('dev'))
 // Gzip content
 app.use(compression())
 
+const { APPVERSION, APP_BUILD_DATE, APP_GIT_COMMIT, APP_BUILD_TAG } = process.env
+app.use('/ping.json', (req, res) => {
+  res.json({
+    version_number: APPVERSION,
+    build_date: APP_BUILD_DATE,
+    commit_id: APP_GIT_COMMIT,
+    build_tag: APP_BUILD_TAG
+  })
+})
+app.use('/healthcheck.json', (req, res) => {
+  res.json({
+    status: true,
+    health: 'OK'
+  })
+})
+app.use('/status.json', (req, res) => {
+  res.json({
+    status: 'OK'
+  })
+})
+
 // Set Favicon
-app.use(favicon(getDirPath('static/images/site-icons/favicon.ico')))
+app.use(favicon(getDistPath('static/images/site-icons/favicon.ico')))
 
 // Set a static files folder (css, images etc...)
-app.use('/', express.static(getDirPath('')))
+app.use('/', express.static(getDistPath('')))
 
 app.use('/', routes)
 
+const { GA_TRACKING_ID } = process.env
 let errs = {
   404: {
     title: 'This page can’t be found',
@@ -72,7 +95,8 @@ function errorHandler (err, req, res, next) {
     res.status(errCode)
     res.render('error', {
       type: 'error',
-      page: errorPage
+      page: errorPage,
+      GA_TRACKING_ID
     })
   }
 }
