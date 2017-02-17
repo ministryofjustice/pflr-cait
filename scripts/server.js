@@ -35,10 +35,10 @@ app.use(morgan('dev'))
 // Gzip content
 app.use(compression())
 
-const { APPVERSION, APP_BUILD_DATE, APP_GIT_COMMIT, APP_BUILD_TAG } = process.env
+const { APP_VERSION, APP_BUILD_DATE, APP_GIT_COMMIT, APP_BUILD_TAG } = process.env
 app.use('/ping.json', (req, res) => {
   res.json({
-    version_number: APPVERSION,
+    version_number: APP_VERSION,
     build_date: APP_BUILD_DATE,
     commit_id: APP_GIT_COMMIT,
     build_tag: APP_BUILD_TAG
