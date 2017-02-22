@@ -11,7 +11,7 @@ const compression = require('compression')
 const routes = require('../lib/routes')
 
 const rootDir = path.join(__dirname, '..')
-const getDistPath = srcDir => path.join(rootDir, 'dist', srcDir)
+const getDistPath = (srcDir = '') => path.join(rootDir, 'dist', srcDir)
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -46,13 +46,7 @@ app.use('/ping.json', (req, res) => {
 })
 app.use('/healthcheck.json', (req, res) => {
   res.json({
-    status: true,
-    health: 'OK'
-  })
-})
-app.use('/status.json', (req, res) => {
-  res.json({
-    status: 'OK'
+    status: 'ok'
   })
 })
 
@@ -60,7 +54,7 @@ app.use('/status.json', (req, res) => {
 app.use(favicon(getDistPath('static/images/site-icons/favicon.ico')))
 
 // Set a static files folder (css, images etc...)
-app.use('/', express.static(getDistPath('')))
+app.use('/', express.static(getDistPath()))
 
 app.use('/', routes)
 
