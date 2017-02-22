@@ -21,6 +21,7 @@ app.use(bodyParser.json())
 
 app.set('view engine', 'ejs')
 app.set('views', path.join(rootDir, 'src', 'views'))
+// app.set('views', path.join(rootDir, 'views'))
 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*')

@@ -26,7 +26,7 @@
     "preinstall": "if [ -d .git ] && [ -x \"$(command -v git)\" ]; then npm run githooks; else echo 'git not installed'; fi;",
     "start": "node scripts/server.js",
     "test": "npm-run-all test:unit",
-    "test:unit": "ava **/*.unit.spec.js"
+    "test:unit": "ava scripts/**/*.unit.spec.js lib/**/*.unit.spec.js"
   },
   "description": "Child Arrangements Informational Tool",
   "main": "scripts/server.js",
@@ -52,6 +52,7 @@
     "jeet": "6.1.2",
     "morgan": "^1.7.0",
     "npm-run-all": "^4.0.1",
+    "request-promise-native": "^1.0.3",
     "rupture": "^0.6.1",
     "serve-favicon": "^2.3.2",
     "stylus": "^0.54.5"
