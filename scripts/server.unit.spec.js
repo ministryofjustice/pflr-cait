@@ -2,8 +2,8 @@ import test from 'ava'
 
 const request = require('request-promise-native')
 
+process.env.ENV = 'test'
 process.env.PORT = 4000
-
 process.env.APP_VERSION = 'APP_VERSION'
 process.env.APP_BUILD_DATE = 'APP_BUILD_DATE'
 process.env.APP_GIT_COMMIT = 'APP_GIT_COMMIT'
@@ -11,8 +11,7 @@ process.env.APP_BUILD_TAG = 'APP_BUILD_TAG'
 
 test.before('setup', t => {
   return new Promise((resolve) => {
-    let app = require('./server')
-    console.log('Loading app', app)
+    require('./server')
     setTimeout(() => resolve({}), 50)
   })
 })
