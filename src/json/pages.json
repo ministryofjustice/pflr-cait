@@ -1,90 +1,44 @@
 [
 	{
-		"id": 1,
-		"template": "prepare-3",
-		"slug": "emotional-support",
-		"title": "Getting emotional support",
-		"filter_title": "",
-		"short_title": "",
-		"introduction": "<p>Separation can be a stressful experience and you may find you need emotional support to help you cope. Getting emotional support can prepare you for negotiating child arrangements with the other parent.</p>",
-		"columns": [
-			{
-				"title": "Talking to your friends and family",
-				"html": "<p>Talking to your friends and family can help you make sense of what’s happening. It can also put your situation into perspective and ease any stress you may be feeling.</p>"
-			},
-			{
-				"title": "Getting counselling",
-				"html": "<p>You should consider speaking to a counsellor if you’re struggling to cope or if you want to understand the effect it’s having on your children. A counsellor can help you understand why your relationship ended and allow you to make progress emotionally.</p><p><a href=\"http://www.counselling-directory.org.uk/separation.html\">Find out more about counselling</a></p>"
-			},
-			{
-				"title": "Using online forums",
-				"html": "<p>Every separation is unique. However, there may be people who have been through a similar experience to you who will be able to offer advice. Online forums allow you to share your story, tell people how you’re feeling and discuss any concerns you have.</p><p><a href=\"http://www.theparentconnection.org.uk/posts\">Visit the Parent Connection forum</a></p>"
-			}
-		]
-	},
-	{
 		"id": 10,
 		"template": "prepare-3",
 		"slug": "involving-children",
-		"title": "Involving your children",
+		"title": "Put your children first",
 		"filter_title": "Involving your children",
 		"short_title": "",
-		"introduction": "<p>You should involve your children in the decision-making process if they understand what’s happening. It’s important they see both of you during negotiations. Arrange visits at a child contact centre if it’s easier.</p>",
-		"columns": [
-			{
-				"title": "When and how to involve your children",
-				"html": "<p>The physical separation has the biggest impact on children so talk to them about it before it happens.</p><p>You must also make sure you discuss child arrangements with them at the earliest opportunity. Children who contribute will feel more prepared for their new routine.</p><p><a href=\"http://www.familylives.org.uk/advice/divorce-and-separation/your-children/how-to-involve-children-in-decisions-during-divorce-and-separation/\">Find out more about involving your children</a></p>"
-			},
-			{
-				"title": "Making sure your children see both parents",
-				"html": "<p>If there are no safety concerns, your children should continue to see both parents during negotiations.</p><p>Non-resident parents can use a child contact centre if they can’t find somewhere to see their children. There are around 350 child contact centres across the UK and Ireland.</p><p><a href=\"http://www.naccc.org.uk\">Find out more about contact centres</a></p>"
-			},
-			{
-				"title": "Get support to help your children cope",
-				"html": "<p>Your children may need extra support if they’re finding it hard dealing with your separation.</p><p>Many schools have professionals they can talk to, but some might need further help from a counsellor. The type of counselling varies depending on your child’s age and if they have any learning difficulties.</p><p><a href=\"http://www.counselling-directory.org.uk/childrelatedissues.html\">Find out more about support for your children</a></p>"
-			}
+		"introduction": "<p>The needs of your children should come first when you make child arrangements with the other parent. Your children will feel happier if you can include them in decisions, keep in regular contact and know where to get extra support if they need it.</p>",
+		"includes": [
+			"involving your children in decisions",
+			"arranging contact with your children",
+			"supporting your children"
 		]
 	},
 	{
 		"id": 20,
 		"template": "prepare-3",
-		"slug": "protecting-children",
-		"title": "Protecting you and your children",
-		"filter_title": "Protecting you and your children",
+		"slug": "rights-and-responsibilities",
+		"title": "Your parental responsibility",
+		"filter_title": "Learning about parental responsibility",
 		"short_title": "",
-		"introduction": "<p>It’s important you know how to identify the different forms of domestic violence and child abuse. You must report the other parent if their behaviour, or the behaviour of those around them, is concerning you.</p>",
-		"columns": [
-			{
-				"title": "Identifying and reporting domestic violence",
-				"html": "<p>Domestic violence can range from abuse that’s physical or emotional to abuse that’s financial, psychological or sexual.</p><p>You must report any concerns straight away. If you’re in immediate danger, call 999 and ask for the police. They take domestic violence seriously and will be able to help and protect you.</p><p><a href=\"http://www.refuge.org.uk/get-help-now/what-is-domestic-violence/\">Find out more about domestic violence</a></p>"
-			},
-			{
-				"title": "Identifying and reporting child abuse or neglect",
-				"html": "<p>Child abuse can be physical, sexual or emotional. Child neglect includes the lack of love, care and attention.</p><p>You must contact social services if you have concerns that your child is being abused or neglected by the other parent. You should also tell your children about Childline so they can report abuse themselves.</p><p><a href=\"https://www.nspcc.org.uk/preventing-abuse/child-abuse-and-neglect/\">Find out more about child abuse and neglect</a></p>"
-			},
-			{
-				"title": "Preventing your children being taken out of the country",
-				"html": "<p>If you think your children may be taken out of the country without your permission, you should keep their passports safe with you.</p><p>If you don’t have their passports you can go to court to ask for a ‘prohibited steps order’ to prevent the other parent taking your children abroad.</p><p><a href=\"http://www.lawandparents.co.uk/prohibited-steps-orders-effect-parents.html\">Find out more a prohibited steps order</a></p>"
-			}
+		"introduction": "<p>Parental responsibility is a legal term that means you have a duty to protect your children and make important decisions for them. You should know what parental responsibility is, and if you have it, before you start making arrangements.</p>",
+		"includes": [
+			"what is parental responsibility",
+			"who has parental responsibility",
+			"agreeing decisions with the other parent"
 		]
 	},
 	{
 		"id": 30,
-		"template": "prepare-2",
-		"slug": "rights-and-responsibilities",
-		"title": "Learning about parental responsibility",
-		"filter_title": "Learning about parental responsibility",
+		"template": "prepare-3",
+		"slug": "emotional-support",
+		"title": "Get emotional support",
+		"filter_title": "",
 		"short_title": "",
-		"introduction": "",
-		"columns": [
-			{
-				"title": "",
-				"html": "<p>All mothers and most fathers have legal rights and responsibilities as parents. This is known as ‘parental responsibility’. If you have parental responsibility your main role is to protect your child and provide a home for them.</p><p>You’re also responsible for issues such as choosing their schools, the type of medical care they receive and how you discipline them. You must financially support your child even if you don’t have parental responsibility.</p>"
-			},
-			{
-				"title": "",
-				"html": "<p><a href=\"https://www.gov.uk/parental-rights-responsibilities\">Find out more about parental responsibility</a></p>"
-			}
+		"introduction": "<p>Separation can be a stressful experience and you may find you need emotional support to help you cope. Getting emotional support can prepare you for negotiating child arrangements with the other parent.</p>",
+		"includes": [
+			"peer support",
+			"professional advice",
+			"emotional readiness"
 		]
 	},
 	{
@@ -112,7 +66,7 @@
 				"cost": "<span class=\"cost-type\">Separated Parents Information Programme (SPIP)</span> <span class=\"cost-amount\"><strong>&pound;150</strong> per person</span>"
 			}
 		],
-		"usp_callout": "<p><strong>Consider this if</strong> you already agree on the majority of issues but may benefit from using a tool such as a parenting plan.</p>",
+		"usp_callout": "you already agree on the majority of issues but may benefit from using a tool such as a parenting plan.",
 		"resources": {
 			"info": "<p>Gingerbread has an <a href=\"https://gingerbread.org.uk/factsheet/4/Making-arrangements-for-your-children\">arrangements factsheet</a> that includes tips on making negotiating work.</p><p>GOV.UK has information on <a href=\"https://www.gov.uk/arranging-child-maintenance-yourself\">arranging child maintenance yourself</a> that includes a <a href=\"https://www.gov.uk/calculate-your-child-maintenance\">child maintenance calculator</a>.</p>"
 		},
@@ -168,7 +122,7 @@
 			}
 		],
 		"who_is_involved_caption": "Cost will vary dependent on location and the experience of the mediator. How many mediation sessions you need will depend on how complex your situation is.",
-		"usp_callout": "<p><strong>Consider this if</strong> you want to reach an agreement together but need help from someone who is independent.</p>",
+		"usp_callout": "you want to reach an agreement together but need help from someone who is independent.",
 		"resources": {
 			"info": "<p>National Family Mediation has more information on the <a href=\"https://www.familymediationcouncil.org.uk/family-mediation\">mediation process</a> and how it can benefit you.</p><p>The <a href=\"https://www.cafcass.gov.uk/grown-ups/separated-parents-information-programme-(spip).aspx\">Separated Parents Information Programme</a> is a course that will help you and the other parent understand how to put your children first when separating.</p><p>Download a <a href=\"https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/489124/family-mediation-leaflet.pdf\">mediation information pack</a> from the Ministry of Justice.</p><p>Advice Now has a <a href=\"http://www.advicenow.org.uk/guides/survival-guide-using-family-mediation-after-break\">guide to using mediation</a> following separation.</p><p>Find out more about <a href=\"http://www.divorce.co.uk/divorce-approaches/mediation-with-lawyers\">lawyer-assisted mediation</a></p>"
 		},
@@ -228,7 +182,7 @@
 			}
 		],
 		"who_is_involved_caption": "Cost will vary dependent on location and the experience of the legal representative. How many hours you need will depend on how complex your situation is.",
-		"usp_callout": "<p><strong>Consider this if </strong>your relationship is still difficult and you’d prefer not to meet, or there’s a lack of trust. </p> ",
+		"usp_callout": "your relationship is still difficult and you’d prefer not to meet, or there’s a lack of trust.  ",
 		"resources": {
 			"info": "<p><a href=\"http://www.resolution.org.uk/findamember\">Find a local solicitor</a></p>"
 		},
@@ -287,7 +241,7 @@
 			}
 		],
 		"who_is_involved_caption": "Costs may vary depending on your location and the experience of your legal representative. How many hours you need will depend on how complex your situation is.",
-		"usp_callout": "<p><strong>Consider this if </strong>you can still communicate with the other parent but have complex legal issues to resolve.</p>",
+		"usp_callout": "you can still communicate with the other parent but have complex legal issues to resolve.",
 		"resources": {
 			"info": "<p>Read more about the <a href=\"http://www.resolution.org.uk/editorial.asp?page_id=1164\">collaborative law process</a></p><p><a href=\"http://www.resolution.org.uk/memberSearch.asp?page_id=64\">Find a collaborative lawyer</a></p>"
 		},
@@ -381,7 +335,7 @@
 			}
 		],
 		"who_is_involved_caption": "Costs may vary depending on your location and the experience of your legal representative. How many hours you need will depend on how complex your situation is.",
-		"usp_callout": "<p><strong>Consider this if</strong> you’ve tried all other options, such as mediation, and still can’t agree on child arrangements.</p>",
+		"usp_callout": "you’ve tried all other options, such as mediation, and still can’t agree on child arrangements.",
 		"resources": {
 			"info": "<p>01689 820272 (Resolution) <br /><a href=\"https://checklegalaid.service.gov.uk\">Check if you can get legal aid</a><br /><a href=\"https://www.gov.uk/find-a-legal-adviser\">Find a legal adviser</a></p>"
 		},

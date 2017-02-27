@@ -151,3 +151,113 @@ a {
   width: 100%;
   height: 315px;
 }
+
+.visuallyhidden {
+  position: absolute;
+  left: -9999em;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+#footer {
+  background-color: #dee0e2;
+  border-top: 10px solid #005ea5;
+  color: #454a4c;
+  & a {
+    color: #454a4c;
+  }
+  &:before {
+    content: '';
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+}
+.footer-wrapper {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+#footer .footer-meta .footer-meta-inner {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 100%;
+}
+@media (min-width: 641px) {
+  #footer .footer-meta .footer-meta-inner {
+    width: 75%;
+  }
+}
+
+.open-government-licence {
+  position: relative;
+  padding-left: 53px;
+}
+
+#footer .footer-meta .footer-meta-inner .open-government-licence .logo {
+  margin-bottom: 1em;
+  padding-top: 0;
+}
+@media (min-width: 641px) {
+#footer .footer-meta .footer-meta-inner .open-government-licence .logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 41px;
+    height: 100%;
+  }
+}
+#footer .footer-meta .footer-meta-inner .open-government-licence .logo a {
+  display: block;
+  width: 41px;
+  height: 17px;
+  overflow: hidden;
+  text-indent: -999em;
+  background: url(https://assets.publishing.service.gov.uk/static/images/open-government-licence-c1aedc8257961b938b4c7a21a2b0db3f2716dd9ef782cea73110dc69107c9042.png) 0 0 no-repeat;
+}
+@media (min-width: 641px) {
+  #footer .footer-meta .footer-meta-inner .open-government-licence p {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+
+
+@media (min-width: 641px) {
+  #footer .footer-meta .copyright {
+    display: inline-block;
+    text-align: inherit;
+    width: 24.5%;
+    padding-top: 15px;
+    margin-top: 0;
+  }
+}
+@media (min-width: 641px) {
+  #footer .footer-meta .copyright {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+#footer .footer-meta .copyright a {
+  display: block;
+  background-image: url(https://assets.publishing.service.gov.uk/static/images/govuk-crest-bb9e22aff7881b895c2ceb41d9340804451c474b883f09fe1b4026e76456f44b.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  text-align: center;
+  text-decoration: none;
+  padding: 115px 0 0 0;
+}
+@media (min-width: 641px) {
+  #footer .footer-meta .copyright a {
+    background-position: 100% 0%;
+  }
+}
+@media (min-width: 641px) {
+  #footer .footer-meta .copyright a {
+    text-align: right;
+  }
+}
