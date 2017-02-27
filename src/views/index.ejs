@@ -10,20 +10,19 @@
   </div>
 </div>
 <div class="full">
-  <% include components/filter.ejs %>
   <section class="c c-article-list js-article-list">
     <div class="centralise">
       <div class="u-cards cards-preparing">
-        <h2>Preparing yourself</h2>
+        <h2>Preparing to make arrangements</h2>
         <% pages.forEach(function(page, i) { %>
           <% if (page.template === 'prepare-3' || page.template === 'prepare-2') { %>
-            <article class="u-card template-<%= page.template %>" data-slug="<%= page.slug %>">
+            <article class="u-card template-prepare" data-slug="<%= page.slug %>">
               <% include templates/prepare.ejs %>
             </article>
           <% } %>
         <% }) %>
       </div>
-      <div class="u-cards cards-preparing">
+      <div class="u-cards cards-reaching">
         <h2>Reaching an agreement</h2>
         <% pages.forEach(function(page, i) { %>
           <% if (page.template === 'compare') { %>

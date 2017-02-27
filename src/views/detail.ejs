@@ -38,7 +38,7 @@
       <% } %>
     <!-- </div> -->
     <% } %>
-    <% if (page.resources.info) { %>
+    <% if (page.resources && page.resources.info) { %>
     <div class="c c-resources divider">
       <h2><%= page.short_title ? page.short_title : page.title %> resources</h2>
       <div class="info">
@@ -76,10 +76,10 @@
         <li class="c-share__icon c-share__icon--share"><a href="#">Share this page</a></li>
       </ul>
     </div> -->
-    <% if (page.pros.length > 0 || page.cons.length > 0) { %>
+    <% if (page.pros && page.pros.length > 0 || page.cons && page.cons.length > 0) { %>
       <% include components/pros-cons.ejs %>
     <% } %>
-    <% if (page.who_is_involved.length > 0) { %>
+    <% if (page.who_is_involved && page.who_is_involved.length > 0) { %>
       <% include components/who-is-involved.ejs %>
     <% } %>
     <% if (page.cost && page.cost.info) { %>

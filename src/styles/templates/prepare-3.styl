@@ -61,3 +61,23 @@
 
   }
 }
+
+&-prepare {
+  .prepare-info {
+    padding: 1.5rem 1.5rem 1rem;
+    background: #f8f8f8;
+    aside & {
+      +above(m) {
+        margin-top: 2rem;
+      }
+    }
+    ul {
+      real-list();
+    }
+    // li {
+    //   list-style-type: disc;
+    //   padding-left: 1rem;
+    //   margin-left: 3rem;
+    // }
+  }
+}

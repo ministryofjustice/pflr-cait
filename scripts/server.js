@@ -7,14 +7,18 @@ const morgan = require('morgan')
 const favicon = require('serve-favicon')
 const compression = require('compression')
 
+const logger = require('../lib/logger')
+
 // Route loader
 const routes = require('../lib/routes')
 
 const rootDir = path.join(__dirname, '..')
-const getDistPath = srcDir => path.join(rootDir, 'dist', srcDir)
+const getDistPath = (srcDir = '') => path.join(rootDir, 'dist', srcDir)
+
+const ENV = process.env.ENV
+const PORT = process.env.PORT || 3000
 
 const app = express()
-const port = process.env.PORT || 3000
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
@@ -30,7 +34,10 @@ app.use((req, res, next) => {
   next()
 })
 
-app.use(morgan('dev'))
+const loggingPreset = ENV ? 'combined' : 'dev'
+app.use(morgan(loggingPreset, {
+  skip: () => ENV === 'test'
+}))
 
 // Gzip content
 app.use(compression())
@@ -46,13 +53,7 @@ app.use('/ping.json', (req, res) => {
 })
 app.use('/healthcheck.json', (req, res) => {
   res.json({
-    status: true,
-    health: 'OK'
-  })
-})
-app.use('/status.json', (req, res) => {
-  res.json({
-    status: 'OK'
+    status: 'ok'
   })
 })
 
@@ -60,7 +61,10 @@ app.use('/status.json', (req, res) => {
 app.use(favicon(getDistPath('static/images/site-icons/favicon.ico')))
 
 // Set a static files folder (css, images etc...)
-app.use('/', express.static(getDistPath('')))
+app.use('/', express.static(getDistPath(), {
+  index: ['index.html'],
+  extensions: ['html']
+}))
 
 app.use('/', routes)
 
@@ -80,11 +84,9 @@ function errorHandler (err, req, res, next) {
     return next(err)
   }
   if (err) {
-    console.log(err)
+    logger(err)
     let errCode = Number(err.message.toString())
-    if (isNaN(errCode)) {
-      errCode = 500
-    } else if (errCode > 500) {
+    if (isNaN(errCode) || errCode > 500) {
       errCode = 500
     }
 
@@ -103,6 +105,6 @@ function errorHandler (err, req, res, next) {
 
 app.use(errorHandler)
 
-app.listen(port)
+app.listen(PORT)
 
-console.log('CAIT is running on localhost:' + port)
+logger('CAIT is running on localhost:' + PORT)
