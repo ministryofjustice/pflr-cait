@@ -16,7 +16,7 @@
         <h2>Preparing to make arrangements</h2>
         <% pages.forEach(function(page, i) { %>
           <% if (page.template === 'prepare-3' || page.template === 'prepare-2') { %>
-            <article class="u-card template-prepare" data-slug="<%= page.slug %>">
+            <article class="u-card template-prepare" id="card-<%= page.slug %>" data-slug="<%= page.slug %>">
               <% include templates/prepare.ejs %>
             </article>
           <% } %>
@@ -26,7 +26,7 @@
         <h2>Reaching an agreement</h2>
         <% pages.forEach(function(page, i) { %>
           <% if (page.template === 'compare') { %>
-            <article class="u-card template-<%= page.template %>" data-slug="<%= page.filter_group || page.slug %>">
+            <article class="u-card template-<%= page.template %>" id="card-<%= page.slug %>" data-slug="<%= page.slug %>">
               <% include templates/compare.ejs %>
             </article>
           <% } %>

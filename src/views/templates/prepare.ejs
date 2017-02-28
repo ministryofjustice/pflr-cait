@@ -5,11 +5,15 @@
 </div>
 <aside>
   <div class="prepare-info">
-  <p><strong>This section includes information on</strong></p>
+  <p><strong>Get information on:</strong></p>
   <% if (page.includes && page.includes.length > 0) { %>
     <ul>
       <% page.includes.forEach(function(inc, i) { %>
-        <li><%- inc %></li>
+        <% if (inc.text) { %>
+          <li><a href="<%- page.slug %>#<%- inc.anchor %>"><%- inc.text %></a></li>
+        <% } else { %>
+          <li><%- inc %></li>
+        <% } %>
       <% }) %>
     </ul>
   <% } %>
