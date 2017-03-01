@@ -1,5 +1,6 @@
 const express = require('express')
 const path = require('path')
+const request = require('request-promise-native')
 
 // Express middleware
 const bodyParser = require('body-parser')
@@ -51,10 +52,24 @@ app.use('/ping.json', (req, res) => {
     build_tag: APP_BUILD_TAG
   })
 })
+
+const indexJson = require('../src/json/index.json')
+const indexMatch = new RegExp(`<h1>${indexJson.title}</h1>`)
 app.use('/healthcheck.json', (req, res) => {
-  res.json({
-    status: 'ok'
-  })
+  let status = 200
+  request(`http://localhost:${PORT}`)
+    .then(html => {
+      if (!html.match(indexMatch)) {
+        // «Je ne suis pas celle que vous croyez» - Nic Jessus
+        status = 555
+      }
+    })
+    .catch(err => { status = err.statusCode })
+    .then(() => {
+      res.json({
+        status
+      })
+    })
 })
 
 // Set Favicon
