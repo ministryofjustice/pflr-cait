@@ -23,7 +23,7 @@ COPY scripts /usr/app/scripts
 # Build static files
 COPY .babelrc /usr/app/
 COPY src /usr/app/src
-RUN yarn run build
+RUN npm run build
 
 EXPOSE 3000
 CMD [ "node", "scripts/server.js" ]

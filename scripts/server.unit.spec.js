@@ -33,7 +33,7 @@ test('healthcheck.json', t => {
   return request('http://localhost:4000/healthcheck.json')
     .then(res => {
       t.deepEqual(JSON.parse(res), {
-        status: 'ok'
+        status: 200
       }, 'Loaded healthcheck file successfully')
     })
     .catch(() => t.fail('Failed to load healthcheck file'))
