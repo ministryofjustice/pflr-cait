@@ -97,6 +97,22 @@
     <% } %>
   </aside>
 </article>
+
+<nav class="interlinks">
+<h2><% if (page.template === 'prepare') { %>Other ways to prepare yourself<% } else { %>Other ways to reach an agreement<% } %></h2>
+<ul>
+<% pages.forEach((p, i) => { %>
+  <% if (p.template === page.template && p.title !== page.title) { %>
+  <li><a href="<%= p.slug %>"><%= p.title %></a></li>
+  <% } %>
+<% }) %>
+</ul>
+<div class="overview">
+<h3>Overview</h3>
+<p><a href="/">View all child arrangements options</a></p>
+</div>
+</nav>
+
 </div>
 </div>
 <% include layouts/footer.ejs %>
