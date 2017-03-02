@@ -26,6 +26,23 @@
     // Activate any event plugins eg. print intent, error tracking
     // GOVUK.analyticsPlugins.error();
     // GOVUK.analyticsPlugins.printIntent();
+  function setUserDimension () {
+    var cookies = document.cookie.split('; ')
+    var userId = null
+    for (var i = 0, cLength = cookies.length; i < cLength; i++) {
+      if (cookies[i].indexOf('_ga=') === 0) {
+        userId = cookies[i].replace('_ga=', '')
+        break
+      }
+    }
+    if (!userId) {
+      return setTimeout(setUserDimension, 1)
+    }
+    // GOVUK.analytics.setDimension('dimension1', userId)
+    // GOVUK.analytics.setDimension(1, userId)
+    window.ga('set', 'dimension1', userId)
+  }
+  setUserDimension()
 
     // Track initial pageview
   GOVUK.analytics.trackPageview()

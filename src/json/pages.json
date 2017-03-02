@@ -1,7 +1,7 @@
 [
 	{
 		"id": 10,
-		"template": "prepare-3",
+		"template": "prepare",
 		"slug": "involving-children",
 		"title": "Putting your children first",
 		"filter_title": "Involving your children",
@@ -16,7 +16,7 @@
 	},
 	{
 		"id": 20,
-		"template": "prepare-3",
+		"template": "prepare",
 		"slug": "rights-and-responsibilities",
 		"title": "Your parental responsibility",
 		"filter_title": "Learning about parental responsibility",
@@ -32,7 +32,7 @@
 	},
 	{
 		"id": 30,
-		"template": "prepare-3",
+		"template": "prepare",
 		"slug": "emotional-support",
 		"title": "Getting emotional support",
 		"filter_title": "",
