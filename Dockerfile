@@ -16,12 +16,14 @@ WORKDIR /usr/app
 COPY package.json yarn.lock /usr/app/
 RUN yarn install --ignore-scripts --ignore-optional
 
+# Copy config files
+COPY .babelrc .eslintrc.js /usr/app/
+
 # Copy app
 COPY lib /usr/app/lib
 COPY scripts /usr/app/scripts
 
 # Build static files
-COPY .babelrc /usr/app/
 COPY src /usr/app/src
 RUN npm run build
 

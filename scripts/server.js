@@ -9,6 +9,7 @@ const favicon = require('serve-favicon')
 const compression = require('compression')
 
 const logger = require('../lib/logger')
+const auth = require('../lib/auth')
 
 // Route loader
 const routes = require('../lib/routes')
@@ -75,11 +76,19 @@ app.use('/healthcheck.json', (req, res) => {
 // Set Favicon
 app.use(favicon(getDistPath('static/images/site-icons/favicon.ico')))
 
+// Run everything through basic auth
+app.use(auth)
+
 // Set a static files folder (css, images etc...)
 app.use('/', express.static(getDistPath(), {
   index: ['index.html'],
   extensions: ['html']
 }))
+
+app.use((req, res, next) => {
+  req.servername = req.protocol + '://' + req.headers.host
+  next()
+})
 
 app.use('/', routes)
 

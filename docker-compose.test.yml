@@ -1,0 +1,4 @@
+testunit:
+  build: .
+  dockerfile: Dockerfile
+  command: yarn test

@@ -41,18 +41,16 @@
     <script src="/static/scripts/govuk_frontend_toolkit/external-link-tracker.js" charset="utf-8"></script>
     <script>var GA_TRACKING_ID = '<%= GA_TRACKING_ID %>'</script>
     <script src="/static/scripts/app/analytics.js" charset="utf-8"></script>
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
-    <script src="/static/scripts/vendor/autotrack.js"></script>
     <script>
     jQuery(function() {
       var elements = [{
         id: 'footer',
-        trackFirstImpressionOnly: false
+        trackFirstImpressionOnly: true
       }]
       jQuery('.u-card').each(function(index, elem){
         elements.push({
           id: elem.id,
-          trackFirstImpressionOnly: false,
+          trackFirstImpressionOnly: true,
           threshold: 0.5
         })
       })
@@ -63,6 +61,46 @@
       ga('require', 'maxScrollTracker');
     })
     </script>
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+    <script src="/static/scripts/vendor/autotrack.js"></script>
+
+<script type="text/javascript">
+  // https://developers.google.com/youtube/iframe_api_reference
+  jQuery(function(){
+    var videos = jQuery('[type=video] iframe')
+    if (videos.length) {
+      var iframeAPI = document.createElement('script')
+      iframeAPI.src = 'https://www.youtube.com/iframe_api'
+      var firstScriptElement = document.getElementsByTagName('script')[0]
+      firstScriptElement.parentNode.insertBefore(iframeAPI, firstScriptElement)
+
+      var eventState = {
+        '0': 'ended',
+        '1': 'play'
+      }
+      function onPlayerStateChange(event) {
+        var eventName = eventState[event.data]
+        if (eventName) {
+          GOVUK.analytics.trackEvent('video', this.id, { label: eventName })
+        }
+      }
+      window.onYouTubeIframeAPIReady = function() {
+        videos.each(function(index, video){
+          var player = new YT.Player(video.id, {
+            events: {
+              onStateChange: onPlayerStateChange.bind(video)
+            }
+          })
+        })
+      }
+    }
+
+  })
+</script>
+
+
+
     <% } %>
   </body>
 </html>
