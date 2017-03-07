@@ -6,9 +6,22 @@ ff-title() {
 ff-body() {
   font-family: 'GDS-T-Light', sans-serif;
   font-weight: normal;
-  font-size: $bodyCopy;
+  font-size: 1.6rem;
+  +above(m) {
+    font-size: $bodyCopy;
+  }
   line-height: $bodyCopyLineHeight;
   margin-bottom: $bodyCopy;
+}
+
+ff-blockquote() {
+  padding: $vspacing $hspacing*2 1px;
+  border-left: $hspacing solid lighten($primary, 60%);
+  margin: $componentVSpacing 0 2*$componentVSpacing;
+  font-size: 1.6rem;
+  +above(m) {
+    font-size: $bodyCopy;
+  }
 }
 
 real-list() {

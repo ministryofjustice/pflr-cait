@@ -1,6 +1,9 @@
 &-details {
   .details-page & h1 {
-    font-size: 4.8rem;
+    font-size: 3.6rem;
+    +above(m) {
+      font-size: 4.8rem;
+    }
     margin-top: 0;
     a {
       text-decoration: underline;
@@ -8,12 +11,21 @@
     }
   }
   .details-page & .c-body-copy h2 {
-    font-size: 3.6rem;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    +above(m) {
+      font-size: 3.6rem;
+    }
+    padding: 0.5rem 0;
   }
   .c-video-player,
   .c-resources {
     & h2 {
-      font-size: 3.6rem;
+      font-size: 2.4rem;
+      line-height: 1.2;
+      +above(m) {
+        font-size: 3.6rem;
+      }
       padding: 0.5rem 0;
     }
   }
@@ -62,11 +74,17 @@
 
   .c-body-details {
     overflow: hidden;
-    padding-bottom: 2rem;
-    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+    margin-top: 1rem;
+    +above(m) {
+      margin-top: 3rem;
+    }
   }
   .c-body-intro-copy p:first-child {
-    font-size: 2.4rem;
+    font-size: 1.9rem;
+    +above(m) {
+      font-size: 2.4rem;
+    }
     padding-top: 1rem;
   }
   +above(l) {
