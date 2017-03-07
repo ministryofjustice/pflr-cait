@@ -8,17 +8,24 @@
       <li><%= page.title %></li>
     </ul>
     <div class="c c-headed-text divider">
-      <h1><%= page.title %></h1>
-      <% if (page.body_intro) { %>
-      <div class="c c-body-intro">
-        <%- page.body_intro %>
+      <div class="c-body-details">
+        <div class="c-body-intro">
+          <h1><%= page.title %></h1>
+          <% if (page.body_intro) { %>
+          <div class="c c-body-intro-copy">
+            <%- page.body_intro %>
+          </div>
+          <% } %>
+          <% if (page.usp_callout) { %>
+            <% include components/usp-callout.ejs %>
+          <% } %>
+        </div>
+        <% if (page.pros && page.pros.length > 0 || page.cons && page.cons.length > 0) { %>
+          <aside class="c-body-details-aside">
+          <% include components/pros-cons.ejs %>
+          </aside>
+        <% } %>
       </div>
-      <% } %>
-      <% if (page.pros && page.pros.length > 0 || page.cons && page.cons.length > 0) { %>
-        <aside class="xu-secondary">
-        <% include components/pros-cons.ejs %>
-        </aside>
-      <% } %>
       <% if (page.body_copy) { %>
       <div class="c c-body-copy">
         <%- page.body_copy %>
