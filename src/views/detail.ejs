@@ -9,9 +9,21 @@
     </ul>
     <div class="c c-headed-text divider">
       <h1><%= page.title %></h1>
+      <% if (page.body_intro) { %>
+      <div class="c c-body-intro">
+        <%- page.body_intro %>
+      </div>
+      <% } %>
+      <% if (page.pros && page.pros.length > 0 || page.cons && page.cons.length > 0) { %>
+        <aside class="xu-secondary">
+        <% include components/pros-cons.ejs %>
+        </aside>
+      <% } %>
+      <% if (page.body_copy) { %>
       <div class="c c-body-copy">
         <%- page.body_copy %>
       </div>
+      <% } %>
     </div>
     <% if(page.steps) { %>
       <% include components/steps.ejs %>
@@ -69,13 +81,7 @@
     </section>
     <% } %>
   </section>
-  <aside class="u-secondary">
-    <!-- <div class="c c-share">
-      <ul>
-        <li class="c-share__icon c-share__icon--print"><a href="#">Print this page</a></li>
-        <li class="c-share__icon c-share__icon--share"><a href="#">Share this page</a></li>
-      </ul>
-    </div> -->
+  <!-- <aside class="u-secondary">
     <% if (page.pros && page.pros.length > 0 || page.cons && page.cons.length > 0) { %>
       <% include components/pros-cons.ejs %>
     <% } %>
@@ -95,7 +101,7 @@
       </div>
     </div>
     <% } %>
-  </aside>
+  </aside> -->
 </article>
 
 <nav class="interlinks">
