@@ -1,8 +1,15 @@
 &-proscons {
   h2 {
-    font-size: $outerCore;
+    font-size: 1.6rem;
+    +above(m) {
+      font-size: $outerCore;
+    }
     padding: 0;
     margin-bottom: $vspacing;
+  }
+  ul {
+    list-style-type: none;
+    margin-left: 0;
   }
   li {
     position:relative;
@@ -32,7 +39,10 @@
   padding: 1.5rem 1.5rem 1rem;
   background: #f8f8f8;
   border-top: solid 5px #005ea5;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
+  +above(m) {
+    margin-bottom: 0;
+  }
 
   .c-usp-callout + aside & {
     +above(m) {

@@ -1,5 +1,8 @@
 &-headed-text {
   margin-bottom: $vspacing;
+  &.divider {
+    margin-bottom:0;
+  }
 
   h1 {
     font-size: $mantle;
@@ -14,9 +17,12 @@
   }
   .u-primary & {
     h1 {
-      font-size: $crust;
-      font-size: 4.8rem;
-      margin-top: 3rem;
+      font-size: 3.6rem;
+      margin-top: 1rem;
+      +above(m) {
+        font-size: 4.8rem;
+        margin-top: 3rem;
+      }
     }
   }
 

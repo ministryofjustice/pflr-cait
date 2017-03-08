@@ -1,10 +1,17 @@
 &-quick-links {
+  display: none;
+  ff-body();
+  padding-left: 0;
+  margin: 0;
   ul {
     li {
-      padding-left: $hspacing*2;
+      padding-left: 0;
       +above(l) {
         padding: $spacing 0;
       }
     }
+  }
+  +above(l) {
+    margin-top: 13rem;
   }
 }

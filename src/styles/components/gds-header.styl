@@ -20,10 +20,10 @@
         width: 33.33%;
       }
       .logo {
+        ff-title();
         float: left;
         overflow: visible;
         color: white;
-        font-weight: bold;
         font-size: 30px;
         line-height: 1;
         text-decoration: none;
@@ -36,6 +36,25 @@
           margin: 2px 1px 0 0;
           vertical-align: bottom;
           visibility: hidden;
+        }
+      }
+    }
+    .header-proposition {
+      ff-title();
+      padding-top: 10px;
+      line-height: 1;
+      font-size: 2rem;
+      clear: both;
+      +above(m) {
+        font-size: 2.4rem;
+        clear: none;
+      }
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        a:hover {
+          text-decoration: underline;
         }
       }
     }

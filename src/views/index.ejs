@@ -1,10 +1,10 @@
 <% include layouts/header.ejs %>
-<div class="full">
+<div class="full c-summary">
   <div class="centralise">
     <div class="u-primary">
       <% include components/headed-text.ejs %>
     </div>
-    <div class="u-secondary">
+    <div class="u-secondary c-quick-links">
       <% include components/quick-links.ejs %>
     </div>
   </div>
@@ -12,7 +12,7 @@
 <div class="full">
   <section class="c c-article-list js-article-list">
     <div class="centralise">
-      <div class="u-cards cards-preparing">
+      <div id="cards-preparing" class="u-cards">
         <h2>Preparing to make arrangements</h2>
         <% pages.forEach((page, i) => { %>
           <% if (page.template === 'prepare') { %>
@@ -22,7 +22,7 @@
           <% } %>
         <% }) %>
       </div>
-      <div class="u-cards cards-reaching">
+      <div id="cards-reaching" class="u-cards">
         <h2>Reaching an agreement</h2>
         <% pages.forEach((page, i) => { %>
           <% if (page.template === 'compare') { %>

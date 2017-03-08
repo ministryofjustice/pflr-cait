@@ -10,7 +10,7 @@
     <ul>
       <% page.includes.forEach(function(inc, i) { %>
         <% if (inc.text) { %>
-          <li><a href="<%- page.slug %>#<%- inc.anchor %>"><%- inc.text %></a></li>
+          <li><%- inc.text %></li>
         <% } else { %>
           <li><%- inc %></li>
         <% } %>

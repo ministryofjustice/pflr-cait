@@ -1,18 +1,51 @@
 &-details {
   .details-page & h1 {
-    font-size: 4.8rem;
+    font-size: 3.6rem;
+    +above(m) {
+      font-size: 4.8rem;
+    }
+    margin-top: 0;
     a {
       text-decoration: underline;
       color: $links;
     }
   }
+  .details-page & .c-body-copy > section {
+    margin-top: 3rem;
+    +above(m) {
+      margin-top: 5rem;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .c-body-copy > section section + section {
+    margin-top: 3rem;
+    +above(m) {
+      margin-top: 4rem;
+    }
+  }
+
   .details-page & .c-body-copy h2 {
-    font-size: 3.6rem;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    +above(m) {
+      font-size: 3.6rem;
+      margin-bottom: 1.5rem;
+    }
+    padding: 0.5rem 0;
   }
   .c-video-player,
   .c-resources {
     & h2 {
-      font-size: 3.6rem;
+      font-size: 2.4rem;
+      margin-top: 2rem;
+      line-height: 1.2;
+      +above(m) {
+        font-size: 3.6rem;
+      }
       padding: 0.5rem 0;
     }
   }
@@ -55,6 +88,101 @@
       li {
         display: inline-block;
       }
+    }
+  }
+
+
+  .c-body-details {
+    overflow: hidden;
+    padding-bottom: 2.5rem;
+    margin-top: 1rem;
+    +above(m) {
+      margin-top: 3rem;
+    }
+  }
+  .c-body-intro-copy p:first-child {
+    font-size: 1.6rem;
+    +above(m) {
+      font-size: 2.4rem;
+    }
+    padding-top: 1rem;
+  }
+  .c-body-copy {
+    margin-top: -2.5rem;
+  }
+  +above(l) {
+    .c-body-intro {
+      float: left;
+      width: 65%;
+    }
+    .c-body-details {
+      aside {
+        float: right;
+        width: 31%;
+      }
+    }
+    .c-body-copy,
+    .c-step,
+    .c-video-player,
+    .c-resources {
+      padding-right: 35%;
+    }
+  }
+  .c-body-copy section h2 {
+    line-height: 1.2;
+    padding-top: 1rem;
+  }
+
+  // article {
+    .c-body-copy section {
+      position: relative;
+    }
+    .c-costs {
+      border-left: solid 5px #005ea5;
+      padding-left: 1.5rem !important;
+      margin-bottom: 3rem;
+    }
+    h4.c-cost__heading {
+      font-size: 1.9rem;
+      font-family: GDS-T-Bold;
+      font-weight: bold;
+      margin: 0;
+    }
+    p.c-cost__amount {
+      font-size: 4.8rem;
+      font-family: GDS-T-Bold;
+      font-weight: bold;
+      margin: 0;
+    }
+    p.c-cost__small_print {
+      font-size: 1.4rem;
+      margin: 0;
+    }
+    +above(l) {
+      .c-costs {
+        border-left: none;
+        border-top: solid 5px #005ea5;
+        padding-left: 0 !important;
+        padding-top: 1rem;
+        position: absolute;
+        right: 0;
+        top: 3rem;
+        width: 31%;
+      }
+      .c-section-costs {
+        left: 100%;
+        margin-left: 4rem;
+        right: auto;
+        width: 47.5%;
+      }
+    }
+  // }
+
+  .c-video-player__container iframe {
+    width: 100%;
+    height: 215px;
+    +above(l) {
+      height: 355px;
     }
   }
 

@@ -1,13 +1,18 @@
 &-steps {
   .c-step {
     position: relative;
-    padding-top: 3rem;
-    background-image: url(/static/images/steps/step-divider.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    margin-top: 3rem;
+    padding-top: 2.5rem;
+    +above(m) {
+      padding-top: 3rem;
+      min-height: 26rem;
+    }
+    border-bottom: solid 1px #6f777a;
+    // background-image: url(/static/images/steps/step-divider.svg);
+    // background-repeat: no-repeat;
+    // background-position: 50% 0;
+    // margin-top: 3rem;
     &.c-step-0 {
-      background: none;
+      // background: none;
       padding-top: 2rem;
       margin-top: 0;
       & .c-step-count {
@@ -22,6 +27,7 @@
       background-repeat: no-repeat;
       padding-left: 3.5rem;
       background-size: 2.5rem;
+      margin-bottom: 1rem;
     }
     +above(m) {
         & > * {
@@ -43,6 +49,10 @@
       margin-bottom: 1.5rem;
     }
   }
+
+  blockquote {
+    ff-blockquote();
+  }
 }
 
 .step-hire-lawyer {
@@ -56,4 +66,15 @@
 }
 .step-attend-court {
   background-image: url(/static/images/steps/step-attend-court.svg)
+}
+
+
+.step-meet-lawyer {
+  background-image: url(/static/images/steps/step-meeting-2-way.svg)
+}
+.step-first-meeting {
+  background-image: url(/static/images/steps/step-meeting-4-way.svg)
+}
+.step-agreement {
+  background-image: url(/static/images/steps/step-agreement.svg)
 }
