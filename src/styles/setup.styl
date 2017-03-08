@@ -179,6 +179,10 @@ a {
   }
 }
 .footer-wrapper {
+  font-size: 1.4rem;
+  +above(m) {
+    font-size: 1.6rem;
+  }
   padding-top: 60px;
   padding-bottom: 30px;
 }
@@ -196,7 +200,15 @@ a {
 
 .open-government-licence {
   position: relative;
-  padding-left: 53px;
+  +above(m) {
+    padding-left: 53px;
+  }
+}
+.copyright {
+    padding-top: 30px;
+  +above(m) {
+    padding-top: 0;
+  }
 }
 
 #footer .footer-meta .footer-meta-inner .open-government-licence .logo {
