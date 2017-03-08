@@ -19,6 +19,9 @@
       <% }) %>
       </div>
     <% } %>
+    <% if (step.link) { %>
+    <p><a class="u-btn" href="<%- step.link.url %>"><%- step.link.text %></a></p>
+    <% } %>
   </div>
 <% }) %>
 
