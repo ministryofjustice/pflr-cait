@@ -19,6 +19,12 @@
       margin-top: 0;
     }
   }
+  .c-body-copy > section section + section {
+    margin-top: 3rem;
+    +above(m) {
+      margin-top: 4rem;
+    }
+  }
 
   .details-page & .c-body-copy h2 {
     font-size: 2.4rem;
@@ -35,6 +41,7 @@
   .c-resources {
     & h2 {
       font-size: 2.4rem;
+      margin-top: 2rem;
       line-height: 1.2;
       +above(m) {
         font-size: 3.6rem;
@@ -94,11 +101,14 @@
     }
   }
   .c-body-intro-copy p:first-child {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     +above(m) {
       font-size: 2.4rem;
     }
     padding-top: 1rem;
+  }
+  .c-body-copy {
+    margin-top: -2.5rem;
   }
   +above(l) {
     .c-body-intro {
@@ -111,7 +121,6 @@
         width: 31%;
       }
     }
-
     .c-body-copy,
     .c-step,
     .c-video-player,
