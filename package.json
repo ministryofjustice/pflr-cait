@@ -30,7 +30,7 @@
     "test:functional": "codeceptjs run --steps",
     "test:unit": "ava --verbose scripts/**/*.unit.spec.js lib/**/*.unit.spec.js"
   },
-  "description": "Child Arrangements Informational Tool",
+  "description": "Private Family Law Child Arrangements Information Tool",
   "main": "scripts/server.js",
   "repository": {
     "type": "git",
