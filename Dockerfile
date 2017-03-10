@@ -19,6 +19,10 @@ RUN yarn install --ignore-scripts --ignore-optional
 # Copy config files
 COPY .babelrc .eslintrc.js /usr/app/
 
+# Copy standalone test files
+COPY codecept.conf.js /usr/app/
+COPY spec /usr/app/spec
+
 # Copy app
 COPY lib /usr/app/lib
 COPY scripts /usr/app/scripts
