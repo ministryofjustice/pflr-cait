@@ -11,7 +11,6 @@ let basePort = process.env.basePort === undefined ? 3000 : process.env.basePort
 if (basePort) {
   basePort = `:${basePort}`
 }
-console.log({baseIp: process.env.baseIp, hostIp})
 const baseIp = process.env.baseIp || hostIp
 const baseUrl = process.env.baseUrl || `${baseProtocol}://${baseIp}${basePort}`
 const seleniumProtocol = process.env.seleniumProtocol || 'http'

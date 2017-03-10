@@ -20,7 +20,6 @@ then
   # more modern correct way above; but Jenkins version insists on following
   SELENIUM_IP=$(docker inspect --format '{{.NetworkSettings.IPAddress}}' $SELENIUM)
 
-  echo APP_IP = $APP_IP
   # Now run the tests
   docker run -e "baseUrl=$BASE_URL" -e "baseIp=$APP_IP" -e "seleniumIp=$SELENIUM_IP" $APP node_modules/.bin/codeceptjs run --steps
 
