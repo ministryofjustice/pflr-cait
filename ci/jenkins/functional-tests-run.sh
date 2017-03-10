@@ -23,8 +23,4 @@ then
   # Now run the tests
   docker run -e "baseUrl=$BASE_URL" -e "baseIp=$APP_IP" -e "seleniumIp=$SELENIUM_IP" $APP node_modules/.bin/codeceptjs run --steps
 
-  ### Clean up
-  docker rm -fv $APP 2>/dev/null
-  # docker rmi -f $APP 2>/dev/null
-  docker rm -fv $SELENIUM 2>/dev/null
 fi
