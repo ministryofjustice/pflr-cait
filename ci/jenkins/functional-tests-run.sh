@@ -8,7 +8,7 @@ then
   docker build -t $APP .
 
   #### If no environment url passed, spin the app up
-  if [ "$BASE_URL" == "" ]
+  if [ -n $BASE_URL ]
   then
     docker run --name $APP -d $APP
     APP_IP=$(docker inspect --format '{{.NetworkSettings.IPAddress}}' $APP)
