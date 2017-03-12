@@ -54,7 +54,7 @@ app.use('/ping.json', (req, res) => {
   })
 })
 
-const indexJson = require('../src/json/index.json')
+const indexJson = require('../data/index.json')
 const indexMatch = new RegExp(`<h1>${indexJson.title}</h1>`)
 app.use('/healthcheck.json', (req, res) => {
   let status = 200

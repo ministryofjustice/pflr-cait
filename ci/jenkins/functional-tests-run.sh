@@ -15,12 +15,17 @@ then
   fi
 
   SELENIUM=$DOCKERTAG-selenium
-  docker run --name $SELENIUM -d selenium/standalone-firefox:2.48.2
+  docker run --name $SELENIUM -d selenium/standalone-firefox:3.1.0
   # SELENIUM_IP=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $SELENIUM)
   # more modern correct way above; but Jenkins version insists on following
   SELENIUM_IP=$(docker inspect --format '{{.NetworkSettings.IPAddress}}' $SELENIUM)
 
+  if [ "$REPORTS" != "" ]
+  then
+    REPORTS_VOLUME="-v $REPORTS:/usr/app/reports"
+    echo "Reports will be output to $REPORTS"
+  fi
   # Now run the tests
-  docker run -e "baseUrl=$BASE_URL" -e "baseIp=$APP_IP" -e "seleniumIp=$SELENIUM_IP" $APP node_modules/.bin/codeceptjs run --steps
+  docker run $REPORTS_VOLUME -e "baseUrl=$BASE_URL" -e "baseIp=$APP_IP" -e "seleniumIp=$SELENIUM_IP" $APP node_modules/.bin/codeceptjs run --steps
 
 fi

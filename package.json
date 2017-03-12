@@ -21,7 +21,7 @@
     "lint": "npm-run-all -p lint:*",
     "lint:app": "eslint scripts lib",
     "lint:client": "eslint src/scripts",
-    "lint:json": "find src/json/*.json | xargs -L 1 jsonlint -q",
+    "lint:json": "find data/*.json | xargs -L 1 jsonlint -q",
     "lint:spec": "eslint spec",
     "postinstall": "npm-run-all build",
     "preinstall": "if [ -d .git ] && [ -x \"$(command -v git)\" ]; then npm run githooks; else echo 'git not installed'; fi;",

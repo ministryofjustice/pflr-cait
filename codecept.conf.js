@@ -23,7 +23,7 @@ console.log('Codecept config', {baseUrl, seleniumUrl})
 exports.config = {
   'tests': 'spec/functional/*.functional.spec.js',
   'timeout': 10000,
-  'output': './codecept-output',
+  'output': './reports',
   'helpers': {
     'WebDriverIO': {
       'url': baseUrl,
