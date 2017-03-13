@@ -132,7 +132,7 @@ Runs all the tests in docker containers
 
     yarn test:unit
 
-Unit tests are run before every commit
+Unit tests are run before every commit (see `.githooks/pre-commit`)
 
 [AVA](https://github.com/avajs/ava) is used as the test runner
 
@@ -177,7 +177,7 @@ NB. this starts up a selenium container of its own automatically
 
 Runs `eslint` and `jsonlint` over various locations
 
-Linting is performed before any commit
+Linting is performed before any commit (see `.githooks/pre-commit`)
 
 ### ESLint
 
