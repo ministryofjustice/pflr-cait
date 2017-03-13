@@ -55,6 +55,6 @@ then
   fi
   if [ "$SKIP_UNIT" != "true" ]
   then
-    docker run --name $DOCKERTAG-unit $TEST_IMAGE yarn test
+    docker run --name $DOCKERTAG-unit $TEST_IMAGE yarn test:unit
   fi
 fi

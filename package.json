@@ -2,8 +2,8 @@
   "name": "pflr-cait",
   "version": "1.0.0",
   "engines": {
-    "node": "6.9.1",
-    "npm": "3.10.8"
+    "node": "7.7.1",
+    "npm": "4.1.2"
   },
   "scripts": {
     "build": "npm-run-all -s cleanbuild -p build:scripts build:styles build:static",
@@ -14,8 +14,7 @@
     "build:static:robot": "mkdir -p dist && cp -rp src/robots.txt dist/",
     "build:styles": "mkdir -p dist/static/styles && stylus --compress -p src/styles/start.styl > dist/static/styles/core.min.css",
     "cleanbuild": "rm -rf dist",
-    "docker:build": "docker build -t familylaw-cait .",
-    "docker:run": "docker run -p 44444:3000 -d familylaw-cait",
+    "docker:selenium": "docker run --name cait-selenium -p 4444:4444 -d selenium/standalone-firefox:3.1.0",
     "githooks": "git config core.hooksPath .githooks",
     "githooksUnset": "git config --unset core.hooksPath",
     "lint": "npm-run-all -p lint:*",
@@ -24,11 +23,17 @@
     "lint:json": "find data/*.json | xargs -L 1 jsonlint -q",
     "lint:spec": "eslint spec",
     "postinstall": "npm-run-all build",
+    "posttest:functional:docker": "yarn test:docker:cleanup",
+    "posttest:unit:docker": "yarn test:docker:cleanup",
     "preinstall": "if [ -d .git ] && [ -x \"$(command -v git)\" ]; then npm run githooks; else echo 'git not installed'; fi;",
     "start": "node scripts/server.js",
-    "test": "npm-run-all test:unit",
+    "test": "npm-run-all lint test:unit -s test:functional",
+    "test:docker": "npm-run-all -s test:unit:docker test:functional:docker",
+    "test:docker:cleanup": "sh ci/jenkins/cleanup.sh",
     "test:functional": "codeceptjs run --steps",
-    "test:unit": "ava --verbose scripts/**/*.unit.spec.js lib/**/*.unit.spec.js"
+    "test:functional:docker": "sh ci/jenkins/functional-tests-run.sh",
+    "test:unit": "ava --verbose scripts/**/*.unit.spec.js lib/**/*.unit.spec.js",
+    "test:unit:docker": "sh ci/jenkins/unit-tests-run.sh"
   },
   "description": "Private Family Law Child Arrangements Information Tool",
   "main": "scripts/server.js",
@@ -36,7 +41,7 @@
     "type": "git",
     "url": "git+https://github.com/ministryofjustice/pflr-cait.git"
   },
-  "author": "Alex Ward",
+  "author": "MoJ Digital",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ministryofjustice/pflr-cait/issues"
