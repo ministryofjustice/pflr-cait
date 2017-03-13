@@ -1,31 +1,34 @@
-FROM node:boron
+FROM node:7.7.1
 
 # Install yarn
-RUN apt-get update
-RUN apt-get --assume-yes install apt-transport-https
-RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
-RUN apt-get update
-RUN apt-get --assume-yes install yarn
+RUN curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 0.21.3
+RUN ln -sf /root/.yarn/bin/yarn /usr/local/bin/yarn
 
 # Create app directory
 RUN mkdir -p /usr/app
 WORKDIR /usr/app
 
 # Install node modules
-COPY package.json yarn.lock /usr/app/
+COPY package.json yarn.lock ./
 RUN yarn install --ignore-scripts --ignore-optional
 
 # Copy config files
-COPY .babelrc .eslintrc.js /usr/app/
+COPY .babelrc .eslintrc.js ./
+
+# Copy standalone test files
+COPY codecept.conf.js ./
+COPY spec ./spec
 
 # Copy app
-COPY lib /usr/app/lib
-COPY scripts /usr/app/scripts
+COPY lib ./lib
+COPY scripts ./scripts
 
 # Build static files
-COPY src /usr/app/src
-RUN npm run build
+COPY src ./src
+RUN yarn run build
+
+# Copy data
+COPY data ./data
 
 EXPOSE 3000
 CMD [ "node", "scripts/server.js" ]
