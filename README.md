@@ -14,6 +14,8 @@ That confidence is dependent upon sign off by Policy and Legal (and confirmation
 
 Please see the [PFLR Cait entry in the MoJ Ops Manual](https://opsmanual.dsd.io/run_books/pflr-cait.html)
 
+The corresponding repo holding environment variables for deployment is [pflr-cait-deploy](https://github.com/ministryofjustice/pflr-cait-deploy)
+
 ## Pre-requisites
 
   [Node 7.7.1](https://nodejs.org)
@@ -48,7 +50,21 @@ By default the app runs on port 3000, so the app will be available at:
   
 ## Developing
 
+### Installing new modules
+
+Use `yarn add <new_module>` rather than `npm install <new_module>`
+
+Similarly, use `yarn remove <old_module>` rather than just deleting it from `package.json`
+
+If you do add or remove a module, please run the dockerised tests to confirm that everything is as it should be - though you'll find out soon enough when Jenkins tries to build it…
+
 The application architecture is as follows:
+
+### Deployment artifacts
+
+- `Dockerfile`
+
+  provides the details to build the image that is used for running the app and tests against it
 
 ### Backend
 
@@ -132,7 +148,7 @@ Runs all the tests in docker containers
 
     yarn test:unit
 
-Unit tests are run before every commit
+Unit tests are run before every commit (see `.githooks/pre-commit`)
 
 [AVA](https://github.com/avajs/ava) is used as the test runner
 
@@ -177,7 +193,7 @@ NB. this starts up a selenium container of its own automatically
 
 Runs `eslint` and `jsonlint` over various locations
 
-Linting is performed before any commit
+Linting is performed before any commit (see `.githooks/pre-commit`)
 
 ### ESLint
 

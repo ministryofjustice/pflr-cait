@@ -57,18 +57,25 @@ app.use('/ping.json', (req, res) => {
 const indexJson = require('../data/index.json')
 const indexMatch = new RegExp(`<h1>${indexJson.title}</h1>`)
 app.use('/healthcheck.json', (req, res) => {
-  let status = 200
+  let status = true
+  let statusCode
   request(`http://localhost:${PORT}`)
     .then(html => {
+      statusCode = 200
       if (!html.match(indexMatch)) {
-        // «Je ne suis pas celle que vous croyez» - Nic Jessus
-        status = 555
+        status = false
       }
     })
-    .catch(err => { status = err.statusCode })
+    .catch(err => {
+      status = false
+      statusCode = err.statusCode
+    })
     .then(() => {
       res.json({
-        status
+        status,
+        content: {
+          statusCode
+        }
       })
     })
 })

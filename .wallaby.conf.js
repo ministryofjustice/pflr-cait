@@ -5,7 +5,7 @@ module.exports = () => ({
     { pattern: 'scripts/**/*.js', load: false },
     "!scripts/**/*.unit.spec.js",
     { pattern: 'src/**/*.js', load: false },
-    { pattern: 'src/**/*.json', load: false },
+    { pattern: 'data/**/*.json', load: false },
     { pattern: 'src/views/**/*', load: false },
     { pattern: 'dist/**/*', load: false }
   ],
