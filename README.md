@@ -14,6 +14,8 @@ That confidence is dependent upon sign off by Policy and Legal (and confirmation
 
 Please see the [PFLR Cait entry in the MoJ Ops Manual](https://opsmanual.dsd.io/run_books/pflr-cait.html)
 
+The corresponding repo holding environment variables for deployment is [pflr-cait-deploy](https://github.com/ministryofjustice/pflr-cait-deploy)
+
 ## Pre-requisites
 
   [Node 7.7.1](https://nodejs.org)
@@ -49,6 +51,12 @@ By default the app runs on port 3000, so the app will be available at:
 ## Developing
 
 The application architecture is as follows:
+
+### Deployment artifacts
+
+- `Dockerfile`
+
+  provides the details to build the image that is used for running the app and tests against it
 
 ### Backend
 
