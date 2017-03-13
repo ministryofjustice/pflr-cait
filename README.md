@@ -50,6 +50,14 @@ By default the app runs on port 3000, so the app will be available at:
   
 ## Developing
 
+### Installing new modules
+
+Use `yarn add <new_module>` rather than `npm install <new_module>`
+
+Similarly, use `yarn remove <old_module>` rather than just deleting it from `package.json`
+
+If you do add or remove a module, please run the dockerised tests to confirm that everything is as it should be - though you'll find out soon enough when Jenkins tries to build it…
+
 The application architecture is as follows:
 
 ### Deployment artifacts
