@@ -2,36 +2,36 @@
 
 if [[ $1 == "-h" || $1 == "--help" ]]
 then
-  USAGE=$(cat << EndOfMessage
-functional-tests-run.sh
-=======================
+  read -d '' USAGE <<- EndOfMessage
+		functional-tests-run.sh
+		=======================
 
-Runs functional (end-to-end) tests in a docker container
+		Runs functional (end-to-end) tests in a docker container
 
-Used by Jenkins jobs:
-  https://ci.service.dsd.io/view/family%20justice/job/BUILD-cait
-  https://ci.service.dsd.io/view/family%20justice/job/FUNCTIONALTEST-cait
+		Used by Jenkins jobs:
+		  https://ci.service.dsd.io/view/family%20justice/job/BUILD-cait
+		  https://ci.service.dsd.io/view/family%20justice/job/FUNCTIONALTEST-cait
 
-The following environment variables must be set:
+		The following environment variables must be set:
 
-  JOB_NAME
+		  JOB_NAME
 
-  BUILD_NUMBER
+		  BUILD_NUMBER
 
-The following environment variables can also be set:
+		The following environment variables can also be set:
 
-  BASE_URL
-  base url to run the tests against
-  - must include protocol, port and credentials (if necessary)
+		  BASE_URL
+		  base url to run the tests against
+		  - must include protocol, port and credentials (if necessary)
 
-  REPORTS
-  directory on host where reports should be written to
-  - must be an absolute path
+		  REPORTS
+		  directory on host where reports should be written to
+		  - must be an absolute path
 
-  SKIP_FUNCTIONAL
-  whether to run functional tests or not
+		  SKIP_FUNCTIONAL
+		  whether to run functional tests or not
 EndOfMessage
-  )
+
   echo "$USAGE"
   exit 0
 fi
