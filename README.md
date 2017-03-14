@@ -10,12 +10,6 @@ The service will not go into public beta until there is confidence that the guid
 
 That confidence is dependent upon sign off by Policy and Legal (and confirmation that the service is not at odds with any ministerial steer).
 
-## Deploying
-
-Please see the [PFLR Cait entry in the MoJ Ops Manual](https://opsmanual.dsd.io/run_books/pflr-cait.html)
-
-The corresponding repo holding environment variables for deployment is [pflr-cait-deploy](https://github.com/ministryofjustice/pflr-cait-deploy)
-
 ## Pre-requisites
 
   [Node 7.7.1](https://nodejs.org)
@@ -47,7 +41,7 @@ Build the app
 By default the app runs on port 3000, so the app will be available at:
 
     http://localhost:3000
-  
+
 ## Developing
 
 ### Installing new modules
@@ -136,14 +130,6 @@ See [Git manual](https://git-scm.com/docs/githooks) for more info on git hooks
 
 ## Testing
 
-    yarn test
-
-Lints and runs both unit and functional tests (see below for details)
-
-    yarn test:docker
-
-Runs all the tests in docker containers
-
 ### Unit tests
 
     yarn test:unit
@@ -187,6 +173,16 @@ The tests can also be run in a docker container as they are as part of the Jenki
 
 NB. this starts up a selenium container of its own automatically
 
+### Run all the tests
+
+    yarn test
+
+Lints and runs both unit and functional tests (see below for details)
+
+    yarn test:docker
+
+Runs all the tests in docker containers
+
 ## Linting
 
     yarn lint
@@ -223,3 +219,9 @@ The following locations are linted:
 - `data/**/*.json`
 
   application json
+
+## Deploying
+
+Please see the [PFLR Cait entry in the MoJ Ops Manual](https://opsmanual.dsd.io/run_books/pflr-cait.html)
+
+The corresponding repo holding environment variables for deployment is [pflr-cait-deploy](https://github.com/ministryofjustice/pflr-cait-deploy)
