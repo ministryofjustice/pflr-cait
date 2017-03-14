@@ -41,29 +41,27 @@
     <script src="/static/scripts/govuk_frontend_toolkit/external-link-tracker.js" charset="utf-8"></script>
     <script>var GA_TRACKING_ID = '<%= GA_TRACKING_ID %>'</script>
     <script src="/static/scripts/app/analytics.js" charset="utf-8"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+    <script src="/static/scripts/vendor/autotrack.js"></script>
     <script>
     jQuery(function() {
       var elements = [{
         id: 'footer',
-        trackFirstImpressionOnly: true
+        trackFirstImpressionOnly: false
       }]
       jQuery('.u-card').each(function(index, elem){
         elements.push({
           id: elem.id,
-          trackFirstImpressionOnly: true,
+          trackFirstImpressionOnly: false,
           threshold: 0.5
         })
       })
       ga('require', 'impressionTracker', {
-        elements: elements,
-        rootMargin: '-20px 0'
+        elements: elements
       })
       ga('require', 'maxScrollTracker');
     })
     </script>
-
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
-    <script src="/static/scripts/vendor/autotrack.js"></script>
 
 <script type="text/javascript">
   // https://developers.google.com/youtube/iframe_api_reference

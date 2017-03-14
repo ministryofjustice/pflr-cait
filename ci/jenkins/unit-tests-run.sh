@@ -2,29 +2,29 @@
 
 if [[ $1 == "-h" || $1 == "--help" ]]
 then
-  USAGE=$(cat << EndOfMessage
-unit-tests-run.sh
-=================
+  read -d '' USAGE <<- EndOfMessage
+		unit-tests-run.sh
+		=================
 
-Runs unit tests in a docker container
+		Runs unit tests in a docker container
 
-Used by Jenkins job https://ci.service.dsd.io/view/family%20justice/job/BUILD-cait
+		Used by Jenkins job https://ci.service.dsd.io/view/family%20justice/job/BUILD-cait
 
-The following environment variables must be set:
+		The following environment variables must be set:
 
-  JOB_NAME
+		  JOB_NAME
 
-  BUILD_NUMBER
+		  BUILD_NUMBER
 
-The following environment variables can also be set:
+		The following environment variables can also be set:
 
-  SKIP_LINT
-  whether to run linting or not
+		  SKIP_LINT
+		  whether to run linting or not
 
-  SKIP_UNIT
-  whether to run unit tests or not
+		  SKIP_UNIT
+		  whether to run unit tests or not
 EndOfMessage
-  )
+
   echo "$USAGE"
   exit 0
 fi
