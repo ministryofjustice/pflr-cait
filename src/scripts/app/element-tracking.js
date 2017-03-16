@@ -6,7 +6,7 @@ jQuery(function () {
     trackFirstImpressionOnly
   }]
   const elements = ['#footer']
-  jQuery('.u-card, section[id]').each((index, elem) => {
+  jQuery('.u-card, .c-step, section[id]').each((index, elem) => {
     elements.push('#' + elem.id)
     impressionTrackerElements.push({
       id: elem.id,
