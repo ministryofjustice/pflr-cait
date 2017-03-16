@@ -6,8 +6,7 @@
     WINDOW_ID: 3,
     HIT_ID: 4,
     HIT_TIME: 5,
-    HIT_TYPE: 6,
-    USER_ID: 7
+    HIT_TYPE: 6
   }
 
   const metrics = {
