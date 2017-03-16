@@ -1,6 +1,6 @@
 <div class="c c-steps">
 <% page.steps.forEach(function(step, i) { %>
-  <div class="c-step c-step-<%= i %>">
+  <div id="<%= step.icon_class %>" class="c-step c-step-<%= i %>">
     <p class="c-step-count <%= step.icon_class %>">Step <%= i + 1 %></p>
     <h2><%= step.title %></h2>
     <div class="c-step-content">
