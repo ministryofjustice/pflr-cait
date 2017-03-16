@@ -10,9 +10,9 @@
   }
 
   const metrics = {
-    RESPONSE_END_TIME: 'metric1',
-    DOM_LOAD_TIME: 'metric2',
-    WINDOW_LOAD_TIME: 'metric3'
+    RESPONSE_END_TIME: 1,
+    DOM_LOAD_TIME: 2,
+    WINDOW_LOAD_TIME: 3
   }
 
   const TRACKING_VERSION = 'testing'
@@ -44,9 +44,9 @@
   ga((tracker) => {
     const originalBuildHitTask = tracker.get('buildHitTask')
     tracker.set('buildHitTask', (model) => {
-      model.set(dimensions.HIT_ID, uuid(), true)
-      model.set(dimensions.HIT_TIME, String(+new Date()), true)
-      model.set(dimensions.HIT_TYPE, model.get('hitType'), true)
+      model.set('metric' + dimensions.HIT_ID, uuid(), true)
+      model.set('metric' + dimensions.HIT_TIME, String(+new Date()), true)
+      model.set('metric' + dimensions.HIT_TYPE, model.get('hitType'), true)
 
       originalBuildHitTask(model)
     })
