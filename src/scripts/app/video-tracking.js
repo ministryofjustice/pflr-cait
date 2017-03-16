@@ -16,10 +16,10 @@ jQuery(function () {
       const videoId = this.id
       if (eventName) {
         if (eventName === 'play') {
-          const currentTime = parseInt(window.ytplayers[videoId].getCurrentTime(), 10)
-          if (!currentTime) {
+          if (!this.hasBeenStarted) {
             eventName = 'start'
           }
+          this.hasBeenStarted = true
         }
 
         ga('send', 'event', {
