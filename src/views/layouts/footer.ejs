@@ -38,7 +38,7 @@
     if (Cookies.get('seen_cookie_message')) {
       jQuery('#global-cookie-message').addClass('cookie-seen')
     }
-    Cookies.set('seen_cookie_message', true, { expires: 365 })
+    Cookies.set('seen_cookie_message', true, { expires: 28 })
     </script>
     <% if (GA_TRACKING_ID) { %>
     <script>
@@ -52,22 +52,6 @@
     <script>
     jQuery('.u-btn').each(function() {
       jQuery(this).attr('data-link-type', 'button')
-    })
-    jQuery(function() {
-      var elements = [{
-        id: 'footer',
-        trackFirstImpressionOnly: false
-      }]
-      jQuery('.u-card').each(function(index, elem){
-        elements.push({
-          id: elem.id,
-          trackFirstImpressionOnly: false,
-          threshold: 0.5
-        })
-      })
-      ga('require', 'impressionTracker', {
-        elements: elements
-      })
     })
     </script>
     <script src="/static/scripts/app/video-tracking.js"></script>
