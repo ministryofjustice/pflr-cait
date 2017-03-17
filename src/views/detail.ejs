@@ -4,7 +4,7 @@
 <article class="c-details">
   <section class="u-primary">
     <ul class="c c-breadcrumbs">
-      <li><a href="/">Home</a></li>
+      <li><a href="/" data-link-type="breadcrumbs">Home</a></li>
       <li><%= page.title %></li>
     </ul>
     <div class="c c-headed-text divider">
@@ -95,13 +95,13 @@
 <ul>
 <% pages.forEach((p, i) => { %>
   <% if (p.template === page.template && p.title !== page.title) { %>
-  <li><a href="<%= p.slug %>"><%= p.title %></a></li>
+  <li><a href="<%= p.slug %>" data-link-type="site-nav"><%= p.title %></a></li>
   <% } %>
 <% }) %>
 </ul>
 <div class="overview">
 <h3>Overview</h3>
-<p><a href="/">View all child arrangements options</a></p>
+<p><a href="/" data-link-type="site-nav">View all child arrangements options</a></p>
 </div>
 </nav>
 

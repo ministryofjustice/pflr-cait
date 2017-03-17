@@ -1,7 +1,6 @@
     </div> <%# wrapper %>
 
-<footer class="group js-footer" id="footer" role="contentinfo">
-  <div class="xwrapper">
+<footer class="group footer js-footer" id="footer" role="contentinfo">
   <div class="full">
   <div class="centralise">
   <div class="footer-wrapper">
@@ -31,7 +30,6 @@
   </div>
   </div>
   </div>
-  </div>
 </footer>
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
@@ -45,6 +43,9 @@
     <script src="/static/scripts/vendor/autotrack.js"></script>
     <script src="/static/scripts/app/ga-plugins.js"></script>
     <script>
+    jQuery('.u-btn').each(function() {
+      jQuery(this).attr('data-link-type', 'button')
+    })
     jQuery(function() {
       var elements = [{
         id: 'footer',
