@@ -1,12 +1,9 @@
 jQuery(function () {
   const trackFirstImpressionOnly = false
   const threshold = 0.5
-  const impressionTrackerElements = [{
-    id: 'footer',
-    trackFirstImpressionOnly
-  }]
-  const elements = ['#footer']
-  jQuery('.u-card, .c-step, section[id]').each((index, elem) => {
+  const impressionTrackerElements = []
+  const elements = []
+  jQuery('.footer, .u-card, .c-step, section[id]').each((index, elem) => {
     elements.push('#' + elem.id)
     impressionTrackerElements.push({
       id: elem.id,
@@ -14,6 +11,7 @@ jQuery(function () {
       threshold
     })
   })
+
   ga('require', 'impressionTracker', {
     elements: impressionTrackerElements
   })

@@ -1,10 +1,11 @@
 // https://github.com/googleanalytics/autotrack
 (function () {
   const dimensions = {
-    QUERY_DIMENSION: 7,
-    BREAKPOINT: 8,
-    PIXEL_DENSITY: 9,
-    DEVICE_ORIENTATION: 10
+    HIT_EVENT_TYPE: 7,
+    QUERY_DIMENSION: 8,
+    BREAKPOINT: 9,
+    PIXEL_DENSITY: 10,
+    DEVICE_ORIENTATION: 11
   }
 
   window.ga = window.ga || function () {
@@ -20,8 +21,33 @@
   })
 
   // outboundLinkTracker
+  // NB. actually tracks internal links too
+  let linkType = ''
   ga('require', 'outboundLinkTracker', {
-    events: ['click', 'contextmenu']
+    events: ['click', 'contextmenu'],
+    shouldTrackOutboundLink: (link, parseUrl) => {
+      linkType = link.getAttribute('data-link-type')
+      return true
+    },
+    hitFilter: model => {
+      // send url as action
+      // send data-link-type as label
+      // send eventType as custom dimension
+      let eventType = model.get('eventAction')
+      let eventAction = model.get('eventLabel')
+      if (eventType) {
+        model.set('dimension' + dimensions.HIT_EVENT_TYPE, eventType, true)
+      }
+      // is the url an internal link?
+      if (eventAction.indexOf(document.location.origin) === 0) {
+        model.set('eventCategory', 'Internal Link', true)
+        eventAction = eventAction.replace(document.location.origin, '')
+      }
+      model.set('eventAction', eventAction, true)
+      model.set('eventLabel', linkType, true)
+      // clear linkType
+      linkType = ''
+    }
   })
 
   // pageVisibilityTracker
