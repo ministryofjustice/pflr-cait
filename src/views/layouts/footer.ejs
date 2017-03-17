@@ -33,6 +33,13 @@
 </footer>
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+    <script src="/static/scripts/vendor/js.cookie.js"></script>
+    <script>
+    if (Cookies.get('seen_cookie_message')) {
+      jQuery('#global-cookie-message').addClass('cookie-seen')
+    }
+    Cookies.set('seen_cookie_message', true, { expires: 365 })
+    </script>
     <% if (GA_TRACKING_ID) { %>
     <script>
     var GA_TRACKING_ID = '<%= GA_TRACKING_ID %>'

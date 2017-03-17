@@ -277,6 +277,24 @@ a {
   }
 }
 
+#global-cookie-message {
+  f-body();
+  font-size: 1.4rem;
+  width: 100%;
+  background-color: #d5e8f3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  +above(m) {
+    p {
+      font-size: 1.6rem;
+      line-height: 1.25;
+    }
+  }
+  &.cookie-seen {
+    display: none;
+  }
+}
+
 
 
 nav.interlinks {
