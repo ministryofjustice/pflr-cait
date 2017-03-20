@@ -109,8 +109,11 @@
   }
   .c-body-copy {
     margin-top: -2.5rem;
+    +above(m) {
+      margin-top: 0;
+    }
   }
-  +above(l) {
+  +above(ml) {
     .c-body-intro {
       float: left;
       width: 65%;
@@ -121,6 +124,10 @@
         width: 31%;
       }
     }
+    // .c-body-copy {
+    //   margin-top: 2.5rem;
+    //   padding-top: 10rem;
+    // }
     .c-body-copy,
     .c-step,
     .c-video-player,
@@ -158,7 +165,23 @@
       font-size: 1.4rem;
       margin: 0;
     }
-    +above(l) {
+    .c-costs {
+      +above(m) {
+        width: 50%;
+      }
+      +above(l) {
+        width: auto;
+      }
+    }
+    .c-steps .c-costs {
+      +above(m) {
+        margin-left: 9rem;
+      }
+      +above(ml) {
+        margin-left: 0;
+      }
+    }
+    +above(ml) {
       .c-costs {
         border-left: none;
         border-top: solid 5px #005ea5;
@@ -181,6 +204,12 @@
   .c-video-player__container iframe {
     width: 100%;
     height: 215px;
+    +above(m) {
+      height: 405px;
+    }
+    +above(ml) {
+      height: 345px;
+    }
     +above(l) {
       height: 355px;
     }

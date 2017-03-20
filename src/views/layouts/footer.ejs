@@ -40,6 +40,36 @@
     }
     Cookies.set('seen_cookie_message', true, { expires: 28 })
     </script>
+    <script>
+    var surveyData = Cookies.getJSON('surveyData') || { visited: {} }
+    var pageStub = document.location.pathname
+                    .replace(/\/$/, '')
+                    .replace(/.*\//, '')
+                    || 'summary'
+    surveyData.visited[pageStub] = true
+    Cookies.set('surveyData', surveyData)
+
+    var visited = []
+    for (var page in surveyData.visited) {
+      visited.push(page)
+    }
+
+    jQuery('a[data-link-type="feedback"]').each(function(){
+      var addition = ''
+      jQuery.each(visited, function(i, page) {
+        addition += addition ? '&' : '?'
+        addition += page + '=T'
+      })
+      this.href += addition
+    }).on('click', function(e) {
+      if (!visited.length || (visited.length === 1 && visited[0] === 'summary')) {
+        var confirmed = confirm('Are you sure you have had enough time to check the site out?')
+        if (!confirmed) {
+          e.preventDefault()
+        }
+      }
+    })
+    </script>
     <% if (GA_TRACKING_ID) { %>
     <script>
     var GA_TRACKING_ID = '<%= GA_TRACKING_ID %>'
