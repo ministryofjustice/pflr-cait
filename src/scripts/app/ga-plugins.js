@@ -12,6 +12,9 @@
     (ga.q = ga.q || []).push(arguments)
   }
 
+  // Anonymise all the ips!
+  ga('set', 'anonymizeIp', true)
+
   // cleanUrlTracker
   ga('require', 'cleanUrlTracker', {
     stripQuery: true,
