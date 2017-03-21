@@ -58,7 +58,7 @@ then
   fi
 
   # Now run the tests
-  yarn test:a11y -- $BASE_URL
+  spec/a11y/pa11y-crawl.sh $BASE_URL
 
   ERRORS=$(node -e "const results = require('./reports/a11y.json'); console.log(Object.keys(results.data).filter(page => results.data[page].count.error).length)")
 
