@@ -50,7 +50,7 @@ then
   docker build -t $APP .
 
   #### If no environment url passed, spin the app up
-  if [ -n $BASE_URL ]
+  if [ "$BASE_URL" == "" ]
   then
     docker run --name $APP -e "ENV=a11y" -d $APP
     APP_IP=$(docker inspect --format '{{.NetworkSettings.IPAddress}}' $APP)

@@ -179,8 +179,6 @@ NB. this starts up a selenium container of its own automatically
 
     yarn test:a11y
 
-A11Y checks are run as part of every build
-
 [pa11y-crawl](https://github.com/18F/pa11y-crawl) is used as the accessibility checking tool
 
 The checks are performed using a docker container and the resulting report is output to `reposts/a11y.json`
@@ -190,7 +188,7 @@ The checks are performed using a docker container and the resulting report is ou
 
     yarn test
 
-Lints and runs both unit and functional tests (see below for details)
+Lints and runs both unit and functional tests and a11y checks
 
     yarn test:docker
 
