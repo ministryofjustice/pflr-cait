@@ -134,7 +134,7 @@ See [Git manual](https://git-scm.com/docs/githooks) for more info on git hooks
 
     yarn test:unit
 
-Unit tests are run before every commit (see `.githooks/pre-commit`)
+Unit tests are run before every commit (see `.githooks/pre-commit`) and as part of every build
 
 [AVA](https://github.com/avajs/ava) is used as the test runner
 
@@ -142,13 +142,15 @@ The unit tests live next to the file/module they are for
 
 They have the extension `.unit.spec.js`
 
-The tests can also be run in a docker container as they are as part of the Jenkins build
+The tests can also be run locally in a docker container
 
     yarn test:unit:docker
 
 ### Functional tests (end-to-end)
 
     yarn test:functional
+
+Functional tests are run as part of every build
 
 The tests expect a Selenium instance to be running. The following script is provided for convenience, but any Selenium instance will do.
 
@@ -167,11 +169,22 @@ and have the extension `.functional.spec.js`
 
 A `.wallaby.conf.js` file is provided if you use [Wallaby.js](https://wallabyjs.com/) for continuous testing in your editor
 
-The tests can also be run in a docker container as they are as part of the Jenkins build
+The tests can also be run locally in a docker container
 
     yarn test:functional:docker
 
 NB. this starts up a selenium container of its own automatically
+
+### A11Y tests (accessibility)
+
+    yarn test:a11y
+
+A11Y checks are run as part of every build
+
+[pa11y-crawl](https://github.com/18F/pa11y-crawl) is used as the accessibility checking tool
+
+The checks are performed using a docker container and the resulting report is output to `reposts/a11y.json`
+
 
 ### Run all the tests
 

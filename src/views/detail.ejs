@@ -41,7 +41,7 @@
         <div class="c c-video-player" id="c_video_player">
           <h2><%= page.video.title %></h2>
           <div class="c-video-player__container c-video-player__lightbox" type="video">
-            <iframe id="<%= page.video.id %>" src="https://www.youtube.com/embed/<%= page.video.youtube_code %>?enablejsapi=1&origin=<%= req.servername %>" frameborder="0" allowfullscreen></iframe>
+            <iframe id="<%= page.video.id %>" title="<%= page.video.title %>" src="https://www.youtube.com/embed/<%= page.video.youtube_code %>?enablejsapi=1&origin=<%= req.servername %>" frameborder="0" allowfullscreen></iframe>
             <!-- <img data-youtube="<%= page.video.youtube_code %>" src="<%= page.video.thumbnail %>" alt="<%= page.video.title %>"> -->
           </div>
         </div>
