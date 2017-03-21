@@ -1,15 +1,5 @@
 FROM node:7.7.1
 
-# Install jq
-RUN apt-get update
-RUN apt-get install jq
-
-# Install phantomjs
-RUN wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
-RUN tar -xjvf phantomjs-2.1.1-linux-x86_64.tar.bz2
-RUN ln -s /phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin/phantomjs
-
-
 # Install yarn
 RUN curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 0.21.3
 RUN ln -sf /root/.yarn/bin/yarn /usr/local/bin/yarn
