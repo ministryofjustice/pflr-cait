@@ -1,3 +1,4 @@
+const fs = require('fs')
 const express = require('express')
 const path = require('path')
 const request = require('request-promise-native')
@@ -19,6 +20,10 @@ const getDistPath = (srcDir = '') => path.join(rootDir, 'dist', srcDir)
 
 const ENV = process.env.ENV
 const PORT = process.env.PORT || 3000
+
+if (!ENV || ENV === 'a11y') {
+  fs.unlinkSync(getDistPath('robots.txt'))
+}
 
 const app = express()
 
