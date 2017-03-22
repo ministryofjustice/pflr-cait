@@ -8,6 +8,15 @@ else
   TARGET=http://$IP_ADDRESS:3000
 fi
 
+echo Checking $TARGET is reachable
+
+curl -s $TARGET > /dev/null
+if [ "$?" != "0" ]
+then
+  echo $TARGET is not reachable
+  exit 1
+fi
+
 echo Running a11y checks against $TARGET
 
 docker run -t -v $PWD/reports:/usr/app/reports 18fgsa/pa11y-crawl-docker:latest pa11y-crawl -o /usr/app/reports/a11y.json $TARGET
