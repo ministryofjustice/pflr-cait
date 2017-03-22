@@ -60,11 +60,4 @@ then
   # Now run the tests
   spec/a11y/pa11y-crawl.sh $BASE_URL
 
-  ERRORS=$(node -e "const results = require('./reports/a11y.json'); console.log(Object.keys(results.data).filter(page => results.data[page].count.error).length)")
-
-  if [ "$ERRORS" != "0" ]
-  then
-    echo "There were $ERRORS accessibility errors - check reports/a11y.json for details"
-    exit 1
-  fi
 fi
