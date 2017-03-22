@@ -52,7 +52,7 @@ then
   if [ "$SKIP_LINT" != "true" ]
   then
     docker run --name $DOCKERTAG-lint $TEST_IMAGE yarn lint
-    if [ "$?" = "1" ]
+    if [ "$?" != "0" ]
     then
       exit 1
     fi
