@@ -20,6 +20,8 @@ That confidence is dependent upon sign off by Policy and Legal (and confirmation
 
   [Docker](https://www.docker.com)
 
+  (Required if running a11y checks and/or pushing code to the repo - see `.githooks/pre-push`)
+
 ## Installing
 
 Clone the repo
@@ -114,9 +116,21 @@ Installing the project's node modules also sets the repo's `hooksPath` to `.gith
 
 - `pre-commit`
 
-  ensures that all necessary files are linted and tested
+    - ensures that all necessary files are linted and tested
 
-  (NB. can be skipped by passing `--no-verify` flag)
+    - ensures that commits are not made to the master branch
+
+  NB. can be skipped by passing `--no-verify` flag
+
+- `pre-push`
+
+    - ensures all unit, functional and a11y tests are run
+
+  NB. can be skipped by setting `SKIP_PRE_PUSH_CAIT` environment variable to `true`
+
+  eg. `env SKIP_PRE_PUSH_CAIT=true git push`
+
+#### Disabling githooks
 
 Git hooks can be disabled
 
@@ -134,7 +148,7 @@ See [Git manual](https://git-scm.com/docs/githooks) for more info on git hooks
 
     yarn test:unit
 
-Unit tests are run before every commit (see `.githooks/pre-commit`) and as part of every build
+Unit tests are run before every commit (see `.githooks/pre-commit`), every push (see `.githooks/pre-push`) and as part of every build
 
 [AVA](https://github.com/avajs/ava) is used as the test runner
 
@@ -150,7 +164,7 @@ The tests can also be run locally in a docker container
 
     yarn test:functional
 
-Functional tests are run as part of every build
+Functional tests are run before every push (see `.githooks/pre-push`) and as part of every build
 
 The tests expect a Selenium instance to be running. The following script is provided for convenience, but any Selenium instance will do.
 
@@ -175,9 +189,11 @@ The tests can also be run locally in a docker container
 
 NB. this starts up a selenium container of its own automatically
 
-### A11Y tests (accessibility)
+### A11Y checks (accessibility)
 
     yarn test:a11y
+
+Accessibility checks are run every push (see `.githooks/pre-push`)
 
 [pa11y-crawl](https://github.com/18F/pa11y-crawl) is used as the accessibility checking tool
 
@@ -229,7 +245,7 @@ The following locations are linted:
 
 - `data/**/*.json`
 
-  application json
+  application json for content
 
 ## Deploying
 
