@@ -350,13 +350,13 @@
 		"title": "Going to court",
 		"filter_title": "",
 		"short_title": "",
-		"introduction": "<p>You can go to court if you can't agree on arrangements. A judge will assess your case and make a decision for you</p>",
-		"body_intro": "<p>You and the other parent will need to apply for a court order if you've tried other suitable options and still can’t agree on child arrangements.</p><p>The court process involves several steps and can take a long time.</p>",
+		"introduction": "<p>You’ll need to go to court if you’ve tried other suitable options and still can’t agree arrangements, or you’re worried about the safety of you or your children.</p>",
+		"body_intro": "<p>You’ll need to go to court if you’ve tried other suitable options and still can’t agree arrangements, or you’re worried about the safety of you or your children.</p><p>The court process involves several steps and can take a long time.</p>",
 		"steps": [
 			{
 				"icon_class": "step-hire-lawyer",
-				"title": "Consider hiring a lawyer",
-				"body": "<p>A lawyer will be expensive but they’ll handle the legal aspects of the case and represent you in court.</p><p>They may try and negotiate a deal with the other parent out of court or recommend moving to step 2 straight away.</p><p>Find out <a href=\"https://www.gov.uk/represent-yourself-in-court/overview\">how to represent yourself</a> in court if you decide you don’t want to hire a lawyer.</p><p>The <a href=\"https://www.thepsu.org/about-us/\">Personal Support Unit (PSU)</a> provides help for every stage of the court process if you don't have a lawyer.</p><p><a href=\"http://solicitors.lawsociety.org.uk/\">Find a legal adviser</a></p>",
+				"title": "Choose to hire a lawyer or represent yourself",
+				"body": "<h3>Hire a lawyer</h3><p>A lawyer will be expensive but they’ll handle the legal aspects of the case and represent you in court.</p><p>They may try and negotiate a deal with the other parent out of court or recommend you move to step 2 straight away.</p><p><a href=\"http://solicitors.lawsociety.org.uk/\">Find a legal adviser</a></p><h3>Represent yourself</h3><p>You may choose to represent yourself because you'd prefer to speak to the judge directly or because you can't afford the legal fees.</p>GOV.UK has more information on <a href=\"https://www.gov.uk/represent-yourself-in-court/overview\">how to represent yourself in court</a>.</p><p>The <a href=\"https://www.thepsu.org/about-us/\">Personal Support Unit (PSU)</a> provides help for every stage of the court process for those without a lawyer.</p><p><a href=\"https://www.lawworks.org.uk/legal-advice-individuals/find-legal-advice-clinic-near-you\">Find a free legal advice clinic</a></p>",
 				"costs": [
 					{
 						"description": "Lawyer rates (per hour)",
@@ -368,12 +368,12 @@
 			{
 				"icon_class": "step-attend-miam",
 				"title": "Attend a Mediation Information and Assessment Meeting (MIAM)",
-				"body": "<p>Before applying for a court order you must attend a <a href=\"https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam\">MIAM</a>, unless there’s been domestic abuse or social services are involved in your situation.</p><p>The meeting will assess whether mediation is right for you and if you can agree arrangements out of court.</p><p>You will need to <a href=\"http://www.familymediationcouncil.org.uk/find-local-mediator/\">find a mediator</a> to book a MIAM.</p><p>Only accredited mediators can carry out a MIAM. Check with the mediator before you book.</p>",
+				"body": "<p>Before applying for a court order you must attend a <a href=\"mediation\">MIAM</a>, unless there’s been domestic abuse or social services are involved in your situation.</p><p>The MIAM will assess whether mediation is right for you and if you can agree arrangements out of court.</p><p>You will need to <a href=\"http://www.familymediationcouncil.org.uk/find-local-mediator/\">find a mediator</a> to book a MIAM.</p><p>Only accredited mediators can carry out a MIAM. Check with the mediator before you book.</p>",
 				"costs": [
 					{
-						"description": "Average total cost per person",
+						"description": "Average cost of MIAM per person",
 						"amount": "£90",
-						"small_print": "Fee may vary depending on your location and the experience of the mediator. Some mediators offer reductions if you’re unemployed or on a low income. It may be cheaper if you attend together."
+						"small_print": "Estimated fees may vary depending on your location and the experience of the mediator. Some mediators offer reductions if you’re unemployed or on a low income. It may be cheaper if you attend together."
 					}
 				]
 			},
@@ -411,8 +411,8 @@
 				"slug": "mediator",
 				"key": "Mediator",
 				"value": 1,
-				"cost": "<p><span class=\"cost-type\">Mediation Information and Assessment (MIAM)</span> <span class=\"cost-amount\"><strong>&pound;95</strong> per person</span></p>",
-				"xcost": "<p><span class=\"cost-type\">Mediation Information and Assessment (MIAM)</span> <span class=\"cost-amount\"><strong>&pound;95</strong> per person</span></p><p><span class=\"cost-type\">Single mediation session</span> <span class=\"cost-amount\"><strong>&pound;85</strong> per person</span></p>"
+				"cost": "<p><span class=\"cost-type\">Mediation Information and Assessment (MIAM)</span> <span class=\"cost-amount\"><strong>&pound;90</strong> per person</span></p>",
+				"xcost": "<p><span class=\"cost-type\">Mediation Information and Assessment (MIAM)</span> <span class=\"cost-amount\"><strong>&pound;90</strong> per person</span></p><p><span class=\"cost-type\">Single mediation session</span> <span class=\"cost-amount\"><strong>&pound;85</strong> per person</span></p>"
 			},
 			{
 				"slug": "lawyersolicitor",
@@ -428,9 +428,9 @@
 			}
 		],
 		"who_is_involved_caption": "Costs may vary depending on your location and the experience of your legal representative. How many hours you need will depend on how complex your situation is.",
-		"usp_callout": "you’ve tried all other suitable options, such as mediation, and still can’t agree on child arrangements.",
+		"usp_callout": "you want a court to make a decision for you or you have concerns about domestic abuse or child neglect.",
 		"resources": {
-			"info": "<p>Telephone: 01689 820272 (Resolution) <br /><a href=\"https://checklegalaid.service.gov.uk\">Check if you can get legal aid</a><br /><a href=\"https://www.gov.uk/find-a-legal-adviser\">Find a legal adviser</a></p>"
+			"info": "<p>Telephone: 01689 820272 (Resolution)</p><p><a href=\"https://checklegalaid.service.gov.uk\">Check if you can get legal aid</a></p><p><a href=\"https://www.gov.uk/find-a-legal-adviser\">Find a legal adviser</a></p><p><a href=\"https://barprobono.org.uk/do-you-need-help.html\">Check if you can get free legal help</a></p><p><a href=\"https://www.citizensadvice.org.uk/law-and-courts/legal-system/taking-legal-action/help-with-legal-costs-free-or-affordable-help/\">Legal costs: free or affordable help</a></p>"
 		},
 		"pros": [
 			{
