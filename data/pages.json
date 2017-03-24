@@ -455,5 +455,23 @@
 			}
 		],
 		"other": ""
+	},
+	{
+		"id": 90,
+		"type": "about",
+		"slug": "about/cookies",
+		"title": "Cookies"
+	},
+	{
+		"id": 91,
+		"type": "about",
+		"slug": "about/terms-conditions",
+		"title": "Terms and conditions"
+	},
+	{
+		"id": 92,
+		"type": "about",
+		"slug": "about/privacy",
+		"title": "Privacy policy"
 	}
 ]

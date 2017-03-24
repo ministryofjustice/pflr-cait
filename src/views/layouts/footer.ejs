@@ -6,18 +6,14 @@
   <div class="footer-wrapper">
     <div class="footer-meta">
       <div class="footer-meta-inner">
-        <%#
         <h2 class="visuallyhidden">Support links</h2>
         <ul>
-          <li><a href="/help">Help</a></li>
-          <li><a href="/help/cookies">Cookies</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/help/terms-conditions">Terms and conditions</a></li>
-          <li><a href="/cymraeg" lang="cy" hreflang="cy">Rhestr o Wasanaethau Cymraeg</a></li>
-          <li>Built by the <a href="https://www.gov.uk/government/organisations/government-digital-service">Government Digital Service</a>
+          <li><a href="/about/cookies">Cookies</a></li>
+          <li><a href="/about/terms-conditions">Terms and conditions</a></li>
+          <li><a href="/about/privacy">Privacy</a></li>
+          <li>Built by <a href="https://mojdigital.blog.gov.uk/about/">MoJ Digital</a>
         </li>
         </ul>
-        %>
         <div class="open-government-licence">
           <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
           <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
@@ -41,7 +37,35 @@
     Cookies.set('seen_cookie_message', true, { expires: 28 })
     </script>
     <script>
+    var searchArgs = {}
+    var search = document.location.search
+    if (search) {
+      search = search.replace(/^\?/, '')
+      var searchChunks = search.split('&')
+      for (var i = 0, sLength = searchChunks.length; i < sLength; i++) {
+        var argParts = searchChunks[i].split('=')
+        searchArgs[argParts[0]] = argParts[1]
+      }
+    }
+    window.ga = window.ga || function () {
+      (ga.q = ga.q || []).push(arguments)
+    }
     var surveyData = Cookies.getJSON('surveyData') || { visited: {} }
+    if (searchArgs.uuid) {
+      surveyData.uuid = searchArgs.uuid
+    }
+    ga('set', 'dimension12', surveyData.uuid)
+    var campaignFields = ['campaignName', 'campaignMedium', 'campaignKeyword', 'campaignContent', 'campaignID']
+    for (var j = 0; j < campaignFields.length; j++) {
+      var campaignField = campaignFields[j]
+      if (searchArgs[campaignField]) {
+        surveyData[campaignField] = searchArgs[campaignField]
+      }
+      if (surveyData[campaignField]) {
+        ga('set', campaignField, surveyData[campaignField])
+      }
+    }
+
     var pageStub = document.location.pathname
                     .replace(/\/$/, '')
                     .replace(/.*\//, '')
