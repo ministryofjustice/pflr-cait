@@ -1,7 +1,7 @@
 <% include layouts/header.ejs %>
 <div class="full details-page">
 <div class="centralise">
-<article class="c-details">
+<article class="c-details c-<%= type %>">
   <section class="u-primary">
     <ul class="c c-breadcrumbs">
       <li><a href="/" data-link-type="breadcrumbs">Home</a></li>
@@ -29,6 +29,10 @@
       <% if (page.body_copy) { %>
       <div class="c c-body-copy">
         <%- page.body_copy %>
+      </div>
+      <% } else if (!page.steps) { %>
+      <div class="c c-body-copy">
+        <%- include("pages/" + page.slug + ".ejs") %>
       </div>
       <% } %>
     </div>
@@ -90,6 +94,7 @@
   </section>
 </article>
 
+<% if (type == 'detail') { %>
 <nav class="interlinks">
 <h2><% if (page.template === 'prepare') { %>Other ways to prepare<% } else { %>Other ways to reach an agreement<% } %></h2>
 <ul>
@@ -104,6 +109,7 @@
 <p><a href="/" data-link-type="site-nav">View all child arrangements options</a></p>
 </div>
 </nav>
+<% } %>
 
 </div>
 </div>

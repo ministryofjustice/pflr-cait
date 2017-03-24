@@ -215,4 +215,55 @@
     }
   }
 
+
+  &.c-about .c-body-copy {
+    h2 {
+      font-size: 1.9rem;
+      margin: 2em 0 2rem 0;
+    };
+    +above(m) {
+      h2 {
+        font-size: 2.4rem;
+      }
+    }
+    h3 {
+      margin-bottom: 2rem;
+    }
+    blockquote {
+      margin: 3rem 0;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      margin: 1em 0 2em;
+      width: 100%;
+    }
+
+    th,
+    td {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.14286;
+      vertical-align: top;
+      padding: .75em .5em .75em 0;
+      border-bottom: solid 1px #bfc1c3;
+    }
+    th {
+      line-height: 1.25em;
+      text-align: left;
+      font-weight: 700;
+    }
+
+    +above(m) {
+      th,
+      td {
+        font-size: 16px;
+        line-height: 1.25;
+      }
+    }
+  }
+
+
 }
