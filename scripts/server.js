@@ -5,6 +5,7 @@ const request = require('request-promise-native')
 
 // Express middleware
 const bodyParser = require('body-parser')
+const cookieParser = require('cookie-parser')
 const morgan = require('morgan')
 const favicon = require('serve-favicon')
 const compression = require('compression')
@@ -22,7 +23,9 @@ const ENV = process.env.ENV
 const PORT = process.env.PORT || 3000
 
 if (!ENV || ENV === 'a11y') {
-  fs.unlinkSync(getDistPath('robots.txt'))
+  try {
+    fs.unlinkSync(getDistPath('robots.txt'))
+  } catch (e) {}
 }
 
 const app = express()
@@ -90,6 +93,26 @@ app.use(favicon(getDistPath('static/images/site-icons/favicon.ico')))
 
 // Run everything through basic auth
 app.use(auth)
+
+// Enable reading of cookies
+app.use(cookieParser())
+
+// Shut out users who have not come via private beta
+if (ENV === 'private-beta' || ENV === 'prod') {
+  app.use((req, res, next) => {
+    if (!req.cookies || !req.cookies.surveyData) {
+      let referrer = req.header('Referrer')
+      if (!referrer || !referrer.includes('surveymonkey')) {
+        res.sendStatus(401)
+        return
+      }
+      res.cookie('surveyData', JSON.stringify({
+        campaignName: 'private-beta-cla'
+      }))
+    }
+    next()
+  })
+}
 
 // Set a static files folder (css, images etc...)
 app.use('/', express.static(getDistPath(), {

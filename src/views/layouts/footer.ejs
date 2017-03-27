@@ -50,11 +50,16 @@
     window.ga = window.ga || function () {
       (ga.q = ga.q || []).push(arguments)
     }
-    var surveyData = Cookies.getJSON('surveyData') || { visited: {} }
+    var surveyData = Cookies.getJSON('surveyData') || {}
+    surveyData.visited = surveyData.visited || {}
     if (searchArgs.uuid) {
       surveyData.uuid = searchArgs.uuid
     }
     ga('set', 'dimension12', surveyData.uuid)
+    <% if (typeof env === 'object') { %>
+    var APP_VERSION = '<%= env.APP_VERSION %>'
+    ga('set', 'dimension13', APP_VERSION)
+    <% } %>
     var campaignFields = ['campaignName', 'campaignMedium', 'campaignKeyword', 'campaignContent', 'campaignID']
     for (var j = 0; j < campaignFields.length; j++) {
       var campaignField = campaignFields[j]
@@ -66,11 +71,13 @@
       }
     }
 
+    <% if (page.type !== 'about') { %>
     var pageStub = document.location.pathname
                     .replace(/\/$/, '')
                     .replace(/.*\//, '')
                     || 'summary'
     surveyData.visited[pageStub] = true
+    <% } %>
     Cookies.set('surveyData', surveyData)
 
     var visited = []
