@@ -109,7 +109,7 @@
 		"title": "Professional mediation",
 		"filter_group": "negotiating",
 		"short_title": "",
-		"introduction": "<p>Mediation sessions are run by a trained professional who helps you try and reach an agreement without going to court. You don't have to be in the same room as the other parent.</p>",
+		"introduction": "<p>Sessions are run by a trained professional who helps you try to reach an agreement without going to court. Mediation isn't counselling and you don't have to be in the same room as the other parent.</p>",
 		"body_intro": "<p>Mediation sessions are run by a trained professional who helps you try and reach an agreement without going to court.</p><p>Mediation isn’t relationship counselling and you don't have to be in the same room as the other parent.</p>",
 		"video": {
 			"id": "understanding_family_mediation",
@@ -133,7 +133,7 @@
 		"who_is_involved_caption": "Cost will vary dependent on location and the experience of the mediator. How many mediation sessions you need will depend on how complex your situation is.",
 		"usp_callout": "you both want to reach an agreement but need help from someone who is independent.",
 		"resources": {
-			"info": "<p>The Family Mediation Council has more information on the <a href=\"https://www.familymediationcouncil.org.uk/family-mediation\">mediation process</a> and how it can benefit you.</p><p>The <a href=\"https://www.cafcass.gov.uk/grown-ups/separated-parents-information-programme-(spip).aspx\">Separated Parents Information Programme</a> is a course that will help you and the other parent understand how to put your children first when separating.</p><p>Download a <a href=\"https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/489124/family-mediation-leaflet.pdf\">mediation information pack</a> from the Ministry of Justice.</p><p>Advice Now has a <a href=\"http://www.advicenow.org.uk/guides/survival-guide-using-family-mediation-after-break\">guide to using mediation</a> following separation.</p><p>Find out more about <a href=\"http://www.divorce.co.uk/divorce-approaches/mediation-with-lawyers\">lawyer-assisted mediation</a></p>"
+			"info": "<p>The Family Mediation Council has more information on the <a href=\"https://www.familymediationcouncil.org.uk/family-mediation\">mediation process</a> and how it can benefit you.</p><p>The <a href=\"https://www.cafcass.gov.uk/grown-ups/separated-parents-information-programme-(spip).aspx\">Separated Parents Information Programme</a> helps you understand how to put your children first and manage disputes with the other parent. There are similar programmes in <a href=\"http://cafcass.gov.wales/info_for_adults/working_together_for_children_course/?skip=1&lang=en\">Wales</a> and <a href=\"http://www.relationships-scotland.org.uk/family-support/parenting-apart-groups\">Scotland</a>.</p><p>Download a <a href=\"https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/489124/family-mediation-leaflet.pdf\">mediation information pack</a> from the Ministry of Justice.</p><p>Advice Now has a <a href=\"http://www.advicenow.org.uk/guides/survival-guide-using-family-mediation-after-break\">guide to using mediation</a> following separation.</p><p>Find out more about <a href=\"http://www.divorce.co.uk/divorce-approaches/mediation-with-lawyers\">lawyer-assisted mediation</a></p>"
 		},
 		"pros": [
 			{
