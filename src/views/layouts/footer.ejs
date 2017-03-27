@@ -50,7 +50,8 @@
     window.ga = window.ga || function () {
       (ga.q = ga.q || []).push(arguments)
     }
-    var surveyData = Cookies.getJSON('surveyData') || { visited: {} }
+    var surveyData = Cookies.getJSON('surveyData') || {}
+    surveyData.visited = surveyData.visited || {}
     if (searchArgs.uuid) {
       surveyData.uuid = searchArgs.uuid
     }
@@ -66,11 +67,13 @@
       }
     }
 
+    <% if (page.type !== 'about') { %>
     var pageStub = document.location.pathname
                     .replace(/\/$/, '')
                     .replace(/.*\//, '')
                     || 'summary'
     surveyData.visited[pageStub] = true
+    <% } %>
     Cookies.set('surveyData', surveyData)
 
     var visited = []
