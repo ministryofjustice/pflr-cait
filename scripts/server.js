@@ -100,13 +100,12 @@ app.use(cookieParser())
 // Shut out users who have not come via private beta
 if (ENV === 'private-beta' || ENV === 'prod') {
   app.use((req, res, next) => {
-    if (!req.cookies || !req.cookies.private_beta) {
+    if (!req.cookies || !req.cookies.surveyData) {
       let referrer = req.header('Referrer')
       if (!referrer || !referrer.includes('surveymonkey')) {
         res.sendStatus(401)
         return
       }
-      res.cookie('private_beta', 'true')
       res.cookie('surveyData', JSON.stringify({
         campaignName: 'private-beta-cla'
       }))
