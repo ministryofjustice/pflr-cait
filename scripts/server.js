@@ -100,6 +100,9 @@ app.use(auth)
 // Shut out users who have not come via private beta
 if (ENV === 'prod' || ENV === 'dev' || ENV === 'private-beta') {
   app.use((req, res, next) => {
+    if (req.connection.remoteAddress.includes('127.0.0.1')) {
+      return next()
+    }
     if (!req.url.match(/\.(css|js)/)) {
       if (!req.cookies || !req.cookies.surveyData) {
         let referrer = req.query.referrer
