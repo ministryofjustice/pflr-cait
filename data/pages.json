@@ -22,8 +22,8 @@
 		"filter_title": "Learning about parental responsibility",
 		"short_title": "",
 		"more_link": "parental responsibility",
-		"introduction": "<p>Parental responsibility is a term that means you have legal rights and duties relating to your children's upbringing.</p><p>For example you have a right to be involved in naming your child but you don't have a right to spend time with them.</p>",
-		"body_intro": "p>Parental responsibility is a term that means you have legal rights and duties relating to your children's upbringing.</p><p>For example you have a right to be involved in naming your child but you don't have a right to spend time with them.</p>",
+		"introduction": "<p>Parental responsibility is a term that means you have legal rights and duties relating to your children's upbringing.</p><p>It doesn't mean you have a right to spend time with them - this is the children's right.</p>",
+		"body_intro": "<p>Parental responsibility is a term that means you have legal rights and duties relating to your children's upbringing.</p><p>It doesn't mean you have a right to spend time with them - this is the children's right.</p>",
 		"includes": [
 			{"text": "what parental responsibility is", "anchor": "what"},
 			{"text": "who has parental responsibility", "anchor": "who"},
@@ -109,8 +109,62 @@
 		"title": "Professional mediation",
 		"filter_group": "negotiating",
 		"short_title": "",
-		"introduction": "<p>Sessions are run by a trained professional who helps you try to reach an agreement without going to court. Mediation isn't counselling and you don't have to be in the same room as the other parent.</p>",
-		"body_intro": "<p>Mediation sessions are run by a trained professional who helps you try and reach an agreement without going to court.</p><p>Mediation isn’t relationship counselling and you don't have to be in the same room as the other parent.</p>",
+		"introduction": "<p>Mediation sessions are run by professionals who help you try and reach an agreement without going to court. It isn’t relationship counselling and you don’t have to be in the same room as the other parent.</p>",
+		"body_intro": "<p>Mediation sessions are run by professionals who help you try and reach an agreement without going to court.</p><p>Mediation isn’t relationship counselling and you don't have to be in the same room as the other parent.</p>",
+		"steps": [
+			{
+				"icon_class": "xxxxx",
+				"title": "Find a mediator",
+				"body": "<p>Mediator rates can vary depending on their experience and your location. Some offer reductions if you're unemployed or on a low income.</p><p>Check with the mediator before booking and don’t be afraid to shop around.</p>",
+				"xcosts": [
+					{
+						"description": "",
+						"amount": "",
+						"small_print": ""
+					}
+				],
+				"link": {
+					"url": "http://www.familymediationcouncil.org.uk/find-local-mediator/",
+					"text": "Find a mediator"
+				}
+			},
+			{
+				"icon_class": "xxxx",
+				"title": "Book initial meeting with a mediator",
+				"body": "<p>You must first meet with a mediator to check if mediation is right for you. This is called a pre-mediation meeting.</p><p>If you or the other parent wants to go to <a href=\"/going-to-court\">court</a> the initial meeting is called a <a href=\"https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam/\">Mediation Information and Assessment Meeting</a> (MIAM).</p><p>The parent applying to court is legally required to show they’ve considered mediation by attending a MIAM, unless <a href=\"https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam/miams-exemptions/\">they’re exempt</a>. The other parent is also expected to attend.</p><p>The mediator will explain at either meeting:</p><ul><li>how mediation works</li><li>the benefits</li><li>whether it's right for you</li><li>the likely costs</li><li>if you're eligible for free mediation through <a href=\"https://checklegalaid.service.gov.uk/\">legal aid</a></li></ul><p>Only authorised mediators can carry out a MIAM. Check with the mediator before you book.</p>",
+				"costs": [
+					{
+						"description": "Average cost of MIAM per person",
+						"amount": "£90",
+						"small_print": "Estimated fees may vary depending on your location and the experience of the mediator. Some mediators offer reductions if you’re unemployed or on a low income. It may also be cheaper if you attend together."
+					}
+				]
+			},
+			{
+				"icon_class": "xxxx",
+				"title": "Attend mediation sessions",
+				"body": "<p>Your mediator will book your first session if you and the other parent agree to try mediation. Mediation usually takes place face-to-face with the other parent over several sessions. Each session lasts about 90 minutes.</p><p>You can choose to have mediation:</p><ul><li>in the same room</li><li>in different rooms (shuttle mediation)</li><li>on different days</li><li>with your children (family mediation)</li><li>with a lawyer (lawyer-assisted mediation)</li></ul>",
+				"costs": [
+					{
+						"description": "Average cost of mediation per person",
+						"amount": "£480",
+						"small_print": "Estimated cost based on an average of <strong>3</strong> sessions. Fees may vary depending on your location and the experience of the mediator. Some mediators offer reductions if you’re unemployed or on a low income."
+					}
+				]
+			},
+			{
+				"icon_class": "xxxx",
+				"title": "Get agreement in writing",
+				"body": "<p>If you both reach an agreement the mediator will write down the details. This isn't legally binding but is flexible so you can update it if your situation changes.</p><h3>Making your agreement legally binding</h3><p>You can ask a lawyer to draft a consent order if you or the other parent prefer to make your agreement legally binding.</p><p>This can be useful if the arrangements are long and complex or you think you need a more formal agreement with the other parent.</p><p>GOV.UK has more information about consent orders and <a href=\"https://www.gov.uk/looking-after-children-divorce/if-you-agree\">making your agreement legally binding</a>.</p>",
+				"xcosts": [
+					{
+						"description": "",
+						"amount": "",
+						"small_print": ""
+					}
+				]
+			}
+		],
 		"video": {
 			"id": "understanding_family_mediation",
 			"title": "Understanding Family Mediation",
@@ -133,7 +187,7 @@
 		"who_is_involved_caption": "Cost will vary dependent on location and the experience of the mediator. How many mediation sessions you need will depend on how complex your situation is.",
 		"usp_callout": "you both want to reach an agreement but need help from someone who is independent.",
 		"resources": {
-			"info": "<p>The Family Mediation Council has more information on the <a href=\"https://www.familymediationcouncil.org.uk/family-mediation\">mediation process</a> and how it can benefit you.</p><p>The <a href=\"https://www.cafcass.gov.uk/grown-ups/separated-parents-information-programme-(spip).aspx\">Separated Parents Information Programme</a> helps you understand how to put your children first and manage disputes with the other parent. There are similar programmes in <a href=\"http://cafcass.gov.wales/info_for_adults/working_together_for_children_course/?skip=1&lang=en\">Wales</a> and <a href=\"http://www.relationships-scotland.org.uk/family-support/parenting-apart-groups\">Scotland</a>.</p><p>Download a <a href=\"https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/489124/family-mediation-leaflet.pdf\">mediation information pack</a> from the Ministry of Justice.</p><p>Advice Now has a <a href=\"http://www.advicenow.org.uk/guides/survival-guide-using-family-mediation-after-break\">guide to using mediation</a> following separation.</p><p>Find out more about <a href=\"http://www.divorce.co.uk/divorce-approaches/mediation-with-lawyers\">lawyer-assisted mediation</a></p>"
+			"info": "<p>The Family Mediation Council has more information on the <a href=\"https://www.familymediationcouncil.org.uk/family-mediation\">mediation process</a> and how it can benefit you.</p><p>The <a href=\"https://www.cafcass.gov.uk/grown-ups/separated-parents-information-programme-(spip).aspx\">Separated Parents Information Programme</a> helps you understand how to put your children first and manage disputes with the other parent. There are similar programmes in <a href=\"http://cafcass.gov.wales/info_for_adults/working_together_for_children_course/?skip=1&lang=en\">Wales</a> and <a href=\"http://www.relationships-scotland.org.uk/family-support/parenting-apart-groups\">Scotland</a>.</p><p>Download a <a href=\"https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/489124/family-mediation-leaflet.pdf\">mediation information pack</a> from the Ministry of Justice.</p><p>Advice Now has a <a href=\"http://www.advicenow.org.uk/guides/survival-guide-using-family-mediation-after-break\">guide to using mediation</a> following separation.</p><p>Find out more about <a href=\"http://www.divorce.co.uk/divorce-approaches/mediation-with-lawyers\">lawyer-assisted mediation</a></p>  <p><a href=\"http://www.familymediationcouncil.org.uk/find-local-mediator/\">Find a local mediator</a></p>"
 		},
 		"pros": [
 			{
@@ -236,12 +290,12 @@
 			{
 				"icon_class": "step-hire-lawyer",
 				"title": "Hire a lawyer",
-				"body": "<p>Both you and the other parent will need to hire your own lawyer. A lawyer will be expensive so try and get a quote or ask if they offer a fixed fee for the collaborative process.</p>",
+				"body": "<p>Both you and the other parent will need to hire your own lawyer. A lawyer will be expensive so try and get a quote or ask if they offer a fixed fee for the collaborative process.</p><p>Some lawyers offer free 30-minute consultations or you can <a href=\"https://www.lawworks.org.uk/legal-advice-individuals\">check if you can get free legal help.</a></p>",
 				"costs": [
 					{
 						"description": "Lawyer rates per hour",
 						"amount": "£110 - £410",
-						"small_print": "Fees may vary dependent on location and the experience of the lawyer. How many hours you need will depend on your situation. Some lawyers offer free 30-minute consultations or you can <a href=\"https://www.barprobono.org.uk/do-you-need-help.html\">check if you can get free legal help.</a>"
+						"small_print": "Fees may vary dependent on location and the experience of the lawyer. How many hours you need will depend on your situation."
 					}
 				],
 				"link": {
@@ -276,7 +330,7 @@
 			{
 				"icon_class": "step-agreement",
 				"title": "Sign the agreement or set a date for next meeting",
-				"body": "<p>Collaborative law is a flexible process so how many meetings you'll need to reach an agreement will depend on your situation.</p><h3>If you agree at the first meeting</h3><p>Your lawyers will draw up a document that they'll submit to court for approval. You and the other parent won’t have to attend court unless there's an issue with the document or the judge wants more information.</p><h3>If there's no agreement at the first meeting</h3><p>You and the other parent must meet with your lawyers to discuss the unresolved issues. A date is then set for a second meeting.</p><h3>If there's still no agreement</h3><p>If it looks like you won't be able to reach an agreement, you and the other parent must instruct new lawyers who will deal with the issues at court.</p>",
+				"body": "<p>Collaborative law is a flexible process so how many meetings you'll need to reach an agreement will depend on your situation.</p><h3>If you agree at the first meeting</h3><p>Your lawyers will draw up a document that they'll submit to court for approval. You and the other parent won’t have to attend court unless there's an issue with the document or the judge wants more information.</p><h3>If there's no agreement at the first meeting</h3><p>You and the other parent must meet with your lawyers to discuss the unresolved issues. A date is then set for a second meeting.</p><h3>If there's still no agreement</h3><p>If it looks like you won't be able to reach an agreement, you and the other parent may need to consider going to court.</p>",
 				"xcosts": [
 					{
 						"description": "",
