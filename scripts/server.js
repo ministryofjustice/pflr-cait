@@ -91,26 +91,33 @@ app.use('/healthcheck.json', (req, res) => {
 // Set Favicon
 app.use(favicon(getDistPath('static/images/site-icons/favicon.ico')))
 
-// Run everything through basic auth
-app.use(auth)
-
 // Enable reading of cookies
 app.use(cookieParser())
 
+// Run everything through basic auth
+app.use(auth)
+
 // Shut out users who have not come via private beta
-if (ENV === 'private-beta' || ENV === 'prod') {
+if (ENV === 'prod' || ENV === 'dev' || ENV === 'private-beta') {
   app.use((req, res, next) => {
-    if (!req.cookies || !req.cookies.surveyData) {
-      let referrer = req.header('Referrer')
-      if (!referrer || !referrer.includes('surveymonkey')) {
-        res.sendStatus(401)
-        return
-      }
-      res.cookie('surveyData', JSON.stringify({
-        campaignName: 'private-beta-cla'
-      }))
+    if (req.connection.remoteAddress.includes('127.0.0.1')) {
+      return next()
     }
-    next()
+    if (!req.url.match(/\.(css|js)/)) {
+      if (!req.cookies || !req.cookies.surveyData) {
+        let referrer = req.query.referrer
+        let uuid = req.query.uuid
+        if (!referrer || !referrer.includes('private-beta-cla') || !uuid) {
+          req.disqualified = true
+          throw new Error(401)
+        }
+        res.cookie('surveyData', JSON.stringify({
+          campaignName: 'private-beta-cla',
+          uuid
+        }))
+      }
+    }
+    return next()
   })
 }
 
@@ -129,6 +136,11 @@ app.use('/', routes)
 
 const { GA_TRACKING_ID } = process.env
 let errs = {
+  401: {
+    title: 'You’re not eligible to use this service',
+    message: 'Based on the answers you’ve given, you currently can’t use this service.',
+    more: '<p>Visit GOV.UK for more information on <a href="https://www.gov.uk/looking-after-children-divorce">making child arrangements</a> with the other parent.</p><p>Thank you for your time.</p>'
+  },
   404: {
     title: 'This page can’t be found',
     message: 'Please check you’ve entered the correct web address.'
@@ -157,7 +169,8 @@ function errorHandler (err, req, res, next) {
     res.render('error', {
       type: 'error',
       page: errorPage,
-      GA_TRACKING_ID
+      GA_TRACKING_ID,
+      req
     })
   }
 }
