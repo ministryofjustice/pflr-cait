@@ -7,7 +7,7 @@
       <li><a href="/" data-link-type="breadcrumbs">Home</a></li>
       <li><%= page.title %></li>
     </ul>
-    <div class="c c-headed-text divider">
+    <div class="c c-headed-text">
       <div class="c-body-details">
         <div class="c-body-intro">
           <h1><%= page.title %></h1>
@@ -38,6 +38,13 @@
     </div>
     <% if(page.steps) { %>
       <% include components/steps.ejs %>
+      <% if (page.extra_body_copy) { %>
+      <div class="c-body-details">
+      <div class="c c-body-copy">
+        <%- include('pages/' + page.slug + ".ejs") %>
+      </div>
+      </div>
+      <% } %>
     <% } %>
     <% if(page.video && page.video.title || page.process_image_link && page.process_image_link.full) { %>
     <!-- <div class="two-columns-uneven divider"> -->
@@ -62,7 +69,7 @@
     <!-- </div> -->
     <% } %>
     <% if (page.resources && page.resources.info) { %>
-    <div class="c c-resources divider">
+    <div class="c c-resources">
       <h2><%= page.short_title ? page.short_title : page.title %> resources</h2>
       <div class="info">
         <%- page.resources.info %>
