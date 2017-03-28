@@ -14,5 +14,7 @@
 <body>
   <% include ../components/skiplink.ejs %>
   <% include ../components/gds-header.ejs %>
+  <% if (!req.disqualified) { %>
   <% include ../components/phase-banner.ejs %>
+  <% } %>
   <div class="wrapper" id="content">

@@ -6,6 +6,7 @@
   <div class="footer-wrapper">
     <div class="footer-meta">
       <div class="footer-meta-inner">
+        <% if (!req.disqualified) { %>
         <h2 class="visuallyhidden">Support links</h2>
         <ul>
           <li><a href="/about/cookies">Cookies</a></li>
@@ -14,6 +15,7 @@
           <li>Built by <a href="https://mojdigital.blog.gov.uk/about/">MoJ Digital</a>
         </li>
         </ul>
+        <% } %>
         <div class="open-government-licence">
           <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
           <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
@@ -28,6 +30,7 @@
   </div>
 </footer>
 
+  <% if (!req.disqualified) { %>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
     <script src="/static/scripts/vendor/js.cookie.js"></script>
     <script>
@@ -52,7 +55,7 @@
     }
     var surveyData = Cookies.getJSON('surveyData') || {}
     surveyData.visited = surveyData.visited || {}
-    if (searchArgs.uuid) {
+    if (!surveyData.uuid && searchArgs.uuid) {
       surveyData.uuid = searchArgs.uuid
     }
     ga('set', 'dimension12', surveyData.uuid)
@@ -86,10 +89,9 @@
     }
 
     jQuery('a[data-link-type="feedback"]').each(function(){
-      var addition = ''
+      var addition = '?uuid=' + surveyData.uuid
       jQuery.each(visited, function(i, page) {
-        addition += addition ? '&' : '?'
-        addition += page + '=T'
+        addition += '&' + page.replace(/-/g, '_') + '=T'
       })
       this.href += addition
     }).on('click', function(e) {
@@ -118,5 +120,6 @@
     <script src="/static/scripts/app/video-tracking.js"></script>
     <script src="/static/scripts/app/element-tracking.js"></script>
     <% } %>
+  <% } %>
   </body>
 </html>
