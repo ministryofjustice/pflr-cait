@@ -111,9 +111,10 @@
 		"short_title": "",
 		"introduction": "<p>Mediation sessions are run by professionals who help you try and reach an agreement without going to court. It isn’t relationship counselling and you don’t have to be in the same room as the other parent.</p>",
 		"body_intro": "<p>Mediation sessions are run by professionals who help you try and reach an agreement without going to court.</p><p>Mediation isn’t relationship counselling and you don't have to be in the same room as the other parent.</p>",
+		"extra_body_copy": true,
 		"steps": [
 			{
-				"icon_class": "xxxxx",
+				"icon_class": "step-find-mediator",
 				"title": "Find a mediator",
 				"body": "<p>Mediator rates can vary depending on their experience and your location. Some offer reductions if you're unemployed or on a low income.</p><p>Check with the mediator before booking and don’t be afraid to shop around.</p>",
 				"xcosts": [
@@ -129,7 +130,7 @@
 				}
 			},
 			{
-				"icon_class": "xxxx",
+				"icon_class": "step-book-mediator",
 				"title": "Book initial meeting with a mediator",
 				"body": "<p>You must first meet with a mediator to check if mediation is right for you. This is called a pre-mediation meeting.</p><p>If you or the other parent wants to go to <a href=\"/going-to-court\">court</a> the initial meeting is called a <a href=\"https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam/\">Mediation Information and Assessment Meeting</a> (MIAM).</p><p>The parent applying to court is legally required to show they’ve considered mediation by attending a MIAM, unless <a href=\"https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam/miams-exemptions/\">they’re exempt</a>. The other parent is also expected to attend.</p><p>The mediator will explain at either meeting:</p><ul><li>how mediation works</li><li>the benefits</li><li>whether it's right for you</li><li>the likely costs</li><li>if you're eligible for free mediation through <a href=\"https://checklegalaid.service.gov.uk/\">legal aid</a></li></ul><p>Only authorised mediators can carry out a MIAM. Check with the mediator before you book.</p>",
 				"costs": [
@@ -141,7 +142,7 @@
 				]
 			},
 			{
-				"icon_class": "xxxx",
+				"icon_class": "step-attend-mediation",
 				"title": "Attend mediation sessions",
 				"body": "<p>Your mediator will book your first session if you and the other parent agree to try mediation. Mediation usually takes place face-to-face with the other parent over several sessions. Each session lasts about 90 minutes.</p><p>You can choose to have mediation:</p><ul><li>in the same room</li><li>in different rooms (shuttle mediation)</li><li>on different days</li><li>with your children (family mediation)</li><li>with a lawyer (lawyer-assisted mediation)</li></ul>",
 				"costs": [
@@ -153,7 +154,7 @@
 				]
 			},
 			{
-				"icon_class": "xxxx",
+				"icon_class": "step-agreement",
 				"title": "Get agreement in writing",
 				"body": "<p>If you both reach an agreement the mediator will write down the details. This isn't legally binding but is flexible so you can update it if your situation changes.</p><h3>Making your agreement legally binding</h3><p>You can ask a lawyer to draft a consent order if you or the other parent prefer to make your agreement legally binding.</p><p>This can be useful if the arrangements are long and complex or you think you need a more formal agreement with the other parent.</p><p>GOV.UK has more information about consent orders and <a href=\"https://www.gov.uk/looking-after-children-divorce/if-you-agree\">making your agreement legally binding</a>.</p>",
 				"xcosts": [
