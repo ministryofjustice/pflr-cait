@@ -6,11 +6,11 @@
 		"title": "Putting your children first",
 		"filter_title": "Involving your children",
 		"short_title": "",
-		"introduction": "<p>The needs of your children should come first when you make child arrangements with the other parent.</p><p>Your children will feel happier if you keep in regular contact with them and know where to get extra support if they need it. If they understand the situation, involve them in decision-making.</p>",
-		"body_intro": "<p>The needs of your children should come first when you make child arrangements with the other parent.</p><p>Your children will feel happier if you keep in regular contact with them and know where to get extra support if they need it. If they understand the situation, involve them in decision-making.</p>",
+		"introduction": "<p>The needs of your children should come first when you make child arrangements with the other parent.</p><p>Your children will feel happier if they have regular contact with you and the other parent, and know where to get extra support if they need it. If they understand the situation, involve them in decision-making.</p>",
+		"body_intro": "<p>The needs of your children should come first when you make child arrangements with the other parent.</p><p>Your children will feel happier if they have regular contact with you and the other parent, if it’s safe to do. If they understand the situation, involve them in the decision-making.</p>",
 		"includes": [
 			{"text": "involving your children in decisions", "anchor": "involving-children"},
-			{"text": "arranging to spend time with your children", "anchor": "arranging-contact"},
+			{"text": "arranging times your children spend with you", "anchor": "arranging-contact"},
 			{"text": "supporting and protecting your children", "anchor": "supporting"}
 		]
 	},
@@ -22,8 +22,8 @@
 		"filter_title": "Learning about parental responsibility",
 		"short_title": "",
 		"more_link": "parental responsibility",
-		"introduction": "<p>Parental responsibility is a term that means you have legal rights and duties relating to your children's upbringing.</p><p>It's not about your rights over your children - for example you don't have an automatic right to live with or spend time with them.</p>",
-		"body_intro": "p>Parental responsibility is a term that means you have legal rights and duties relating to your children's upbringing.</p><p>It's not about your rights over your children - for example you don't have an automatic right to live with or spend time with them.</p>",
+		"introduction": "<p>Parental responsibility is a term that means you have legal rights and duties relating to your children's upbringing.</p><p>For example you have a right to be involved in naming your child but you don't have a right to spend time with them.</p>",
+		"body_intro": "p>Parental responsibility is a term that means you have legal rights and duties relating to your children's upbringing.</p><p>For example you have a right to be involved in naming your child but you don't have a right to spend time with them.</p>",
 		"includes": [
 			{"text": "what parental responsibility is", "anchor": "what"},
 			{"text": "who has parental responsibility", "anchor": "who"},
@@ -64,8 +64,8 @@
 		"filter_group": "negotiating",
 		"more_link": "negotiation tools and services",
 		"short_title": "Negotiation",
-		"introduction": "<p>The cheapest and easiest way to make arrangements is to negotiate with the other parent. There are free tools and services that can help you.</p>",
-		"body_intro": "<p>The cheapest and easiest way to make arrangements is to negotiate with the other parent. There are free tools and services that can help you.</p>",
+		"introduction": "<p>If there are no safety concerns, the cheapest and easiest way to make arrangements is to negotiate with the other parent. There are free tools and services that can help you.</p>",
+		"body_intro": "<p>If there are no safety concerns, the cheapest and easiest way to make arrangements is to negotiate with the other parent. There are free tools and services that can help you.</p>",
 		"who_is_involved": [
 			{
 				"slug": "parents",
@@ -241,7 +241,7 @@
 					{
 						"description": "Lawyer rates per hour",
 						"amount": "£110 - £410",
-						"small_print": "Cost will vary dependent on location and the experience of the legal representative. How many hours you need will depend on how complex your situation is."
+						"small_print": "Fees may vary dependent on location and the experience of the lawyer. How many hours you need will depend on your situation. Some lawyers offer free 30-minute consultations or you can <a href=\"https://www.barprobono.org.uk/do-you-need-help.html\">check if you can get free legal help.</a>"
 					}
 				],
 				"link": {
@@ -276,7 +276,7 @@
 			{
 				"icon_class": "step-agreement",
 				"title": "Sign the agreement or set a date for next meeting",
-				"body": "<p>Collaborative law is a flexible process so how many meetings you'll need to reach an agreement will depend on your situation.</p><h3>If you agree at the first meeting</h3><p>Your lawyers will draw up a document that they'll submit to court for approval. You and the other parent won’t have to attend court.</p><h3>If there's no agreement at the first meeting</h3><p>You and the other parent must meet with your lawyers to discuss the unresolved issues. A date is then set for a second meeting.</p>",
+				"body": "<p>Collaborative law is a flexible process so how many meetings you'll need to reach an agreement will depend on your situation.</p><h3>If you agree at the first meeting</h3><p>Your lawyers will draw up a document that they'll submit to court for approval. You and the other parent won’t have to attend court unless there's an issue with the document or the judge wants more information.</p><h3>If there's no agreement at the first meeting</h3><p>You and the other parent must meet with your lawyers to discuss the unresolved issues. A date is then set for a second meeting.</p><h3>If there's still no agreement</h3><p>If it looks like you won't be able to reach an agreement, you and the other parent must instruct new lawyers who will deal with the issues at court.</p>",
 				"xcosts": [
 					{
 						"description": "",
