@@ -131,8 +131,8 @@
 			},
 			{
 				"icon_class": "step-book-mediator",
-				"title": "Book initial meeting with a mediator",
-				"body": "<p>You must first meet with a mediator to check if mediation is right for you. This is called a pre-mediation meeting.</p><p>If you or the other parent wants to go to <a href=\"/going-to-court\">court</a> the initial meeting is called a <a href=\"https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam/\">Mediation Information and Assessment Meeting</a> (MIAM).</p><p>The parent applying to court is legally required to show they’ve considered mediation by attending a MIAM, unless <a href=\"https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam/miams-exemptions/\">they’re exempt</a>. The other parent is also expected to attend.</p><p>The mediator will explain at either meeting:</p><ul><li>how mediation works</li><li>the benefits</li><li>whether it's right for you</li><li>the likely costs</li><li>if you're eligible for free mediation through <a href=\"https://checklegalaid.service.gov.uk/\">legal aid</a></li></ul><p>Only authorised mediators can carry out a MIAM. Check with the mediator before you book.</p>",
+				"title": "Book initial meeting with mediator",
+				"body": "<p>You must first meet with a mediator to check if mediation is right for you. This is called a pre-mediation meeting.</p><p>If you or the other parent wants to go to <a href=\"/going-to-court\">court</a> this initial meeting is called a <a href=\"https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam/\">Mediation Information and Assessment Meeting</a> (MIAM).</p><p>The parent applying to court is legally required to show they’ve considered mediation by attending a MIAM, unless <a href=\"https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam/miams-exemptions/\">they’re exempt</a>. The other parent is also expected to attend.</p><p>At either meeting the mediator will explain:</p><ul><li>how mediation works</li><li>the benefits</li><li>whether it's right for you</li><li>the likely costs</li><li>if you're eligible for free mediation through <a href=\"https://checklegalaid.service.gov.uk/\">legal aid</a></li></ul><p>Only authorised mediators can carry out a MIAM. Check with the mediator before you book.</p>",
 				"costs": [
 					{
 						"description": "Average cost of MIAM per person",
@@ -144,7 +144,7 @@
 			{
 				"icon_class": "step-attend-mediation",
 				"title": "Attend mediation sessions",
-				"body": "<p>Your mediator will book your first session if you and the other parent agree to try mediation. Mediation usually takes place face-to-face with the other parent over several sessions. Each session lasts about 90 minutes.</p><p>You can choose to have mediation:</p><ul><li>in the same room</li><li>in different rooms (shuttle mediation)</li><li>on different days</li><li>with your children (family mediation)</li><li>with a lawyer (lawyer-assisted mediation)</li></ul>",
+				"body": "<p>Mediation usually takes place face-to-face with the other parent over several sessions. Each session lasts about 90 minutes.</p><p>You can choose to have mediation:</p><ul><li>in the same room</li><li>in different rooms (shuttle mediation)</li><li>on different days</li><li>with your children (family mediation)</li><li>with a lawyer (lawyer-assisted mediation)</li></ul>",
 				"costs": [
 					{
 						"description": "Average cost of mediation per person",
