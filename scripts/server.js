@@ -99,6 +99,11 @@ app.use(auth)
 
 // Shut out users who have not come via private beta
 if (ENV === 'prod' || ENV === 'dev' || ENV === 'private-beta') {
+  const disqualifiedUser = (req, code = 403) => {
+    req.disqualified = true
+    throw new Error(code)
+  }
+  app.get('/sorry', req => disqualifiedUser(req, 401))
   app.use((req, res, next) => {
     if (req.connection.remoteAddress.includes('127.0.0.1')) {
       return next()
@@ -108,13 +113,15 @@ if (ENV === 'prod' || ENV === 'dev' || ENV === 'private-beta') {
         let referrer = req.query.referrer
         let uuid = req.query.uuid
         if (!referrer || !referrer.includes('private-beta-cla') || !uuid) {
-          req.disqualified = true
-          throw new Error(401)
+          disqualifiedUser(req)
         }
         res.cookie('surveyData', JSON.stringify({
           campaignName: 'private-beta-cla',
           uuid
         }))
+        if (req.url.includes('/landing')) {
+          res.redirect('/accepted')
+        }
       }
     }
     return next()
@@ -140,6 +147,11 @@ let errs = {
     title: 'You’re not eligible to use this service',
     message: 'Based on the answers you’ve given, you currently can’t use this service.',
     more: '<p>Visit GOV.UK for more information on <a href="https://www.gov.uk/looking-after-children-divorce">making child arrangements</a> with the other parent.</p><p>Thank you for your time.</p>'
+  },
+  403: {
+    title: 'This service is not available',
+    message: 'This service is currently in private beta and not available to you.',
+    more: 'Visit GOV.UK for more information on <a href="https://www.gov.uk/looking-after-children-divorce">making child arrangements</a>.'
   },
   404: {
     title: 'This page can’t be found',
