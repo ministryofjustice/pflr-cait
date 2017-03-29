@@ -79,6 +79,7 @@ app.use('/healthcheck.json', (req, res) => {
       statusCode = err.statusCode
     })
     .then(() => {
+      res.status(status ? 200 : 500)
       res.json({
         status,
         content: {
