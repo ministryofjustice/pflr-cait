@@ -86,7 +86,7 @@ a {
 .u-primary {
     .c-summary & {
       padding: 0;
-      +above(l) {
+      +above(ml) {
         col(2/3, cycle: 2);
         padding: 0 5% 0 0;
         margin-right: 0;
@@ -113,9 +113,6 @@ a {
       ff-body();
       list-style: disc;
       margin-left: $hspacing*3;
-      li {
-        margin-bottom: $vspacing;
-      }
     }
     .two-columns-uneven {
       cf();
@@ -193,16 +190,18 @@ a {
   width: 100%;
 }
 
+
+#footer .footer-meta .footer-meta-inner ul {
+    margin: 0 0 1em 0;
+}
+#footer .footer-meta .footer-meta-inner ul li {
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+
 +above(m) {
   #footer .footer-meta .footer-meta-inner {
     width: 75%;
-  }
-  #footer .footer-meta .footer-meta-inner ul {
-      margin: 0 0 1em 0;
-  }
-  #footer .footer-meta .footer-meta-inner ul li {
-    display: inline-block;
-    margin: 0 15px 0 0;
   }
 }
 

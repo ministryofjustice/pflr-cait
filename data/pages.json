@@ -6,8 +6,8 @@
 		"title": "Putting your children first",
 		"filter_title": "Involving your children",
 		"short_title": "",
-		"introduction": "<p>The needs of your children should come first when you make child arrangements with the other parent.</p><p>Your children will feel happier if they have regular contact with you and the other parent, and know where to get extra support if they need it. If they understand the situation, involve them in decision-making.</p>",
-		"body_intro": "<p>The needs of your children should come first when you make child arrangements with the other parent.</p><p>Your children will feel happier if they have regular contact with you and the other parent, if it’s safe to do. If they understand the situation, involve them in the decision-making.</p>",
+		"introduction": "<p>The needs of your children should come first when you make child arrangements with the other parent.</p><p>Your children will feel happier if they have regular contact with you and the other parent, and know where to get extra support if they need it. If they understand the situation, involve them in the decision-making.</p>",
+		"body_intro": "<p>The needs of your children should come first when you make child arrangements with the other parent.</p><p>Your children will feel happier if they have regular contact with you and the other parent, if it’s safe to do so. If they understand the situation, involve them in the decision-making.</p>",
 		"includes": [
 			{"text": "involving your children in decisions", "anchor": "involving-children"},
 			{"text": "arranging times your children spend with you", "anchor": "arranging-contact"},
@@ -231,8 +231,8 @@
 		"title": "Lawyer negotiation",
 		"filter_group": "legal-help",
 		"short_title": "",
-		"introduction": "<p>You don’t have to deal with the other parent if you choose this option. You each hire a lawyer to negotiate arrangements for you.</p>",
-		"body_intro": "<p>You don’t have to deal with the other parent if you choose this option. You each hire a lawyer to negotiate arrangements for you.</p><p>It can be an expensive process but some parents find having experienced legal help reassuring.</p>",
+		"introduction": "<p>You don’t have to deal directly with the other parent if you choose this option. You each hire a lawyer to negotiate arrangements for you.</p>",
+		"body_intro": "<p>You don’t have to deal directly with the other parent if you choose this option. You each hire a lawyer to negotiate arrangements for you.</p><p>It can be an expensive process but some parents find having experienced legal help reassuring.</p>",
 		"video": {
 			"id": "lawyer_negotiation",
 			"title": "What is lawyer negotiation?",
@@ -331,7 +331,7 @@
 			{
 				"icon_class": "step-agreement",
 				"title": "Sign the agreement or set a date for next meeting",
-				"body": "<p>Collaborative law is a flexible process so how many meetings you'll need to reach an agreement will depend on your situation.</p><h3>If you agree at the first meeting</h3><p>Your lawyers will draw up a document that they'll submit to court for approval. You and the other parent won’t have to attend court unless there's an issue with the document or the judge wants more information.</p><h3>If there's no agreement at the first meeting</h3><p>You and the other parent must meet with your lawyers to discuss the unresolved issues. A date is then set for a second meeting.</p><h3>If there's still no agreement</h3><p>If it looks like you won't be able to reach an agreement, you and the other parent may need to consider going to court.</p>",
+				"body": "<p>Collaborative law is a flexible process so how many meetings you'll need to reach an agreement will depend on your situation.</p><h3>If you agree at the first meeting</h3><p>Your lawyers will draw up a document that they'll submit to court for approval. You and the other parent won’t have to attend court unless there's an issue with the document or the judge wants more information.</p><h3>If there's no agreement at the first meeting</h3><p>You and the other parent must meet with your lawyers to discuss the unresolved issues. A date is then set for a second meeting.</p><h3>If there's still no agreement</h3><p>If it looks like you won't be able to reach an agreement, you and the other parent may need to consider <a href=\"/going-to-court\">going to court</a>.</p>",
 				"xcosts": [
 					{
 						"description": "",
@@ -405,7 +405,7 @@
 			{
 				"icon_class": "step-hire-lawyer",
 				"title": "Choose to hire a lawyer or represent yourself",
-				"body": "<h3>Hire a lawyer</h3><p>A lawyer will be expensive but they’ll handle the legal aspects of the case and represent you in court.</p><p>They may try and negotiate a deal with the other parent out of court or recommend you move to step 2 straight away.</p><p><a href=\"http://solicitors.lawsociety.org.uk/\">Find a legal adviser</a></p><h3>Represent yourself</h3><p>You may choose to represent yourself because you'd prefer to speak to the judge directly or because you can't afford the legal fees.</p>GOV.UK has more information on <a href=\"https://www.gov.uk/represent-yourself-in-court/overview\">how to represent yourself in court</a>.</p><p>The <a href=\"https://www.thepsu.org/about-us/\">Personal Support Unit (PSU)</a> provides help for every stage of the court process for those without a lawyer.</p><p><a href=\"https://www.lawworks.org.uk/legal-advice-individuals/find-legal-advice-clinic-near-you\">Find a free legal advice clinic</a></p>",
+				"body": "<h3>Hire a lawyer</h3><p>A lawyer will be expensive but they’ll handle the legal aspects of the case and represent you in court.</p><p>They may try and negotiate a deal with the other parent out of court or recommend you move to step 2 straight away.</p><p><a href=\"http://solicitors.lawsociety.org.uk/\">Find a legal adviser</a></p><h3>Represent yourself</h3><p>You may choose to represent yourself because you'd prefer to speak to the judge directly or because you can't afford the legal fees.</p><p>GOV.UK has more information on <a href=\"https://www.gov.uk/represent-yourself-in-court/overview\">how to represent yourself in court</a>.</p><p>The <a href=\"https://www.thepsu.org/about-us/\">Personal Support Unit (PSU)</a> provides help for every stage of the court process for those without a lawyer.</p><p><a href=\"https://www.lawworks.org.uk/legal-advice-individuals/find-legal-advice-clinic-near-you\">Find a free legal advice clinic</a></p>",
 				"costs": [
 					{
 						"description": "Lawyer rates (per hour)",
