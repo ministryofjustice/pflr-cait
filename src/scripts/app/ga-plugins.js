@@ -7,6 +7,9 @@
     PIXEL_DENSITY: 10,
     DEVICE_ORIENTATION: 11
   }
+  const metrics = {
+    MAX_SCROLL: 4
+  }
 
   window.ga = window.ga || function () {
     (ga.q = ga.q || []).push(arguments)
@@ -88,5 +91,7 @@
     ]
   })
   // maxScrollTracker
-  ga('require', 'maxScrollTracker')
+  ga('require', 'maxScrollTracker', {
+    maxScrollMetricIndex: metrics.MAX_SCROLL
+  })
 })()

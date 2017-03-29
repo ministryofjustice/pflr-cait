@@ -119,6 +119,9 @@ if (ENV === 'prod' || ENV === 'dev' || ENV === 'private-beta') {
           campaignName: 'private-beta-cla',
           uuid
         }))
+        if (req.url.includes('/landing')) {
+          res.redirect('/accepted')
+        }
       }
     }
     return next()
@@ -146,8 +149,9 @@ let errs = {
     more: '<p>Visit GOV.UK for more information on <a href="https://www.gov.uk/looking-after-children-divorce">making child arrangements</a> with the other parent.</p><p>Thank you for your time.</p>'
   },
   403: {
-    title: 'This service is in private beta',
-    message: 'Visit GOV.UK for more information on <a href="https://www.gov.uk/looking-after-children-divorce">making child arrangements</a>.'
+    title: 'This service is not available',
+    message: 'This service is currently in private beta and not available to you.',
+    more: 'Visit GOV.UK for more information on <a href="https://www.gov.uk/looking-after-children-divorce">making child arrangements</a>.'
   },
   404: {
     title: 'This page can’t be found',

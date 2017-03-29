@@ -522,5 +522,11 @@
 		"type": "about",
 		"slug": "about/privacy",
 		"title": "Privacy policy"
+	},
+	{
+		"id": 92,
+		"type": "about",
+		"slug": "accepted",
+		"title": "You’re eligible to use this service"
 	}
 ]
