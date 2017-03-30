@@ -94,13 +94,6 @@
         addition += '&' + page.replace(/-/g, '_') + '=T'
       })
       this.href += addition
-    }).on('click', function(e) {
-      if (!visited.length || (visited.length === 1 && visited[0] === 'summary')) {
-        var confirmed = confirm('Are you sure you have had enough time to check the site out?')
-        if (!confirmed) {
-          e.preventDefault()
-        }
-      }
     })
     </script>
     <% if (GA_TRACKING_ID) { %>
