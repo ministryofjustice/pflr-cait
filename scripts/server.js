@@ -99,7 +99,7 @@ app.use(cookieParser())
 app.use(auth)
 
 // Shut out users who have not come via private beta
-if (ENV === 'prod' || ENV === 'dev' || ENV === 'private-beta') {
+if (ENV === 'prod' || ENV === 'staging' || ENV === 'private-beta') {
   const disqualifiedUser = (req, code = 403) => {
     req.disqualified = true
     throw new Error(code)

@@ -22,7 +22,7 @@
 		"filter_title": "Learning about parental responsibility",
 		"short_title": "",
 		"more_link": "parental responsibility",
-		"introduction": "<p>Parental responsibility is a term that means you have legal rights and duties relating to your children's upbringing.</p><p>It doesn't mean you have a right to spend time with them - this is the children's right.</p>",
+		"introduction": "<p>Parental responsibility is a term that means you have legal rights and duties relating to your children's upbringing.</p><p>It doesn't mean you have a right to spend time with your children but the other parent must update you on their well-being.</p>",
 		"body_intro": "<p>Parental responsibility is a term that means you have legal rights and duties relating to your children's upbringing.</p><p>It doesn't mean you have a right to spend time with them - this is the children's right.</p>",
 		"includes": [
 			{"text": "what parental responsibility is", "anchor": "what"},
@@ -76,7 +76,7 @@
 		],
 		"usp_callout": "you both still communicate and agree on the majority of issues but may benefit from using a tool such as a parenting plan.",
 		"resources": {
-			"info": "<p>GOV.UK has information on <a href=\"https://www.gov.uk/arranging-child-maintenance-yourself\">arranging child maintenance yourself</a> that includes a <a href=\"https://www.gov.uk/calculate-your-child-maintenance\">child maintenance calculator</a>.</p><p>Separated Families also has a free <a href=\"https://www.separatedfamilies.info/home/parenting-apart/parenting-agreements/\">online parenting plan</a>.</p><p><a href=\"http://theparentconnection.org.uk/articles/tips-for-helping-you-communicate-with-your-ex\">Tips on how to communicate with your ex</a></p>"
+			"info": "<p>GOV.UK has information on <a href=\"https://www.gov.uk/arranging-child-maintenance-yourself\">arranging child maintenance yourself</a> that includes a <a href=\"https://www.gov.uk/calculate-your-child-maintenance\">child maintenance calculator</a>.</p><p>Separated Families also has a free <a href=\"https://www.separatedfamilies.info/home/parenting-apart/parenting-agreements/\">online parenting plan</a>.</p><p>The Parent Connection offers a few <a href=\"http://theparentconnection.org.uk/articles/tips-for-helping-you-communicate-with-your-ex\">tips on how to communicate with your ex</a>.</p>"
 		},
 		"pros": [
 			{
@@ -410,14 +410,14 @@
 					{
 						"description": "Lawyer rates (per hour)",
 						"amount": "£110 - £410",
-						"small_print": "Fees may vary depending on your location and the experience of the lawyer. How long you need will depend on your situation. Some lawyers offer free 30-minute consultations or you can <a href=\"https://barprobono.org.uk/\">check if you can get free legal help</a>."
+						"small_print": "Fees may vary depending on your location and the experience of the lawyer. How long you need will depend on your situation. Some lawyers offer free 30-minute consultations or you can <a href=\"https://barprobono.org.uk/do-you-need-help.html\">check if you can get free legal help</a>."
 					}
 				]
 			},
 			{
 				"icon_class": "step-attend-miam",
 				"title": "Attend a Mediation Information and Assessment Meeting (MIAM)",
-				"body": "<p>Before applying for a court order you must attend a <a href=\"mediation\">MIAM</a>, unless there’s been domestic abuse or social services are already involved in your situation.</p><p>The MIAM will assess whether mediation is right for you and if you can agree arrangements out of court.</p><p>You will need to <a href=\"http://www.familymediationcouncil.org.uk/find-local-mediator/\">find a mediator</a> to book a MIAM.</p><p>Only accredited mediators can carry out a MIAM. Check with the mediator before you book.</p>",
+				"body": "<p>Before applying for a court order you must attend a <a href=\"professional-mediation\">MIAM</a>, unless there’s been domestic abuse or social services are already involved in your situation.</p><p>The MIAM will assess whether mediation is right for you and if you can agree arrangements out of court.</p><p>You will need to <a href=\"http://www.familymediationcouncil.org.uk/find-local-mediator/\">find a mediator</a> to book a MIAM.</p><p>Only accredited mediators can carry out a MIAM. Check with the mediator before you book.</p>",
 				"costs": [
 					{
 						"description": "Average cost of MIAM per person",
@@ -441,7 +441,7 @@
 			{
 				"icon_class": "step-attend-court",
 				"title": "Go to court",
-				"body": "<p>At the first hearing the court will see if there’s still a chance you can reach an agreement with the other parent.</p><h3>If you can reach an agreement</h3><p>The judge will end the process and write a consent order setting out the details of your agreement.</p><h3>If you can't reach an agreement</h3><p>The judge will look at the issues you disagree on and set out a timetable for what will happen next.</p><p>You may be asked to try and reach an agreement again. This could be through <a href=\"mediation\">mediation</a> or a <a href=\"https://www.cafcass.gov.uk/grown-ups/separated-parents-information-programme-%28spip%29.aspx\">Separated Parents Information Programme</a> (SPIP).</p><p>Your case may be put on hold (adjourned) if the judge needs more time to decide what's best for the children. The court may ask Cafcass to write another report.</p><p>A new date is then set for a final hearing. If you reach an agreement before this date the judge can stop the process.</p><p>GOV.UK has more information on <a href=\"https://www.gov.uk/looking-after-children-divorce/after-you-apply-for-a-court-order\">what happens if there’s no agreement</a> at the first hearing.</p>"
+				"body": "<p>At the first hearing the court will see if there’s still a chance you can reach an agreement with the other parent.</p><h3>If you can reach an agreement</h3><p>The judge will end the process and write a consent order setting out the details of your agreement.</p><h3>If you can't reach an agreement</h3><p>The judge will look at the issues you disagree on and set out a timetable for what will happen next.</p><p>You may be asked to try and reach an agreement again. This could be through <a href=\"professional-mediation\">mediation</a> or a <a href=\"https://www.cafcass.gov.uk/grown-ups/separated-parents-information-programme-%28spip%29.aspx\">Separated Parents Information Programme</a> (SPIP).</p><p>Your case may be put on hold (adjourned) if the judge needs more time to decide what's best for the children. The court may ask Cafcass to write another report.</p><p>A new date is then set for a final hearing. If you reach an agreement before this date the judge can stop the process.</p><p>GOV.UK has more information on <a href=\"https://www.gov.uk/looking-after-children-divorce/after-you-apply-for-a-court-order\">what happens if there’s no agreement</a> at the first hearing.</p>"
 			}
 		],
 		"video": {
