@@ -1,5 +1,4 @@
 // https://github.com/googleanalytics/autotrack
-// https://philipwalton.com/articles/the-google-analytics-setup-i-use-on-every-site-i-build/
 (function () {
   const dimensions = {
     HIT_EVENT_TYPE: 7,

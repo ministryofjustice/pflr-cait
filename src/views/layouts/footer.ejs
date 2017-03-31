@@ -50,27 +50,23 @@
         searchArgs[argParts[0]] = argParts[1]
       }
     }
-    window.ga = window.ga || function () {
-      (ga.q = ga.q || []).push(arguments)
-    }
     var surveyData = Cookies.getJSON('surveyData') || {}
     surveyData.visited = surveyData.visited || {}
     if (!surveyData.uuid && searchArgs.uuid) {
       surveyData.uuid = searchArgs.uuid
     }
-    ga('set', 'dimension12', surveyData.uuid)
+    window.setValues = {}
+    window.setValues.dimension12 = surveyData.uuid
     <% if (typeof env === 'object') { %>
     var APP_VERSION = '<%= env.APP_VERSION %>'
-    ga('set', 'dimension13', APP_VERSION)
+    window.setValues.dimension13 = APP_VERSION
     <% } %>
     var campaignFields = ['campaignName', 'campaignMedium', 'campaignKeyword', 'campaignContent', 'campaignID']
     for (var j = 0; j < campaignFields.length; j++) {
       var campaignField = campaignFields[j]
       if (searchArgs[campaignField]) {
         surveyData[campaignField] = searchArgs[campaignField]
-      }
-      if (surveyData[campaignField]) {
-        ga('set', campaignField, surveyData[campaignField])
+        window.setValues[campaignField] = searchArgs[campaignField]
       }
     }
 

@@ -1,21 +1,21 @@
 // Adapted from https://philipwalton.com/articles/the-google-analytics-setup-i-use-on-every-site-i-build
 (function () {
   const dimensions = {
-    TRACKING_VERSION: 1,
-    CLIENT_ID: 2,
-    WINDOW_ID: 3,
-    HIT_ID: 4,
-    HIT_TIME: 5,
-    HIT_TYPE: 6
+    TRACKING_VERSION: 'dimension1',
+    CLIENT_ID: 'dimension2',
+    WINDOW_ID: 'dimension3',
+    HIT_ID: 'dimension4',
+    HIT_TIME: 'dimension5',
+    HIT_TYPE: 'dimension6'
   }
 
   const metrics = {
-    RESPONSE_END_TIME: 1,
-    DOM_LOAD_TIME: 2,
-    WINDOW_LOAD_TIME: 3
+    RESPONSE_END_TIME: 'metric1',
+    DOM_LOAD_TIME: 'metric2',
+    WINDOW_LOAD_TIME: 'metric3'
   }
 
-  const TRACKING_VERSION = 'testing'
+  const TRACKING_VERSION = '1.0.0'
 
   const uuid = function b (a) {
     return a ? (a ^ Math.random() * 16 >> a / 4).toString(16)
@@ -31,10 +31,12 @@
 // Tracking version
   ga('set', dimensions.TRACKING_VERSION, TRACKING_VERSION)
 
-// Client ID
+// Client ID (and send the pageview)
   ga((tracker) => {
     var clientId = tracker.get('clientId')
     tracker.set(dimensions.CLIENT_ID, clientId)
+    // Send the pageview
+    ga('send', 'pageview')
   })
 
   // Window ID
@@ -44,16 +46,19 @@
   ga((tracker) => {
     const originalBuildHitTask = tracker.get('buildHitTask')
     tracker.set('buildHitTask', (model) => {
-      model.set('metric' + dimensions.HIT_ID, uuid(), true)
-      model.set('metric' + dimensions.HIT_TIME, String(+new Date()), true)
-      model.set('metric' + dimensions.HIT_TYPE, model.get('hitType'), true)
+      model.set(dimensions.HIT_ID, uuid(), true)
+      model.set(dimensions.HIT_TIME, String(+new Date()), true)
+      model.set(dimensions.HIT_TYPE, model.get('hitType'), true)
 
       originalBuildHitTask(model)
     })
   })
 
-  // Send the pageview
-  ga('send', 'pageview')
+  if (window.setValues) {
+    for (var val in window.setValues) {
+      ga('set', val, window.setValues[val])
+    }
+  }
 
   // Error handling
   const trackError = (error, fieldsObj = {}) => {
