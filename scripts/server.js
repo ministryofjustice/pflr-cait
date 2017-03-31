@@ -105,6 +105,22 @@ if (ENV === 'prod' || ENV === 'staging' || ENV === 'private-beta') {
     throw new Error(code)
   }
   app.get('/sorry', req => disqualifiedUser(req, 401))
+  app.get('/revisit', (req, res) => {
+    if (!req.cookies || !req.cookies.surveyData) {
+      const surveyCookie = {
+        campaignName: 'private-beta-cla',
+        uuid: req.query.uuid,
+        visited: {}
+      }
+      for (var q in req.query) {
+        if (q !== 'uuid') {
+          surveyCookie.visited[q] = true
+        }
+      }
+      res.cookie('surveyData', JSON.stringify(surveyCookie))
+    }
+    res.redirect('/')
+  })
   app.use((req, res, next) => {
     if (req.connection.remoteAddress.includes('127.0.0.1')) {
       return next()
