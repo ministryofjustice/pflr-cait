@@ -8,7 +8,8 @@
     DEVICE_ORIENTATION: 11
   }
   const metrics = {
-    MAX_SCROLL: 4
+    MAX_SCROLL: 4,
+    PAGE_VISIBLE_TIME: 5
   }
 
   window.ga = window.ga || function () {
@@ -57,7 +58,9 @@
   })
 
   // pageVisibilityTracker
-  ga('require', 'pageVisibilityTracker')
+  ga('require', 'pageVisibilityTracker', {
+    visibleMetricIndex: metrics.PAGE_VISIBLE_TIME
+  })
 
   // mediaQueryTracker
   ga('require', 'mediaQueryTracker', {
