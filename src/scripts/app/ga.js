@@ -15,7 +15,7 @@
     WINDOW_LOAD_TIME: 'metric3'
   }
 
-  const TRACKING_VERSION = '1.0.0'
+  const TRACKING_VERSION = '1.0.1'
 
   const uuid = function b (a) {
     return a ? (a ^ Math.random() * 16 >> a / 4).toString(16)
