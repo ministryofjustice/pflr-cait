@@ -9,6 +9,7 @@
         <% if (!req.disqualified) { %>
         <h2 class="visuallyhidden">Support links</h2>
         <ul>
+          <li><a href="https://www.surveymonkey.co.uk/r/3DXCX9L" data-link-type="footer-feedback">Give feedback</a></li>
           <li><a href="/about/cookies">Cookies</a></li>
           <li><a href="/about/terms-conditions">Terms and conditions</a></li>
           <li><a href="/about/privacy">Privacy</a></li>
@@ -84,7 +85,7 @@
       visited.push(page)
     }
 
-    jQuery('a[data-link-type="feedback"]').each(function(){
+    jQuery('a[data-link-type="feedback"], a[data-link-type="footer-feedback"]').each(function(){
       var addition = '?uuid=' + surveyData.uuid
       jQuery.each(visited, function(i, page) {
         addition += '&' + page.replace(/-/g, '_') + '=T'
