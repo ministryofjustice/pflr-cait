@@ -45,10 +45,13 @@
       if (eventType) {
         model.set('dimension' + dimensions.HIT_EVENT_TYPE, eventType, true)
       }
-      // is the url an internal link?
-      if (eventAction.indexOf(document.location.origin) === 0) {
+      // is the url an internal link? First kludge for IE
+      if (!window.location.origin) {
+        window.location.origin = window.location.protocol + '//' + window.location.hostname + (window.location.port ? ':' + window.location.port : '')
+      }
+      if (eventAction.indexOf(window.location.origin) === 0) {
         model.set('eventCategory', 'Internal Link', true)
-        eventAction = eventAction.replace(document.location.origin, '')
+        eventAction = eventAction.replace(window.location.origin, '')
       }
       model.set('eventAction', eventAction, true)
       model.set('eventLabel', linkType, true)
