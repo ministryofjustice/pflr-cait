@@ -85,7 +85,7 @@
       visited.push(page)
     }
 
-    jQuery('a[data-link-type="feedback"], a[data-link-type="footer-feedback"]').each(function(){
+    jQuery('a[data-link-type="feedback"], a[data-link-type="footer-feedback"], a[data-link-type="feedback-banner"]').each(function(){
       var addition = '?uuid=' + surveyData.uuid
       jQuery.each(visited, function(i, page) {
         addition += '&' + page.replace(/-/g, '_') + '=T'
