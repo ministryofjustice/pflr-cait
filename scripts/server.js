@@ -152,6 +152,7 @@ app.use('/', express.static(getDistPath(), {
 }))
 
 app.use((req, res, next) => {
+  req.ENV = ENV
   req.servername = req.protocol + '://' + req.headers.host
   next()
 })
