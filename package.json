@@ -9,7 +9,7 @@
   "repository": {},
   "license": "MIT",
   "dependencies": {
-    "moj-express-kit": "https://github.com/solidgoldpig/moj-express-kit.git#3cc6268bee828509b92d2abbfb9879f78f4bb163"
+    "moj-express-kit": "https://github.com/solidgoldpig/moj-express-kit.git#e70542e8fad15ba5fd3b51c342c2636b5021882b"
   },
   "scripts": {
     "build:css": "env APPDIR=$PWD npm explore moj-express-kit -- yarn postcss",
