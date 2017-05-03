@@ -2,7 +2,7 @@
 {% from '../CallToAction/CallToAction.njk' import CallToAction with context %}
 {% import "components.njk" as govuk with context %}
 
-{% macro section(name, className='', depth=2) %}
+{% macro section(name, className='', content='', depth=2) %}
 {% set gv_depth = {
   '2': 'gv-u-heading-xlarge',
   '3': 'gv-u-heading-small',
@@ -10,6 +10,9 @@
 } %}
 <section id="{{ name }}" class="o-section o-section--{{ depth }} {{ className }}" data-element-block="{{name}}">
 <h{{depth}} class="o-section__heading o-section__heading--{{ depth }} {{ gv_depth[depth] }}{% if className %} {{ className }}__heading{% endif %}">{{ getFormattedProp(name, 'heading') | safe }}</h{{depth}}>
+{% if content %}
+{{ content }}
+{% endif %}
 {% if caller %}
 {{ caller() }}
 {% endif %}
