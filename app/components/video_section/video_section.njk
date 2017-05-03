@@ -1,0 +1,10 @@
+{% from '../section/section.njk' import section with context %}
+{% macro video_section(name) %}
+{% call section(name, className='c-VideoSection') -%}
+<div class="c-video-player__container c-video-player__lightbox" type="video" id="c_video_player">
+  <div class="c-video-player__wrapper">
+  <iframe id="{{ getFormattedProp(name, 'video_id') }}" title="{{ getFormattedProp(name, 'heading') }}" src="https://www.youtube.com/embed/{{ getFormattedProp(name, 'youtube_code') }}?enablejsapi=1&amp;origin={{ req.servername }}" frameborder="0" allowfullscreen=""></iframe>
+  </div>
+</div>
+{% endcall %}
+{% endmacro %}

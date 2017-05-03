@@ -1,0 +1,37 @@
+@import 'utils/_site.pcss';
+
+.c-cost {
+  border-left: solid 5px #005ea5;
+  padding-left: 1.5rem;
+  margin-bottom: 3rem;
+  @media (--s-vp) {
+    width: 50%;
+  }
+  @media (--ml-vp) {
+    border-left: none;
+    border-top: solid 5px #005ea5;
+    padding-left: 0;
+    padding-top: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    width: 31%;
+  }
+}
+.c-cost--step {
+  @media (--ml-vp) {
+    top: 3rem;
+  }
+}
+
+.c-cost__heading {
+  margin-top: 0;
+}
+.c-cost__amount {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem
+}
+.c-cost__small_print p {
+  font-size: 1.4rem;
+  margin: 0;
+}

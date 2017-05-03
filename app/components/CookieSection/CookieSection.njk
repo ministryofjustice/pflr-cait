@@ -1,0 +1,27 @@
+{% from '../section/section.njk' import section with context %}
+{% macro CookieSection(name) %}
+<div class="c-CookieSection">
+<h3>{{ getFormattedProp(name, 'heading') }}</h3>
+{{ getFormattedBody(name) | safe }}
+<table>
+<tr>
+<th>Name</th>
+<th>Purpose</th>
+<th>Expires</th>
+</tr>
+<tr>
+<td>{{ getFormattedProp(name, 'cookie_name') }}</td>
+<td>{{ getFormattedProp(name, 'cookie_description') }}</td>
+<td>{{ getFormattedProp(name, 'cookie_expires') }}</td>
+</tr>
+{% if getElementProp(name, 'cookie_name_2') %}
+<tr>
+<td>{{ getFormattedProp(name, 'cookie_name_2') }}</td>
+<td>{{ getFormattedProp(name, 'cookie_description_2') }}</td>
+<td>{{ getFormattedProp(name, 'cookie_expires_2') }}</td>
+</tr>
+{% endif %}
+</table>
+</div>
+
+{% endmacro %}

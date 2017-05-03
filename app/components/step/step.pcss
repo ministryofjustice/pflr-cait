@@ -1,0 +1,95 @@
+@import 'utils/_site.pcss';
+@import 'utils/_typography.pcss';
+
+.c-step {
+  @apply --section-grid;
+  @apply --section-divider;
+  position: relative;
+  padding-top: 2.5rem;
+}
+
+/*
+@media (--ml-vp) {
+  .c-step:first-child {
+    margin-top: 3rem;
+  }
+}
+*/
+
+@media only screen and (min-width: 740px) {
+  .c-step > * {
+    padding-left: 9rem;
+  }
+}
+
+.c-step__count {
+  color: #6f777b;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  padding: 0.5rem 3.5rem;
+  background-size: 3rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 740px) {
+  .c-step__count {
+    position: absolute;
+    padding: 0;
+    margin-top: 0;
+    top: 2.75rem;
+    width: 10rem;
+    height: 8rem;
+    background-position: 0 100%;
+    background-size: 5rem;
+  }
+}
+
+.c-step__heading {
+  margin-top: 0;
+}
+
+.c-step__content h3 {
+  @apply --gv-u-heading-small;
+}
+
+
+.c-step__count--going-to-court-step-1 {
+  background-image: url(/public/images/steps/step-find-professional.svg);
+}
+.c-step__count--going-to-court-step-2 {
+  background-image: url(/public/images/steps/step-meeting-3-way.svg);
+}
+.c-step__count--going-to-court-step-3 {
+  background-image: url(/public/images/steps/step-apply-order.svg);
+}
+.c-step__count--going-to-court-step-4 {
+  background-image: url(/public/images/steps/step-attend-court.svg);
+}
+
+.c-step__count--professional-mediation-step-1 {
+  background-image: url(/public/images/steps/step-find-professional.svg);
+}
+.c-step__count--professional-mediation-step-2 {
+  background-image: url(/public/images/steps/step-meeting-3-way.svg);
+}
+.c-step__count--professional-mediation-step-3 {
+  background-image: url(/public/images/steps/step-meeting-3-way.svg);
+}
+.c-step__count--professional-mediation-step-4 {
+  background-image: url(/public/images/steps/step-agreement.svg);
+}
+
+.c-step__count--collaborative-law-step-1 {
+  background-image: url(/public/images/steps/step-find-professional.svg);
+}
+.c-step__count--collaborative-law-step-2 {
+  background-image: url(/public/images/steps/step-meeting-2-way.svg);
+}
+.c-step__count--collaborative-law-step-3 {
+  background-image: url(/public/images/steps/step-meeting-4-way.svg);
+}
+.c-step__count--collaborative-law-step-4 {
+  background-image: url(/public/images/steps/step-agreement.svg);
+}

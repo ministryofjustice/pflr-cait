@@ -1,0 +1,23 @@
+@import 'utils/_site.pcss';
+
+.c-VideoSection {
+  @apply --section-divider;
+}
+
+.c-VideoSection__heading {
+  @apply --section-heading;
+}
+
+.c-video-player__wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* aspect ratio: 360 / 640 */
+}
+
+.c-VideoSection iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

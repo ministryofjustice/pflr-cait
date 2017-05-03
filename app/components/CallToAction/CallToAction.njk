@@ -1,0 +1,6 @@
+{% macro CallToAction(name, modifier='') %}
+{% set call_to_action = getFormattedProp(name, 'call_to_action') %}
+{% if call_to_action %}
+<p class="o-CallToAction{% if modifier %} o-CallToAction--{{ modifier }}{% endif %}"><a class="o-CallToAction__link{% if modifier %} o-CallToAction__link--{{ modifier }}{% endif %} gv-c-button" href="">{{ call_to_action }}</a></p>
+{% endif %}
+{% endmacro %}

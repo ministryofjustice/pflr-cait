@@ -1,0 +1,69 @@
+{% extends "templates/app/app.html" %}
+
+{% block stylesheet %}
+{{ super() }}
+<link href="{{ asset_path }}stylesheets/summary.css" rel="stylesheet">
+{% endblock %}
+
+{% block grid_content %}
+
+  <div><div class="gv-o-grid-row">
+  <div class="gv-o-grid-item gv-u-two-thirds">
+  <h1 class="c-summary__heading gv-u-heading-xxlarge">{{ getFormattedProp(route.id, 'heading') }}</h1>
+  <p class="c-summary__lede">{{ getFormattedProp(route.id, 'lede') }}</p>
+  <p class="c-summary__lede">{{ getFormattedProp(route.id, 'lede_additional') | safe }}</p>
+  <div class="gv-s-prose">
+  {{ macros.group(elements=route.elements) }}
+  </div>
+  </div>
+  </div>
+  {% for collection in route.collections %}
+    <section id="{{ collection }}" class="c-areas">
+    <h2 class="c-areas__heading gv-u-heading-xlarge">{{ getFormattedProp(collection, 'title') }}</h2>
+    {% for item in getElementProp(collection, 'items') %}
+      <article class="c-area c-area--template-{{ getElementProp(collection, 'template') }}" id="card-{{ getElementProp(collection, ['slug', 'url']) }}" data-slug="{{ getElementProp(collection, ['slug', 'url']) }}">
+        <div class="c-area__details">
+        <h3 class="c-area__heading gv-u-heading-xlarge"><a href="{{ getRouteUrl(item) }}" data-link-type="card-header">{{ getFormattedProp(item, 'heading') }}</a></h3>
+        <p class="c-area__lede gv-u-text-small">{{ getFormattedProp(item, 'summary_lede') }}</p>
+        <p class="c-area__lede-additional gv-u-text-small">{{ getFormattedProp(item, 'summary_lede_additional') }}</p>
+
+        {% if getElementProp(item, 'usp') %}
+          <div class="o-usp-callout">
+          <h4 class="gv-u-heading-small">{{ macros.string('string:usp-heading') }}</h4>
+          <p>{{ getFormattedProp(item, 'usp') | safe }}</p>
+          </div>
+        {% endif %}
+        {% if getElementProp(item, 'involved') %}
+          <div class="c-involvement-callout">
+          <h4 class="gv-u-heading-small">{{ macros.string('string:involved-heading') }}</h4>
+          <ul class="gv-c-list--bullet">
+          {% for involved in getElementProp(item, 'involved') %}
+          <li>{{ involved | safe }}</li>
+          {% endfor %}
+          </ul>
+          </div>
+        {% endif %}
+      </div>
+      <aside class="c-area__aside xgv-s-prose">
+      {% set concerns = getElementProp(item, 'concerns') %}
+      {% if concerns %}
+        <div class="c-area__concerns">
+          <h4 class="c-area__concerns__heading gv-u-heading-small">Get information on:</h4>
+          <ul class="c-area__concerns__list gv-c-list--bullet">
+            {% for concern in concerns %}
+            <li class="c-area__concerns__list-item gv-u-text-xsmall">{{ concern | safe }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+      {{ macros.proscons(item) }}
+      </aside>
+
+      <p class="c-area__read-more"><a href="{{ getRouteUrl(item) }}" data-link-type="card-read-more">Read more about {{ getFormattedProp(item, 'heading') }}</a></p>
+
+      </article>
+    {% endfor %}
+    </section>
+  {% endfor %}
+
+{% endblock %}

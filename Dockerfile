@@ -21,15 +21,18 @@ COPY codecept.conf.js ./
 COPY spec ./spec
 
 # Copy app
-COPY lib ./lib
-COPY scripts ./scripts
+COPY app ./app
+COPY index.js ./index.js
+# COPY lib ./lib
+# COPY scripts ./scripts
 
 # Build static files
-COPY src ./src
-RUN yarn run build
+# COPY src ./src
+# RUN yarn run build
+RUN yarn run build:css
 
 # Copy data
-COPY data ./data
+COPY metadata ./metadata
 
 EXPOSE 3000
-CMD [ "node", "scripts/server.js" ]
+CMD [ "node", "index.js" ]
