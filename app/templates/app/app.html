@@ -10,7 +10,8 @@
   "components/section/section.njk",
   "components/step/step.njk",
   "components/video_section/video_section.njk",
-  "components/CookieSection/CookieSection.njk"
+  "components/CookieSection/CookieSection.njk",
+  "components/CookieMessage/CookieMessage.njk"
 ]) }}
 
 {% block proposition_name %}{{ getString('string:service-name') }}{% endblock %}
@@ -20,14 +21,12 @@
 <link href="/public/stylesheets/app.css" rel="stylesheet">
 {% endblock %}
 
+{%block cookie_message %}
+{{ macros.CookieMessage() }}
+{% endblock %}
+
 {% block after_header %}
 {{ macros.FeedbackBanner() }}
-{#<div class="moj-c-FeedbackBanner">
-<div class="gv-o-wrapper">
-<h3 class="moj-c-FeedbackBanner__heading">Tell us what you think</h3>
-<p class="moj-c-FeedbackBanner__link">Your <a href="https://www.surveymonkey.co.uk/r/3DXCX9L" data-link-type="feedback-banner">feedback</a> will help us make improvements</p>
-</div>
-</div>#}
 {% endblock %}
 
 {% block phase_banner %}
