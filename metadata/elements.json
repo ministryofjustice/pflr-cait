@@ -779,5 +779,29 @@
     "heading": "Responsibility for the service",
     "lede": "",
     "type": "section"
+  },
+  "401": {
+    "heading": "You’re not eligible to use this service",
+    "lede": "Based on the answers you’ve given, you currently can’t use this service.",
+    "lede_additional": "Visit GOV.UK for more information on [making child arrangements](https://www.gov.uk/looking-after-children-divorce).\n\nThank you for your time.",
+    "type": "ErrorRoute"
+  },
+  "403": {
+    "heading": "This service is not available",
+    "lede": "This service is currently in private beta and not available to you.",
+    "lede_additional": "Visit GOV.UK for more information on [making child arrangements](https://www.gov.uk/looking-after-children-divorce).",
+    "type": "ErrorRoute"
+  },
+  "404": {
+    "heading": "This page can’t be found",
+    "lede": "Please check you’ve entered the correct web address.",
+    "lede_additional": "",
+    "type": "ErrorRoute"
+  },
+  "500": {
+    "heading": "Sorry, we’re currently experiencing technical difficulties",
+    "lede": "Please try again later.",
+    "lede_additional": "",
+    "type": "ErrorRoute"
   }
 }

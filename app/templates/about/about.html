@@ -14,14 +14,15 @@
   {% if lede %}
   <p class="c-summary__lede">{{lede }}</p>
   {% endif %}
-  {% set lede_additional = getFormattedProp(route.id, 'lede_additional') %}
+  {% set lede_additional = getFormattedBody(route.id, 'lede_additional') %}
   {% if lede_additional %}
-  <p class="c-summary__lede">{{lede_additional }}</p>
+  {{lede_additional | safe }}
   {% endif %}
+  {% if route.elements %}
   <div class="gv-s-prose">
-  {#{{ route.elements }}#}
   {{ macros.group(elements=route.elements) }}
   </div>
+  {% endif %}
   </div>
   </div>
 
