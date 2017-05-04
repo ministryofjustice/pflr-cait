@@ -9,19 +9,19 @@
 <th>Purpose</th>
 <th>Expires</th>
 </tr>
-<tr>
-<td>{{ getFormattedProp(name, 'cookie_name') }}</td>
-<td>{{ getFormattedProp(name, 'cookie_description') }}</td>
-<td>{{ getFormattedProp(name, 'cookie_expires') }}</td>
-</tr>
-{% if getElementProp(name, 'cookie_name_2') %}
-<tr>
-<td>{{ getFormattedProp(name, 'cookie_name_2') }}</td>
-<td>{{ getFormattedProp(name, 'cookie_description_2') }}</td>
-<td>{{ getFormattedProp(name, 'cookie_expires_2') }}</td>
-</tr>
-{% endif %}
+{{ CookieRow(name) }}
+{{ CookieRow(name, suffix='_2') }}
 </table>
 </div>
 
+{% endmacro %}
+
+{% macro CookieRow(name, suffix='') %}
+{% if getElementProp(name, 'cookie_name' + suffix) %}
+<tr>
+<td data-th="Name">{{ getFormattedProp(name, 'cookie_name' + suffix) }}</td>
+<td data-th="Purpose">{{ getFormattedProp(name, 'cookie_description' + suffix) }}</td>
+<td data-th="Expires">{{ getFormattedProp(name, 'cookie_expires' + suffix) }}</td>
+</tr>
+{% endif %}
 {% endmacro %}

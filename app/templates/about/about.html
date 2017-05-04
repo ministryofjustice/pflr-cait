@@ -10,8 +10,14 @@
   <div><div class="gv-o-grid-row">
   <div class="gv-o-grid-item gv-u-two-thirds">
   <h1 class="c-summary__heading gv-u-heading-xxlarge">{{ getFormattedProp(route.id, 'heading') }}</h1>
-  <p class="c-summary__lede">{{ getFormattedProp(route.id, 'lede') }}</p>
-  <p class="c-summary__lede">{{ getFormattedProp(route.id, 'lede_additional') | safe }}</p>
+  {% set lede = getFormattedProp(route.id, 'lede') %}
+  {% if lede %}
+  <p class="c-summary__lede">{{lede }}</p>
+  {% endif %}
+  {% set lede_additional = getFormattedProp(route.id, 'lede_additional') %}
+  {% if lede_additional %}
+  <p class="c-summary__lede">{{lede_additional }}</p>
+  {% endif %}
   <div class="gv-s-prose">
   {#{{ route.elements }}#}
   {{ macros.group(elements=route.elements) }}

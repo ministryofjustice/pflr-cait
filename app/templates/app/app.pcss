@@ -2,40 +2,56 @@
 @import 'FeedbackBanner/FeedbackBanner.pcss';
 @import 'proscons/proscons.pcss';
 @import 'costs/costs.pcss';
+@import 'CookieMessage/CookieMessage.pcss';
 
 #global-header .header-proposition {
   padding-top: 0.5rem;
 }
 
-#global-cookie-message {
-  background-color: #d5e8f3;
-  padding: 10px 0;
-}
-.cookie-seen {
-  display: none;
-}
-#global-cookie-message .cookie-message {
-    max-width: 960px;
-    margin: 0 15px;
-}
-@media (min-width: 641px) {
-  #global-cookie-message .cookie-message {
-    margin: 0 30px;
-  }
-}
-@media (min-width: 1020px) {
-  #global-cookie-message .cookie-message {
-    margin: 0 auto;
-  }
-}
 
 main {
-  @media (--ml-vp) {
+  padding-bottom: 3rem;
+  /*@media (--ml-vp) {
     padding-bottom: 3rem;
-  }
+  }*/
 }
 
 
 #footer {
   border-top: 10px solid #005ea5;
+}
+
+@media (max-width: 500px) {
+  th {
+    display: none;
+  }
+  table td {
+    display: block;
+    border-bottom: none;
+  }
+  td:before {
+    content: attr(data-th);
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+table th,
+table td {
+  vertical-align: top;
+  font-size: 1.4rem;
+  @media (--ml-vp) {
+    font-size: 1.6rem;
+  }
+}
+
+
+@media (--ml-vp) {
+  td:first-child {
+    width: 15rem;
+  }
+  td:last-child {
+    width: 11rem;
+  }
 }

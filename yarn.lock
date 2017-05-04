@@ -1190,9 +1190,9 @@ minimist@^1.2.0:
   dependencies:
     minimist "0.0.8"
 
-"moj-express-kit@https://github.com/solidgoldpig/moj-express-kit.git#e70542e8fad15ba5fd3b51c342c2636b5021882b":
+"moj-express-kit@https://github.com/solidgoldpig/moj-express-kit.git#bc4cf87":
   version "0.0.1"
-  resolved "https://github.com/solidgoldpig/moj-express-kit.git#e70542e8fad15ba5fd3b51c342c2636b5021882b"
+  resolved "https://github.com/solidgoldpig/moj-express-kit.git#bc4cf87"
   dependencies:
     body-parser "^1.17.1"
     compression "^1.6.2"
