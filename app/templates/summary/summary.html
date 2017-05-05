@@ -59,7 +59,7 @@
       {{ macros.proscons(item) }}
       </aside>
 
-      <p class="c-area__read-more"><a href="{{ getRouteUrl(item) }}" data-link-type="card-read-more">Read more about {{ getFormattedProp(item, 'heading') }}</a></p>
+      <p class="c-area__read-more"><a href="{{ getRouteUrl(item) }}" data-link-type="card-read-more">Read more about {{ getFormattedProp(item, 'heading') | lower }}</a></p>
 
       </article>
     {% endfor %}
