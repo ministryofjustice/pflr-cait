@@ -14,6 +14,8 @@
   "components/CookieMessage/CookieMessage.njk"
 ]) }}
 
+{% block body_classes %}{{ route.template }}{% if req.disqualified %} disqualified{% endif %}{% endblock %}
+
 {% block proposition_name %}{{ getString('string:service-name') }}{% endblock %}
 
 {% block stylesheet %}
@@ -22,14 +24,19 @@
 {% endblock %}
 
 {%block cookie_message %}
+{% if not req.disqualified %}
 {{ macros.CookieMessage() }}
+{% endif %}
 {% endblock %}
 
 {% block after_header %}
+{% if not req.disqualified %}
 {{ macros.FeedbackBanner() }}
+{% endif %}
 {% endblock %}
 
 {% block phase_banner %}
+{% if not req.disqualified %}
 <div class="gv-c-phase-banner">
   <p class="gv-c-phase-banner__content">
     <strong class="gv-c-phase-tag">{{ getString('string:app-phase') }}</strong>
@@ -40,9 +47,11 @@
     phase = 'beta',
     message = 'This is the first version of a new service'
 ) }}#}
+{% endif %}
 {% endblock %}
 
 {% block footer_support_links %}
+  {% if not req.disqualified %}
   <h2 class="visuallyhidden">Support links</h2>
   <ul>
     <li><a href="https://www.surveymonkey.co.uk/r/3DXCX9L" data-link-type="footer-feedback">Give feedback</a></li>
@@ -52,6 +61,7 @@
     <li>Built by <a href="https://mojdigital.blog.gov.uk/about/">MoJ Digital</a>
   </li>
   </ul>
+  {% endif %}
 {% endblock %}
 
 {% block body_end %}

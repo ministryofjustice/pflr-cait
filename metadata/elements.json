@@ -1,4 +1,28 @@
 {
+  "401": {
+    "heading": "You’re not eligible to use this service",
+    "lede": "Based on the answers you’ve given, you currently can’t use this service.",
+    "lede_additional": "Visit GOV.UK for more information on [making child arrangements](https://www.gov.uk/looking-after-children-divorce).\n\nThank you for your time.",
+    "type": "ErrorRoute"
+  },
+  "403": {
+    "heading": "This service is not available",
+    "lede": "This service is currently in private beta and not available to you.",
+    "lede_additional": "Visit GOV.UK for more information on [making child arrangements](https://www.gov.uk/looking-after-children-divorce).",
+    "type": "ErrorRoute"
+  },
+  "404": {
+    "heading": "This page can’t be found",
+    "lede": "Please check you’ve entered the correct web address.",
+    "lede_additional": "",
+    "type": "ErrorRoute"
+  },
+  "500": {
+    "heading": "Sorry, we’re currently experiencing technical difficulties",
+    "lede": "Please try again later.",
+    "lede_additional": "",
+    "type": "ErrorRoute"
+  },
   "collaborative-law-resources": {
     "body": "Read more about the [collaborative law process](http://www.resolution.org.uk/editorial.asp?page_id=1164)\r\n\r\n[Find a collaborative lawyer](http://www.resolution.org.uk/memberSearch.asp?page_id=64)",
     "heading": "Collaborative law resources",
@@ -428,6 +452,15 @@
     "title_nav": "Other ways to reach an agreement",
     "type": "collection"
   },
+  "route:accepted": {
+    "heading": "You’re eligible to use this service",
+    "lede": "This service is currently in ‘private beta’. This means you’re looking at the first version of it.",
+    "lede_additional": "A service in ‘private beta’ isn’t open to everyone or may not work for everyone. We do this so we can test and improve the service before releasing it to more people.\n\nAfter using the service, please give your feedback using the link at the top of the page.\n\nWe’ll send you a reminder by email if you forget to leave feedback.",
+    "template": "start",
+    "title": "",
+    "type": "route",
+    "url": "/accepted"
+  },
   "route:collaborative_law": {
     "*summary_lede": "lede",
     "cons": [
@@ -731,7 +764,8 @@
       "route:going_to_court",
       "route:privacy",
       "route:terms_conditions",
-      "route:cookies"
+      "route:cookies",
+      "route:accepted"
     ],
     "type": "routes"
   },
@@ -741,7 +775,7 @@
   },
   "string:app-phase-text": {
     "type": "string",
-    "value": "This is the first version of a new service"
+    "value": "This is the first version of the service"
   },
   "string:involved-heading": {
     "type": "string",
@@ -779,29 +813,5 @@
     "heading": "Responsibility for the service",
     "lede": "",
     "type": "section"
-  },
-  "401": {
-    "heading": "You’re not eligible to use this service",
-    "lede": "Based on the answers you’ve given, you currently can’t use this service.",
-    "lede_additional": "Visit GOV.UK for more information on [making child arrangements](https://www.gov.uk/looking-after-children-divorce).\n\nThank you for your time.",
-    "type": "ErrorRoute"
-  },
-  "403": {
-    "heading": "This service is not available",
-    "lede": "This service is currently in private beta and not available to you.",
-    "lede_additional": "Visit GOV.UK for more information on [making child arrangements](https://www.gov.uk/looking-after-children-divorce).",
-    "type": "ErrorRoute"
-  },
-  "404": {
-    "heading": "This page can’t be found",
-    "lede": "Please check you’ve entered the correct web address.",
-    "lede_additional": "",
-    "type": "ErrorRoute"
-  },
-  "500": {
-    "heading": "Sorry, we’re currently experiencing technical difficulties",
-    "lede": "Please try again later.",
-    "lede_additional": "",
-    "type": "ErrorRoute"
   }
 }
