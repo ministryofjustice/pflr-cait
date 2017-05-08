@@ -1,20 +1,20 @@
-{% macro proscons(name, modifier='') %}
+{% macro ProsCons(name, modifier='') %}
   {% set pros = getElementProp(name, 'pros') %}
   {% if pros %}
-  <div class="c-proscons{% if modifier %} c-proscons--{{ modifier }}{% endif %}">
-  <div class="c-pros">
-  <h3 class="c-proscons__heading gv-u-heading-small">{{ macros.string('string:pros-heading') }}</h3>
-  <ul class="c-proscons__list--pros">
+  <div class="ProsCons{% if modifier %} ProsCons--{{ modifier }}{% endif %}">
+  <div class="Pros">
+  <h3 class="ProsCons__heading gv-u-heading-small">{{ macros.string('string:pros-heading') }}</h3>
+  <ul class="ProsCons__list--pros">
   {% for pro in pros %}
-    <li class="c-proscons__item c-proscons__item--pros">{{ pro }}</li>
+    <li class="ProsCons__item ProsCons__item--pros">{{ pro }}</li>
   {% endfor %}
   </ul>
   </div>
-  <div class="c-cons">
-  <h3 class="c-proscons__heading gv-u-heading-small">{{ macros.string('string:cons-heading') }}</h3>
-  <ul class="c-proscons__list--cons">
+  <div class="Cons">
+  <h3 class="ProsCons__heading gv-u-heading-small">{{ macros.string('string:cons-heading') }}</h3>
+  <ul class="ProsCons__list--cons">
   {% for con in getElementProp(name, 'cons') %}
-    <li class="c-proscons__item c-proscons__item--cons">{{ con }}</li>
+    <li class="ProsCons__item ProsCons__item--cons">{{ con }}</li>
   {% endfor %}
   </ul>
   </div>

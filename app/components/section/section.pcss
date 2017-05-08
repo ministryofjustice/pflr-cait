@@ -1,11 +1,11 @@
 @import 'utils/_site.pcss';
 @import 'utils/_typography.pcss';
 
-.o-section > * {
+.moj-Section > * {
   @apply --section-grid;
 }
 
-.o-section {
+.moj-Section {
   position: relative;
   @media (--ml-vp) {
     padding-right: 0;
@@ -13,23 +13,23 @@
 }
 
 @media (--ml-vp) {
-  .o-section--2:first-child .o-section__heading--2 {
+  .moj-Section--2:first-child .moj-Section__heading--2 {
     margin-top: 2rem;
   }
 }
 
-.o-section h3.heading-medium {
+.moj-Section h3.heading-medium {
   @apply --gv-u-heading-small;
 }
 
-.o-section--3:not(:last-child) .o-CallToAction {
+.moj-Section--3:not(:last-child) .CallToAction {
   padding-bottom: 1rem;
 }
 
 
-.c-step + .o-section {
+.moj-Step + .moj-Section {
   @apply --section-divider;
 }
-.c-step + .o-section .o-section__heading--2 {
+.moj-Step + .moj-Section .moj-Section__heading--2 {
   margin-top: 3.5rem;
 }

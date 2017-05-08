@@ -5,12 +5,12 @@
 {{ utils.addMacros([
   "components/FeedbackBanner/FeedbackBanner.njk",
   "components/CallToAction/CallToAction.njk",
-  "components/costs/costs.njk",
+  "components/Costs/Costs.njk",
   "components/proscons/proscons.njk",
-  "components/resources_section/resources_section.njk",
-  "components/section/section.njk",
-  "components/step/step.njk",
-  "components/video_section/video_section.njk",
+  "components/Section/Section.njk",
+  "components/SectionResources/SectionResources.njk",
+  "components/SectionVideo/SectionVideo.njk",
+  "components/Step/Step.njk",
   "components/CookieSection/CookieSection.njk",
   "components/CookieMessage/CookieMessage.njk"
 ]) }}
@@ -134,7 +134,7 @@
   }
 
 
-  jQuery('.moj-c-FeedbackBanner__link a').attr('data-link-type', 'feedback-banner')
+  jQuery('.moj-FeedbackBanner__link a').attr('data-link-type', 'feedback-banner')
   jQuery('a[data-link-type="feedback"], [data-link-type="footer-feedback"] a, a[data-link-type="feedback-banner"]').each(function(){
     var addition = '?uuid=' + surveyData.uuid
     jQuery.each(visited, function(i, page) {
