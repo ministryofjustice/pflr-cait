@@ -192,6 +192,7 @@
       "xxxx"
     ],
     "heading": "xxxx",
+    "isa": "view:reaching",
     "lede": "xxxx",
     "lede_additional": "xxxx",
     "pros": [
@@ -200,7 +201,6 @@
       "xxxx",
       "xxxx"
     ],
-    "template": "reaching",
     "title": "",
     "type": "route",
     "url": "/xxx",
@@ -480,6 +480,7 @@
       "Both parents",
       "Lawyer for each parent"
     ],
+    "isa": "view:reaching",
     "lede": "Collaborative lawyers work with you and the other parent to resolve your issues out of court. You each hire a lawyer then all meet to negotiate face-to-face.",
     "lede_additional": "The collaborative process involves several steps but is usually quicker and cheaper than going to court.",
     "pros": [
@@ -489,20 +490,19 @@
       "lawyers are present throughout",
       "good for your children to see their parents working together"
     ],
-    "template": "reaching",
     "title": "",
     "type": "route",
     "url": "/collaborative-law",
     "usp": "You can still communicate with the other parent but have complex legal issues to resolve."
   },
   "route:cookies": {
+    "isa": "view:about",
     "elements": [
       "cookies-body",
       "cookies-use"
     ],
     "heading": "Cookies",
     "lede": "",
-    "template": "about",
     "title": "",
     "type": "route",
     "url": "/about/cookies"
@@ -522,9 +522,9 @@
       "emotional-support-resources"
     ],
     "heading": "Getting emotional support",
+    "isa": "view:preparing",
     "lede": "Emotional support can help you get through the stress of making child arrangements.",
     "lede_additional": "You’re more likely to reach an agreement if you’re emotionally ready and know where to get support if you need it.",
-    "template": "preparing",
     "title": "",
     "type": "route",
     "url": "/emotional-support",
@@ -548,6 +548,7 @@
       "going-to-court-resources"
     ],
     "heading": "Going to court",
+    "isa": "view:reaching",
     "involved": [
       "Both parents",
       "Mediator",
@@ -559,7 +560,6 @@
     "pros": [
       "legally binding decision"
     ],
-    "template": "reaching",
     "title": "",
     "type": "route",
     "url": "/going-to-court",
@@ -579,10 +579,10 @@
       "involving-children-protecting"
     ],
     "heading": "Putting your children first",
+    "isa": "view:preparing",
     "lede": "The needs of your children should come first when you make child arrangements with the other parent.",
     "lede_additional": "Your children will feel happier if they have regular contact with you and the other parent, if it’s safe to do so. If they understand the situation, involve them in the decision-making.",
     "summary_lede_additional": "Your children will feel happier if they have regular contact with you and the other parent, and know where to get extra support if they need it. If they understand the situation, involve them in the decision-making.",
-    "template": "preparing",
     "title": "",
     "type": "route",
     "url": "/involving-children",
@@ -603,6 +603,7 @@
     "involved": [
       "Lawyer for each parent"
     ],
+    "isa": "view:reaching",
     "lede": "You don’t have to deal directly with the other parent if you choose this option. You each hire a lawyer to negotiate arrangements for you.",
     "lede_additional": "It can be an expensive process but some parents find having experienced legal help reassuring.",
     "pros": [
@@ -611,7 +612,6 @@
       "quicker and less stressful than court",
       "you don’t deal directly with the other parent"
     ],
-    "template": "reaching",
     "title": "",
     "type": "route",
     "url": "/lawyer-negotiation",
@@ -632,6 +632,7 @@
     "involved": [
       "Both parents"
     ],
+    "isa": "view:reaching",
     "lede": "If there are no safety concerns, the cheapest and easiest way to make arrangements is to negotiate with the other parent. There are free tools and services that can help you.",
     "pros": [
       "cheapest and quickest option",
@@ -639,7 +640,6 @@
       "helps children continue family relationships",
       "agreements are flexible"
     ],
-    "template": "reaching",
     "title": "",
     "type": "route",
     "url": "/negotiating-between-parents",
@@ -658,21 +658,21 @@
       "parental-responsibility-making-decisions"
     ],
     "heading": "Your parental responsibility",
+    "isa": "view:preparing",
     "lede": "Parental responsibility is a term that means you have legal rights and duties relating to your children’s upbringing.",
     "lede_additional": "It doesn’t mean you have a right to spend time with your children (if you don’t live with them), but the other parent must update you on their well-being.",
-    "template": "preparing",
     "title": "",
     "type": "route",
     "url": "/parental-responsibility",
     "usp": ""
   },
   "route:privacy": {
+    "isa": "view:about",
     "elements": [
       "privacy-body"
     ],
     "heading": "Privacy policy",
     "lede": "When you use this service certain information or data about you is collected.",
-    "template": "about",
     "title": "",
     "type": "route",
     "url": "/about/privacy"
@@ -697,6 +697,7 @@
       "Both parents",
       "Mediator"
     ],
+    "isa": "view:reaching",
     "lede": "Mediation sessions are run by professionals who help you try and reach an agreement without going to court.",
     "lede_additional": "Mediation isn’t relationship counselling and you don’t have to be in the same room as the other parent.",
     "pros": [
@@ -707,7 +708,6 @@
       "agreements are flexible"
     ],
     "summary_lede": "Mediation sessions are run by professionals who help you try and reach an agreement without going to court. It isn’t relationship counselling and you don’t have to be in the same room as the other parent.",
-    "template": "reaching",
     "title": "",
     "type": "route",
     "url": "/professional-mediation",
@@ -733,19 +733,20 @@
     ],
     "heading": "Get help with child arrangements",
     "lede": "Use this guide if you need to make or change child arrangements (also known as custody or contact) with the other parent. For example, you may need to decide where your children will live or rearrange the times they see you.",
+    "static": true,
     "template": "summary",
     "title": "",
     "type": "route",
     "url": "/"
   },
   "route:terms_conditions": {
+    "isa": "view:about",
     "elements": [
       "terms-conditions-responsibility",
       "terms-conditions-phase"
     ],
     "heading": "Terms and conditions",
     "lede": "By using this service you agree to these terms and conditions.",
-    "template": "about",
     "title": "",
     "type": "route",
     "url": "/about/terms-conditions"
@@ -813,5 +814,24 @@
     "heading": "Responsibility for the service",
     "lede": "",
     "type": "section"
+  },
+  "view:area": {
+    "type": "view",
+    "static": true
+  },
+  "view:preparing": {
+    "isa": "view:area",
+    "type": "view",
+    "template": "preparing"
+  },
+  "view:reaching": {
+    "isa": "view:area",
+    "type": "view",
+    "template": "reaching"
+  },
+  "view:about": {
+    "type": "view",
+    "template": "about",
+    "static": true
   }
 }
