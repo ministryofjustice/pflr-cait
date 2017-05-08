@@ -816,6 +816,7 @@
     "type": "section"
   },
   "view:area": {
+    "breadcrumbs": true,
     "type": "view",
     "static": true
   },
@@ -830,6 +831,7 @@
     "template": "reaching"
   },
   "view:about": {
+    "breadcrumbs": true,
     "type": "view",
     "template": "about",
     "static": true

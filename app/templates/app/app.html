@@ -1,5 +1,6 @@
 {% extends "templates/base/base.html" %}
 {% import "components/utils.njk" as utils with context %}
+{% from 'components/Breadcrumbs/Breadcrumbs.njk' import Breadcrumbs with context %}
 
 {{ utils.addMacros([
   "components/FeedbackBanner/FeedbackBanner.njk",
@@ -47,6 +48,12 @@
     phase = 'beta',
     message = 'This is the first version of a new service'
 ) }}#}
+{% endif %}
+{% endblock %}
+
+{% block breadcrumbs_content %}
+{% if route.breadcrumbs %}
+{{ Breadcrumbs(route) }}
 {% endif %}
 {% endblock %}
 
