@@ -26,7 +26,8 @@
   "SupportLinks": {
     "links": [
       {
-        "link": "[Give Feeback](https://www.surveymonkey.co.uk/r/3DXCX9L)"
+        "link": "[Give Feeback](https://www.surveymonkey.co.uk/r/3DXCX9L)",
+        "type": "footer-feedback"
       },
       {
         "route": "route:cookies"
@@ -789,6 +790,10 @@
       "route:accepted"
     ],
     "type": "routes"
+  },
+  "string:CookieMessage": {
+    "type": "string",
+    "value": "We uses cookies to make the site simpler. [Find out more about cookies]({app:urls:route:cookies})"
   },
   "string:FeedbackBanner_heading": {
     "type": "string",

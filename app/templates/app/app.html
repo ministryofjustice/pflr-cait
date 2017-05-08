@@ -63,7 +63,7 @@
   {% set supportLinks = getElementProp('SupportLinks', 'links') %}
   <ul data-element-block="SupportLinks">
   {% for link in supportLinks %}
-  <li>
+  <li{% if link.type %} data-link-type="{{ link.type }}"{% endif %}{% if link.className %} class="{{ link.className }}"{% endif %}>
     {% if link.route %}
       <a href="{{ getRouteUrl(link.route) }}">{{ getElementProp(link.route, 'heading') }}</a>
     {% else %}
@@ -135,8 +135,7 @@
 
 
   jQuery('.moj-c-FeedbackBanner__link a').attr('data-link-type', 'feedback-banner')
-  jQuery('.footer-meta-inner a').eq(0).attr('data-link-type', 'footer-feedback')
-  jQuery('a[data-link-type="feedback"], a[data-link-type="footer-feedback"], a[data-link-type="feedback-banner"]').each(function(){
+  jQuery('a[data-link-type="feedback"], [data-link-type="footer-feedback"] a, a[data-link-type="feedback-banner"]').each(function(){
     var addition = '?uuid=' + surveyData.uuid
     jQuery.each(visited, function(i, page) {
       addition += '&' + page.replace(/-/g, '_') + '=T'
