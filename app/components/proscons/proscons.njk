@@ -3,7 +3,7 @@
   {% if pros %}
   <div class="c-proscons{% if modifier %} c-proscons--{{ modifier }}{% endif %}">
   <div class="c-pros">
-  <h3 class="c-proscons__heading gv-u-heading-small">Pros</h3>
+  <h3 class="c-proscons__heading gv-u-heading-small">{{ macros.string('string:pros-heading') }}</h3>
   <ul class="c-proscons__list--pros">
   {% for pro in pros %}
     <li class="c-proscons__item c-proscons__item--pros">{{ pro }}</li>
@@ -11,7 +11,7 @@
   </ul>
   </div>
   <div class="c-cons">
-  <h3 class="c-proscons__heading gv-u-heading-small">Cons</h3>
+  <h3 class="c-proscons__heading gv-u-heading-small">{{ macros.string('string:cons-heading') }}</h3>
   <ul class="c-proscons__list--cons">
   {% for con in getElementProp(name, 'cons') %}
     <li class="c-proscons__item c-proscons__item--cons">{{ con }}</li>

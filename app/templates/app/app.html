@@ -17,7 +17,7 @@
 
 {% block body_classes %}{{ route.template }}{% if req.disqualified %} disqualified{% endif %}{% endblock %}
 
-{% block proposition_name %}{{ getString('string:service-name') }}{% endblock %}
+{% block proposition_name %}{{ macros.string('string:service-name') }}{% endblock %}
 
 {% block stylesheet %}
 {{ super() }}
@@ -40,8 +40,8 @@
 {% if not req.disqualified %}
 <div class="gv-c-phase-banner">
   <p class="gv-c-phase-banner__content">
-    <strong class="gv-c-phase-tag">{{ getString('string:app-phase') }}</strong>
-    <span class="gv-c-phase-banner__text">{{ getString('string:app-phase-text') | safe }}</span>
+    <strong class="gv-c-phase-tag">{{ macros.string('string:app-phase') }}</strong>
+    <span class="gv-c-phase-banner__text">{{ macros.string('string:app-phase-text') | safe }}</span>
   </p>
 </div>
 {#{{ govuk.phaseBanner(
@@ -59,14 +59,18 @@
 
 {% block footer_support_links %}
   {% if not req.disqualified %}
-  <h2 class="visuallyhidden">Support links</h2>
-  <ul>
-    <li><a href="https://www.surveymonkey.co.uk/r/3DXCX9L" data-link-type="footer-feedback">Give feedback</a></li>
-    <li><a href="{{ getRouteUrl('route:cookies') }}">{{ getElementProp('route:cookies', 'heading') }}</a></li>
-    <li><a href="{{ app.urls['route:terms_conditions'] }}">{{ getElementProp('route:terms_conditions', 'heading') }}</a></li>
-    <li><a href="{{ app.urls['route:privacy'] }}">{{ getElementProp('route:privacy', 'heading') }}</a></li>
-    <li>Built by <a href="https://mojdigital.blog.gov.uk/about/">MoJ Digital</a>
+  <h2 class="visuallyhidden">{{ macros.string('string:SupportLinks_heading') }}</h2>
+  {% set supportLinks = getElementProp('SupportLinks', 'links') %}
+  <ul data-element-block="SupportLinks">
+  {% for link in supportLinks %}
+  <li>
+    {% if link.route %}
+      <a href="{{ getRouteUrl(link.route) }}">{{ getElementProp(link.route, 'heading') }}</a>
+    {% else %}
+      {{ markdown(link.link) | safe }}
+    {% endif %}
   </li>
+  {% endfor %}
   </ul>
   {% endif %}
 {% endblock %}
@@ -130,6 +134,8 @@
   }
 
 
+  jQuery('.moj-c-FeedbackBanner__link a').attr('data-link-type', 'feedback-banner')
+  jQuery('.footer-meta-inner a').eq(0).attr('data-link-type', 'footer-feedback')
   jQuery('a[data-link-type="feedback"], a[data-link-type="footer-feedback"], a[data-link-type="feedback-banner"]').each(function(){
     var addition = '?uuid=' + surveyData.uuid
     jQuery.each(visited, function(i, page) {

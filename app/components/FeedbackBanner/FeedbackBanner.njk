@@ -1,8 +1,9 @@
 {% macro FeedbackBanner() %}
 <div class="moj-c-FeedbackBanner">
 <div class="gv-o-wrapper">
-<h3 class="moj-c-FeedbackBanner__heading">Tell us what you think</h3>
-<p class="moj-c-FeedbackBanner__link">Your <a href="https://www.surveymonkey.co.uk/r/3DXCX9L" data-link-type="feedback-banner">feedback</a> will help us make improvements</p>
+<h3 class="moj-c-FeedbackBanner__heading">{{ macros.string('string:FeedbackBanner_heading') }}</h3>
+<p class="moj-c-FeedbackBanner__link">{{ macros.string('string:FeedbackBanner_link') }}</p>
 </div>
 </div>
 {% endmacro %}
+{# data-link-type="feedback-banner" #}

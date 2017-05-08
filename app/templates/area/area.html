@@ -28,7 +28,7 @@
   </div>
 
 {% set collection = route.template + '-collection' %}
-<nav class="c-interlinks">
+<nav class="c-interlinks" data-element-block="{{ collection }}">
 <h2 class="c-interlinks__heading gv-u-heading-xlarge">{{ getFormattedProp(collection, 'title_nav') }}</h2>
 <ul class="c-interlinks__list">
 {% for r in getElementProp(collection, 'items') %}
@@ -38,8 +38,8 @@
 {% endfor %}
 </ul>
 <div class="c-interlinks__overview">
-<h3 class="c-interlinks__overview__heading gv-u-heading-large">Overview</h3>
-<p><a href="{{ getRouteUrl('route:summary') }}" class="c-interlinks__overview__link" data-link-type="site-nav">View all child arrangements options</a></p>
+<h3 class="c-interlinks__overview__heading gv-u-heading-large">{{ macros.string('string:Interlinks__Overview__heading') }}</h3>
+<p><a href="{{ getRouteUrl('route:summary') }}" class="c-interlinks__overview__link" data-link-type="site-nav">{{ macros.string('string:Interlinks__Overview__link') }}</a></p>
 </div>
 </nav>
 {% endblock %}

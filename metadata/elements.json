@@ -23,6 +23,26 @@
     "lede_additional": "",
     "type": "ErrorRoute"
   },
+  "SupportLinks": {
+    "links": [
+      {
+        "link": "[Give Feeback](https://www.surveymonkey.co.uk/r/3DXCX9L)"
+      },
+      {
+        "route": "route:cookies"
+      },
+      {
+        "route": "route:terms_conditions"
+      },
+      {
+        "route": "route:privacy"
+      },
+      {
+        "link": "Built by [MoJ Digital](https://mojdigital.blog.gov.uk/about/)"
+      }
+    ],
+    "type": "SupportLinks"
+  },
   "collaborative-law-resources": {
     "body": "Read more about the [collaborative law process](http://www.resolution.org.uk/editorial.asp?page_id=1164)\r\n\r\n[Find a collaborative lawyer](http://www.resolution.org.uk/memberSearch.asp?page_id=64)",
     "heading": "Collaborative law resources",
@@ -496,12 +516,12 @@
     "usp": "You can still communicate with the other parent but have complex legal issues to resolve."
   },
   "route:cookies": {
-    "isa": "view:about",
     "elements": [
       "cookies-body",
       "cookies-use"
     ],
     "heading": "Cookies",
+    "isa": "view:about",
     "lede": "",
     "title": "",
     "type": "route",
@@ -548,13 +568,13 @@
       "going-to-court-resources"
     ],
     "heading": "Going to court",
-    "isa": "view:reaching",
     "involved": [
       "Both parents",
       "Mediator",
       "Lawyer for each parent (optional)",
       "Judge/Court"
     ],
+    "isa": "view:reaching",
     "lede": "You’ll need to go to court if you’ve tried other suitable options and still can’t agree arrangements, or you’re worried about the safety of you or your children.",
     "lede_additional": "The court process involves several steps and can take a long time.",
     "pros": [
@@ -667,11 +687,11 @@
     "usp": ""
   },
   "route:privacy": {
-    "isa": "view:about",
     "elements": [
       "privacy-body"
     ],
     "heading": "Privacy policy",
+    "isa": "view:about",
     "lede": "When you use this service certain information or data about you is collected.",
     "title": "",
     "type": "route",
@@ -740,12 +760,12 @@
     "url": "/"
   },
   "route:terms_conditions": {
-    "isa": "view:about",
     "elements": [
       "terms-conditions-responsibility",
       "terms-conditions-phase"
     ],
     "heading": "Terms and conditions",
+    "isa": "view:about",
     "lede": "By using this service you agree to these terms and conditions.",
     "title": "",
     "type": "route",
@@ -770,6 +790,26 @@
     ],
     "type": "routes"
   },
+  "string:FeedbackBanner_heading": {
+    "type": "string",
+    "value": "Tell us what you think"
+  },
+  "string:FeedbackBanner_link": {
+    "type": "string",
+    "value": "Your [feedback](https://www.surveymonkey.co.uk/r/3DXCX9L) will help us make improvements"
+  },
+  "string:Interlinks__Overview__heading": {
+    "type": "string",
+    "value": "Overview"
+  },
+  "string:Interlinks__Overview__link": {
+    "type": "string",
+    "value": "View all child arrangements options"
+  },
+  "string:SupportLinks_heading": {
+    "type": "string",
+    "value": "Support links"
+  },
   "string:app-phase": {
     "type": "string",
     "value": "Beta"
@@ -778,9 +818,21 @@
     "type": "string",
     "value": "This is the first version of the service"
   },
+  "string:concerned-heading": {
+    "type": "string",
+    "value": "Get information on"
+  },
+  "string:cons-heading": {
+    "type": "string",
+    "value": "Cons"
+  },
   "string:involved-heading": {
     "type": "string",
     "value": "Who’s involved"
+  },
+  "string:pros-heading": {
+    "type": "string",
+    "value": "Pros"
   },
   "string:service-name": {
     "type": "string",
@@ -815,25 +867,25 @@
     "lede": "",
     "type": "section"
   },
+  "view:about": {
+    "breadcrumbs": true,
+    "static": true,
+    "template": "about",
+    "type": "view"
+  },
   "view:area": {
     "breadcrumbs": true,
-    "type": "view",
-    "static": true
+    "static": true,
+    "type": "view"
   },
   "view:preparing": {
     "isa": "view:area",
-    "type": "view",
-    "template": "preparing"
+    "template": "preparing",
+    "type": "view"
   },
   "view:reaching": {
     "isa": "view:area",
-    "type": "view",
-    "template": "reaching"
-  },
-  "view:about": {
-    "breadcrumbs": true,
-    "type": "view",
-    "template": "about",
-    "static": true
+    "template": "reaching",
+    "type": "view"
   }
 }
