@@ -483,7 +483,7 @@
     "url": "/accepted"
   },
   "route:collaborative_law": {
-    "*summary_lede": "lede",
+    "summary_lede": "!route:collaborative_law#lede!",
     "cons": [
       "expensive process",
       "won’t work unless you and the other parent trust each other equally"
@@ -529,8 +529,8 @@
     "url": "/about/cookies"
   },
   "route:emotional_support": {
-    "*summary_lede": "lede",
-    "*summary_lede_additional": "lede_additional",
+    "summary_lede": "!route:emotional_support#lede!",
+    "summary_lede_additional": "!route:emotional_support#lede_additional!",
     "concerns": [
       "peer support",
       "professional advice",
@@ -552,7 +552,7 @@
     "usp": ""
   },
   "route:going_to_court": {
-    "*summary_lede": "lede",
+    "summary_lede": "!route:going_to_court#lede!",
     "cons": [
       "can be expensive",
       "court process takes a long time",
@@ -587,7 +587,7 @@
     "usp": "You want a court to make a decision for you or you have concerns about domestic abuse or child neglect."
   },
   "route:involving_children": {
-    "*summary_lede": "lede",
+    "summary_lede": "!route:involving_children#lede!",
     "concerns": [
       "involving your children in decisions",
       "arranging times your children spend with you",
@@ -610,7 +610,7 @@
     "usp": ""
   },
   "route:lawyer_negotiation": {
-    "*summary_lede": "lede",
+    "summary_lede": "!route:lawyer_negotiation#lede!",
     "cons": [
       "expensive process",
       "can be seen as a confrontational approach",
@@ -639,7 +639,7 @@
     "usp": "Your relationship is still difficult and you’d prefer not to meet, or there’s a lack of trust."
   },
   "route:negotiating_between_parents": {
-    "*summary_lede": "lede",
+    "summary_lede": "!route:negotiating_between_parents#lede!",
     "cons": [
       "you’ll need a consent order to make agreement legally binding",
       "process heavily relies on parent co-operation"
@@ -667,8 +667,8 @@
     "usp": "You both still communicate and agree on the majority of issues but may benefit from using a tool such as a parenting plan."
   },
   "route:parental_responsibility": {
-    "*summary_lede": "lede",
-    "*summary_lede_additional": "lede_additional",
+    "summary_lede": "!route:parental_responsibility#lede!",
+    "summary_lede_additional": "!route:parental_responsibility#lede_additional!",
     "concerns": [
       "what parental responsibility is",
       "who has parental responsibility",
