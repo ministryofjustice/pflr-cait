@@ -1,6 +1,6 @@
 {% from '../section/section.njk' import section with context %}
 {% macro CookieSection(name) %}
-<div class="c-CookieSection">
+<div class="c-CookieSection" data-element-block="{{name}}">
 <h3>{{ getFormattedProp(name, 'heading') }}</h3>
 {{ getFormattedBody(name) | safe }}
 <table>

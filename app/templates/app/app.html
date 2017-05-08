@@ -72,6 +72,7 @@
 {% endblock %}
 
 {% block body_end %}
+{{ super() }}
 {# TODO: ensure that req.disqualified does what it should do #}
 {# TODO: normalize env, ENV, req.env, req.ENV #}
 {% if not req.disqualified %}
