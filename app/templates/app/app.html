@@ -17,7 +17,7 @@
 
 {% block body_classes %}{{ route.template }}{% if req.disqualified %} disqualified{% endif %}{% endblock %}
 
-{% block proposition_name %}{{ macros.string('string:service-name') }}{% endblock %}
+{% block proposition_name %}{{ macros.String('string:service-name') }}{% endblock %}
 
 {% block stylesheet %}
 {{ super() }}
@@ -40,8 +40,8 @@
 {% if not req.disqualified %}
 <div class="gv-c-phase-banner">
   <p class="gv-c-phase-banner__content">
-    <strong class="gv-c-phase-tag">{{ macros.string('string:app-phase') }}</strong>
-    <span class="gv-c-phase-banner__text">{{ macros.string('string:app-phase-text') | safe }}</span>
+    <strong class="gv-c-phase-tag">{{ macros.String('string:app-phase') }}</strong>
+    <span class="gv-c-phase-banner__text">{{ macros.String('string:app-phase-text') | safe }}</span>
   </p>
 </div>
 {#{{ govuk.phaseBanner(
@@ -59,7 +59,7 @@
 
 {% block footer_support_links %}
   {% if not req.disqualified %}
-  <h2 class="visuallyhidden">{{ macros.string('string:SupportLinks_heading') }}</h2>
+  <h2 class="visuallyhidden">{{ macros.String('string:SupportLinks_heading') }}</h2>
   {% set supportLinks = getElementProp('SupportLinks', 'links') %}
   <ul data-element-block="SupportLinks">
   {% for link in supportLinks %}

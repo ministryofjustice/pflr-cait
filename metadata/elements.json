@@ -88,7 +88,7 @@
   },
   "cookies-body": {
     "body": "This service puts small files (known as ‘cookies’) onto your computer.\r\n\r\nThe cookies help us:\r\n\r\n- understand how you use the service, so we can make improvements\r\n- remember what notifications you’ve seen so you’re not shown them again\r\n\r\n> The cookies aren’t used to identify you personally.\r\n\r\nFind out [how to manage cookies](http://www.aboutcookies.org/).",
-    "type": "body"
+    "type": "Body"
   },
   "cookies-ga": {
     "body": "We use Google Analytics to collect information about how you use the service. This information helps us to update and improve the service.\r\n\r\nGoogle Analytics stores information about:\r\n\r\n- the pages you visit\r\n- how long you spend on each page\r\n- how you got to the service\r\n- what you click on while you’re using the service\r\n\r\n> We don’t allow Google to use or share our analytics data.\r\n\r\nYou can [opt out of Google Analytics cookies](https://tools.google.com/dlpage/gaoptout).",
@@ -401,7 +401,7 @@
   },
   "privacy-body": {
     "body": "This includes:\r\n\r\n- any questions or feedback you leave\r\n- your email address (if you leave feedback)\r\n- your IP address, and details of which version of web browser you used\r\ninformation on how you use the site\r\n\r\nThis helps us to:\r\n\r\n- improve the site by monitoring how you use it\r\n- respond to any feedback or questions you send us, if you’ve asked us to\r\n\r\nWe can’t identify you using your data.\r\n\r\n### Where your data is stored\r\n\r\nAny information you provide when using the service is held by [SurveyMonkey](https://www.surveymonkey.co.uk/). Check the [SurveyMonkey privacy policy](https://www.surveymonkey.co.uk/mp/policy/privacy-policy/) to find out what it does with your information.\r\n\r\n### Links to other websites\r\n\r\nThis privacy policy only applies to this service. It doesn’t cover the other services and websites that we link to.\r\n\r\n### Following a link to another website\r\n\r\nIf you go to another website from this service, read the privacy policy on that website to find out what it does with your information.\r\n\r\n### Following a link to this service from another website\r\n\r\nIf you come to this service from another website, we may receive personal information about you from the other website. Read the privacy policy of that website to find out more.",
-    "type": "body"
+    "type": "Body"
   },
   "professional-mediation-other": {
     "body": "### Shuttle mediation\r\n\r\nYour mediator may suggest you and the other parent sit in separate rooms and the mediator ‘shuttle’ between you. This is a good option if you’d prefer not to meet the other parent face-to-face or don’t feel safe to do so.\r\n\r\nShuttle mediation is usually more expensive than standard mediation because it’s a longer process.\r\n\r\n### Lawyer-assisted mediation\r\n\r\nThis is different to standard mediation because you and the other parent both hire lawyers who attend the sessions with you. You can also hire lawyers to help with shuttle mediation.\r\n\r\nAs mediators can’t offer legal advice you may want to choose this option if you have a lot of complex legal issues to resolve.\r\n\r\nYou’ll need to consider the additional cost of a lawyer if you select this option.\r\n\r\n### Family mediation\r\n\r\nParents with children over 10 years old are encouraged to include them in the process so the mediator can hear their opinion.\r\n\r\nTalk with a mediator about whether it’s suitable to involve your children in your situation and ask your child if they’re happy to take part.\r\n\r\nCheck if your mediator is qualified to offer this service before booking.",
@@ -459,7 +459,7 @@
   },
   "quicklinks": {
     "body": "- [Sessions](/admin/sessions)\n\n- [Routes](/admin/routes)\n- [Flag configuration](/admin/flags)\n- [Element types](/admin/elements)",
-    "type": "body"
+    "type": "Body"
   },
   "reaching-collection": {
     "items": [
@@ -792,64 +792,64 @@
     "type": "routes"
   },
   "string:CookieMessage": {
-    "type": "string",
+    "type": "String",
     "value": "We uses cookies to make the site simpler. [Find out more about cookies]({app:urls:route:cookies})"
   },
   "string:FeedbackBanner_heading": {
-    "type": "string",
+    "type": "String",
     "value": "Tell us what you think"
   },
   "string:FeedbackBanner_link": {
-    "type": "string",
+    "type": "String",
     "value": "Your [feedback](https://www.surveymonkey.co.uk/r/3DXCX9L) will help us make improvements"
   },
   "string:Interlinks__Overview__heading": {
-    "type": "string",
+    "type": "String",
     "value": "Overview"
   },
   "string:Interlinks__Overview__link": {
-    "type": "string",
+    "type": "String",
     "value": "View all child arrangements options"
   },
   "string:SupportLinks_heading": {
-    "type": "string",
+    "type": "String",
     "value": "Support links"
   },
   "string:app-phase": {
-    "type": "string",
+    "type": "String",
     "value": "Beta"
   },
   "string:app-phase-text": {
-    "type": "string",
+    "type": "String",
     "value": "This is the first version of the service"
   },
   "string:concerned-heading": {
-    "type": "string",
+    "type": "String",
     "value": "Get information on"
   },
   "string:cons-heading": {
-    "type": "string",
+    "type": "String",
     "value": "Cons"
   },
   "string:involved-heading": {
-    "type": "string",
+    "type": "String",
     "value": "Who’s involved"
   },
   "string:pros-heading": {
-    "type": "string",
+    "type": "String",
     "value": "Pros"
   },
   "string:service-name": {
-    "type": "string",
+    "type": "String",
     "value": "Get help with child arrangements"
   },
   "string:usp-heading": {
-    "type": "string",
+    "type": "String",
     "value": "Choose this if…"
   },
   "summary-intro": {
     "body": "This guide contains help on:\r\n\r\n#### Preparing to make arrangements\r\n\r\nIncludes information on where to find emotional support and how to put your children’s needs first.\r\n\r\n#### Reaching an agreement\r\n\r\nIncludes information on the different options you can use (such as mediation) to help you make an arrangement.",
-    "type": "body"
+    "type": "Body"
   },
   "terms-conditions-phase": {
     "body": "This service is currently in ‘private beta’. This means you’re looking at the first version of it.\r\n\r\nA service in ‘private beta’ isn’t open to everyone or may not work for everyone. We do this so we can test and improve the service before releasing it to more people.",
