@@ -138,19 +138,19 @@
     "cost_description": "Cost based on a 50-minute session. Fees may vary depending on your location and the experience of the counsellor. Some counsellors offer reductions if you’re unemployed or on a low income.",
     "heading": "Counselling",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "emotional-support-offline": {
     "body": "Look for a [family meet-up group](https://www.meetup.com/find/parents-family/) or [single parents network](https://www.meetup.com/find/?allMeetups=false&keywords=single+parent+support&radius=50&userFreeform=London%2C+United+Kingdom&mcId=z1012717&mcName=London%2C+England%2C+GB&sort=default&eventFilter=mysugg) in your area. Both work in the same way as forums but the focus is usually on meeting face to face.",
     "heading": "Find a group near you",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "emotional-support-online": {
     "body": "Online forums allow you to share your story, tell people how you’re feeling and discuss any concerns you have.\r\n\r\nYou can get advice from others by posting a question or sharing your story.\r\n\r\nThe following are examples of helpful forums:\r\n\r\n- [Parent Connection](http://www.theparentconnection.org.uk/posts)\r\n- [Dad.info](https://www.dad.info/forum/index)\r\n- [Netmums](https://www.netmums.com/coffeehouse/)\r\n- [Wikivorce](https://www.wikivorce.com/divorce/About-Us.html)\r\n- [Gingerbread](https://gingerbread.org.uk/Forum/default.aspx)",
     "heading": "Use online forums",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "emotional-support-peers": {
     "body": "Your family and friends are likely to be the greatest source of support.\r\n\r\nYou can also try using online forums or attending group meetings to speak with people who have been through a similar experience.",
@@ -160,7 +160,7 @@
     ],
     "heading": "Peer support",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "emotional-support-professional": {
     "body": "You should consider professional advice (for example seeing a counsellor or attending meetings) if you feel you’re struggling to cope.",
@@ -170,14 +170,14 @@
     ],
     "heading": "Professional advice",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "emotional-support-readiness": {
     "body": "Emotional readiness is being able to put aside your own feelings and any negative thoughts about the other parent. If you’re emotionally ready you’ll have a better chance of making an agreement that’s in the best interests of your children.\r\n\r\nThe Children and Family Court Advisory and Support Service (Cafcass) has more information on what you need to do to [become emotionally ready](https://www.cafcass.gov.uk/grown-ups/listening-to-your-child-after-separation.aspx).",
     "elements": [],
     "heading": "Emotional readiness",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "emotional-support-resources": {
     "body": "[Find out more about counselling](http://www.counselling-directory.org.uk/separation.html)\r\n\r\nRelate has a [free online chat service](https://www.relate.org.uk/relationship-help/talk-someone/live-chat-counsellor). Sessions last around 25 minutes.\r\n\r\nRelate also has a [telephone service](https://www.relate.org.uk/relationship-help/talk-someone/telephone-counselling) that costs £55 per hour.\r\n\r\n[Getting it right for children](http://theparentconnection.org.uk/programmes/programmes/getting-it-right-for-children-when-parents-part) is a free programme which uses real life situations to show how things can go wrong - and how you can do them better.",
@@ -194,7 +194,7 @@
     "cost_description": "It may be free to attend in some areas.",
     "heading": "Parenting advice",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "empty-SectionResources": {
     "body": "xxxx",
@@ -232,7 +232,7 @@
     "elements": [],
     "heading": "xxxx",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "empty-step": {
     "body": "xxxx",
@@ -298,35 +298,35 @@
     "elements": [],
     "heading": "Counselling",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "involving-children-involving": {
     "body": "Children are more likely to adapt to new arrangements if you involve them in decisions. If they understand the situation, make sure to include them whenever possible.\r\n\r\nYou should try and make your arrangements flexible so you can take into account the changing needs of your children as they grow older.\r\n\r\n[Find out more about involving your children](https://www.cafcass.gov.uk/grown-ups/listening-to-your-child-after-separation.aspx)",
     "elements": [],
     "heading": "Involving your children",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "involving-children-online-support": {
     "body": "[Voices in the Middle](https://voicesinthemiddle.org.uk/) is a website that has advice from young people in a similar situation. There’s a guide to further help if your children want it.\r\n\r\n[Where to get emotional support for your children](https://www.sortingoutseparation.org.uk/children-parenting/childs-emotional-physical-well/)",
     "elements": [],
     "heading": "Support online",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "involving-children-protecting": {
     "body": "In some situations it may not be in the child’s best interests for parents to work out child arrangements. You’ll probably need to go to court if you’re worried about the safety of you or your children.\r\n\r\nYou should [report child abuse](https://www.gov.uk/report-child-abuse) or [domestic abuse](https://www.gov.uk/report-domestic-abuse) if you have any concerns.\r\n\r\nRead more about the [signs of child abuse](https://www.nspcc.org.uk/preventing-abuse/child-abuse-and-neglect/) and [domestic abuse](http://www.refuge.org.uk/get-help-now/help-for-women/recognising-abuse/).",
     "elements": [],
     "heading": "Protecting your children",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "involving-children-seeing": {
     "body": "Your children will cope better with their situation if they have regular contact with you and the other parent, if it’s safe to do so.\r\n\r\n[Research shows](http://theparentconnection.org.uk/articles/what-children-think-about-contact) most children think the parent who doesn’t live with them is still an important part of their family.\r\n\r\nYou can use a [child contact centre](https://www.naccc.org.uk/) if you don’t live with your children and can’t find somewhere to see them. There are around 350 across England and Wales.\r\n\r\n> There are steps you can take if the other parent is [preventing you from seeing your children](http://www.advicenow.org.uk/guides/survival-guide-sorting-out-arrangements-your-children).",
     "elements": [],
     "heading": "Seeing your children",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "involving-children-supporting": {
     "body": "Your children may need extra support if they’re finding it hard to cope.",
@@ -336,7 +336,7 @@
     ],
     "heading": "Supporting your children",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "lawyer-negotiation-process": {
     "body": "You might use lawyer negotiation (also known as solicitor-led negotiation) if you no longer talk to the other parent.\r\n\r\nTo begin the process both you and the other parent will need to hire your own lawyer.\r\n\r\nYour lawyer will set up a meeting to discuss the case with you. You’ll need to explain what your issues are and the outcome you want to achieve.\r\n\r\nAfter receiving instructions from you and the other parent, the lawyers will begin negotiations face-to-face. You won’t have to deal directly with the other parent at any time.\r\n\r\nAs in [collaborative law]({app:urls:route:collaborative_law}) both lawyers will try and keep the case from going to court.\r\n\r\nYour lawyers will draw up a document for court approval once they reach an agreement that you and the other parent are happy with.They’ll then submit it to the court for consideration and approval.",
@@ -347,7 +347,7 @@
     "cost_description": "Fees may vary depending on your location and the experience of the lawyer. How long you need will depend on your situation. Some lawyers offer free 30-minute consultations or you can [check if you can get free legal help](https://www.lawworks.org.uk/legal-advice-individuals).",
     "heading": "Lawyer negotation process",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "lawyer-negotiation-video": {
     "body": "",
@@ -367,27 +367,27 @@
     "body": "The needs of your children must come first when negotiating arrangements. The following are flexible (unless you make them into a [consent order](https://www.wikivorce.com/divorce/Consent-Orders.html)) so you can change the details as your children grow older.\r\n\r\n### Parenting plan\r\n\r\nA parenting plan is a written or online plan that you use to prepare, discuss and agree child arrangements. It’s not legally binding and you can update the details as your children grow older and their needs change.\r\n\r\nUsing a parenting plan:\r\n\r\n- helps you know what’s expected of you\r\n- confirms your agreements (for example, where your children will live)\r\n- works as a record for you to go back to\r\n\r\nYou can choose to use an [online parenting plan](http://www.splittingup-putkidsfirst.org.uk/home) or a plan you [can print out](https://www.cafcass.gov.uk/grown-ups/parenting-plan.aspx).\r\n\r\n### Negotiating tools\r\n\r\n[The Negotiations Cycle tool](https://www.separatedfamilies.info/home/parenting-apart/negotiations/) lets you break down your negotiations into 4 stages.\r\n\r\nGingerbread has an [arrangements factsheet](https://gingerbread.org.uk/factsheet/4/Making-arrangements-for-your-children) that includes tips on making negotiating work.\r\n\r\n### Letter templates\r\n\r\nChild Law Advice has a useful [letter template](http://childlawadvice.org.uk/wp-content/uploads/Residence-template-letter.pdf) if you prefer to negotiate by letter or email.",
     "heading": "Which tools and services to use",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "negotiating-unsuitable": {
     "body": "### Child abuse or neglect\r\n\r\nYou shouldn’t make arrangements with the other parent if you have reason to think they’re abusing or neglecting your children.\r\n\r\n[Report child abuse](https://www.gov.uk/report-child-abuse-to-local-council) if you have any concerns and tell your children about [Childline](https://www.childline.org.uk/) so they can report any abuse themselves.\r\n\r\nYou can [report a concern about a child online](https://www.nspcc.org.uk/what-you-can-do/report-abuse/report-abuse-online/) to the National Society for the Prevention of Cruelty to Children (NSPCC).\r\n\r\n[Find out more about child abuse and neglect](https://www.nspcc.org.uk/preventing-abuse/child-abuse-and-neglect/)\r\n\r\n### Domestic violence\r\n\r\nNegotiating with the other parent directly won’t be suitable if they pose a threat to you or your children’s safety.\r\n\r\n[Report domestic violence](https://www.gov.uk/report-domestic-abuse) if it’s safe to do so and you think you’re a victim.\r\n\r\nFind out more about [signs of domestic violence](http://www.refuge.org.uk/get-help-now/what-is-domestic-violence/) if you’re unsure whether you’re a victim.",
     "heading": "When negotiating may not be suitable",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "parental-responsibility-making-decisions": {
     "body": "You don’t always need to get the consent of the other parent when making a decision, even if they also have parental responsibility.\r\n\r\nIf it’s a major decision (for example one of you wants to move abroad with your children) both parents with responsibility must agree in writing.\r\n\r\nYou can apply for a [Specific Issue Order](http://www.compactlaw.co.uk/free-legal-information/children/specific-issue-order.html) or [Prohibited Steps Order](http://www.lawandparents.co.uk/prohibited-steps-orders-effect-parents.html) if you can’t agree. A judge will then make a decision which is in your children’s best interests.",
     "elements": [],
     "heading": "Making decisions with the other parent",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "parental-responsibility-responsibilities": {
     "body": "You’re also responsible for issues such as:\r\n\r\n- where they go to school\r\n- how to discipline them\r\n- agreeing to their medical treatment\r\n- choosing, registering or changing their names\r\n\r\nAll mothers automatically have parental responsibility. A father usually does if he’s either married to the child’s mother or listed on the birth certificate.\r\n\r\nFind out more about [who has parental responsibility](https://www.gov.uk/parental-rights-responsibilities/who-has-parental-responsibility).\r\n\r\nYou can [apply for parental responsibility](https://www.gov.uk/parental-rights-responsibilities/apply-for-parental-responsibility) if you don’t automatically have it.\r\n\r\n> You must provide financial support for your children even if you don’t have parental responsibility.\r\n\r\n[Arrange child maintenance yourself](https://www.gov.uk/arranging-child-maintenance-yourself)",
     "elements": [],
     "heading": "",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "preparing-collection": {
     "items": [
@@ -407,7 +407,7 @@
     "body": "### Shuttle mediation\r\n\r\nYour mediator may suggest you and the other parent sit in separate rooms and the mediator ‘shuttle’ between you. This is a good option if you’d prefer not to meet the other parent face-to-face or don’t feel safe to do so.\r\n\r\nShuttle mediation is usually more expensive than standard mediation because it’s a longer process.\r\n\r\n### Lawyer-assisted mediation\r\n\r\nThis is different to standard mediation because you and the other parent both hire lawyers who attend the sessions with you. You can also hire lawyers to help with shuttle mediation.\r\n\r\nAs mediators can’t offer legal advice you may want to choose this option if you have a lot of complex legal issues to resolve.\r\n\r\nYou’ll need to consider the additional cost of a lawyer if you select this option.\r\n\r\n### Family mediation\r\n\r\nParents with children over 10 years old are encouraged to include them in the process so the mediator can hear their opinion.\r\n\r\nTalk with a mediator about whether it’s suitable to involve your children in your situation and ask your child if they’re happy to take part.\r\n\r\nCheck if your mediator is qualified to offer this service before booking.",
     "heading": "Other types of mediation",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "professional-mediation-resources": {
     "body": "The Family Mediation Council has more information on the [mediation process](https://www.familymediationcouncil.org.uk/family-mediation/) and how it can benefit you.\r\n\r\nThe [Separated Parents Information Programme](https://www.cafcass.gov.uk/grown-ups/separated-parents-information-programme-(spip).aspx) helps you understand how to put your children first and manage disputes with the other parent. There are similar programmes in [Wales](http://cafcass.gov.wales/info_for_adults/working_together_for_children_course/?skip=1&lang=en) and [Scotland](http://www.relationships-scotland.org.uk/family-support/parenting-apart-groups).\r\n\r\nDownload a [mediation information pack](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/489124/family-mediation-leaflet.pdf) from the Ministry of Justice.\r\n\r\nAdvice Now has a [guide to using mediation](http://www.advicenow.org.uk/guides/survival-guide-using-family-mediation-after-break) following separation.\r\n\r\nFind out more about [lawyer-assisted mediation](http://www.divorce.co.uk/divorce-approaches/mediation-with-lawyers)\r\n\r\n[Find a local mediator](https://www.familymediationcouncil.org.uk/find-local-mediator/)",
@@ -447,7 +447,7 @@
     "body": "### Child abuse or neglect\r\n\r\nYou shouldn’t attend mediation with the other parent if you think they’re abusing or neglecting your children.\r\n\r\n[Report child abuse](https://www.gov.uk/report-child-abuse-to-local-council) if you have any concerns and tell your children about [Childline](https://www.childline.org.uk/) so they can report any abuse themselves.\r\n\r\nYou can [report a concern about a child online](https://www.nspcc.org.uk/what-you-can-do/report-abuse/report-abuse-online/) to the National Society for the Prevention of Cruelty to Children (NSPCC).\r\n\r\n[Find out more about child abuse and neglect](https://www.nspcc.org.uk/preventing-abuse/child-abuse-and-neglect/)\r\n\r\n### Domestic violence\r\n\r\nMediation with the other parent is not likely to be suitable if you think they pose a threat to you or your children’s safety.\r\n\r\n[Report domestic violence](https://www.gov.uk/report-domestic-abuse) if it’s safe to do so and you think you’re a victim.\r\n\r\nFind out more about [signs of domestic violence](http://www.refuge.org.uk/get-help-now/what-is-domestic-violence/) if you’re unsure whether you’re a victim.",
     "heading": "When mediation may not be suitable",
     "lede": "",
-    "type": "Section"
+    "type": "SectionArea"
   },
   "professional-mediation-video": {
     "body": "",
@@ -855,13 +855,6 @@
     "body": "This service is currently in ‘private beta’. This means you’re looking at the first version of it.\r\n\r\nA service in ‘private beta’ isn’t open to everyone or may not work for everyone. We do this so we can test and improve the service before releasing it to more people.",
     "elements": [],
     "heading": "Private beta",
-    "lede": "",
-    "type": "Section"
-  },
-  "terms-conditions-responsibilities": {
-    "body": "xxxx",
-    "elements": [],
-    "heading": "xxxx",
     "lede": "",
     "type": "Section"
   },
