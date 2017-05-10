@@ -15,7 +15,7 @@
   {% endif %}
   {% if route.elements %}
   <div class="gv-s-prose">
-  {{ macros.Group(elements=route.elements) }}
+  {{ Block.Group(elements=route.elements) }}
   </div>
   {% endif %}
   {% block grid_content_extra %}{% endblock %}

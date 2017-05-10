@@ -1,8 +1,8 @@
 {% extends "templates/base/base.html" %}
-{% import "components/utils.njk" as utils with context %}
+{% import "components/Utils/Utils.njk" as Utils with context %}
 {% from 'components/Breadcrumbs/Breadcrumbs.njk' import Breadcrumbs with context %}
 
-{{ utils.addMacros([
+{{ Utils.registerBlocks([
   "components/FeedbackBanner/FeedbackBanner.njk",
   "components/CallToAction/CallToAction.njk",
   "components/Costs/Costs.njk",
@@ -17,7 +17,7 @@
 
 {% block body_classes %}{{ route.template }}{% if req.disqualified %} disqualified{% endif %}{% endblock %}
 
-{% block proposition_name %}{{ macros.String('string:service-name') }}{% endblock %}
+{% block proposition_name %}{{ Block.String('string:service-name') }}{% endblock %}
 
 {% block stylesheet %}
 {{ super() }}
@@ -26,13 +26,13 @@
 
 {%block cookie_message %}
 {% if not req.disqualified %}
-{{ macros.CookieMessage() }}
+{{ Block.CookieMessage() }}
 {% endif %}
 {% endblock %}
 
 {% block after_header %}
 {% if not req.disqualified %}
-{{ macros.FeedbackBanner() }}
+{{ Block.FeedbackBanner() }}
 {% endif %}
 {% endblock %}
 
@@ -40,8 +40,8 @@
 {% if not req.disqualified %}
 <div class="gv-c-phase-banner">
   <p class="gv-c-phase-banner__content">
-    <strong class="gv-c-phase-tag">{{ macros.String('string:app-phase') }}</strong>
-    <span class="gv-c-phase-banner__text">{{ macros.String('string:app-phase-text') | safe }}</span>
+    <strong class="gv-c-phase-tag">{{ Block.String('string:app-phase') }}</strong>
+    <span class="gv-c-phase-banner__text">{{ Block.String('string:app-phase-text') | safe }}</span>
   </p>
 </div>
 {#{{ govuk.phaseBanner(
@@ -59,7 +59,7 @@
 
 {% block footer_support_links %}
   {% if not req.disqualified %}
-  <h2 class="visuallyhidden">{{ macros.String('string:SupportLinks_heading') }}</h2>
+  <h2 class="visuallyhidden">{{ Block.String('string:SupportLinks_heading') }}</h2>
   {% set supportLinks = getElementProp('SupportLinks', 'links') %}
   <ul data-element-block="SupportLinks">
   {% for link in supportLinks %}

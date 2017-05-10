@@ -8,23 +8,23 @@
 {% block grid_content %}
 <div class="gv-o-grid-row">
 <div class="gv-o-grid-item gv-u-two-thirds">
-  {{ macros.PageHeader(route.id, heading_size='xxlarge') }}
+  {{ Block.PageHeader(route.id, heading_size='xxlarge') }}
 
   {% if route.usp %}
   <div class="c-usp-callout gv-s-prose">
-  <h4>{{ macros.String('string:usp-heading') }}</h4>
+  <h4>{{ Block.String('string:usp-heading') }}</h4>
   <p>{{ route.usp | safe }}</p>
   </div>
   {% endif %}
 </div>
 
 <div class="gv-o-grid-item gv-u-one-third">
-  {{ macros.ProsCons(route.id, modifier='header') }}
+  {{ Block.ProsCons(route.id, modifier='header') }}
 </div>
 </div>
 
   <div class="xgv-o-grid-row">
-  {{ macros.Group(elements=route.elements) }}
+  {{ Block.Group(elements=route.elements) }}
   </div>
 
 {% set collection = route.template + '-collection' %}
@@ -38,8 +38,8 @@
 {% endfor %}
 </ul>
 <div class="AreaLinks__overview">
-<h3 class="AreaLinks__overview__heading gv-u-heading-large">{{ macros.String('string:Interlinks__Overview__heading') }}</h3>
-<p><a href="{{ getRouteUrl('route:summary') }}" class="AreaLinks__overview__link" data-link-type="site-nav">{{ macros.String('string:Interlinks__Overview__link') }}</a></p>
+<h3 class="AreaLinks__overview__heading gv-u-heading-large">{{ Block.String('string:Interlinks__Overview__heading') }}</h3>
+<p><a href="{{ getRouteUrl('route:summary') }}" class="AreaLinks__overview__link" data-link-type="site-nav">{{ Block.String('string:Interlinks__Overview__link') }}</a></p>
 </div>
 </nav>
 {% endblock %}

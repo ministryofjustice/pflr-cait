@@ -13,7 +13,7 @@
   <p class="c-summary__lede">{{ getFormattedProp(route.id, 'lede') }}</p>
   <p class="c-summary__lede">{{ getFormattedProp(route.id, 'lede_additional') | safe }}</p>
   <div class="gv-s-prose">
-  {{ macros.Group(elements=route.elements) }}
+  {{ Block.Group(elements=route.elements) }}
   </div>
   </div>
   </div>
@@ -29,13 +29,13 @@
 
         {% if getElementProp(item, 'usp') %}
           <div class="o-usp-callout">
-          <h4 class="gv-u-heading-small">{{ macros.String('string:usp-heading') }}</h4>
+          <h4 class="gv-u-heading-small">{{ Block.String('string:usp-heading') }}</h4>
           <p>{{ getFormattedProp(item, 'usp') | safe }}</p>
           </div>
         {% endif %}
         {% if getElementProp(item, 'involved') %}
           <div class="c-involvement-callout">
-          <h4 class="gv-u-heading-small">{{ macros.String('string:involved-heading') }}</h4>
+          <h4 class="gv-u-heading-small">{{ Block.String('string:involved-heading') }}</h4>
           <ul class="gv-c-list--bullet">
           {% for involved in getElementProp(item, 'involved') %}
           <li>{{ involved | safe }}</li>
@@ -48,7 +48,7 @@
       {% set concerns = getElementProp(item, 'concerns') %}
       {% if concerns %}
         <div class="c-area__concerns">
-          <h4 class="c-area__concerns__heading gv-u-heading-small">{{ macros.String('string:concerned-heading') }}</h4>
+          <h4 class="c-area__concerns__heading gv-u-heading-small">{{ Block.String('string:concerned-heading') }}</h4>
           <ul class="c-area__concerns__list gv-c-list--bullet">
             {% for concern in concerns %}
             <li class="c-area__concerns__list-item gv-u-text-xsmall">{{ concern | safe }}</li>
@@ -56,7 +56,7 @@
           </ul>
         </div>
       {% endif %}
-      {{ macros.ProsCons(item) }}
+      {{ Block.ProsCons(item) }}
       </aside>
 
       <p class="c-area__read-more"><a href="{{ getRouteUrl(item) }}" data-link-type="card-read-more">Read more about {{ getFormattedProp(item, 'heading') | lower }}</a></p>

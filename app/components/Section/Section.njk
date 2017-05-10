@@ -27,7 +27,7 @@
 {% if subsections.length %}
 {% for subsection in subsections %}
 {% set subsections = [] %}
-{{ macros.Control(subsection, depth=depth+1) }}
+{{ Block.Control(subsection, depth=depth+1) }}
 {% endfor %}
 {% endif %}
 {% endif %}
