@@ -38,18 +38,20 @@
 
 {% block phase_banner %}
 {% if not req.disqualified %}
+{% if getString('string:app-phase') %}
 <div class="gv-c-phase-banner">
   <p class="gv-c-phase-banner__content">
     <strong class="gv-c-phase-tag">{{ Block.String('string:app-phase') }}</strong>
     <span class="gv-c-phase-banner__text">{{ Block.String('string:app-phase-text') | safe }}</span>
   </p>
 </div>
+{% endif %}
+{% endif %}
+{% endblock %}
 {#{{ govuk.phaseBanner(
     phase = 'beta',
     message = 'This is the first version of a new service'
 ) }}#}
-{% endif %}
-{% endblock %}
 
 {% block breadcrumbs_content %}
 {% if route.breadcrumbs %}

@@ -483,7 +483,6 @@
     "url": "/accepted"
   },
   "route:collaborative_law": {
-    "summary_lede": "!route:collaborative_law#lede!",
     "cons": [
       "expensive process",
       "won’t work unless you and the other parent trust each other equally"
@@ -511,6 +510,7 @@
       "lawyers are present throughout",
       "good for your children to see their parents working together"
     ],
+    "summary_lede": "!route:collaborative_law#lede!",
     "title": "",
     "type": "route",
     "url": "/collaborative-law",
@@ -529,8 +529,6 @@
     "url": "/about/cookies"
   },
   "route:emotional_support": {
-    "summary_lede": "!route:emotional_support#lede!",
-    "summary_lede_additional": "!route:emotional_support#lede_additional!",
     "concerns": [
       "peer support",
       "professional advice",
@@ -546,13 +544,14 @@
     "isa": "view:preparing",
     "lede": "Emotional support can help you get through the stress of making child arrangements.",
     "lede_additional": "You’re more likely to reach an agreement if you’re emotionally ready and know where to get support if you need it.",
+    "summary_lede": "!route:emotional_support#lede!",
+    "summary_lede_additional": "!route:emotional_support#lede_additional!",
     "title": "",
     "type": "route",
     "url": "/emotional-support",
     "usp": ""
   },
   "route:going_to_court": {
-    "summary_lede": "!route:going_to_court#lede!",
     "cons": [
       "can be expensive",
       "court process takes a long time",
@@ -581,13 +580,13 @@
     "pros": [
       "legally binding decision"
     ],
+    "summary_lede": "!route:going_to_court#lede!",
     "title": "",
     "type": "route",
     "url": "/going-to-court",
     "usp": "You want a court to make a decision for you or you have concerns about domestic abuse or child neglect."
   },
   "route:involving_children": {
-    "summary_lede": "!route:involving_children#lede!",
     "concerns": [
       "involving your children in decisions",
       "arranging times your children spend with you",
@@ -603,6 +602,7 @@
     "isa": "view:preparing",
     "lede": "The needs of your children should come first when you make child arrangements with the other parent.",
     "lede_additional": "Your children will feel happier if they have regular contact with you and the other parent, if it’s safe to do so. If they understand the situation, involve them in the decision-making.",
+    "summary_lede": "!route:involving_children#lede!",
     "summary_lede_additional": "Your children will feel happier if they have regular contact with you and the other parent, and know where to get extra support if they need it. If they understand the situation, involve them in the decision-making.",
     "title": "",
     "type": "route",
@@ -610,7 +610,6 @@
     "usp": ""
   },
   "route:lawyer_negotiation": {
-    "summary_lede": "!route:lawyer_negotiation#lede!",
     "cons": [
       "expensive process",
       "can be seen as a confrontational approach",
@@ -633,13 +632,13 @@
       "quicker and less stressful than court",
       "you don’t deal directly with the other parent"
     ],
+    "summary_lede": "!route:lawyer_negotiation#lede!",
     "title": "",
     "type": "route",
     "url": "/lawyer-negotiation",
     "usp": "Your relationship is still difficult and you’d prefer not to meet, or there’s a lack of trust."
   },
   "route:negotiating_between_parents": {
-    "summary_lede": "!route:negotiating_between_parents#lede!",
     "cons": [
       "you’ll need a consent order to make agreement legally binding",
       "process heavily relies on parent co-operation"
@@ -661,14 +660,13 @@
       "helps children continue family relationships",
       "agreements are flexible"
     ],
+    "summary_lede": "!route:negotiating_between_parents#lede!",
     "title": "",
     "type": "route",
     "url": "/negotiating-between-parents",
     "usp": "You both still communicate and agree on the majority of issues but may benefit from using a tool such as a parenting plan."
   },
   "route:parental_responsibility": {
-    "summary_lede": "!route:parental_responsibility#lede!",
-    "summary_lede_additional": "!route:parental_responsibility#lede_additional!",
     "concerns": [
       "what parental responsibility is",
       "who has parental responsibility",
@@ -682,6 +680,8 @@
     "isa": "view:preparing",
     "lede": "Parental responsibility is a term that means you have legal rights and duties relating to your children’s upbringing.",
     "lede_additional": "It doesn’t mean you have a right to spend time with your children (if you don’t live with them), but the other parent must update you on their well-being.",
+    "summary_lede": "!route:parental_responsibility#lede!",
+    "summary_lede_additional": "!route:parental_responsibility#lede_additional!",
     "title": "",
     "type": "route",
     "url": "/parental-responsibility",
