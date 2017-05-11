@@ -12,7 +12,7 @@
 
   {% if route.usp %}
   <div class="c-usp-callout gv-s-prose">
-  <h4>{{ Block.String('string:usp-heading') }}</h4>
+  <h4>{{ Block.String('Area__USP__heading') }}</h4>
   <p>{{ route.usp | safe }}</p>
   </div>
   {% endif %}
@@ -38,8 +38,8 @@
 {% endfor %}
 </ul>
 <div class="AreaLinks__overview">
-<h3 class="AreaLinks__overview__heading gv-u-heading-large">{{ Block.String('string:Interlinks__Overview__heading') }}</h3>
-<p><a href="{{ getRouteUrl('route:summary') }}" class="AreaLinks__overview__link" data-link-type="site-nav">{{ Block.String('string:Interlinks__Overview__link') }}</a></p>
+<h3 class="AreaLinks__overview__heading gv-u-heading-large">{{ Block.String('AreaLinks__overview__heading') }}</h3>
+<p><a href="{{ getRouteUrl('route:summary') }}" class="AreaLinks__overview__link" data-link-type="site-nav">{{ Block.String('AreaLinks__overview__link') }}</a></p>
 </div>
 </nav>
 {% endblock %}

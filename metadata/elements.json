@@ -23,6 +23,22 @@
     "lede_additional": "",
     "type": "ErrorRoute"
   },
+  "CookieMessage": {
+    "type": "String",
+    "value": "We uses cookies to make the site simpler. [Find out more about cookies]({app:urls:route:cookies})"
+  },
+  "ProsCons__heading--cons": {
+    "type": "String",
+    "value": "Cons"
+  },
+  "ProsCons__heading--pros": {
+    "type": "String",
+    "value": "Pros"
+  },
+  "ServiceName": {
+    "type": "String",
+    "value": "Get help with child arrangements"
+  },
   "SupportLinks": {
     "links": [
       {
@@ -356,6 +372,14 @@
     "type": "SectionVideo",
     "video_id": "lawyer_negotiation",
     "youtube_code": "vGGDIsUJHNY"
+  },
+  "FeedbackBanner__heading": {
+    "type": "String",
+    "value": "Tell us what you think"
+  },
+  "FeedbackBanner__link": {
+    "type": "String",
+    "value": "Your [feedback](https://www.surveymonkey.co.uk/r/3DXCX9L) will help us make improvements"
   },
   "negotiating-resources": {
     "body": "GOV.UK has information on [arranging child maintenance yourself](https://www.gov.uk/arranging-child-maintenance-yourself) that includes a [child maintenance calculator](https://www.gov.uk/calculate-your-child-maintenance).\r\n\r\nSeparated Families also has a free [online parenting plan](https://www.separatedfamilies.info/home/parenting-apart/parenting-agreements/).\r\n\r\nThe Parent Connection offers a few [tips on how to communicate with your ex](http://theparentconnection.org.uk/articles/tips-for-helping-you-communicate-with-your-ex).",
@@ -791,59 +815,35 @@
     ],
     "type": "routes"
   },
-  "string:CookieMessage": {
-    "type": "String",
-    "value": "We uses cookies to make the site simpler. [Find out more about cookies]({app:urls:route:cookies})"
-  },
-  "string:FeedbackBanner_heading": {
-    "type": "String",
-    "value": "Tell us what you think"
-  },
-  "string:FeedbackBanner_link": {
-    "type": "String",
-    "value": "Your [feedback](https://www.surveymonkey.co.uk/r/3DXCX9L) will help us make improvements"
-  },
-  "string:Interlinks__Overview__heading": {
+  "AreaLinks__overview__heading": {
     "type": "String",
     "value": "Overview"
   },
-  "string:Interlinks__Overview__link": {
+  "AreaLinks__overview__link": {
     "type": "String",
     "value": "View all child arrangements options"
   },
-  "string:SupportLinks_heading": {
+  "SupportLinks__heading": {
     "type": "String",
     "value": "Support links"
   },
-  "string:app-phase": {
+  "ServicePhase": {
     "type": "String",
     "value": "Beta"
   },
-  "string:app-phase-text": {
+  "ServicePhase__text": {
     "type": "String",
     "value": "This is the first version of the service"
   },
-  "string:concerned-heading": {
+  "SummaryArea__Concerning__heading": {
     "type": "String",
     "value": "Get information on"
   },
-  "string:cons-heading": {
-    "type": "String",
-    "value": "Cons"
-  },
-  "string:involved-heading": {
+  "SummaryArea__Involvement__heading": {
     "type": "String",
     "value": "Who’s involved"
   },
-  "string:pros-heading": {
-    "type": "String",
-    "value": "Pros"
-  },
-  "string:service-name": {
-    "type": "String",
-    "value": "Get help with child arrangements"
-  },
-  "string:usp-heading": {
+  "Area__USP__heading": {
     "type": "String",
     "value": "Choose this if…"
   },

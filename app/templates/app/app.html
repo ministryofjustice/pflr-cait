@@ -17,7 +17,7 @@
 
 {% block body_classes %}{{ route.template }}{% if req.disqualified %} disqualified{% endif %}{% endblock %}
 
-{% block proposition_name %}{{ Block.String('string:service-name') }}{% endblock %}
+{% block proposition_name %}{{ Block.String('ServiceName') }}{% endblock %}
 
 {% block stylesheet %}
 {{ super() }}
@@ -38,11 +38,11 @@
 
 {% block phase_banner %}
 {% if not req.disqualified %}
-{% if getString('string:app-phase') %}
+{% if getString('ServicePhase') %}
 <div class="gv-c-phase-banner">
   <p class="gv-c-phase-banner__content">
-    <strong class="gv-c-phase-tag">{{ Block.String('string:app-phase') }}</strong>
-    <span class="gv-c-phase-banner__text">{{ Block.String('string:app-phase-text') | safe }}</span>
+    <strong class="gv-c-phase-tag">{{ Block.String('ServicePhase') }}</strong>
+    <span class="gv-c-phase-banner__text">{{ Block.String('ServicePhase__text') | safe }}</span>
   </p>
 </div>
 {% endif %}
@@ -61,7 +61,7 @@
 
 {% block footer_support_links %}
   {% if not req.disqualified %}
-  <h2 class="visuallyhidden">{{ Block.String('string:SupportLinks_heading') }}</h2>
+  <h2 class="visuallyhidden">{{ Block.String('SupportLinks__heading') }}</h2>
   {% set supportLinks = getElementProp('SupportLinks', 'links') %}
   <ul data-element-block="SupportLinks">
   {% for link in supportLinks %}
