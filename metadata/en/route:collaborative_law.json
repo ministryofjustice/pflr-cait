@@ -1,0 +1,35 @@
+{
+  "_blockType": "Route",
+  "_id": "route:collaborative_law",
+  "_isa": "view:reaching",
+  "blocks": [
+    "collaborative-law-step-1",
+    "collaborative-law-step-2",
+    "collaborative-law-step-3",
+    "collaborative-law-step-4",
+    "collaborative-law-video",
+    "collaborative-law-resources"
+  ],
+  "cons": [
+    "expensive process",
+    "won’t work unless you and the other parent trust each other equally"
+  ],
+  "heading": "Collaborative law",
+  "involved": [
+    "Both parents",
+    "Lawyer for each parent"
+  ],
+  "lede": "Collaborative lawyers work with you and the other parent to resolve your issues out of court. You each hire a lawyer then all meet to negotiate face-to-face.",
+  "lede_additional": "The collaborative process involves several steps but is usually quicker and cheaper than going to court.",
+  "pros": [
+    "everyone is committed to not going to court",
+    "quicker and less stressful than court",
+    "you and the other parent set the agenda",
+    "lawyers are present throughout",
+    "good for your children to see their parents working together"
+  ],
+  "summary_lede": "!route:collaborative_law#lede!",
+  "title": "",
+  "url": "/collaborative-law",
+  "usp": "You can still communicate with the other parent but have complex legal issues to resolve."
+}

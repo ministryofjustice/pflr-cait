@@ -1,0 +1,36 @@
+{
+  "_blockType": "Route",
+  "_id": "route:going_to_court",
+  "_isa": "view:reaching",
+  "blocks": [
+    "going-to-court-step-1",
+    "going-to-court-step-2",
+    "going-to-court-step-3",
+    "going-to-court-step-4",
+    "going-to-court-video",
+    "going-to-court-resources"
+  ],
+  "cons": [
+    "can be expensive",
+    "court process takes a long time",
+    "you’re not in control - a judge will make the decision",
+    "can be more stressful for your children",
+    "increased chance of conflict between you and the other parent"
+  ],
+  "heading": "Going to court",
+  "involved": [
+    "Both parents",
+    "Mediator",
+    "Lawyer for each parent (optional)",
+    "Judge/Court"
+  ],
+  "lede": "You’ll need to go to court if you’ve tried other suitable options and still can’t agree arrangements, or you’re worried about the safety of you or your children.",
+  "lede_additional": "The court process involves several steps and can take a long time.",
+  "pros": [
+    "legally binding decision"
+  ],
+  "summary_lede": "!route:going_to_court#lede!",
+  "title": "",
+  "url": "/going-to-court",
+  "usp": "You want a court to make a decision for you or you have concerns about domestic abuse or child neglect."
+}

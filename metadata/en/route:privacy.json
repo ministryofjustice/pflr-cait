@@ -1,0 +1,12 @@
+{
+  "_blockType": "Route",
+  "_id": "route:privacy",
+  "_isa": "view:about",
+  "blocks": [
+    "privacy-body"
+  ],
+  "heading": "Privacy policy",
+  "lede": "When you use this service certain information or data about you is collected.",
+  "title": "",
+  "url": "/about/privacy"
+}

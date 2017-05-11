@@ -1,0 +1,37 @@
+{
+  "_blockType": "Route",
+  "_id": "route:professional_mediation",
+  "_isa": "view:reaching",
+  "blocks": [
+    "professional-mediation-step-1",
+    "professional-mediation-step-2",
+    "professional-mediation-step-3",
+    "professional-mediation-step-4",
+    "professional-mediation-other",
+    "professional-mediation-unsuitable",
+    "professional-mediation-video",
+    "professional-mediation-resources"
+  ],
+  "cons": [
+    "you’ll need a consent order to make agreement legally binding",
+    "process won’t work unless parents can co-operate"
+  ],
+  "heading": "Professional mediation",
+  "involved": [
+    "Both parents",
+    "Mediator"
+  ],
+  "lede": "Mediation sessions are run by professionals who help you try and reach an agreement without going to court.",
+  "lede_additional": "Mediation isn’t relationship counselling and you don’t have to be in the same room as the other parent.",
+  "pros": [
+    "it’s quicker than court in most cases",
+    "cheaper than using a lawyer",
+    "less conflict between parents",
+    "helps children continue family relationships",
+    "agreements are flexible"
+  ],
+  "summary_lede": "Mediation sessions are run by professionals who help you try and reach an agreement without going to court. It isn’t relationship counselling and you don’t have to be in the same room as the other parent.",
+  "title": "",
+  "url": "/professional-mediation",
+  "usp": "You both want to reach an agreement but need help from someone who is independent."
+}

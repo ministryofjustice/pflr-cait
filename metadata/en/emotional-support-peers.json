@@ -1,0 +1,11 @@
+{
+  "_blockType": "SectionArea",
+  "_id": "emotional-support-peers",
+  "blocks": [
+    "emotional-support-online",
+    "emotional-support-offline"
+  ],
+  "body": "Your family and friends are likely to be the greatest source of support.\r\n\r\nYou can also try using online forums or attending group meetings to speak with people who have been through a similar experience.",
+  "heading": "Peer support",
+  "lede": ""
+}
