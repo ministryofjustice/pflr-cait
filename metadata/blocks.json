@@ -125,7 +125,7 @@
     "_blockType": "CookieSection"
   },
   "cookies-use": {
-    "elements": [
+    "blocks": [
       "cookies-ga",
       "cookies-introductory-message",
       "cookies-youtube"
@@ -170,7 +170,7 @@
   },
   "emotional-support-peers": {
     "body": "Your family and friends are likely to be the greatest source of support.\r\n\r\nYou can also try using online forums or attending group meetings to speak with people who have been through a similar experience.",
-    "elements": [
+    "blocks": [
       "emotional-support-online",
       "emotional-support-offline"
     ],
@@ -180,7 +180,7 @@
   },
   "emotional-support-professional": {
     "body": "You should consider professional advice (for example seeing a counsellor or attending meetings) if you feel you’re struggling to cope.",
-    "elements": [
+    "blocks": [
       "emotional-support-counselling",
       "emotional-support-spip"
     ],
@@ -190,7 +190,7 @@
   },
   "emotional-support-readiness": {
     "body": "Emotional readiness is being able to put aside your own feelings and any negative thoughts about the other parent. If you’re emotionally ready you’ll have a better chance of making an agreement that’s in the best interests of your children.\r\n\r\nThe Children and Family Court Advisory and Support Service (Cafcass) has more information on what you need to do to [become emotionally ready](https://www.cafcass.gov.uk/grown-ups/listening-to-your-child-after-separation.aspx).",
-    "elements": [],
+    "blocks": [],
     "heading": "Emotional readiness",
     "lede": "",
     "_blockType": "SectionArea"
@@ -224,7 +224,7 @@
       "xxxx",
       "xxxx"
     ],
-    "elements": [
+    "blocks": [
       "xxxx",
       "xxxx"
     ],
@@ -245,7 +245,7 @@
   },
   "empty-section": {
     "body": "xxxx",
-    "elements": [],
+    "blocks": [],
     "heading": "xxxx",
     "lede": "",
     "_blockType": "SectionArea"
@@ -311,42 +311,42 @@
   },
   "involving-children-counselling": {
     "body": "Many schools have professionals they can talk to, but some might need further help from a counsellor. The type of [counselling](http://www.counselling-directory.org.uk/childrelatedissues.html) varies depending on age and if they have any learning difficulties.",
-    "elements": [],
+    "blocks": [],
     "heading": "Counselling",
     "lede": "",
     "_blockType": "SectionArea"
   },
   "involving-children-involving": {
     "body": "Children are more likely to adapt to new arrangements if you involve them in decisions. If they understand the situation, make sure to include them whenever possible.\r\n\r\nYou should try and make your arrangements flexible so you can take into account the changing needs of your children as they grow older.\r\n\r\n[Find out more about involving your children](https://www.cafcass.gov.uk/grown-ups/listening-to-your-child-after-separation.aspx)",
-    "elements": [],
+    "blocks": [],
     "heading": "Involving your children",
     "lede": "",
     "_blockType": "SectionArea"
   },
   "involving-children-online-support": {
     "body": "[Voices in the Middle](https://voicesinthemiddle.org.uk/) is a website that has advice from young people in a similar situation. There’s a guide to further help if your children want it.\r\n\r\n[Where to get emotional support for your children](https://www.sortingoutseparation.org.uk/children-parenting/childs-emotional-physical-well/)",
-    "elements": [],
+    "blocks": [],
     "heading": "Support online",
     "lede": "",
     "_blockType": "SectionArea"
   },
   "involving-children-protecting": {
     "body": "In some situations it may not be in the child’s best interests for parents to work out child arrangements. You’ll probably need to go to court if you’re worried about the safety of you or your children.\r\n\r\nYou should [report child abuse](https://www.gov.uk/report-child-abuse) or [domestic abuse](https://www.gov.uk/report-domestic-abuse) if you have any concerns.\r\n\r\nRead more about the [signs of child abuse](https://www.nspcc.org.uk/preventing-abuse/child-abuse-and-neglect/) and [domestic abuse](http://www.refuge.org.uk/get-help-now/help-for-women/recognising-abuse/).",
-    "elements": [],
+    "blocks": [],
     "heading": "Protecting your children",
     "lede": "",
     "_blockType": "SectionArea"
   },
   "involving-children-seeing": {
     "body": "Your children will cope better with their situation if they have regular contact with you and the other parent, if it’s safe to do so.\r\n\r\n[Research shows](http://theparentconnection.org.uk/articles/what-children-think-about-contact) most children think the parent who doesn’t live with them is still an important part of their family.\r\n\r\nYou can use a [child contact centre](https://www.naccc.org.uk/) if you don’t live with your children and can’t find somewhere to see them. There are around 350 across England and Wales.\r\n\r\n> There are steps you can take if the other parent is [preventing you from seeing your children](http://www.advicenow.org.uk/guides/survival-guide-sorting-out-arrangements-your-children).",
-    "elements": [],
+    "blocks": [],
     "heading": "Seeing your children",
     "lede": "",
     "_blockType": "SectionArea"
   },
   "involving-children-supporting": {
     "body": "Your children may need extra support if they’re finding it hard to cope.",
-    "elements": [
+    "blocks": [
       "involving-children-counselling",
       "involving-children-online-support"
     ],
@@ -401,14 +401,14 @@
   },
   "parental-responsibility-making-decisions": {
     "body": "You don’t always need to get the consent of the other parent when making a decision, even if they also have parental responsibility.\r\n\r\nIf it’s a major decision (for example one of you wants to move abroad with your children) both parents with responsibility must agree in writing.\r\n\r\nYou can apply for a [Specific Issue Order](http://www.compactlaw.co.uk/free-legal-information/children/specific-issue-order.html) or [Prohibited Steps Order](http://www.lawandparents.co.uk/prohibited-steps-orders-effect-parents.html) if you can’t agree. A judge will then make a decision which is in your children’s best interests.",
-    "elements": [],
+    "blocks": [],
     "heading": "Making decisions with the other parent",
     "lede": "",
     "_blockType": "SectionArea"
   },
   "parental-responsibility-responsibilities": {
     "body": "You’re also responsible for issues such as:\r\n\r\n- where they go to school\r\n- how to discipline them\r\n- agreeing to their medical treatment\r\n- choosing, registering or changing their names\r\n\r\nAll mothers automatically have parental responsibility. A father usually does if he’s either married to the child’s mother or listed on the birth certificate.\r\n\r\nFind out more about [who has parental responsibility](https://www.gov.uk/parental-rights-responsibilities/who-has-parental-responsibility).\r\n\r\nYou can [apply for parental responsibility](https://www.gov.uk/parental-rights-responsibilities/apply-for-parental-responsibility) if you don’t automatically have it.\r\n\r\n> You must provide financial support for your children even if you don’t have parental responsibility.\r\n\r\n[Arrange child maintenance yourself](https://www.gov.uk/arranging-child-maintenance-yourself)",
-    "elements": [],
+    "blocks": [],
     "heading": "",
     "lede": "",
     "_blockType": "SectionArea"
@@ -482,7 +482,7 @@
     "youtube_code": "zYhWdwazCZA"
   },
   "quicklinks": {
-    "body": "- [Sessions](/admin/sessions)\n\n- [Routes](/admin/routes)\n- [Flag configuration](/admin/flags)\n- [Element types](/admin/elements)",
+    "body": "- [Sessions](/admin/sessions)\n\n- [Routes](/admin/routes)\n- [Flag configuration](/admin/flags)\n- [Block types](/admin/blocks)",
     "_blockType": "Body"
   },
   "reaching-collection": {
@@ -511,7 +511,7 @@
       "expensive process",
       "won’t work unless you and the other parent trust each other equally"
     ],
-    "elements": [
+    "blocks": [
       "collaborative-law-step-1",
       "collaborative-law-step-2",
       "collaborative-law-step-3",
@@ -541,7 +541,7 @@
     "usp": "You can still communicate with the other parent but have complex legal issues to resolve."
   },
   "route:cookies": {
-    "elements": [
+    "blocks": [
       "cookies-body",
       "cookies-use"
     ],
@@ -558,7 +558,7 @@
       "professional advice",
       "emotional readiness"
     ],
-    "elements": [
+    "blocks": [
       "emotional-support-peers",
       "emotional-support-professional",
       "emotional-support-readiness",
@@ -583,7 +583,7 @@
       "can be more stressful for your children",
       "increased chance of conflict between you and the other parent"
     ],
-    "elements": [
+    "blocks": [
       "going-to-court-step-1",
       "going-to-court-step-2",
       "going-to-court-step-3",
@@ -616,7 +616,7 @@
       "arranging times your children spend with you",
       "supporting and protecting your children"
     ],
-    "elements": [
+    "blocks": [
       "involving-children-involving",
       "involving-children-seeing",
       "involving-children-supporting",
@@ -639,7 +639,7 @@
       "can be seen as a confrontational approach",
       "you may feel you’re not in control"
     ],
-    "elements": [
+    "blocks": [
       "lawyer-negotiation-process",
       "lawyer-negotiation-video"
     ],
@@ -667,7 +667,7 @@
       "you’ll need a consent order to make agreement legally binding",
       "process heavily relies on parent co-operation"
     ],
-    "elements": [
+    "blocks": [
       "negotiating-tools",
       "negotiating-unsuitable",
       "negotiating-resources"
@@ -696,7 +696,7 @@
       "who has parental responsibility",
       "making decisions with the other parent"
     ],
-    "elements": [
+    "blocks": [
       "parental-responsibility-responsibilities",
       "parental-responsibility-making-decisions"
     ],
@@ -712,7 +712,7 @@
     "usp": ""
   },
   "route:privacy": {
-    "elements": [
+    "blocks": [
       "privacy-body"
     ],
     "heading": "Privacy policy",
@@ -727,7 +727,7 @@
       "you’ll need a consent order to make agreement legally binding",
       "process won’t work unless parents can co-operate"
     ],
-    "elements": [
+    "blocks": [
       "professional-mediation-step-1",
       "professional-mediation-step-2",
       "professional-mediation-step-3",
@@ -759,7 +759,7 @@
     "usp": "You both want to reach an agreement but need help from someone who is independent."
   },
   "route:quicklinks": {
-    "elements": [
+    "blocks": [
       "quicklinks"
     ],
     "heading": "Quick links",
@@ -773,7 +773,7 @@
       "preparing-collection",
       "reaching-collection"
     ],
-    "elements": [
+    "blocks": [
       "summary-intro"
     ],
     "heading": "Get help with child arrangements",
@@ -785,7 +785,7 @@
     "url": "/"
   },
   "route:terms_conditions": {
-    "elements": [
+    "blocks": [
       "terms-conditions-responsibility",
       "terms-conditions-phase"
     ],
@@ -853,14 +853,14 @@
   },
   "terms-conditions-phase": {
     "body": "This service is currently in ‘private beta’. This means you’re looking at the first version of it.\r\n\r\nA service in ‘private beta’ isn’t open to everyone or may not work for everyone. We do this so we can test and improve the service before releasing it to more people.",
-    "elements": [],
+    "blocks": [],
     "heading": "Private beta",
     "lede": "",
     "_blockType": "Section"
   },
   "terms-conditions-responsibility": {
     "body": "The Ministry of Justice (MoJ) runs this service.\r\n\r\nWe try to make sure the information we provide is accurate and complete and the service is always available and virus free.\r\n\r\nThe MoJ accepts no liability for:\r\n\r\n- you being unable to access the service (for example due to high demand or because we've taken it down for maintenance)\r\n- indirect damages arising from you using the service or relying on its content\r\n- the content and availability of external websites that link to the service or which link from it",
-    "elements": [],
+    "blocks": [],
     "heading": "Responsibility for the service",
     "lede": "",
     "_blockType": "Section"

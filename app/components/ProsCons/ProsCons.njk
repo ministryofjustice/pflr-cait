@@ -1,5 +1,5 @@
 {% macro ProsCons(name, modifier='') %}
-  {% set pros = getElementProp(name, 'pros') %}
+  {% set pros = getBlockProp(name, 'pros') %}
   {% if pros %}
   <div class="ProsCons{% if modifier %} ProsCons--{{ modifier }}{% endif %}">
   <div class="Pros">
@@ -13,7 +13,7 @@
   <div class="Cons">
   <h3 class="ProsCons__heading ProsCons__heading--cons gv-u-heading-small">{{ Block.String('ProsCons__heading--cons') }}</h3>
   <ul class="ProsCons__list--cons">
-  {% for con in getElementProp(name, 'cons') %}
+  {% for con in getBlockProp(name, 'cons') %}
     <li class="ProsCons__item ProsCons__item--cons">{{ con }}</li>
   {% endfor %}
   </ul>

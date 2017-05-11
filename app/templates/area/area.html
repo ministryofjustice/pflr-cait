@@ -24,14 +24,14 @@
 </div>
 
   <div class="xgv-o-grid-row">
-  {{ Block.Group(elements=route.elements) }}
+  {{ Block.Group(blocks=route.blocks) }}
   </div>
 
 {% set collection = route.template + '-collection' %}
-<nav class="AreaLinks" data-element-block="{{ collection }}">
+<nav class="AreaLinks" data-block-name="{{ collection }}">
 <h2 class="AreaLinks__heading gv-u-heading-xlarge">{{ getFormattedProp(collection, 'title_nav') }}</h2>
 <ul class="AreaLinks__list">
-{% for r in getElementProp(collection, 'items') %}
+{% for r in getBlockProp(collection, 'items') %}
 {% if r != route.id %}
   <li><a href="{{ getRouteUrl(r) }}" data-link-type="site-nav">{{ getFormattedProp(r, 'heading') }}</a></li>
   {% endif %}

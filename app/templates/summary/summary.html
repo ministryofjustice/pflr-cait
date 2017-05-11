@@ -13,31 +13,31 @@
   <p class="c-summary__lede">{{ getFormattedProp(route.id, 'lede') }}</p>
   <p class="c-summary__lede">{{ getFormattedProp(route.id, 'lede_additional') | safe }}</p>
   <div class="gv-s-prose">
-  {{ Block.Group(elements=route.elements) }}
+  {{ Block.Group(blocks=route.blocks) }}
   </div>
   </div>
   </div>
   {% for collection in route.collections %}
-    <section id="{{ collection }}" class="SummaryAreas c-areas" data-element-block="{{ collection }}">
+    <section id="{{ collection }}" class="SummaryAreas c-areas" data-block-name="{{ collection }}">
     <h2 class="SummaryAreas__heading c-areas__heading gv-u-heading-xlarge">{{ getFormattedProp(collection, 'title') }}</h2>
-    {% for item in getElementProp(collection, 'items') %}
-      <article class="SummaryArea c-area c-area--template-{{ getElementProp(collection, 'template') }}" id="card-{{ getElementProp(collection, ['slug', 'url']) }}" data-slug="{{ getElementProp(collection, ['slug', 'url']) }}" data-element-block="{{ item }}">
+    {% for item in getBlockProp(collection, 'items') %}
+      <article class="SummaryArea c-area c-area--template-{{ getBlockProp(collection, 'template') }}" id="card-{{ getBlockProp(collection, ['slug', 'url']) }}" data-slug="{{ getBlockProp(collection, ['slug', 'url']) }}" data-block-name="{{ item }}">
         <div class="SummaryArea__details c-area__details">
         <h3 class="SummaryArea__heading c-area__heading gv-u-heading-xlarge"><a href="{{ getRouteUrl(item) }}" data-link-type="card-header">{{ getFormattedProp(item, 'heading') }}</a></h3>
         <p class="SummaryArea__lede c-area__lede gv-u-text-small">{{ getFormattedProp(item, 'summary_lede') }}</p>
         <p class="SummaryArea__lede-additional c-area__lede-additional gv-u-text-small">{{ getFormattedProp(item, 'summary_lede_additional') }}</p>
 
-        {% if getElementProp(item, 'usp') %}
+        {% if getBlockProp(item, 'usp') %}
           <div class="SummaryArea__USP o-usp-callout">
           <h4 class="SummaryArea_USP__heading gv-u-heading-small">{{ Block.String('Area__USP__heading') }}</h4>
           <p>{{ getFormattedProp(item, 'usp') | safe }}</p>
           </div>
         {% endif %}
-        {% if getElementProp(item, 'involved') %}
+        {% if getBlockProp(item, 'involved') %}
           <div class="SummaryArea__Involvement c-involvement-callout">
           <h4 class="SummaryArea__Involvement__heading gv-u-heading-small">{{ Block.String('SummaryArea__Involvement__heading') }}</h4>
           <ul class="gv-c-list--bullet">
-          {% for involved in getElementProp(item, 'involved') %}
+          {% for involved in getBlockProp(item, 'involved') %}
           <li>{{ involved | safe }}</li>
           {% endfor %}
           </ul>
@@ -45,7 +45,7 @@
         {% endif %}
       </div>
       <aside class="c-area__aside xgv-s-prose">
-      {% set concerns = getElementProp(item, 'concerns') %}
+      {% set concerns = getBlockProp(item, 'concerns') %}
       {% if concerns %}
         <div class="SummaryArea__Concerning c-area__concerns">
           <h4 class="SummaryArea__Concerning__heading c-area__concerns__heading gv-u-heading-small">{{ Block.String('SummaryArea__Concerning__heading') }}</h4>

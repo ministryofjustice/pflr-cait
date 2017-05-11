@@ -62,12 +62,12 @@
 {% block footer_support_links %}
   {% if not req.disqualified %}
   <h2 class="visuallyhidden">{{ Block.String('SupportLinks__heading') }}</h2>
-  {% set supportLinks = getElementProp('SupportLinks', 'links') %}
-  <ul data-element-block="SupportLinks">
+  {% set supportLinks = getBlockProp('SupportLinks', 'links') %}
+  <ul data-block-name="SupportLinks">
   {% for link in supportLinks %}
   <li{% if link.type %} data-link-type="{{ link.type }}"{% endif %}{% if link.className %} class="{{ link.className }}"{% endif %}>
     {% if link.route %}
-      <a href="{{ getRouteUrl(link.route) }}">{{ getElementProp(link.route, 'heading') }}</a>
+      <a href="{{ getRouteUrl(link.route) }}">{{ getBlockProp(link.route, 'heading') }}</a>
     {% else %}
       {{ markdown(link.link) | safe }}
     {% endif %}
@@ -164,7 +164,7 @@
   })
   </script>
   <script src="/public/javascripts/tracking-video/tracking-video.js"></script>
-  <script src="/public/javascripts/tracking-element/tracking-element.js"></script>
+  <script src="/public/javascripts/tracking-block/tracking-block.js"></script>
   {% endif %}
 {% endif %}
 {% endblock %}
