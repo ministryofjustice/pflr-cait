@@ -9,10 +9,19 @@
   "repository": {},
   "license": "MIT",
   "dependencies": {
-    "moj-express-kit": "https://github.com/solidgoldpig/moj-express-kit.git#1c4d2de"
+    "moj-express-kit": "https://github.com/solidgoldpig/moj-express-kit.git#3ae41c7",
+    "npm-run-all": "^4.0.2"
   },
   "scripts": {
+    "build": "npm-run-all build:css",
     "build:css": "env APPDIR=$PWD npm explore moj-express-kit -- yarn postcss",
+    "cleanbuild": "rm -rf public",
+    "lint": "npm-run-all -p lint:data lint:stylesheets lint:templates lint:javascript:client",
+    "lint:data": "lint-data",
+    "lint:javascript:client": "lint-javascript-client",
+    "lint:javascript:server": "lint-javascript-server",
+    "lint:stylesheets": "lint-stylesheets",
+    "lint:templates": "lint-templates",
     "watch:css": "env APPDIR=$PWD npm explore moj-express-kit -- yarn watchpostcss"
   }
 }

@@ -71,7 +71,7 @@
   }
 
   const trackErrors = () => {
-    const loadErrorEvents = window.__e && window.__e.q || []
+    const loadErrorEvents = window.__e && window.__e.q ? window.__e.q : []
     const fieldsObj = {eventAction: 'uncaught error'}
 
     // Replay any stored load error events.
