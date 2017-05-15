@@ -14,10 +14,10 @@ COPY package.json yarn.lock ./
 RUN yarn install --ignore-scripts --ignore-optional
 
 # Copy config files
-COPY .babelrc .eslintrc.js ./
+# COPY .babelrc .eslintrc.js ./
+COPY .babelrc ./
 
 # Copy standalone test files
-COPY codecept.conf.js ./
 COPY spec ./spec
 
 # Copy app
