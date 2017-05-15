@@ -15,6 +15,8 @@
   "scripts": {
     "build": "npm-run-all build:css",
     "build:css": "env APPDIR=$PWD npm explore moj-express-kit -- yarn postcss",
+    "githooks": "git config core.hooksPath .githooks",
+    "githooksUnset": "git config --unset core.hooksPath",
     "cleanbuild": "rm -rf public",
     "lint": "npm-run-all -p lint:data lint:stylesheets lint:templates lint:javascript:client",
     "lint:data": "lint-data",
@@ -22,6 +24,11 @@
     "lint:javascript:server": "lint-javascript-server",
     "lint:stylesheets": "lint-stylesheets",
     "lint:templates": "lint-templates",
+    "preinstall": "if [ -d .git ] && [ -x \"$(command -v git)\" ]; then npm run githooks; else echo 'git not installed'; fi;",
+    "postinstall": "npm-run-all build",
+    "test:unit": "echo no unit tests set up",
+    "test:docker": "echo no docker test set up",
+    "test:docker:cleanup": "echo no docker test cleanup set up",
     "watch:css": "env APPDIR=$PWD npm explore moj-express-kit -- yarn watchpostcss"
   }
 }
