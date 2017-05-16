@@ -17,6 +17,9 @@ RUN yarn install --ignore-scripts --ignore-optional
 # COPY .babelrc .eslintrc.js ./
 COPY .babelrc ./
 
+# Copy start
+COPY start.js .
+
 # Copy lib
 COPY lib ./lib
 
@@ -36,4 +39,4 @@ RUN yarn run build:css
 COPY metadata ./metadata
 
 EXPOSE 3000
-CMD [ "node", "lib/server.js" ]
+CMD [ "node", "start.js" ]
