@@ -23,6 +23,7 @@
     "quicker and less stressful than court",
     "you don’t deal directly with the other parent"
   ],
+  "slug": "lawyer_negotiation",
   "summary_lede": "!route:lawyer_negotiation#lede!",
   "title": "",
   "url": "/lawyer-negotiation",
