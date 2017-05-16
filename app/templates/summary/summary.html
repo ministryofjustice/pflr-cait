@@ -21,7 +21,7 @@
     <section id="{{ collection }}" class="SummaryAreas c-areas" data-block-name="{{ collection }}">
     <h2 class="SummaryAreas__heading c-areas__heading gv-u-heading-xlarge">{{ getFormattedProp(collection, 'title') }}</h2>
     {% for item in getBlockProp(collection, 'items') %}
-      <article class="SummaryArea c-area c-area--template-{{ getBlockProp(collection, 'template') }}" id="card-{{ getBlockProp(collection, ['slug', 'url']) }}" data-slug="{{ getBlockProp(collection, ['slug', 'url']) }}" data-block-name="{{ item }}">
+      <article class="SummaryArea c-area c-area--template-{{ getBlockProp(collection, 'template') }}" id="card-{{ getBlockProp(item, ['slug', 'url']) }}" data-slug="{{ getBlockProp(collection, ['slug', 'url']) }}" data-block-name="{{ item }}">
         <div class="SummaryArea__details c-area__details">
         <h3 class="SummaryArea__heading c-area__heading gv-u-heading-xlarge"><a href="{{ getRouteUrl(item) }}" data-link-type="card-header">{{ getFormattedProp(item, 'heading') }}</a></h3>
         <p class="SummaryArea__lede c-area__lede gv-u-text-small">{{ getFormattedProp(item, 'summary_lede') }}</p>

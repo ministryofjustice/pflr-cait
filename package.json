@@ -5,7 +5,7 @@
     "node": "7.7.1",
     "npm": "4.1.2"
   },
-  "main": "index.js",
+  "main": "lib/server.js",
   "repository": {},
   "license": "MIT",
   "dependencies": {
@@ -32,8 +32,7 @@
     "test:docker:cleanup": "sh ci/jenkins/cleanup.sh",
     "test:functional": "test-functional",
     "test:functional:docker": "sh ci/jenkins/functional-tests-run.sh",
-    "test:unit": "echo no unit tests set up",
-    "xtest:unit": "ava --verbose scripts/**/*.unit.spec.js lib/**/*.unit.spec.js",
+    "test:unit": "node_modules/ava/cli.js --verbose spec/**/*.unit.spec.js lib/**/*.unit.spec.js",
     "test:unit:docker": "sh ci/jenkins/unit-tests-run.sh",
     "watch:css": "env APPDIR=$PWD npm explore moj-express-kit -- yarn watchpostcss"
   }
