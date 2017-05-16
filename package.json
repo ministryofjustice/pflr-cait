@@ -9,7 +9,7 @@
   "repository": {},
   "license": "MIT",
   "dependencies": {
-    "moj-express-kit": "https://github.com/solidgoldpig/moj-express-kit.git#e9dec0b",
+    "moj-express-kit": "https://github.com/solidgoldpig/moj-express-kit.git#a01e707",
     "npm-run-all": "^4.0.2"
   },
   "scripts": {
@@ -32,7 +32,7 @@
     "test:docker:cleanup": "sh ci/jenkins/cleanup.sh",
     "test:functional": "test-functional",
     "test:functional:docker": "sh ci/jenkins/functional-tests-run.sh",
-    "test:unit": "node_modules/ava/cli.js --verbose spec/**/*.unit.spec.js lib/**/*.unit.spec.js",
+    "test:unit": "test-unit",
     "test:unit:docker": "sh ci/jenkins/unit-tests-run.sh",
     "watch:css": "env APPDIR=$PWD npm explore moj-express-kit -- yarn watchpostcss"
   }

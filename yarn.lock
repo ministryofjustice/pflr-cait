@@ -3498,9 +3498,9 @@ mocha@^3.1.2:
     mkdirp "0.5.1"
     supports-color "3.1.2"
 
-"moj-express-kit@https://github.com/solidgoldpig/moj-express-kit.git#e9dec0b":
+"moj-express-kit@https://github.com/solidgoldpig/moj-express-kit.git#a01e707":
   version "0.0.1"
-  resolved "https://github.com/solidgoldpig/moj-express-kit.git#e9dec0b"
+  resolved "https://github.com/solidgoldpig/moj-express-kit.git#a01e707"
   dependencies:
     ava "^0.19.1"
     babel-cli "^6.24.1"
