@@ -9,7 +9,7 @@
   "repository": {},
   "license": "MIT",
   "dependencies": {
-    "moj-express-kit": "https://github.com/solidgoldpig/moj-express-kit.git#eda341c",
+    "moj-express-kit": "https://github.com/solidgoldpig/moj-express-kit.git#e9dec0b",
     "npm-run-all": "^4.0.2"
   },
   "scripts": {
@@ -27,13 +27,11 @@
     "preinstall": "if [ -d .git ] && [ -x \"$(command -v git)\" ]; then npm run githooks; else echo 'git not installed'; fi;",
     "postinstall": "npm-run-all build",
     "test": "npm-run-all lint test:unit -s test:functional",
-    "test:a11y": "echo no a11y tests set up",
-    "xtest:a11y": "spec/a11y/pa11y-crawl.sh",
+    "test:a11y": "spec/a11y/pa11y-crawl.sh",
     "test:docker": "npm-run-all -s test:unit:docker test:a11y test:functional:docker",
     "test:docker:cleanup": "sh ci/jenkins/cleanup.sh",
     "test:functional": "test-functional",
-    "test:functional:docker": "echo no docker functional tests set up",
-    "xtest:functional:docker": "sh ci/jenkins/functional-tests-run.sh",
+    "test:functional:docker": "sh ci/jenkins/functional-tests-run.sh",
     "test:unit": "echo no unit tests set up",
     "xtest:unit": "ava --verbose scripts/**/*.unit.spec.js lib/**/*.unit.spec.js",
     "test:unit:docker": "sh ci/jenkins/unit-tests-run.sh",

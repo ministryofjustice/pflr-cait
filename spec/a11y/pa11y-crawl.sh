@@ -1,10 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 if [ -n "$1" ]
 then
   TARGET=$1
 else
   IP_ADDRESS=$(ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p')
+  IP_ADDRESS=$(echo $IP_ADDRESS | sed 's/ .*//')
   TARGET=http://$IP_ADDRESS:3000
 fi
 
