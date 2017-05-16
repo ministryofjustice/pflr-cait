@@ -28,7 +28,7 @@
     "postinstall": "npm-run-all build",
     "test": "npm-run-all lint test:unit -s test:functional",
     "test:a11y": "spec/a11y/pa11y-crawl.sh",
-    "test:docker": "npm-run-all -s test:unit:docker test:a11y test:functional:docker",
+    "test:docker": "npm-run-all -s test:docker:cleanup test:unit:docker test:a11y test:functional:docker",
     "test:docker:cleanup": "sh ci/jenkins/cleanup.sh",
     "test:functional": "test-functional",
     "test:functional:docker": "sh ci/jenkins/functional-tests-run.sh",
