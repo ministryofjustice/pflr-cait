@@ -32,10 +32,6 @@ Install node module dependencies
 
     yarn install
 
-Build the app
-
-    yarn build
-
 ## Running
 
     yarn start
@@ -46,69 +42,112 @@ By default the app runs on port 3000, so the app will be available at:
 
 ## Developing
 
+### Running in dev mode
+
+    yarn dev:start
+
 ### Installing new modules
 
 Use `yarn add <new_module>` rather than `npm install <new_module>`
 
 Similarly, use `yarn remove <old_module>` rather than just deleting it from `package.json`
 
-If you do add or remove a module, please run the dockerised tests to confirm that everything is as it should be - though you'll find out soon enough when Jenkins tries to build it…
+If you do add or remove a module, please run the dockerised prepush tests to confirm that everything is as it should be - though you'll find out soon enough when Jenkins tries to build it…
 
-The application architecture is as follows:
+## Application architecture
 
-### Deployment artifacts
+- `.githooks/`
+
+  Scripts that run before commits and pushes
+
+- `app/`
+
+  - `assets/`
+
+    - `images/`
+
+    - `javascripts/`
+
+    - `stylesheets/`
+
+    Static files
+
+  - `components/`
+
+    Bundles comprising component templates, code, styling and tests
+
+  - `css/`
+
+    Entrypoint for compiling CSS files
+
+  - `templates/`
+
+    Bundles comprising page templates, code, styling and tests
+
+- `ci/`
+
+  Scripts for continuous integration
+
+- `lib/`
+
+  Application modules
+
+- `metadata/`
+
+  JSON files
+
+- `spec`
+
+  Miscellaneous tests (ie. ones that do not reside in the same directory as  the code they’re testing) 
 
 - `Dockerfile`
 
   provides the details to build the image that is used for running the app and tests against it
 
-### Backend
+- `start.js`
 
-- `scripts`
+  Entry point to the application
 
-  Start up scripts
 
-  Entry point to the app is `scripts/server.js`
+### Auto-generated directories
 
-- `lib`
+The following locations are created and are ignored by git
 
-  Application modules
+- `public/`
 
-- `views`
+  Built assets
 
-  Application templates (written in [EJS](http://ejs.co))
+- `reports/`
 
-### Frontend
+  Output of tests
 
-Resources in `src` are for use by the client and copied/processed by relevant parts of the `yarn build` scripts.
 
+## Transpilation
+
+<!--
 - JS
 
-  `src/scripts`
+  Transpiled using [Babel](https://babeljs.io) and output to `public/javasscripts`
+-->
 
-  Transpiled using [Babel](https://babeljs.io) and output to `dist/static/scripts`
+### CSS
 
-  Config provided by `.babelrc` (using es2015 preset)
+Processed with [PostCSS](http://postcss.org/) using the [CSSNext plugin](http://cssnext.io/) and output to `public/stylesheets/`
 
-- CSS
+The following paths are passed to PostCSS:
 
-  `src/styles`
+  - `app/css/`
 
-  Processed with [Stylus](http://stylus-lang.com) and output to `dist/static/styles`
+  - `app/templates/`
 
-- Other
+  - `app/components/`
 
-  `robots.txt`
+  - `app/assets/stylesheets/`
 
-  copied to `dist`
+Files found in `app/css/` are used as entry points
 
-  `src/fonts`
 
-  `src/images`
-  
-  copied to `dist/static`
-
-### Githooks
+## Githooks
 
 Installing the project's node modules also sets the repo's `hooksPath` to `.githooks`.
 
@@ -130,7 +169,7 @@ Installing the project's node modules also sets the repo's `hooksPath` to `.gith
 
   eg. `env SKIP_PRE_PUSH_CAIT=true git push`
 
-#### Disabling githooks
+### Disabling githooks
 
 Git hooks can be disabled
 
@@ -141,6 +180,7 @@ and reenabled
     yarn githooks
 
 See [Git manual](https://git-scm.com/docs/githooks) for more info on git hooks
+
 
 ## Testing
 
@@ -156,19 +196,15 @@ The unit tests live next to the file/module they are for
 
 They have the extension `.unit.spec.js`
 
-The tests can also be run locally in a docker container
+To run the tests in a docker container as they would be in during CI
 
-    yarn test:unit:docker
+    yarn test:unit:prepush
 
 ### Functional tests (end-to-end)
 
     yarn test:functional
 
-Functional tests are run before every push (see `.githooks/pre-push`) and as part of every build
-
-The tests expect a Selenium instance to be running. The following script is provided for convenience, but any Selenium instance will do.
-
-    yarn docker:selenium
+Functional tests are run before every push (see `.githooks/pre-push`) and as part of every Jenkins build
 
 [CodeceptJS](http://codecept.io) is used as the end-to-end test framework
 
@@ -183,9 +219,9 @@ and have the extension `.functional.spec.js`
 
 A `.wallaby.conf.js` file is provided if you use [Wallaby.js](https://wallabyjs.com/) for continuous testing in your editor
 
-The tests can also be run locally in a docker container
+To run the tests in a docker container as they would be in during CI
 
-    yarn test:functional:docker
+    yarn test:functional:prepush
 
 NB. this starts up a selenium container of its own automatically
 
@@ -204,11 +240,11 @@ The checks are performed using a docker container and the resulting report is ou
 
     yarn test
 
-Lints and runs both unit and functional tests and a11y checks
+Lints and runs both unit and functional tests
 
-    yarn test:docker
+    yarn test:prepush
 
-Runs all the tests in docker containers
+Runs all the tests plus a11y checks in the same context as used in CI (as used by `pre-push` githook)
 
 ## Linting
 
@@ -218,34 +254,57 @@ Runs `eslint` and `jsonlint` over various locations
 
 Linting is performed before any commit (see `.githooks/pre-commit`)
 
-### ESLint
+### Javascript linting
 
-`.eslintrc.js` is the main configuration file
+JS files are linted with [ESLint](http://eslint.org/) using the configuration file from `pflr-express-kit`
 
 The following locations are linted:
 
-- `scripts/**/*.js`, `lib/**/*.js`
+- `lib/**/*.js`
 
   application files
-- `src/scripts/**/*.js`
+
+- `app/**/*.js`
 
   client-side js
-
-  config extended by `src/scripts/.eslintrc.js`
 
 - `spec/**/*.js`
 
   tests that don't sit next to the file they are testing, eg. functional tests
 
-  config extended by `spec/.eslintrc.js`
+### CSS linting
 
-### JSONLint
+CSS files are linted with [stylelint](https://stylelint.io)
 
 The following locations are linted:
 
-- `data/**/*.json`
+- `app/**/*.pcss`
 
-  application json for content
+  CSS files written to be compiled using CSSNext
+
+- `app/**/*.css`
+
+  Any other CSS files
+
+### Template linting
+
+The following location are checked to ensure the Nunjucks templates located there are syntactically valid
+
+- `app/**/*.njk`
+
+- `app/**/*.html`
+
+### JSON linting
+
+The following locations are linted:
+
+- `metadata/blocks**/*.json`
+
+  application json for routes and content
+
+- `metadata/*.json`
+
+  auxilliary json files
 
 ## Deploying
 
