@@ -33,9 +33,9 @@
     "test:a11y": "spec/a11y/pa11y-crawl.sh",
     "test:ci": "npm-run-all -s clean:docker test:unit:ci test:a11y test:functional:ci",
     "test:functional": "test-functional",
-    "test:functional:ci": "test-functional-ci",
+    "test:functional:ci": "sh ci/jenkins/test-functional-ci.sh",
     "test:unit": "test-unit",
-    "test:unit:ci": "test-unit-ci",
+    "test:unit:ci": "sh ci/jenkins/test-unit-ci.sh",
     "watch:css": "env APPDIR=$PWD npm explore moj-express-kit -- yarn watchpostcss"
   }
 }
