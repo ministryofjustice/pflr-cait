@@ -18,7 +18,7 @@ RUN yarn install --ignore-scripts --ignore-optional
 COPY .babelrc ./
 
 # Copy start
-COPY start.js .
+COPY start.js ./
 
 # Copy lib
 COPY lib ./lib
