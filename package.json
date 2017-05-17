@@ -9,7 +9,7 @@
   "repository": {},
   "license": "MIT",
   "dependencies": {
-    "moj-express-kit": "https://github.com/solidgoldpig/moj-express-kit.git#c81e1ef",
+    "moj-express-kit": "https://github.com/solidgoldpig/moj-express-kit.git#bd18c2e",
     "npm-run-all": "^4.0.2"
   },
   "scripts": {
