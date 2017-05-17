@@ -9,16 +9,17 @@
   "repository": {},
   "license": "MIT",
   "dependencies": {
-    "moj-express-kit": "https://github.com/solidgoldpig/moj-express-kit.git#a26d25d",
+    "moj-express-kit": "https://github.com/solidgoldpig/moj-express-kit.git#c81e1ef",
     "npm-run-all": "^4.0.2"
   },
   "scripts": {
-    "build": "npm-run-all build:css",
+    "build": "npm-run-all clean:build -p build:css",
     "build:css": "env APPDIR=$PWD npm explore moj-express-kit -- yarn postcss",
-    "dev:start": "npm-run-all cleanbuild -p watch:css start",
+    "dev:start": "npm-run-all clean:build -p watch:css start",
     "githooks": "git config core.hooksPath .githooks",
     "githooksUnset": "git config --unset core.hooksPath",
-    "cleanbuild": "rm -rf public",
+    "clean:build": "rm -rf public",
+    "clean:docker": "clean-docker",
     "lint": "npm-run-all -p lint:data lint:stylesheets lint:templates lint:javascript:client",
     "lint:data": "lint-data",
     "lint:javascript:client": "lint-javascript-client",
@@ -30,12 +31,11 @@
     "start": "node start.js",
     "test": "npm-run-all lint test:unit -s test:functional",
     "test:a11y": "spec/a11y/pa11y-crawl.sh",
-    "test:docker": "npm-run-all -s test:docker:cleanup test:unit:docker test:a11y test:functional:docker",
-    "test:docker:cleanup": "sh ci/jenkins/cleanup.sh",
+    "test:ci": "npm-run-all -s clean:docker test:unit:ci test:a11y test:functional:ci",
     "test:functional": "test-functional",
-    "test:functional:docker": "sh ci/jenkins/functional-tests-run.sh",
+    "test:functional:ci": "test-functional-ci",
     "test:unit": "test-unit",
-    "test:unit:docker": "sh ci/jenkins/unit-tests-run.sh",
+    "test:unit:ci": "test-unit-ci",
     "watch:css": "env APPDIR=$PWD npm explore moj-express-kit -- yarn watchpostcss"
   }
 }
