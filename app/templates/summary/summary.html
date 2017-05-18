@@ -5,6 +5,8 @@
 <link href="{{ asset_path }}stylesheets/summary.css" rel="stylesheet">
 {% endblock %}
 
+{% block page_title %}{{ getFormattedProp(route.id, 'heading') }}{% endblock %}
+
 {% block grid_content %}
 
   <div><div class="gv-o-grid-row">
