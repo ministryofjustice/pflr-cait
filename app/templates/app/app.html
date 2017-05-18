@@ -1,18 +1,21 @@
 {% extends "templates/base/base.html" %}
 {% import "components/Utils/Utils.njk" as Utils with context %}
+{% from 'components/Autotrack/Autotrack.njk' import Autotrack with context %}
 {% from 'components/Breadcrumbs/Breadcrumbs.njk' import Breadcrumbs with context %}
+{% from 'components/CookieMessage/CookieMessage.njk' import CookieMessage with context %}
+{% from 'components/FeedbackBanner/FeedbackBanner.njk' import FeedbackBanner with context %}
+{% from 'components/PhaseBanner/PhaseBanner.njk' import PhaseBanner with context %}
+{% from 'components/SupportLinks/SupportLinks.njk' import SupportLinks with context %}
 
 {{ Utils.registerBlocks([
-  "components/FeedbackBanner/FeedbackBanner.njk",
   "components/CallToAction/CallToAction.njk",
+  "components/CookieSection/CookieSection.njk",
   "components/Costs/Costs.njk",
   "components/ProsCons/ProsCons.njk",
   "components/SectionArea/SectionArea.njk",
   "components/SectionResources/SectionResources.njk",
   "components/SectionVideo/SectionVideo.njk",
-  "components/Step/Step.njk",
-  "components/CookieSection/CookieSection.njk",
-  "components/CookieMessage/CookieMessage.njk"
+  "components/Step/Step.njk"
 ]) }}
 
 {% block body_classes %}{{ route.template }}{% if req.disqualified %} disqualified{% endif %}{% endblock %}
@@ -26,32 +29,22 @@
 
 {%block cookie_message %}
 {% if not req.disqualified %}
-{{ Block.CookieMessage() }}
+{{ CookieMessage() }}
 {% endif %}
 {% endblock %}
 
 {% block after_header %}
 {% if not req.disqualified %}
-{{ Block.FeedbackBanner() }}
+{{ FeedbackBanner() }}
 {% endif %}
 {% endblock %}
 
 {% block phase_banner %}
 {% if not req.disqualified %}
-{% if getString('ServicePhase') %}
-<div class="gv-c-phase-banner">
-  <p class="gv-c-phase-banner__content">
-    <strong class="gv-c-phase-tag">{{ Block.String('ServicePhase') }}</strong>
-    <span class="gv-c-phase-banner__text">{{ Block.String('ServicePhase__text') | safe }}</span>
-  </p>
-</div>
-{% endif %}
+{{ PhaseBanner() }}
 {% endif %}
 {% endblock %}
-{#{{ govuk.phaseBanner(
-    phase = 'beta',
-    message = 'This is the first version of a new service'
-) }}#}
+
 
 {% block breadcrumbs_content %}
 {% if route.breadcrumbs %}
@@ -61,19 +54,7 @@
 
 {% block footer_support_links %}
   {% if not req.disqualified %}
-  <h2 class="visuallyhidden">{{ Block.String('SupportLinks__heading') }}</h2>
-  {% set supportLinks = getBlockProp('SupportLinks', 'links') %}
-  <ul data-block-name="SupportLinks">
-  {% for link in supportLinks %}
-  <li{% if link.type %} data-link-type="{{ link.type }}"{% endif %}{% if link.className %} class="{{ link.className }}"{% endif %}>
-    {% if link.route %}
-      <a href="{{ getRouteUrl(link.route) }}">{{ getBlockProp(link.route, 'heading') }}</a>
-    {% else %}
-      {{ markdown(link.link) | safe }}
-    {% endif %}
-  </li>
-  {% endfor %}
-  </ul>
+  {{ SupportLinks() }}
   {% endif %}
 {% endblock %}
 
@@ -149,22 +130,8 @@
     this.href += addition
   })
   </script>
-  {% if env.GA_TRACKING_ID %}
-  <script>
-  var GA_TRACKING_ID = '{{ env.GA_TRACKING_ID }}'
-  </script>
-  <script src="/public/javascripts/ga-custom/ga-custom.js"></script>
-  <script async src="https://www.google-analytics.com/analytics.js"></script>
-  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
-  <script src="/public/javascripts/vendor/autotrack/autotrack_v2.0.4.js"></script>
-  <script src="/public/javascripts/ga-plugins/ga-plugins.js"></script>
-  <script>
-  jQuery('.gv-c-button').each(function() {
-    jQuery(this).attr('data-link-type', 'button')
-  })
-  </script>
-  <script src="/public/javascripts/tracking-video/tracking-video.js"></script>
-  <script src="/public/javascripts/tracking-element/tracking-element.js"></script>
-  {% endif %}
+
+  {{ Autotrack(env.GA_TRACKING_ID) }}
+
 {% endif %}
 {% endblock %}
