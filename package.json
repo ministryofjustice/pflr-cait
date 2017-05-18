@@ -9,12 +9,12 @@
   "repository": {},
   "license": "MIT",
   "dependencies": {
-    "moj-express-kit": "https://github.com/solidgoldpig/moj-express-kit.git#bd18c2e",
-    "npm-run-all": "^4.0.2"
+    "npm-run-all": "^4.0.2",
+    "pflr-express-kit": "https://github.com/ministryofjustice/pflr-express-kit.git#v0.0.3"
   },
   "scripts": {
     "build": "npm-run-all clean:build -p build:css",
-    "build:css": "env APPDIR=$PWD npm explore moj-express-kit -- yarn postcss",
+    "build:css": "env APPDIR=$PWD npm explore pflr-express-kit -- yarn postcss",
     "dev:start": "npm-run-all clean:build -p watch:css start",
     "githooks": "git config core.hooksPath .githooks",
     "githooksUnset": "git config --unset core.hooksPath",
@@ -42,6 +42,6 @@
     "test:functional:prepush": "sh ci/jenkins/test-functional-ci.sh",
     "test:unit": "test-unit",
     "test:unit:prepush": "sh ci/jenkins/test-unit-ci.sh",
-    "watch:css": "env APPDIR=$PWD npm explore moj-express-kit -- yarn watchpostcss"
+    "watch:css": "env APPDIR=$PWD npm explore pflr-express-kit -- yarn watchpostcss"
   }
 }
