@@ -1,0 +1,139 @@
+{% extends "templates/base/base.html" %}
+{% import "components/Utils/Utils.njk" as Utils with context %}
+{% from 'components/Autotrack/Autotrack.njk' import Autotrack with context %}
+{% from 'components/Breadcrumbs/Breadcrumbs.njk' import Breadcrumbs with context %}
+{% from 'components/CookieMessage/CookieMessage.njk' import CookieMessage with context %}
+{% from 'components/FeedbackBanner/FeedbackBanner.njk' import FeedbackBanner with context %}
+{% from 'components/PhaseBanner/PhaseBanner.njk' import PhaseBanner with context %}
+{% from 'components/SupportLinks/SupportLinks.njk' import SupportLinks with context %}
+
+{{ Utils.registerBlocks([
+  "components/CallToAction/CallToAction.njk",
+  "components/CookieSection/CookieSection.njk",
+  "components/Costs/Costs.njk",
+  "components/ProsCons/ProsCons.njk",
+  "components/SectionArea/SectionArea.njk",
+  "components/SectionResources/SectionResources.njk",
+  "components/SectionVideo/SectionVideo.njk",
+  "components/Step/Step.njk"
+]) }}
+
+{% block page_title %}{{ getFormattedProp(route.id, 'heading') }} - {{ getFormattedProp('route:summary', 'heading') }}{% endblock %}
+
+{% block body_classes %}{{ route.template }}{% if req.disqualified %} disqualified{% endif %}{% endblock %}
+
+{% block proposition_name %}{{ Block.String('ServiceName') }}{% endblock %}
+
+{% block stylesheet %}
+{{ super() }}
+<link href="/public/stylesheets/app.css" rel="stylesheet">
+{% endblock %}
+
+{%block cookie_message %}
+{% if not req.disqualified %}
+{{ CookieMessage() }}
+{% endif %}
+{% endblock %}
+
+{% block after_header %}
+{% if not req.disqualified %}
+{{ FeedbackBanner() }}
+{% endif %}
+{% endblock %}
+
+{% block phase_banner %}
+{% if not req.disqualified %}
+{{ PhaseBanner() }}
+{% endif %}
+{% endblock %}
+
+
+{% block breadcrumbs_content %}
+{% if route.breadcrumbs %}
+{{ Breadcrumbs(route) }}
+{% endif %}
+{% endblock %}
+
+{% block footer_support_links %}
+  {% if not req.disqualified %}
+  {{ SupportLinks() }}
+  {% endif %}
+{% endblock %}
+
+{% block body_end %}
+{{ super() }}
+{# TODO: ensure that req.disqualified does what it should do #}
+{# TODO: normalize env, ENV, req.env, req.ENV #}
+{% if not req.disqualified %}
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+  <script src="/public/javascripts/vendor/js-cookie/js-cookie_v2.1.3.js"></script>
+  <script>
+  if (Cookies.get('seen_cookie_message')) {
+    jQuery('#global-cookie-message').addClass('cookie-seen')
+  }
+  Cookies.set('seen_cookie_message', true, { expires: 28 })
+  </script>
+  <script>
+  var searchArgs = {}
+  var search = document.location.search
+  if (search) {
+    search = search.replace(/^\?/, '')
+    var searchChunks = search.split('&')
+    for (var i = 0, sLength = searchChunks.length; i < sLength; i++) {
+      var argParts = searchChunks[i].split('=')
+      searchArgs[argParts[0]] = argParts[1]
+    }
+  }
+  var surveyData = Cookies.getJSON('surveyData') || {}
+  surveyData.visited = surveyData.visited || {}
+  if (!surveyData.uuid && searchArgs.uuid) {
+    surveyData.uuid = searchArgs.uuid
+  }
+  window.setValues = {}
+  window.setValues.dimension12 = surveyData.uuid
+  {% if env.APP_VERSION %}
+  var APP_VERSION = '{{ env.APP_VERSION }}'
+  window.setValues.dimension13 = APP_VERSION
+  {% endif %}
+  var campaignFields = ['campaignName', 'campaignMedium', 'campaignKeyword', 'campaignContent', 'campaignID']
+  for (var j = 0; j < campaignFields.length; j++) {
+    var campaignField = campaignFields[j]
+    if (searchArgs[campaignField]) {
+      surveyData[campaignField] = searchArgs[campaignField]
+      window.setValues[campaignField] = searchArgs[campaignField]
+    }
+  }
+
+  {% if page.type != 'about' %}
+  var pageStub = document.location.pathname
+                  .replace(/\/$/, '')
+                  .replace(/.*\//, '')
+                  || 'summary'
+  surveyData.visited[pageStub] = true
+  {% endif %}
+  Cookies.set('surveyData', surveyData)
+
+  var visited = []
+  for (var page in surveyData.visited) {
+    visited.push(page)
+  }
+
+
+  jQuery('.moj-FeedbackBanner__link a').attr('data-link-type', 'feedback-banner')
+  jQuery('a[data-link-type="feedback"], [data-link-type="footer-feedback"] a, a[data-link-type="feedback-banner"]').each(function(){
+    var addition = '?uuid=' + surveyData.uuid
+    jQuery.each(visited, function(i, page) {
+      addition += '&' + page.replace(/-/g, '_') + '=T'
+    })
+  // TODO: make this a match and recheck
+  {% if ENV != 'prod' %}
+    this.href = this.href.replace(/3DXCX9L/, 'W6KHC6C')
+  {% endif %}
+    this.href += addition
+  })
+  </script>
+
+  {{ Autotrack(env.GA_TRACKING_ID) }}
+
+{% endif %}
+{% endblock %}

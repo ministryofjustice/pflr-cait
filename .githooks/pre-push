@@ -4,5 +4,5 @@ if [ "$SKIP_PRE_PUSH_CAIT" != "true" ]
 then
   export JOB_NAME=cait-test
   export BUILD_NUMBER=pre-push
-  node_modules/.bin/npm-run-all test:docker:cleanup -p test:docker
+  node_modules/.bin/npm-run-all -p test:prepush
 fi

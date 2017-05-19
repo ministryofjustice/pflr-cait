@@ -1,0 +1,9 @@
+{
+  "_blockType": "Step",
+  "_id": "going-to-court-step-3",
+  "body": "Fill in the C100 form to [apply for a court order](https://www.gov.uk/looking-after-children-divorce/apply-for-court-order) and send it to your nearest family court. It costs £215 to apply.\r\n\r\n> You must give a brief summary of your position and what you want to achieve from the hearing. This is sometimes known as a ‘position statement’.\r\n\r\nYou’ll need to make a separate application if you wish to discuss any other issues in court (for example your finances).\r\nThe court will set a date for a First Hearing Dispute Resolution Appointment (FHDRA). It’ll take about 4 weeks after you apply to get a date.\r\n\r\nAn advisor from the [Children and Family Court Advisory and Support Service (Cafcass)](https://www.cafcass.gov.uk/default.aspx) will provide a report before the first hearing.\r\n\r\nA Cafcass report includes:\r\n\r\n- a social services and criminal record check on you and the other parent\r\n- details of your family’s current arrangements\r\n- a summary of any other issues the court needs to be aware of\r\n\r\nCafcass will also contact you before the first hearing with more information about what to do on the day.\r\n\r\n[Watch video for more details](#c_video_player)",
+  "cost": "Cost of C100 court order",
+  "cost_amount": "£215",
+  "cost_description": "Only applicant needs to pay the fee.",
+  "heading": "Apply for a court order"
+}

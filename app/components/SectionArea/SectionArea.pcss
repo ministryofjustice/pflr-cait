@@ -1,0 +1,36 @@
+@import 'utils/_site.pcss';
+@import 'utils/_typography.pcss';
+
+.moj-Section > * {
+  @apply --section-grid;
+}
+
+.moj-Section {
+  position: relative;
+
+  @media (--ml-vp) {
+    padding-right: 0;
+  }
+}
+
+@media (--ml-vp) {
+  .moj-Section--2:first-child .moj-Section__heading--2 {
+    margin-top: 2rem;
+  }
+}
+
+.moj-Section h3.heading-medium {
+  @apply --gv-u-heading-small;
+}
+
+.moj-Section--3:not(:last-child) .CallToAction {
+  padding-bottom: 1rem;
+}
+
+.moj-Step + .moj-Section {
+  @apply --section-divider;
+}
+
+.moj-Step + .moj-Section .moj-Section__heading--2 {
+  margin-top: 3.5rem;
+}

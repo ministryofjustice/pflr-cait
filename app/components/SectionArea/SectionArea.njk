@@ -1,0 +1,8 @@
+{% from 'components/Section/Section.njk' import Section with context %}
+{% from '../Costs/Costs.njk' import Costs with context %}
+{% from '../CallToAction/CallToAction.njk' import CallToAction with context %}
+
+{% macro SectionArea(name, depth=2) %}
+{% set postContent = Costs(name) + CallToAction(name, modifier='section') %}
+{{ Section(name, className='SectionArea', postContent=postContent, depth=depth)}}
+{% endmacro %}

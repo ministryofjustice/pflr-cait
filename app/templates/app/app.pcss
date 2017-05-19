@@ -1,0 +1,82 @@
+@import 'utils/_mediaqueries.pcss';
+@import 'FeedbackBanner/FeedbackBanner.pcss';
+@import 'ProsCons/ProsCons.pcss';
+@import 'Costs/Costs.pcss';
+@import 'CookieMessage/CookieMessage.pcss';
+
+#global-header .header-proposition {
+  padding-top: 0.5rem;
+}
+
+.disqualified #global-cookie-message {
+  display: none !important;
+}
+
+main {
+  padding-bottom: 3rem;
+}
+
+#footer {
+  border-top: 10px solid #005ea5;
+}
+
+.gv-c-button {
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  th {
+    display: none;
+  }
+
+  table td {
+    display: block;
+    border-bottom: none;
+  }
+
+  td::before {
+    content: attr(data-th);
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+table th,
+table td {
+  vertical-align: top;
+  font-size: 1.4rem;
+
+  @media (--ml-vp) {
+    font-size: 1.6rem;
+  }
+}
+
+@media (--ml-vp) {
+  td:first-child {
+    width: 15rem;
+  }
+
+  td:last-child {
+    width: 11rem;
+  }
+}
+
+/* GRID OVERRIDES */
+@custom-selector :--without-column .summary, .preparing, .about;
+
+@media (min-width: 641px) {
+  :--without-column .gv-u-two-thirds {
+    width: auto;
+  }
+
+  :--without-column .gv-o-grid-item {
+    float: none;
+  }
+}
+
+@media (min-width: 800px) {
+  :--without-column .gv-u-two-thirds {
+    width: 66.66667%;
+  }
+}

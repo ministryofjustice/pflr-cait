@@ -1,0 +1,12 @@
+{% macro Costs(name, classSuffix='') %}
+{% set cost = getFormattedProp(name, 'cost') %}
+{% if cost %}
+  <div class="Costs">
+    <div class="Cost{% if classSuffix %} Cost--{{ classSuffix }}{% endif %}">
+    <h4 class="Cost__heading gv-u-heading-small">{{ cost }}</h4>
+    <p class="Cost__amount gv-u-heading-xlarge"><strong>{{ getFormattedProp(name, 'cost_amount') }}</strong></p>
+    <div class="Cost__small_print">{{ getFormattedBody(name, 'cost_description') | safe }}</div>
+    </div>
+  </div>
+{% endif %}
+{% endmacro %}
