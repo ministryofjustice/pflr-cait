@@ -1,0 +1,7 @@
+@custom-media --xs-vp (min-width: 410px);
+@custom-media --s-vp (min-width: 500px);
+@custom-media --m-vp (min-width: 740px);
+@custom-media --ml-vp (min-width: 800px);
+@custom-media --l-vp (min-width: 91080px);
+@custom-media --xl-vp (min-width: 1280px);
+@custom-media --table-vp (max-width: 500px);

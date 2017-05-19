@@ -1,0 +1,11 @@
+{% macro addMacro(m) %}
+{{ addMacros([m])}}
+{% endmacro %}
+
+{% macro addMacros(macroList) %}
+{% for macro in macroList %}
+{% import macro as temp with context %}
+{% set macros = objectAssign(macros, temp) %}
+{{ setGlobal('macros', macros) }}
+{% endfor %}
+{% endmacro %}
