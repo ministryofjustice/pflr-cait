@@ -3,7 +3,8 @@ jQuery(function () {
   const threshold = 0.5
   const impressionTrackerElements = []
   const elements = []
-  jQuery('.footer, .u-card, .c-step, section[id]').each((index, elem) => {
+  // document.querySelectorAll('#content [id]') ??
+  jQuery('#footer, .SummaryArea, .moj-Step, section[id]').each((index, elem) => {
     elements.push('#' + elem.id)
     impressionTrackerElements.push({
       id: elem.id,
