@@ -119,7 +119,7 @@
   }
 
 
-  jQuery('.moj-FeedbackBanner__link a').attr('data-link-type', 'feedback-banner')
+  jQuery('.FeedbackBanner__link a').attr('data-link-type', 'feedback-banner')
   jQuery('a[data-link-type="feedback"], [data-link-type="footer-feedback"] a, a[data-link-type="feedback-banner"]').each(function(){
     var addition = '?uuid=' + surveyData.uuid
     jQuery.each(visited, function(i, page) {

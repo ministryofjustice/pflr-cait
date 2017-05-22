@@ -4,7 +4,7 @@
   "links": [
     {
       "link": "[Give feedback](https://www.surveymonkey.co.uk/r/3DXCX9L)",
-      "_blockType": "footer-feedback"
+      "linkType": "footer-feedback"
     },
     {
       "route": "route:cookies"
