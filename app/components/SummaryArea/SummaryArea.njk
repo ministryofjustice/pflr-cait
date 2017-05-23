@@ -1,0 +1,43 @@
+{% macro SummaryArea(_id, collection='') %}
+  <article class="SummaryArea SummaryArea__Template-{{ getBlockProp(collection, 'template') }}" id="card-{{ getBlockProp(_id, ['slug', 'url']) }}" data-slug="{{ getBlockProp(collection, ['slug', 'url']) }}" data-block-name="{{ _id }}">
+    <div class="SummaryArea__details">
+    <h3 class="SummaryArea__heading gv-u-heading-xlarge"><a href="{{ getRouteUrl(_id) }}" data-link-type="card-header">{{ getFormattedProp(_id, 'heading') }}</a></h3>
+    <p class="SummaryArea__lede gv-u-text-small">{{ getFormattedProp(_id, 'summary_lede') }}</p>
+    <p class="SummaryArea__lede-additional gv-u-text-small">{{ getFormattedProp(_id, 'summary_lede_additional') }}</p>
+
+    {% if getBlockProp(_id, 'usp') %}
+      <div class="SummaryArea__USP">
+      <h4 class="SummaryArea_USP__heading gv-u-heading-small">{{ Block.String('Area__USP__heading') }}</h4>
+      <p>{{ getFormattedProp(_id, 'usp') | safe }}</p>
+      </div>
+    {% endif %}
+    {% if getBlockProp(_id, 'involved') %}
+      <div class="SummaryArea__Involvement">
+      <h4 class="SummaryArea__Involvement__heading gv-u-heading-small">{{ Block.String('SummaryArea__Involvement__heading') }}</h4>
+      <ul class="SummaryArea__Involvement__list gv-c-list--bullet">
+      {% for involved in getBlockProp(_id, 'involved') %}
+      <li>{{ involved | safe }}</li>
+      {% endfor %}
+      </ul>
+      </div>
+    {% endif %}
+  </div>
+  <aside class="SummaryArea__aside">
+  {% set concerns = getBlockProp(_id, 'concerns') %}
+  {% if concerns %}
+    <div class="SummaryArea__Concerning">
+      <h4 class="SummaryArea__Concerning__heading gv-u-heading-small">{{ Block.String('SummaryArea__Concerning__heading') }}</h4>
+      <ul class="SummaryArea__Concerning__list gv-c-list--bullet">
+        {% for concern in concerns %}
+        <li class="SummaryArea__Concerning__list-item gv-u-text-xsmall">{{ concern | safe }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+  {{ Block.ProsCons(_id) }}
+  </aside>
+
+  <p class="SummaryArea__read-more"><a href="{{ getRouteUrl(_id) }}" data-link-type="card-read-more">Read more about {{ getFormattedProp(_id, 'heading') | lower }}</a></p>
+
+  </article>
+{% endmacro %}

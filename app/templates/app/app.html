@@ -24,7 +24,7 @@
 
 {% block proposition_name %}{{ Block.String('ServiceName') }}{% endblock %}
 
-{% block stylesheet %}
+{% block zstylesheet %}
 {{ super() }}
 <link href="/public/stylesheets/app.css" rel="stylesheet">
 {% endblock %}
@@ -135,5 +135,6 @@
 
   {{ Autotrack(env.GA_TRACKING_ID) }}
 
+<link href="/public/stylesheets/app--print.css" media="print" rel="stylesheet">
 {% endif %}
 {% endblock %}
