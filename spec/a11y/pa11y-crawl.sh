@@ -20,7 +20,11 @@ fi
 
 echo Running a11y checks against $TARGET
 
-docker run -t -v $PWD/reports:/usr/app/reports 18fgsa/pa11y-crawl-docker:latest pa11y-crawl -o /usr/app/reports/a11y.json $TARGET
+A11YNAME=a11y-test-$(date +%s)
+
+docker run --name $A11YNAME -t -v $PWD/reports:/usr/app/reports 18fgsa/pa11y-crawl-docker:latest pa11y-crawl -o /usr/app/reports/a11y.json $TARGET
+
+docker rm -fv $A11YNAME
 
 ERRORS=$(node -e "const results = require('./reports/a11y.json'); console.log(Object.keys(results.data).filter(page => results.data[page].count.error).length)")
 
