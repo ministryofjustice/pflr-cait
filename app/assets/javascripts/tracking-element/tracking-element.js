@@ -1,63 +1,69 @@
+/* eslint-disable */
+'use strict';
+
 jQuery(function () {
-  const trackFirstImpressionOnly = false
-  const threshold = 0.5
-  const impressionTrackerElements = []
-  const elements = []
+  var trackFirstImpressionOnly = false;
+  var threshold = 0.5;
+  var impressionTrackerElements = [];
+  var elements = [];
   // document.querySelectorAll('#content [id]') ??
-  jQuery('#footer, .SummaryArea, .moj-Step, section[id]').each((index, elem) => {
-    elements.push('#' + elem.id)
+  jQuery('#footer, .SummaryArea, .moj-Step, section[id]').each(function (index, elem) {
+    elements.push('#' + elem.id);
     impressionTrackerElements.push({
       id: elem.id,
-      trackFirstImpressionOnly,
-      threshold
-    })
-  })
+      trackFirstImpressionOnly: trackFirstImpressionOnly,
+      threshold: threshold
+    });
+  });
 
   ga('require', 'impressionTracker', {
     elements: impressionTrackerElements
-  })
+  });
 
-  const reportMap = {}
+  var reportMap = {};
 
   // key
   //   - time
   //   - top/bottom
-  const frequency = 1
+  var frequency = 1;
 
-  let windowHasFocus = true
-  jQuery(window)
-    .on('blur', () => { windowHasFocus = false })
-    .on('focus', () => { windowHasFocus = true })
+  var windowHasFocus = true;
+  jQuery(window).on('blur', function () {
+    windowHasFocus = false;
+  }).on('focus', function () {
+    windowHasFocus = true;
+  });
 
-  const reportElements = () => {
+  var reportElements = function reportElements() {
     if (!windowHasFocus) {
-      return
+      return;
     }
-    const windowHeight = jQuery(window).height()
-    const windowWidth = jQuery(window).width()
-    jQuery.each(elements, (index, selector) => {
-      const $elem = jQuery(selector)
-      const bounds = $elem.get(0).getBoundingClientRect()
+    var windowHeight = jQuery(window).height();
+    var windowWidth = jQuery(window).width();
+    jQuery.each(elements, function (index, selector) {
+      var $elem = jQuery(selector);
+      var bounds = $elem.get(0).getBoundingClientRect();
       if (bounds.bottom >= 0 && bounds.top <= windowHeight && bounds.right >= 0 && bounds.left <= windowWidth) {
         if (!reportMap[selector]) {
           reportMap[selector] = {
             elapsed: 0
-          }
+          };
         }
-        reportMap[selector].elapsed += frequency
+        reportMap[selector].elapsed += frequency;
       }
-    })
-  }
-  const path = document.location.pathname.replace(/\?.*/, '')
+    });
+  };
+  var path = document.location.pathname.replace(/\?.*/, '');
   window.addEventListener('beforeunload', function () {
-    for (let prop in reportMap) {
+    for (var prop in reportMap) {
       ga('send', 'event', {
         eventCategory: 'Element Visibility',
         eventAction: prop.replace(/#/, ''),
         eventLabel: path,
         eventValue: reportMap[prop].elapsed
-      })
+      });
     }
-  })
-  setInterval(reportElements, frequency * 1000)
-})
+  });
+  setInterval(reportElements, frequency * 1000);
+});
+
