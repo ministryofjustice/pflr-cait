@@ -24,9 +24,9 @@
 
 {% block proposition_name %}{{ Block.String('ServiceName') }}{% endblock %}
 
-{% block zstylesheet %}
+{% block stylesheet %}
 {{ super() }}
-<link href="/public/stylesheets/app.css" rel="stylesheet">
+<link href="/public/stylesheets/app.css" media="screen" rel="stylesheet">
 {% endblock %}
 
 {%block cookie_message %}

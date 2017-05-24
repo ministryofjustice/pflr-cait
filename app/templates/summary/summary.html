@@ -1,9 +1,9 @@
 {% extends "templates/app/app.html" %}
 {% from 'components/SummaryAreas/SummaryAreas.njk' import SummaryAreas with context %}
 
-{% block zstylesheet %}
+{% block stylesheet %}
 {{ super() }}
-<link href="{{ asset_path }}stylesheets/summary.css" rel="stylesheet">
+<link href="{{ asset_path }}stylesheets/summary.css" media="screen" rel="stylesheet">
 {% endblock %}
 
 {% block page_title %}{{ getFormattedProp(route.id, 'heading') }}{% endblock %}
