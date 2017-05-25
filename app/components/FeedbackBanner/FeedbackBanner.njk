@@ -1,6 +1,6 @@
 {% macro FeedbackBanner() %}
 <div class="FeedbackBanner">
-<div class="gv-o-wrapper">
+<div class="{{ govukClassname('gv-o-wrapper') }}">
 <p class="FeedbackBanner__heading">{{ Block.String('FeedbackBanner__heading') }}</p>
 <p class="FeedbackBanner__link">{{ Block.String('FeedbackBanner__link') }}</p>
 </div>
