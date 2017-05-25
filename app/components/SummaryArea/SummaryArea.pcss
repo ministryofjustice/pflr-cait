@@ -1,3 +1,4 @@
+@import 'utils/_app.pcss';
 
 .SummaryArea {
   clear: both;
@@ -5,12 +6,6 @@
   margin-bottom: 2rem;
   padding: 1rem 0;
   border-bottom: 1px solid #6f777b;
-}
-
-@media only screen and (min-width: 740px) {
-  .SummaryArea {
-    padding-bottom: 3rem;
-  }
 }
 
 .SummaryArea:last-child {
@@ -40,9 +35,10 @@
   margin-top: 2rem;
 }
 
-@media only screen and (min-width: 740px) {
+@media (--kit-medium) {
   .SummaryArea {
     overflow: hidden;
+    padding-bottom: 3rem;
   }
 
   .SummaryArea__details {

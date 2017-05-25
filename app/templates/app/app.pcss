@@ -24,7 +24,7 @@ main {
   text-align: center;
 }
 
-@media (max-width: 500px) {
+@media (--kit-small-max) {
   th {
     display: none;
   }
@@ -47,12 +47,12 @@ table td {
   vertical-align: top;
   font-size: 1.4rem;
 
-  @media (--ml-vp) {
+  @media (--kit-mlarge) {
     font-size: 1.6rem;
   }
 }
 
-@media (--ml-vp) {
+@media (--kit-mlarge) {
   td:first-child {
     width: 15rem;
   }
@@ -66,12 +66,12 @@ table td {
 @custom-selector :--without-column .summary, .preparing, .about;
 
 :--without-column :--column-two-thirds {
-  @media (min-width: 641px) {
+  @media (--govuk-medium) {
     width: auto;
     float: none;
   }
 
-  @media (min-width: 800px) {
+  @media (--kit-mlarge) {
     width: 66.66667%;
   }
 }
