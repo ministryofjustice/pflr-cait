@@ -1,7 +1,7 @@
 {% from 'components/SummaryArea/SummaryArea.njk' import SummaryArea with context %}
 {% macro SummaryAreas(_id) %}
    <section id="{{ _id }}" class="SummaryAreas" data-block-name="{{ _id }}">
-    <h2 class="SummaryAreas__heading gv-u-heading-xlarge">{{ getFormattedProp(_id, 'title') }}</h2>
+    <h2 class="SummaryAreas__heading {{ govukClassname('heading-large') }}">{{ getFormattedProp(_id, 'title') }}</h2>
     {% for item in getBlockProp(_id, 'items') %}
       {{ SummaryArea(item, collection=_id) }}
     {% endfor %}

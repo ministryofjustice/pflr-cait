@@ -1,4 +1,5 @@
 @import 'utils/_mediaqueries.pcss';
+@import 'utils/_site.pcss';
 @import 'FeedbackBanner/FeedbackBanner.pcss';
 @import 'ProsCons/ProsCons.pcss';
 @import 'Costs/Costs.pcss';
@@ -20,7 +21,7 @@ main {
   border-top: 10px solid #005ea5;
 }
 
-.gv-c-button {
+:--button {
   text-align: center;
 }
 
@@ -65,18 +66,13 @@ table td {
 /* GRID OVERRIDES */
 @custom-selector :--without-column .summary, .preparing, .about;
 
-@media (min-width: 641px) {
-  :--without-column .gv-u-two-thirds {
+:--without-column :--column-two-thirds {
+  @media (min-width: 641px) {
     width: auto;
-  }
-
-  :--without-column .gv-o-grid-item {
     float: none;
   }
-}
 
-@media (min-width: 800px) {
-  :--without-column .gv-u-two-thirds {
+  @media (min-width: 800px) {
     width: 66.66667%;
   }
 }
