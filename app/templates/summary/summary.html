@@ -12,9 +12,9 @@
 
   <div class="{{ govukClassname('grid-row') }}">
   <div class="{{ govukClassname('column-two-thirds') }}">
-  <h1 class="c-summary__heading {{ govukClassname('heading-xlarge') }}">{{ getFormattedProp(route.id, 'heading') }}</h1>
-  <p class="c-summary__lede">{{ getFormattedProp(route.id, 'lede') }}</p>
-  <p class="c-summary__lede">{{ getFormattedProp(route.id, 'lede_additional') | safe }}</p>
+  <h1 class="summary__heading {{ govukClassname('heading-xlarge') }}">{{ getFormattedProp(route.id, 'heading') }}</h1>
+  <p class="summary__lede">{{ getFormattedProp(route.id, 'lede') }}</p>
+  <p class="summary__lede summary__lede--additional">{{ getFormattedProp(route.id, 'lede_additional') | safe }}</p>
   <div class="{{ govukClassname('govuk-govspeak') }}">
   {{ Block.Group(blocks=route.blocks) }}
   </div>
