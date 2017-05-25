@@ -3,8 +3,23 @@
 @custom-selector :--inset blockquote;
 
 :root {
+  --line-thin: solid 1px;
+  --line-medium: solid 5px;
+  --line-thick: solid 10px;
+  --border-divider: var(--line-thin) var(--grey-1);
+  --border-subdivider: var(--line-thin) var(--grey-2);
+  --border-brand: var(--line-medium) var(--govuk-blue);
+  --border-brand-thick: var(--line-thick) var(--govuk-blue);
+  --global-cookie-message--background: var(--light-blue-25);
+  --FeedbackBanner--background: var(--purple);
+  --FeedbackBanner--color: var(--govuk-white);
+  --FeedbackBanner_a--color: var(--govuk-white);
+  --ProsCons--background: var(--grey-4);
+  --moj-Step__count--color: var(--grey-1);
+  --SummaryArea__Concerning--background: var(--grey-4);
+
   --section-divider {
-    border-top: solid 1px #6f777b;
+    border-top: var(--border-divider);
     margin-top: 2.5rem;
   }
 
@@ -28,3 +43,22 @@
     }
   }
 }
+
+/*
+black: #000   govuk-black or black?
+
+#bfc1c3 - grey-2
+#d5e8f3 - light-blue-25
+
+#005ea5 - govuk-blue
+
+#2e358b - purple
+
+#ffffff - govuk-white
+
+#f8f8f8 - grey-4, canvas-colour
+
+#6f777b - grey-1, secondary-text-colour
+
+#b4b4b4 - ???? yee be wrong matey
+*/
