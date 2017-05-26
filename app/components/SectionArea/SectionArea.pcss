@@ -1,8 +1,5 @@
 @import 'utils/_app.pcss';
-
-.moj-Section > * {
-  @apply --section-grid;
-}
+@import 'SectionArea--all.pcss';
 
 .moj-Section {
   position: relative;
@@ -22,10 +19,6 @@
   padding-bottom: 1rem;
 }
 
-.moj-Step + .moj-Section {
-  @apply --section-divider;
-}
-
-.moj-Step + .moj-Section .moj-Section__heading--2 {
+.Step + .moj-Section .moj-Section__heading--2 {
   margin-top: 3.5rem;
 }

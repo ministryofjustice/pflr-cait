@@ -1,21 +1,21 @@
 @import 'utils/_app.pcss';
+@import 'Step--all.pcss';
 
-.moj-Step {
+.Step {
   @apply --section-grid;
-  @apply --section-divider;
 
   position: relative;
   padding-top: 2.5rem;
 }
 
 @media (--kit-medium) {
-  .moj-Step > * {
+  .Step > * {
     padding-left: 9rem;
   }
 }
 
-.moj-Step__count {
-  color: var(--moj-Step__count--color);
+.Step__count {
+  color: var(--Step__count--color);
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: bold;
@@ -38,59 +38,59 @@
   }
 }
 
-.moj-Step__heading {
+.Step__heading {
   margin-top: 0;
   font-size: 2.4rem; /* GDS FONT OVERRIDE */
 }
 
-.moj-Step__content h3 {
+.Step__content h3 {
   @apply --gv-u-heading-small;
 }
 
-.moj-Step__count--going-to-court-step-1 {
+.Step__count--going-to-court-step-1 {
   background-image: url(/public/images/steps/step-find-professional.svg);
 }
 
-.moj-Step__count--going-to-court-step-2 {
+.Step__count--going-to-court-step-2 {
   background-image: url(/public/images/steps/step-meeting-3-way.svg);
 }
 
-.moj-Step__count--going-to-court-step-3 {
+.Step__count--going-to-court-step-3 {
   background-image: url(/public/images/steps/step-apply-order.svg);
 }
 
-.moj-Step__count--going-to-court-step-4 {
+.Step__count--going-to-court-step-4 {
   background-image: url(/public/images/steps/step-attend-court.svg);
 }
 
-.moj-Step__count--professional-mediation-step-1 {
+.Step__count--professional-mediation-step-1 {
   background-image: url(/public/images/steps/step-find-professional.svg);
 }
 
-.moj-Step__count--professional-mediation-step-2 {
+.Step__count--professional-mediation-step-2 {
   background-image: url(/public/images/steps/step-meeting-3-way.svg);
 }
 
-.moj-Step__count--professional-mediation-step-3 {
+.Step__count--professional-mediation-step-3 {
   background-image: url(/public/images/steps/step-meeting-3-way.svg);
 }
 
-.moj-Step__count--professional-mediation-step-4 {
+.Step__count--professional-mediation-step-4 {
   background-image: url(/public/images/steps/step-agreement.svg);
 }
 
-.moj-Step__count--collaborative-law-step-1 {
+.Step__count--collaborative-law-step-1 {
   background-image: url(/public/images/steps/step-find-professional.svg);
 }
 
-.moj-Step__count--collaborative-law-step-2 {
+.Step__count--collaborative-law-step-2 {
   background-image: url(/public/images/steps/step-meeting-2-way.svg);
 }
 
-.moj-Step__count--collaborative-law-step-3 {
+.Step__count--collaborative-law-step-3 {
   background-image: url(/public/images/steps/step-meeting-4-way.svg);
 }
 
-.moj-Step__count--collaborative-law-step-4 {
+.Step__count--collaborative-law-step-4 {
   background-image: url(/public/images/steps/step-agreement.svg);
 }

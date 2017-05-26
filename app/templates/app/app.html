@@ -131,6 +131,17 @@
   {% endif %}
     this.href += addition
   })
+
+  // Ensure printed links are fully qualified
+  jQuery('a').each(function() {
+    var href = jQuery(this).attr('href')
+    if (href.match(/^(\/$|\/[^\/])/)) {
+      if (!window.location.origin) {
+        window.location.origin = window.location.protocol + '//' + window.location.hostname + (window.location.port ? ':' + window.location.port : '');
+      }
+      jQuery(this).attr('href', window.location.origin + href)
+    }
+  })
   </script>
 
   {{ Autotrack(env.GA_TRACKING_ID) }}

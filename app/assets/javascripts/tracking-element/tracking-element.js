@@ -7,7 +7,7 @@ jQuery(function () {
   var impressionTrackerElements = [];
   var elements = [];
   // document.querySelectorAll('#content [id]') ??
-  jQuery('#footer, .SummaryArea, .moj-Step, section[id]').each(function (index, elem) {
+  jQuery('#footer, .SummaryArea, .Step, section[id]').each(function (index, elem) {
     elements.push('#' + elem.id);
     impressionTrackerElements.push({
       id: elem.id,
