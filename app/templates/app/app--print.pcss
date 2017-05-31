@@ -1,6 +1,8 @@
 @import 'FeedbackBanner/FeedbackBanner--print.pcss';
 @import 'PhaseBanner/PhaseBanner--print.pcss';
 @import 'AreaLinks/AreaLinks--print.pcss';
+@import 'Costs/Costs--print.pcss';
+@import 'ProsCons/ProsCons--print.pcss';
 @import 'SectionArea/SectionArea--print.pcss';
 @import 'SectionResources/SectionResources--print.pcss';
 @import 'SectionVideo/SectionVideo--print.pcss';
@@ -10,4 +12,10 @@
 
 #global-header .header-proposition {
   display: block;
+}
+
+a[href^="/"]::after,
+a[href^="http://"]::after,
+a[href^="https://"]::after {
+  font-weight: normal;
 }

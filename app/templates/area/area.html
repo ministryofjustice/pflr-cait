@@ -11,8 +11,8 @@
     {{ Block.PageHeader(route.id, heading_size='xlarge') }}
 
     {% if route.usp %}
-    <div class="area__USP__callout {{ govukClassname('govuk-govspeak') }}">
-    <h4>{{ Block.String('Area__USP__heading') }}</h4>
+    <div class="area__USP {{ govukClassname('govuk-govspeak') }}">
+    <h4 class="area__USP__heading">{{ Block.String('Area__USP__heading') }}</h4>
     <p>{{ route.usp | safe }}</p>
     </div>
     {% endif %}
