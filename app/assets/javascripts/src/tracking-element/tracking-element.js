@@ -4,7 +4,7 @@ jQuery(function () {
   const impressionTrackerElements = []
   const elements = []
   // document.querySelectorAll('#content [id]') ??
-  jQuery('#footer, .SummaryArea, .moj-Step, section[id]').each((index, elem) => {
+  jQuery('#footer, .SummaryArea, .Step, section[id]').each((index, elem) => {
     elements.push('#' + elem.id)
     impressionTrackerElements.push({
       id: elem.id,

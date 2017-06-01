@@ -1,4 +1,4 @@
-@import 'utils/_mediaqueries.pcss';
+@import 'utils/_app.pcss';
 @import 'FeedbackBanner/FeedbackBanner.pcss';
 @import 'ProsCons/ProsCons.pcss';
 @import 'Costs/Costs.pcss';
@@ -17,14 +17,14 @@ main {
 }
 
 #footer {
-  border-top: 10px solid #005ea5;
+  border-top: var(--border-brand-thick);
 }
 
-.gv-c-button {
+:--button {
   text-align: center;
 }
 
-@media (max-width: 500px) {
+@media (--kit-small-max) {
   th {
     display: none;
   }
@@ -47,12 +47,12 @@ table td {
   vertical-align: top;
   font-size: 1.4rem;
 
-  @media (--ml-vp) {
+  @media (--kit-mlarge) {
     font-size: 1.6rem;
   }
 }
 
-@media (--ml-vp) {
+@media (--kit-mlarge) {
   td:first-child {
     width: 15rem;
   }
@@ -65,18 +65,13 @@ table td {
 /* GRID OVERRIDES */
 @custom-selector :--without-column .summary, .preparing, .about;
 
-@media (min-width: 641px) {
-  :--without-column .gv-u-two-thirds {
+:--without-column :--column-two-thirds {
+  @media (--govuk-medium) {
     width: auto;
-  }
-
-  :--without-column .gv-o-grid-item {
     float: none;
   }
-}
 
-@media (min-width: 800px) {
-  :--without-column .gv-u-two-thirds {
+  @media (--kit-mlarge) {
     width: 66.66667%;
   }
 }

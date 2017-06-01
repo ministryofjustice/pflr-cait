@@ -2,34 +2,32 @@
 
 {% block stylesheet %}
 {{ super() }}
-<link href="{{ asset_path }}stylesheets/area.css" rel="stylesheet">
+<link href="{{ asset_path }}stylesheets/area.css" media="screen" rel="stylesheet">
 {% endblock %}
 
 {% block grid_content %}
-<div class="gv-o-grid-row">
-<div class="gv-o-grid-item gv-u-two-thirds">
-  {{ Block.PageHeader(route.id, heading_size='xxlarge') }}
+<div class="{{ govukClassname('grid-row') }}">
+  <div class="{{ govukClassname('column-two-thirds') }}">
+    {{ Block.PageHeader(route.id, heading_size='xlarge') }}
 
-  {% if route.usp %}
-  <div class="c-usp-callout gv-s-prose">
-  <h4>{{ Block.String('Area__USP__heading') }}</h4>
-  <p>{{ route.usp | safe }}</p>
+    {% if route.usp %}
+    <div class="area__USP {{ govukClassname('govuk-govspeak') }}">
+    <h4 class="area__USP__heading">{{ Block.String('Area__USP__heading') }}</h4>
+    <p>{{ route.usp | safe }}</p>
+    </div>
+    {% endif %}
   </div>
-  {% endif %}
-</div>
 
-<div class="gv-o-grid-item gv-u-one-third">
-  {{ Block.ProsCons(route.id, modifier='header') }}
-</div>
-</div>
-
-  <div class="xgv-o-grid-row">
-  {{ Block.Group(blocks=route.blocks) }}
+  <div class="{{ govukClassname('column-one-third') }}">
+    {{ Block.ProsCons(route.id, modifier='header') }}
   </div>
+</div>
+
+{{ Block.Group(blocks=route.blocks) }}
 
 {% set collection = route.template + '-collection' %}
 <nav class="AreaLinks" data-block-name="{{ collection }}">
-<h2 class="AreaLinks__heading gv-u-heading-xlarge">{{ getFormattedProp(collection, 'title_nav') }}</h2>
+<h2 class="AreaLinks__heading {{ govukClassname('heading-large') }}">{{ getFormattedProp(collection, 'title_nav') }}</h2>
 <ul class="AreaLinks__list">
 {% for r in getBlockProp(collection, 'items') %}
 {% if r != route.id %}
@@ -38,7 +36,7 @@
 {% endfor %}
 </ul>
 <div class="AreaLinks__overview">
-<h3 class="AreaLinks__overview__heading gv-u-heading-large">{{ Block.String('AreaLinks__overview__heading') }}</h3>
+<h3 class="AreaLinks__overview__heading {{ govukClassname('gv-u-heading-large') }}">{{ Block.String('AreaLinks__overview__heading') }}</h3>
 <p><a href="{{ getRouteUrl('route:summary') }}" class="AreaLinks__overview__link" data-link-type="site-nav">{{ Block.String('AreaLinks__overview__link') }}</a></p>
 </div>
 </nav>

@@ -1,23 +1,18 @@
+@import 'utils/_app.pcss';
 @import 'AreaLinks/AreaLinks.pcss';
 @import 'SectionArea/SectionArea.pcss';
 @import 'SectionVideo/SectionVideo.pcss';
 @import 'SectionResources/SectionResources.pcss';
 @import 'Step/Step.pcss';
 
-h1.heading-xxlarge {
+h1:--heading-xlarge {
   margin-bottom: 3rem;
 }
 
-blockquote {
-  padding: 1rem 2rem;
-  border-left: 1rem solid #b4b4b4;
-  margin: 1rem 0 2rem;
+:--inset {
+  @apply --inset;
 }
 
-blockquote > p:last-child {
-  margin-bottom: 0;
-}
-
-.gv-s-prose blockquote p {
+:--govuk-govspeak :--inset p {
   margin: 0;
 }
