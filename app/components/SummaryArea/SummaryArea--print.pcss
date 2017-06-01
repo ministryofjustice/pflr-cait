@@ -1,0 +1,23 @@
+@import 'SummaryArea--all.pcss';
+
+.SummaryArea__read-more {
+  display: none;
+}
+
+.SummaryArea__heading {
+  page-break-after: avoid;
+}
+
+.SummaryArea__Concerning__heading,
+.SummaryArea__Involvement__heading,
+.SummaryArea_USP__heading,
+.area__USP__heading {
+  @apply --non-standard-heading;
+}
+
+.SummaryArea__Concerning__list,
+.SummaryArea__Involvement__list,
+.SummaryArea_USP__heading + p,
+.area__USP__heading + p {
+  @apply --non-standard-post-heading;
+}
