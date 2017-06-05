@@ -8,6 +8,6 @@
   "devlinks": false,
   "wipstyling": false,
   "degovukify": false,
-  "unavailable": true,
+  "unavailable": false,
   "unavailableId": "route:unavailable"
 }
