@@ -16,6 +16,6 @@
     "route:terms_conditions",
     "route:cookies",
     "route:accepted",
-    "route:notavailable"
+    "route:unavailable"
   ]
 }
