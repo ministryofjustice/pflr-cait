@@ -18,6 +18,7 @@
     "increased chance of conflict between you and the other parent"
   ],
   "heading": "Going to court",
+  "information": "The court process is different in [Scotland](https://www.mygov.scot/crime-justice-and-the-law/courts-and-sentencing/) and [Northern Ireland](https://www.nidirect.gov.uk/articles/solicitors-and-courts).",
   "involved": [
     "Both parents",
     "Mediator",
@@ -25,7 +26,6 @@
     "Judge/Court"
   ],
   "lede": "You’ll need to go to court if you’ve tried other suitable options and still can’t agree arrangements, or you’re worried about the safety of you or your children.",
-  "lede_additional": "The court process involves several steps and can take a long time.",
   "pros": [
     "legally binding decision"
   ],

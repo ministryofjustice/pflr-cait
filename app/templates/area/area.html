@@ -10,6 +10,12 @@
   <div class="{{ govukClassname('column-two-thirds') }}">
     {{ Block.PageHeader(route.id, heading_size='xlarge') }}
 
+    {% if route.information %}
+    <div role="note" aria-label="Information" class="area__information {{govukClassname('inset')}}">
+      {{ getFormattedBody(route.id, 'information') | safe }}
+    </div>
+    {% endif %}
+
     {% if route.usp %}
     <div class="area__USP {{ govukClassname('govuk-govspeak') }}">
     <h4 class="area__USP__heading">{{ Block.String('Area__USP__heading') }}</h4>
