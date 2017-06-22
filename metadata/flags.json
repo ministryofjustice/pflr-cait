@@ -7,5 +7,7 @@
   "edit": true,
   "devlinks": false,
   "wipstyling": false,
-  "degovukify": false
+  "degovukify": false,
+  "unavailable": false,
+  "unavailableId": "route:unavailable"
 }

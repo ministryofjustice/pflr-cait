@@ -3951,9 +3951,9 @@ performance-now@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
 
-"pflr-express-kit@https://github.com/ministryofjustice/pflr-express-kit.git#v0.0.7":
-  version "0.0.7"
-  resolved "https://github.com/ministryofjustice/pflr-express-kit.git#5c8df14b8559d7ee5f471e80f5e0d8ab5a3cac6a"
+"pflr-express-kit@https://github.com/ministryofjustice/pflr-express-kit.git#v0.0.8":
+  version "0.0.8"
+  resolved "https://github.com/ministryofjustice/pflr-express-kit.git#329852969b8ee5ad929e5c90916e7648aff7954e"
   dependencies:
     ava "^0.19.1"
     babel-cli "^6.24.1"
@@ -5608,13 +5608,9 @@ utils-merge@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.0.tgz#0294fb922bb9375153541c4f7096231f287c8af8"
 
-uuid@3.0.0:
+uuid@3.0.0, uuid@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.0.0.tgz#6728fc0459c450d796a99c31837569bdf672d728"
-
-uuid@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.0.1.tgz#6544bba2dfda8c1cf17e629a3a305e2bb1fee6c1"
 
 v8flags@^2.0.10:
   version "2.1.1"

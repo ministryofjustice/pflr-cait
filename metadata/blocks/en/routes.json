@@ -15,6 +15,7 @@
     "route:privacy",
     "route:terms_conditions",
     "route:cookies",
-    "route:accepted"
+    "route:accepted",
+    "route:unavailable"
   ]
 }
