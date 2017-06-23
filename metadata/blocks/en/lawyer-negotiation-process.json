@@ -1,12 +1,12 @@
 {
   "_blockType": "SectionArea",
   "_id": "lawyer-negotiation-process",
-  "body": "You might use lawyer negotiation (also known as solicitor-led negotiation) if you no longer talk to the other parent.\r\n\r\nTo begin the process both you and the other parent will need to hire your own lawyer.\r\n\r\nYour lawyer will set up a meeting to discuss the case with you. You’ll need to explain what your issues are and the outcome you want to achieve.\r\n\r\nAfter receiving instructions from you and the other parent, the lawyers will begin negotiations face-to-face. You won’t have to deal directly with the other parent at any time.\r\n\r\nAs in [collaborative law]({app:urls:route:collaborative_law}) both lawyers will try and keep the case from going to court.\r\n\r\nYour lawyers will draw up a document for court approval once they reach an agreement that you and the other parent are happy with.They’ll then submit it to the court for consideration and approval.",
+  "body": "Before the start of the process (also known as solicitor-led negotiation) your lawyer will set up a meeting to discuss the case with you. You’ll need to explain what your issues are and the outcome you want to achieve.\r\n\r\nAfter receiving instructions from you, your lawyer will begin negotiations with the other parent or their lawyer. You won’t have to deal directly with the other parent at any time.\r\n\r\nAs in [collaborative law]({app:urls:route:collaborative_law}) both lawyers will try and keep the case from going to court.\r\n\r\nYour lawyer will usually draw up a document once they reach an agreement that you and the other parent are happy with. If you want to make the agreement legally binding they’ll submit it to court for consideration and approval.",
   "call_to_action": "Find a lawyer",
   "call_to_action_url": "http://solicitors.lawsociety.org.uk/",
   "cost": "Lawyer rates (per hour)",
   "cost_amount": "£110 - £410",
   "cost_description": "Fees may vary depending on your location and the experience of the lawyer. How long you need will depend on your situation. Some lawyers offer free 30-minute consultations or you can [check if you can get free legal help](https://www.lawworks.org.uk/legal-advice-individuals).",
-  "heading": "Lawyer negotation process",
+  "heading": "Lawyer negotiation process",
   "lede": ""
 }

@@ -15,11 +15,10 @@
   "involved": [
     "Lawyer for each parent"
   ],
-  "lede": "You don’t have to deal directly with the other parent if you choose this option. You each hire a lawyer to negotiate arrangements for you.",
-  "lede_additional": "It can be an expensive process but some parents find having experienced legal help reassuring.",
+  "lede": "You don’t have to deal directly with the other parent if you choose this option. You hire a lawyer to negotiate arrangements for you.",
+  "lede_additional": "You can still hire a lawyer to negotiate on your behalf even if the other parent chooses not to use one.",
   "pros": [
-    "everyone is committed to not going to court",
-    "lawyers are present throughout",
+    "your lawyer supports you throughout",
     "quicker and less stressful than court",
     "you don’t deal directly with the other parent"
   ],

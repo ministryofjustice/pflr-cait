@@ -11,8 +11,8 @@
     "collaborative-law-resources"
   ],
   "cons": [
-    "expensive process",
-    "won’t work unless you and the other parent trust each other equally"
+    "can be an expensive process",
+    "won’t work unless you can trust the other parent and co-operate with them"
   ],
   "heading": "Collaborative law",
   "involved": [
@@ -32,5 +32,5 @@
   "summary_lede": "!route:collaborative_law#lede!",
   "title": "",
   "url": "/collaborative-law",
-  "usp": "You can still communicate with the other parent but have complex legal issues to resolve."
+  "usp": "You can still communicate with the other parent but may have complex legal issues to resolve."
 }
