@@ -1,0 +1,9 @@
+{
+  "_blockType": "Step",
+  "_id": "going-to-court-step-1",
+  "body": "### Hire a lawyer\r\n\r\nA lawyer can be expensive but they’ll handle the legal aspects of the case and represent you in court.\r\n\r\nThey may try and negotiate a deal out of court with the other parent or recommend you move to step 2 straight away.\r\n\r\n[Find a legal adviser](http://solicitors.lawsociety.org.uk/)\r\n\r\n### Represent yourself\r\n\r\nYou may choose to represent yourself because you’d prefer to speak to the judge directly or because you can’t afford the legal fees.\r\n\r\nIf you can’t afford legal representation, you can still ask a lawyer for advice at any time during the court process.\r\n\r\nGOV.UK has more information on [how to represent yourself in court](https://www.gov.uk/represent-yourself-in-court/overview).\r\n\r\nThe [Personal Support Unit (PSU)](https://www.thepsu.org/about-us/) provides help for every stage of the court process for those without a lawyer.\r\n\r\n[Find a free legal advice clinic](https://www.lawworks.org.uk/legal-advice-individuals/find-legal-advice-clinic-near-you)",
+  "cost": "Lawyer rates (per hour)",
+  "cost_amount": "£110 - £410",
+  "cost_description": "Fees may vary depending on your location and the experience of the lawyer. How long you need will depend on your situation. Some lawyers offer free 30-minute consultations or fixed fees. You can also [check if you can get free legal help](https://barprobono.org.uk/do-you-need-help.html).",
+  "heading": "Choose to hire a lawyer or represent yourself"
+}

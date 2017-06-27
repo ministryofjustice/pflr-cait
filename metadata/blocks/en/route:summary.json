@@ -1,0 +1,17 @@
+{
+  "_blockType": "Route",
+  "_id": "route:summary",
+  "blocks": [
+    "summary-intro"
+  ],
+  "collections": [
+    "preparing-collection",
+    "reaching-collection"
+  ],
+  "heading": "Get help with child arrangements",
+  "lede": "Use this guide if you need to make or change child arrangements (also known as custody or contact) with the other parent. For example, you may need to decide where your children will live or rearrange the times they see you.",
+  "static": true,
+  "template": "summary",
+  "title": "",
+  "url": "/"
+}

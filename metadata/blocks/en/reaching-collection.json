@@ -1,0 +1,13 @@
+{
+  "_blockType": "Collection",
+  "_id": "reaching-collection",
+  "items": [
+    "route:negotiating_between_parents",
+    "route:professional_mediation",
+    "route:lawyer_negotiation",
+    "route:collaborative_law",
+    "route:going_to_court"
+  ],
+  "title": "Reaching an agreement",
+  "title_nav": "Other ways to reach an agreement"
+}
