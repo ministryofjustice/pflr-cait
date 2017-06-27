@@ -1,7 +1,7 @@
 {
   "_blockType": "SectionArea",
   "_id": "lawyer-negotiation-process",
-  "body": "Before the start of the process (also known as solicitor-led negotiation) your lawyer will set up a meeting to discuss the case with you. You’ll need to explain what your issues are and the outcome you want to achieve.\r\n\r\nAfter receiving instructions from you, your lawyer will begin negotiations with the other parent or their lawyer. You won’t have to deal directly with the other parent at any time.\r\n\r\nAs in [collaborative law]({app:urls:route:collaborative_law}) both lawyers will try and keep the case from going to court.\r\n\r\nYour lawyer will usually draw up a document once they reach an agreement that you and the other parent are happy with. If you want to make the agreement legally binding they’ll submit it to court for consideration and approval.",
+  "body": "At the start of the process (also known as solicitor-led negotiation) your lawyer will set up a meeting with you to discuss the case. You’ll need to explain your issues and the outcome you want to achieve.\r\n\r\nAfter receiving instructions from you, your lawyer will begin negotiations with the other parent or their lawyer. You won’t have to deal directly with the other parent at any time.\r\n\r\nAs in [collaborative law]({app:urls:route:collaborative_law}) both lawyers will try and keep the case from going to court.\r\n\r\nIf your lawyers reach an agreement that you and the other parent are happy with they'll write down the details. If you both want to make the agreement legally binding they’ll submit it to court for consideration and approval.",
   "call_to_action": "Find a lawyer",
   "call_to_action_url": "http://solicitors.lawsociety.org.uk/",
   "cost": "Lawyer rates (per hour)",

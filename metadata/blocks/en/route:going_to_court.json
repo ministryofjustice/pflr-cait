@@ -27,11 +27,12 @@
   ],
   "lede": "You’ll need to go to court if you’ve tried other suitable options and still can’t agree arrangements, or you’re worried about the welfare of you or your children.",
   "pros": [
-    "legally binding decision"
+    "a decision is made in your child’s best interest",
+    "legally binding outcome"
   ],
   "slug": "going_to_court",
   "summary_lede": "!route:going_to_court#lede!",
   "title": "",
   "url": "/going-to-court",
-  "usp": "You want a court to make a decision for you or you have concerns about domestic abuse or child abuse."
+  "usp": "You want a court to make a decision or you have concerns about domestic abuse or child abuse."
 }
