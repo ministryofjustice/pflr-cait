@@ -1,8 +1,10 @@
 {
   "_blockType": "SectionArea",
   "_id": "involving-children-seeing",
-  "blocks": [],
-  "body": "Your children will cope better with their situation if they have regular contact with you and the other parent, if it’s safe to do so.\r\n\r\n[Research shows](http://theparentconnection.org.uk/articles/what-children-think-about-contact) most children think the parent who doesn’t live with them is still an important part of their family.\r\n\r\nYou can use a [child contact centre](https://www.naccc.org.uk/) if you don’t live with your children and can’t find somewhere to see them. There are around 350 across England and Wales.\r\n\r\n(i) There are steps you can take if the other parent is [preventing you from seeing your children](http://www.advicenow.org.uk/guides/survival-guide-sorting-out-arrangements-your-children).",
+  "blocks": [
+    "involving-children-prevented"
+  ],
+  "body": "Your children will cope better with their situation if they have regular contact with you and the other parent, if it’s safe to do so.\r\n\r\n[Research shows](http://theparentconnection.org.uk/articles/what-children-think-about-contact) most children think the parent who doesn’t live with them is still an important part of their family.\r\n\r\nYou can use a [child contact centre](https://www.naccc.org.uk/) if you don’t live with your children and can’t find somewhere to see them. There are around 350 across England and Wales.\r\n",
   "heading": "Seeing your children",
   "lede": ""
 }
