@@ -13,9 +13,9 @@
   "cons": [
     "can be expensive",
     "court process takes a long time",
-    "you’re not in control - a judge will make the decision",
-    "can be more stressful for your children",
-    "increased chance of conflict between you and the other parent"
+    "you might not get what you want - a judge makes the decision",
+    "can be more stressful for you and your children",
+    "may increase conflict between you and the other parent"
   ],
   "heading": "Going to court",
   "information": "The court process is different in [Scotland](https://www.mygov.scot/crime-justice-and-the-law/courts-and-sentencing/) and [Northern Ireland](https://www.nidirect.gov.uk/articles/solicitors-and-courts).",
@@ -25,13 +25,14 @@
     "Lawyer for each parent (optional)",
     "Judge/Court"
   ],
-  "lede": "You’ll need to go to court if you’ve tried other suitable options and still can’t agree arrangements, or you’re worried about the safety of you or your children.",
+  "lede": "You’ll need to go to court if you’ve tried other suitable options and still can’t agree arrangements, or you’re worried about the welfare of you or your children.",
   "pros": [
-    "legally binding decision"
+    "a decision is made in your child’s best interest",
+    "legally binding outcome"
   ],
   "slug": "going_to_court",
   "summary_lede": "!route:going_to_court#lede!",
   "title": "",
   "url": "/going-to-court",
-  "usp": "You want a court to make a decision for you or you have concerns about domestic abuse or child neglect."
+  "usp": "You want a court to make a decision or you have concerns about domestic abuse or child abuse."
 }
