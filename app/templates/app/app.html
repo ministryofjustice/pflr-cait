@@ -95,6 +95,7 @@
   var APP_VERSION = '{{ env.APP_VERSION }}'
   window.setValues.dimension13 = APP_VERSION
   {% endif %}
+  window.setValues.dimension14 = surveyData.referrer
   var campaignFields = ['campaignName', 'campaignMedium', 'campaignKeyword', 'campaignContent', 'campaignID']
   for (var j = 0; j < campaignFields.length; j++) {
     var campaignField = campaignFields[j]
@@ -118,16 +119,24 @@
     visited.push(page)
   }
 
-
+  function addParam(str, param) {
+    if (surveyData[param]) {
+      str += '&' + param +'=' + surveyData[param]
+    }
+    return str
+  }
   jQuery('.FeedbackBanner__link a').attr('data-link-type', 'feedback-banner')
   jQuery('a[data-link-type="feedback"], [data-link-type="footer-feedback"] a, a[data-link-type="feedback-banner"]').each(function(){
     var addition = '?uuid=' + surveyData.uuid
+    addition = addParam(addition, 'referrer')
+    addition = addParam(addition, 'campaignName')
+
     jQuery.each(visited, function(i, page) {
       addition += '&' + page.replace(/-/g, '_') + '=T'
     })
   // TODO: make this a match and recheck
   {% if ENV != 'prod' %}
-    this.href = this.href.replace(/3DXCX9L/, 'W6KHC6C')
+    this.href = this.href.replace(/72MRZH6/, '72MRZH6')
   {% endif %}
     this.href += addition
   })
