@@ -6,15 +6,11 @@
 {% endmacro %}
 
 {% macro VideoPlayer(name) %}
-<div class="VideoPlayer__container VideoPlayer__lightbox" type="video" id="c_video_player">
-<div class="VideoPlayer__wrapper">
-<p class="VideoPlayer__link"><a href="https://www.youtube.com/watch?v={{ getFormattedProp(name, 'youtube_code') }}" data-video-id="{{ getFormattedProp(name, 'video_id') }}" data-video-code="{{ getFormattedProp(name, 'youtube_code') }}"><img src="https://img.youtube.com/vi/{{ getFormattedProp(name, 'youtube_code') }}/0.jpg" alt="{{ getFormattedProp(name, 'heading') }} - Video on YouTube"></a></p>
-<p class="VideoPlayer__accessible-link"><a href="https://accessyoutube.org.uk/play/{{ getFormattedProp(name, 'youtube_code') }}">{{ getFormattedProp(name, 'heading') }} - Video on Access:YouTube</a></p>
-</div>
-</div>
+<p class="VideoPlayer__link-accessible visually-hidden"><a href="https://www.youtube.com/watch?v={{ getFormattedProp(name, 'youtube_code') }}">{{ getFormattedProp(name, 'heading') }} - Video on YouTube</a></p>
 
-{#
-  <iframe id="{{ getFormattedProp(name, 'video_id') }}" title="{{ getFormattedProp(name, 'heading') }}" src="https://www.youtube.com/embed/{{ getFormattedProp(name, 'youtube_code') }}?enablejsapi=1&amp;origin={{ req.servername }}" frameborder="0" allowfullscreen=""></iframe>
-  <img src="https://img.youtube.com/vi/{{ getFormattedProp(name, 'youtube_code') }}/0.jpg" alt="">
-#}
+<div aria-hidden="true" class="VideoPlayer__container VideoPlayer__lightbox" type="video" id="c_video_player">
+<div class="VideoPlayer__wrapper">
+<iframe id="{{ getFormattedProp(name, 'video_id') }}" title="{{ getFormattedProp(name, 'heading') }}" src="https://www.youtube.com/embed/{{ getFormattedProp(name, 'youtube_code') }}?enablejsapi=1&amp;origin={{ req.servername }}" allowfullscreen=""></iframe>
+</div>
+</div>
 {% endmacro %}
