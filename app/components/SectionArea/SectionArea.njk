@@ -3,6 +3,6 @@
 {% from '../CallToAction/CallToAction.njk' import CallToAction with context %}
 
 {% macro SectionArea(name, depth=2) %}
-{% set postContent = Costs(name) + CallToAction(name, modifier='section') %}
+{% set postContent = Costs(name, depth=depth+1) + CallToAction(name, modifier='section') %}
 {{ Section(name, className='SectionArea', postContent=postContent, depth=depth)}}
 {% endmacro %}

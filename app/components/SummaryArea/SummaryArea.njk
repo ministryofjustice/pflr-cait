@@ -26,7 +26,7 @@
   {% set concerns = getBlockProp(_id, 'concerns') %}
   {% if concerns %}
     <div class="SummaryArea__Concerning">
-      <h4 class="SummaryArea__Concerning__heading {{ govukClassname('heading-small') }}">{{ Block.String('SummaryArea__Concerning__heading') }}</h4>
+      <h4 class="SummaryArea__Concerning__heading {{ govukClassname('heading-small') }}" role="presentation">{{ Block.String('SummaryArea__Concerning__heading') }}</h4>
       <ul class="SummaryArea__Concerning__list {{ govukClassname('list-bullet') }}">
         {% for concern in concerns %}
         <li class="SummaryArea__Concerning__list-item {{ govukClassname('font-xsmall') }}">{{ concern | safe }}</li>

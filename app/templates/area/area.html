@@ -18,14 +18,14 @@
 
     {% if route.usp %}
     <div class="area__USP {{ govukClassname('govuk-govspeak') }}">
-    <h4 class="area__USP__heading">{{ Block.String('Area__USP__heading') }}</h4>
+    <h2 class="area__USP__heading">{{ Block.String('Area__USP__heading') }}</h2>
     <p>{{ route.usp | safe }}</p>
     </div>
     {% endif %}
   </div>
 
   <div class="{{ govukClassname('column-one-third') }}">
-    {{ Block.ProsCons(route.id, modifier='header') }}
+    {{ Block.ProsCons(route.id, modifier='header', level=2) }}
   </div>
 </div>
 

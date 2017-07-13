@@ -1,15 +1,15 @@
 {% from '../Costs/Costs.njk' import Costs with context %}
 {% from '../CallToAction/CallToAction.njk' import CallToAction with context %}
 
-{% macro Step(name) %}
+{% macro Step(name, depth=2) %}
 {% set stepCount = counter('step') + 1 %}
 <div id="step-{{ name }}" class="Step Step-{{ stepCount }} Step--{{ name }}" data-block-name="{{name}}">
-<p class="Step__count Step__count--{{ name }}">Step <span class="Step__count__counter">{{ stepCount }}</span></p>
-<h2 class="Step__heading {{ govukClassname('heading-medium') }}">{{ getFormattedProp(name, ['heading_short', 'heading']) | safe }}</h2>
+<h{{ depth}} class="Step__heading {{ govukClassname('heading-medium') }}">
+<span class="Step__count Step__count--{{ name }}">Step <span class="Step__count__counter">{{ stepCount }}</span><span aria-label=" - "></span></span>{{ getFormattedProp(name, ['heading_short', 'heading']) | safe }}</h{{ depth}}>
 <div class="Step__content {{ govukClassname('govuk-govspeak') }}">
 {{ getFormattedBody(name, 'body') | safe }}
 </div>
-{{ Costs(name, classSuffix='step') }}
+{{ Costs(name, classSuffix='step', depth=depth+1) }}
 {{ CallToAction(name, modifier='step') }}
 </div>
 {% endmacro %}

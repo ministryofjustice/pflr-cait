@@ -136,7 +136,7 @@
     })
   // TODO: make this a match and recheck
   {% if ENV != 'prod' %}
-    this.href = this.href.replace(/72MRZH6/, '72MRZH6')
+    this.href = this.href.replace(/72MRZH6/, '7MF5F5W')
   {% endif %}
     this.href += addition
   })
@@ -150,6 +150,15 @@
       }
       jQuery(this).attr('href', window.location.origin + href)
     }
+  })
+  </script>
+
+  <script>
+  jQuery(document).ready(function() {
+    jQuery('.VideoPlayer__link a').each(function() {
+      var $VideoLink = jQuery(this)
+      // $VideoLink.html('<img src="https://img.youtube.com/vi/' + $VideoLink.attr('data-video-code') + '/0.jpg" alt="">')
+    })
   })
   </script>
 
