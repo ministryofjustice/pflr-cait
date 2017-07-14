@@ -18,7 +18,7 @@
 
     {% if route.usp %}
     <div class="area__USP {{ govukClassname('govuk-govspeak') }}">
-    <h2 class="area__USP__heading">{{ Block.String('Area__USP__heading') }}</h2>
+    <h2 class="area__USP__heading"><span aria-hidden="true">{{ Block.String('Area__USP__heading') }}</span><span class="visually-hidden">{{ Block.String('Area__USP__heading--a11y', { area: getFormattedProp(route.id, 'heading')}) }}</span></h2>
     <p>{{ route.usp | safe }}</p>
     </div>
     {% endif %}
