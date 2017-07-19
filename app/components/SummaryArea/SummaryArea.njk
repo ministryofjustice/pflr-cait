@@ -7,13 +7,13 @@
 
     {% if getBlockProp(_id, 'usp') %}
       <div class="SummaryArea__USP">
-      <h4 class="SummaryArea_USP__heading {{ govukClassname('heading-small') }}">{{ Block.String('Area__USP__heading') }}</h4>
+      <h4 class="SummaryArea_USP__heading {{ govukClassname('heading-small') }}"><span aria-hidden="true">{{ Block.String('Area__USP__heading') }}</span><span class="visually-hidden">{{ Block.String('Area__USP__heading--a11y', { area: getFormattedProp(_id, 'heading')}) }}</span></h4>
       <p>{{ getFormattedProp(_id, 'usp') | safe }}</p>
       </div>
     {% endif %}
     {% if getBlockProp(_id, 'involved') %}
       <div class="SummaryArea__Involvement">
-      <h4 class="SummaryArea__Involvement__heading {{ govukClassname('heading-small') }}">{{ Block.String('SummaryArea__Involvement__heading') }}</h4>
+      <h4 class="SummaryArea__Involvement__heading {{ govukClassname('heading-small') }}">{{ Block.String('SummaryArea__Involvement__heading') }} <span class="visually-hidden">in {{ getFormattedProp(_id, 'heading') }}</span></h4>
       <ul class="SummaryArea__Involvement__list {{ govukClassname('list-bullet') }}">
       {% for involved in getBlockProp(_id, 'involved') %}
       <li>{{ involved | safe }}</li>
@@ -26,7 +26,7 @@
   {% set concerns = getBlockProp(_id, 'concerns') %}
   {% if concerns %}
     <div class="SummaryArea__Concerning">
-      <h4 class="SummaryArea__Concerning__heading {{ govukClassname('heading-small') }}">{{ Block.String('SummaryArea__Concerning__heading') }}</h4>
+      <h4 class="SummaryArea__Concerning__heading {{ govukClassname('heading-small') }}" role="presentation">{{ Block.String('SummaryArea__Concerning__heading') }}</h4>
       <ul class="SummaryArea__Concerning__list {{ govukClassname('list-bullet') }}">
         {% for concern in concerns %}
         <li class="SummaryArea__Concerning__list-item {{ govukClassname('font-xsmall') }}">{{ concern | safe }}</li>

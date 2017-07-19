@@ -6,10 +6,11 @@
 {% endmacro %}
 
 {% macro VideoPlayer(name) %}
-<div class="VideoPlayer__container VideoPlayer__lightbox" type="video" id="c_video_player">
-  <div class="VideoPlayer__wrapper">
-  <iframe id="{{ getFormattedProp(name, 'video_id') }}" title="{{ getFormattedProp(name, 'heading') }}" src="https://www.youtube.com/embed/{{ getFormattedProp(name, 'youtube_code') }}?enablejsapi=1&amp;origin={{ req.servername }}" frameborder="0" allowfullscreen=""></iframe>
-  <img src="https://img.youtube.com/vi/{{ getFormattedProp(name, 'youtube_code') }}/0.jpg" alt="">
-  </div>
+<p class="VideoPlayer__link-accessible visually-hidden"><a href="https://www.youtube.com/watch?v={{ getFormattedProp(name, 'youtube_code') }}">{{ getFormattedProp(name, 'heading') }} - Video on YouTube</a></p>
+
+<div aria-hidden="true" class="VideoPlayer__container VideoPlayer__lightbox" type="video" id="c_video_player">
+<div class="VideoPlayer__wrapper">
+<iframe id="{{ getFormattedProp(name, 'video_id') }}" title="{{ getFormattedProp(name, 'heading') }}" src="https://www.youtube.com/embed/{{ getFormattedProp(name, 'youtube_code') }}?enablejsapi=1&amp;origin={{ req.servername }}" allowfullscreen=""></iframe>
+</div>
 </div>
 {% endmacro %}
