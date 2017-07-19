@@ -1,6 +1,6 @@
 {
   "name": "pflr-cait",
-  "version": "0.9.22",
+  "version": "1.0.0",
   "engines": {
     "node": "7.7.1",
     "npm": "4.1.2"
