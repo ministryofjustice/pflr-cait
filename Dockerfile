@@ -1,7 +1,7 @@
-FROM node:8.1.2
+FROM node:8.1.4
 
 # Install yarn
-RUN curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 0.24.6
+RUN curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 0.27.5
 RUN ln -sf /root/.yarn/bin/yarn /usr/local/bin/yarn
 
 # Create app directory
