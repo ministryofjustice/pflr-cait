@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "npm-run-all": "^4.0.2",
-    "pflr-express-kit": "https://github.com/ministryofjustice/pflr-express-kit.git#v0.0.11",
+    "pflr-express-kit": "https://github.com/ministryofjustice/pflr-express-kit.git#v0.0.12",
     "uuid": "^3.1.0"
   },
   "scripts": {
@@ -41,7 +41,7 @@
     "test:prepush": "npm-run-all -s test:unit:prepush test:a11y test:functional:prepush",
     "test:functional": "test-functional",
     "test:functional:prepush": "sh ci/jenkins/test-functional-ci.sh",
-    "test:unit": "test-unit",
+    "test:unit": "ava --verbose lib/**/*.unit.spec.js",
     "test:unit:prepush": "sh ci/jenkins/test-unit-ci.sh",
     "watch:css": "env APPDIR=$PWD npm explore pflr-express-kit -- yarn watchpostcss"
   }
