@@ -29,6 +29,11 @@
 <link href="/public/stylesheets/app.css" media="screen" rel="stylesheet">
 {% endblock %}
 
+{% block head %}
+{{ super() }}
+<link href="/public/stylesheets/app--print.css" media="print" rel="stylesheet">
+{% endblock %}
+
 {%block cookie_message %}
 {% if not req.disqualified %}
 {{ CookieMessage() }}
@@ -155,6 +160,5 @@
 
   {{ Autotrack(env.GA_TRACKING_ID) }}
 
-<link href="/public/stylesheets/app--print.css" media="print" rel="stylesheet">
 {% endif %}
 {% endblock %}
