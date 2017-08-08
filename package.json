@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "npm-run-all": "^4.0.2",
-    "pflr-express-kit": "https://github.com/ministryofjustice/pflr-express-kit.git#overhaul-scripts-3",
+    "pflr-express-kit": "https://github.com/ministryofjustice/pflr-express-kit.git#v0.0.15",
     "uuid": "^3.1.0"
   },
   "scripts": {

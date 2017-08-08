@@ -12,9 +12,9 @@ That confidence is dependent upon sign off by Policy and Legal (and confirmation
 
 ## Pre-requisites
 
-  [Node 8.0.0](https://nodejs.org)
+  [Node 8.1.4](https://nodejs.org)
 
-  [Yarn 0.24.6](https://yarnpkg.com)
+  [Yarn 0.27.5](https://yarnpkg.com)
 
 ## Optional
 
