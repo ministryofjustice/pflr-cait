@@ -32,7 +32,7 @@
     "pretest:a11y:prepush": "clean-prepush",
     "pretest:functional:prepush": "clean-prepush",
     "pretest:unit:prepush": "clean-prepush",
-    "postinstall": "clean-prepush",
+    "postinstall": "build",
     "posttest:prepush": "clean-prepush",
     "posttest:a11y:prepush": "clean-prepush",
     "posttest:functional:prepush": "clean-prepush",
