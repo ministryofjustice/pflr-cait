@@ -1,19 +1,6 @@
-@import 'utils/_utils.pcss';
-
-@custom-selector :--inset .panel-border-wide;
+@import 'utils/_app--defaults.pcss';
 
 :root {
-  --line-thin: solid 1px;
-  --line-medium: solid 5px;
-  --line-thick: solid 10px;
-  --border-divider: var(--line-thin) var(--grey-1);
-  --border-subdivider: var(--line-thin) var(--grey-2);
-  --border-brand: var(--line-medium) var(--govuk-blue);
-  --border-brand-thick: var(--line-thick) var(--govuk-blue);
-  --global-cookie-message--background: var(--light-blue-25);
-  --FeedbackBanner--background: var(--purple);
-  --FeedbackBanner--color: var(--govuk-white);
-  --FeedbackBanner_a--color: var(--govuk-white);
   --ProsCons--background: var(--grey-4);
   --Step__count--color: var(--govuk-black);
   --SummaryArea__Concerning--background: var(--grey-4);
@@ -30,16 +17,6 @@
   --section-grid {
     @media (--kit-mlarge) {
       padding-right: 35%;
-    }
-  }
-
-  --inset {
-    padding: 1rem 2rem;
-    border-left: var(--line-thick) var(--grey-2);
-    margin: 1rem 0 2rem;
-
-    & > p:last-child {
-      margin-bottom: 0;
     }
   }
 
