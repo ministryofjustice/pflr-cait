@@ -8,12 +8,13 @@
   "repository": {},
   "license": "MIT",
   "dependencies": {
-    "pflr-express-kit": "https://github.com/ministryofjustice/pflr-express-kit.git#refactor-common",
+    "pflr-express-kit": "https://github.com/ministryofjustice/pflr-express-kit.git#refactor-common-E",
     "uuid": "^3.1.0"
   },
   "scripts": {
     "build": "build",
     "build:css": "build-css",
+    "build:javascript": "build-javascript",
     "dev:start": "dev-start",
     "githooks": "git config core.hooksPath .githooks",
     "githooksUnset": "git config --unset core.hooksPath",
@@ -25,17 +26,17 @@
     "lint:javascript:server": "lint-javascript-server",
     "lint:stylesheets": "lint-stylesheets",
     "lint:templates": "lint-templates",
+    "postinstall": "build",
     "preinstall": "if [ -d .git ] && [ -x \"$(command -v git)\" ]; then npm run githooks; else echo 'git not installed'; fi;",
     "pretest:prepush": "clean-prepush",
     "pretest:a11y:prepush": "clean-prepush",
     "pretest:functional:prepush": "clean-prepush",
     "pretest:unit:prepush": "clean-prepush",
-    "postinstall": "build",
     "posttest:prepush": "clean-prepush",
     "posttest:a11y:prepush": "clean-prepush",
     "posttest:functional:prepush": "clean-prepush",
     "posttest:unit:prepush": "clean-prepush",
-    "start": "node start.js",
+    "start": "start",
     "test": "test-all",
     "test:a11y": "test-a11y",
     "test:a11y:prepush": "test-a11y-ci",
@@ -44,6 +45,7 @@
     "test:functional:prepush": "test-functional-ci",
     "test:unit": "ava --verbose lib/**/*.unit.spec.js",
     "test:unit:prepush": "test-unit-ci",
-    "watch:css": "watch-css"
+    "watch:css": "watch-css",
+    "watch:javascript": "watch-javascript"
   }
 }
