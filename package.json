@@ -4,11 +4,11 @@
   "engines": {
     "node": "8.1.4"
   },
-  "main": "start.js",
+  "main": "lib/start.js",
   "repository": {},
   "license": "MIT",
   "dependencies": {
-    "pflr-express-kit": "https://github.com/ministryofjustice/pflr-express-kit.git#refactor-common-G",
+    "pflr-express-kit": "https://github.com/ministryofjustice/pflr-express-kit.git#refactor-common-H",
     "uuid": "^3.1.0"
   },
   "scripts": {
