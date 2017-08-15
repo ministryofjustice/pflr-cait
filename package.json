@@ -8,7 +8,7 @@
   "repository": {},
   "license": "MIT",
   "dependencies": {
-    "pflr-express-kit": "https://github.com/ministryofjustice/pflr-express-kit.git#refactor-common-E",
+    "pflr-express-kit": "https://github.com/ministryofjustice/pflr-express-kit.git#refactor-common-G",
     "uuid": "^3.1.0"
   },
   "scripts": {
@@ -16,8 +16,8 @@
     "build:css": "build-css",
     "build:javascript": "build-javascript",
     "dev:start": "dev-start",
-    "githooks": "git config core.hooksPath .githooks",
-    "githooksUnset": "git config --unset core.hooksPath",
+    "githooks": "githooks",
+    "githooks:unset": "githooks-unset",
     "clean:build": "clean-build",
     "clean:docker": "clean-docker",
     "lint": "lint",
@@ -26,8 +26,7 @@
     "lint:javascript:server": "lint-javascript-server",
     "lint:stylesheets": "lint-stylesheets",
     "lint:templates": "lint-templates",
-    "postinstall": "build",
-    "preinstall": "if [ -d .git ] && [ -x \"$(command -v git)\" ]; then npm run githooks; else echo 'git not installed'; fi;",
+    "postinstall": "postinstall",
     "pretest:prepush": "clean-prepush",
     "pretest:a11y:prepush": "clean-prepush",
     "pretest:functional:prepush": "clean-prepush",
