@@ -8,7 +8,7 @@
   "repository": {},
   "license": "MIT",
   "dependencies": {
-    "pflr-express-kit": "https://github.com/ministryofjustice/pflr-express-kit.git#refactor-common-H",
+    "pflr-express-kit": "https://github.com/ministryofjustice/pflr-express-kit.git#refactor-common-K",
     "uuid": "^3.1.0"
   },
   "scripts": {
@@ -20,6 +20,7 @@
     "githooks:unset": "githooks-unset",
     "clean:build": "clean-build",
     "clean:docker": "clean-docker",
+    "clean:prepush": "clean-prepush",
     "lint": "lint",
     "lint:data": "lint-data",
     "lint:javascript:client": "lint-javascript-client",
@@ -27,23 +28,13 @@
     "lint:stylesheets": "lint-stylesheets",
     "lint:templates": "lint-templates",
     "postinstall": "postinstall",
-    "pretest:prepush": "clean-prepush",
-    "pretest:a11y:prepush": "clean-prepush",
-    "pretest:functional:prepush": "clean-prepush",
-    "pretest:unit:prepush": "clean-prepush",
-    "posttest:prepush": "clean-prepush",
-    "posttest:a11y:prepush": "clean-prepush",
-    "posttest:functional:prepush": "clean-prepush",
-    "posttest:unit:prepush": "clean-prepush",
     "start": "start",
     "test": "test-all",
     "test:a11y": "test-a11y",
-    "test:a11y:prepush": "test-a11y-ci",
     "test:prepush": "test-prepush",
+    "posttest:prepush": "posttest-prepush",
     "test:functional": "test-functional",
-    "test:functional:prepush": "test-functional-ci",
     "test:unit": "ava --verbose lib/**/*.unit.spec.js",
-    "test:unit:prepush": "test-unit-ci",
     "watch:css": "watch-css",
     "watch:javascript": "watch-javascript"
   }
