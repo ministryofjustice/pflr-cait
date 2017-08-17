@@ -1,5 +1,5 @@
-{% from '../Costs/Costs.njk' import Costs with context %}
-{% from '../CallToAction/CallToAction.njk' import CallToAction with context %}
+{% from 'components/Costs/Costs.njk' import Costs with context %}
+{% from 'components/CallToAction/CallToAction.njk' import CallToAction with context %}
 
 {% macro Step(name, depth=2) %}
 {% set stepCount = counter('step') + 1 %}
