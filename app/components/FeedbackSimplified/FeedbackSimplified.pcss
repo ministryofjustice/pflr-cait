@@ -1,0 +1,36 @@
+@import 'utils/_app.pcss';
+
+.FeedbackSimplified {
+  background-color: var(--FeedbackSimplified--background);
+  color: var(--FeedbackSimplified--color);
+  padding: 5px 10px;
+}
+
+.FeedbackSimplified a {
+  color: var(--FeedbackSimplified--color);
+}
+
+.FeedbackSimplified__question {
+  font-weight: bold;
+}
+
+.FeedbackSimplified__response {
+  font-weight: normal;
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 0.25rem;
+}
+
+.js-enabled .FeedbackSimplified__default,
+.FeedbackSimplified__question,
+.FeedbackSimplified__followup,
+.FeedbackSimplified.FeedbackSimplified--answered .FeedbackSimplified__question {
+  display: none;
+}
+
+.js-enabled .FeedbackSimplified__question,
+.FeedbackSimplified--answered .FeedbackSimplified__followup {
+  display: block;
+}
+

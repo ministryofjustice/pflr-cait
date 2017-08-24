@@ -1,5 +1,6 @@
 {% extends "templates/app-base/app-base.html" %}
 {% import "components/Utils/Utils.njk" as Utils with context %}
+{% from 'components/FeedbackSimplified/FeedbackSimplified.njk' import FeedbackSimplified with context %}
 
 {{ Utils.registerBlocks([
   "components/CallToAction/CallToAction.njk",
@@ -11,11 +12,51 @@
   "components/Step/Step.njk"
 ]) }}
 
+{% block content %}
+{{ super() }}
+{{ FeedbackSimplified() }}
+{% endblock %}
+
 {% block body_end %}
 {{ super() }}
 {% if not req.disqualified %}
   <script>
-    jQuery('a[data-link-type="feedback"], [data-link-type="footer-feedback"] a, a[data-link-type="feedback-banner"]').each(function(){
+  // TODO: move back to FeedbackSimplified.js
+  if (window.jQuery) {
+    var helpfulEvent = function helpfulEvent(eventLabel, eventAction) {
+      var eventValue = eventLabel === 'yes' ? 1 : -1;
+      eventAction = eventAction || document.location.pathname;
+      return {
+        eventCategory: 'Page Helpfulness',
+        eventAction: eventAction,
+        eventLabel: eventLabel,
+        eventValue: eventValue
+      };
+    };
+
+    jQuery('.FeedbackSimplified a').attr('data-link-type', 'feedback-simplified');
+    var $feedbackDefault = jQuery('.FeedbackSimplified__default');
+    var $feedbackQuestion = jQuery('.FeedbackSimplified__question');
+    var $feedbackFollowup = jQuery('.FeedbackSimplified__followup');
+
+    var toggleFeedbackAriaState = function toggleFeedbackAriaState($show, $hide) {
+      $show.attr('aria-hidden', false);
+      $hide.attr('aria-hidden', true);
+    };
+    toggleFeedbackAriaState($feedbackQuestion, $feedbackDefault);
+
+    jQuery('.FeedbackSimplified__response').on('click', function () {
+      var $response = jQuery(this);
+      $response.closest('.FeedbackSimplified').addClass('FeedbackSimplified--answered');
+
+      toggleFeedbackAriaState($feedbackFollowup, $feedbackQuestion);
+      var helpfulPayload = helpfulEvent($response.data('response'));
+      ga('send', 'event', helpfulPayload);
+    });
+  }
+  </script>
+  <script>
+    jQuery('a[data-link-type="feedback"], [data-link-type="footer-feedback"] a, a[data-link-type="feedback-banner"], a[data-link-type="feedback-simplified"]').each(function(){
     var addition = '?uuid=' + analytics.uuid
     addition = addParam(addition, 'referrer')
     addition = addParam(addition, 'campaignName')
