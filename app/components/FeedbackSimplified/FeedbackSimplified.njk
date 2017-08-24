@@ -1,0 +1,21 @@
+{% macro FeedbackSimplified() %}
+
+<div class="FeedbackSimplified">
+{# ### Non-JS #}
+<div class="FeedbackSimplified__default" aria-hidden="false">{{ Block.String('FeedbackSimplified__default') }}</div>
+{# ### JS pre-submission #}
+<div class="FeedbackSimplified__question" aria-hidden="true"><span class="FeedbackSimplified__interrogative">{{ Block.String('FeedbackSimplified__interrogative') }}</span>
+<span class="FeedbackSimplified__response" data-response="yes">{{ Block.String('FeedbackSimplified__response__yes') }}</span>
+<span class="FeedbackSimplified__response" data-response="no">{{ Block.String('FeedbackSimplified__response__no') }}</span>
+</div>
+{# ### JS post submission #}
+<div class="FeedbackSimplified__followup" aria-hidden="true">
+{{ Block.String('FeedbackSimplified__followup') }}
+</div>
+</div>
+{% endmacro %}
+
+{% macro FeedbackSimplifiedJS() %}
+<script src="/public/javascripts/FeedbackSimplified.js"></script>
+{% endmacro %}
+
