@@ -4070,6 +4070,14 @@ markdown-it-deflist@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/markdown-it-deflist/-/markdown-it-deflist-2.0.3.tgz#5727db04184d3cb2bc6ee4a9641e3a1091d5fd6f"
 
+markdown-it-sub@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-sub/-/markdown-it-sub-1.0.0.tgz#375fd6026eae7ddcb012497f6411195ea1e3afe8"
+
+markdown-it-sup@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-sup/-/markdown-it-sup-1.0.0.tgz#cb9c9ff91a5255ac08f3fd3d63286e15df0a1fc3"
+
 markdown-it@^8.3.1:
   version "8.3.1"
   resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-8.3.1.tgz#2f4b622948ccdc193d66f3ca2d43125ac4ac7323"
@@ -4841,9 +4849,9 @@ performance-now@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-0.2.0.tgz#33ef30c5c77d4ea21c5a53869d91b56d8f2555e5"
 
-"pflr-express-kit@https://github.com/ministryofjustice/pflr-express-kit.git#v0.0.21":
-  version "0.0.21"
-  resolved "https://github.com/ministryofjustice/pflr-express-kit.git#3e2082127fe0e5c04018f759f832776142eb5282"
+"pflr-express-kit@https://github.com/ministryofjustice/pflr-express-kit.git#v0.0.22":
+  version "0.0.22"
+  resolved "https://github.com/ministryofjustice/pflr-express-kit.git#733bcd10a5f338fb53c2d05b346fe6a81e83dd88"
   dependencies:
     ava "^0.19.1"
     babel-cli "^6.24.1"
@@ -4905,9 +4913,9 @@ performance-now@^0.2.0:
     the-a11y-machine "^0.9.3"
     webdriverio "^4.8.0"
 
-"pflr-express-kit@https://github.com/ministryofjustice/pflr-express-kit.git#v0.0.22":
-  version "0.0.22"
-  resolved "https://github.com/ministryofjustice/pflr-express-kit.git#733bcd10a5f338fb53c2d05b346fe6a81e83dd88"
+"pflr-express-kit@https://github.com/ministryofjustice/pflr-express-kit.git#v0.0.23":
+  version "0.0.23"
+  resolved "https://github.com/ministryofjustice/pflr-express-kit.git#9be4bbd51caa536d526733c143fdb951e3c04189"
   dependencies:
     ava "^0.19.1"
     babel-cli "^6.24.1"
@@ -4935,6 +4943,8 @@ performance-now@^0.2.0:
     markdown "^0.5.0"
     markdown-it "^8.3.1"
     markdown-it-deflist "^2.0.2"
+    markdown-it-sub "^1.0.0"
+    markdown-it-sup "^1.0.0"
     marked "^0.3.6"
     messageformat "^1.0.2"
     mkdirp "^0.5.1"

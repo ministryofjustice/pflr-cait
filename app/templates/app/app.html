@@ -12,6 +12,8 @@
   "components/Step/Step.njk"
 ]) }}
 
+{% block page_title %}{{ getFormattedProp(route.id, 'heading') }}{% if route.id != 'route:index' %} - {{ getFormattedProp('route:summary', 'heading') }}{% endif %}{% endblock %}
+
 {% block content %}
 {{ super() }}
 {{ FeedbackSimplified() }}
