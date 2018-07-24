@@ -12,7 +12,7 @@ That confidence is dependent upon sign off by Policy and Legal (and confirmation
 
 ## Pre-requisites
 
-  [Node 8.1.4](https://nodejs.org)
+  [Node 8.4.0](https://nodejs.org)
 
   [Yarn 0.27.5](https://yarnpkg.com)
 
@@ -173,7 +173,7 @@ Installing the project's node modules also sets the repo's `hooksPath` to `.gith
 
 Git hooks can be disabled
 
-    yarn githooksUnset
+    yarn githooks:unset
 
 and reenabled
 
