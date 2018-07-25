@@ -308,6 +308,6 @@ The following locations are linted:
 
 ## Deploying
 
-Please see the [PFLR Cait entry in the MoJ Ops Manual](https://opsmanual.dsd.io/run_books/pflr-cait.html)
+Please see the [PFLR Cait entry in the MoJ Ops Manual](https://opsmanual.dsd.io/run_books/pflr_cait.html)
 
 The corresponding repo holding environment variables for deployment is [pflr-cait-deploy](https://github.com/ministryofjustice/pflr-cait-deploy)
