@@ -1,0 +1,12 @@
+{% macro RevealingContent(name) %}
+<div class="revealingContent"{% if name %} data-block-name="{{name}}"{% endif %}>
+<details>
+  <summary>
+    <span class="summary">{{ getFormattedProp(name, 'summary') }}</span>
+  </summary>
+  <div class="govuk-details__text">
+    {{ getFormattedBody(name) | safe }}
+  </div>
+</details>
+</div>
+{% endmacro %}
