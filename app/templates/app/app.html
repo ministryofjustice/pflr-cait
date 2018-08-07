@@ -3,6 +3,7 @@
 {% from 'components/FeedbackSimplified/FeedbackSimplified.njk' import FeedbackSimplified with context %}
 
 {{ Utils.registerBlocks([
+  "components/RevealingContent/RevealingContent.njk",
   "components/CallToAction/CallToAction.njk",
   "components/Costs/Costs.njk",
   "components/ProsCons/ProsCons.njk",
@@ -73,17 +74,5 @@
     this.href += addition
   })
   </script>
-  <script>
-    {% if app.production -%}
-      {% set landbot_UID_for_env = 'H-60807-TQH645RWSKIUNBG5' -%}
-    {% else -%}
-      {% set landbot_UID_for_env = 'H-60790-1KP638ND0602BQHE' -%}
-    {% endif -%}
-
-    var Landbot_UID = '{{ env.LANDBOT_UID }}' || '{{ landbot_UID_for_env }}';
-    var LandbotLiveConfig = { index: 'https://landbot.io/u/' + Landbot_UID + '/index.html', accent: '#005ea5' };
-    setTimeout(function(){ LandbotLivechat.open(); }, 3000);
-  </script>
-  <script src="https://static.helloumi.com/umiwebchat/umiwebchat.js?v=1531837735161" defer></script>
 {% endif %}
 {% endblock %}

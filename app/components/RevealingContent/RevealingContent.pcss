@@ -1,0 +1,32 @@
+@import 'utils/_app.pcss';
+
+details {
+  display: block;
+  clear: both;
+  font-size: 90%;
+}
+
+details summary {
+  display: inline-block;
+  color: var(--govuk-blue);
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+details summary:hover {
+  color: var(--light-blue);
+}
+
+details summary:focus {
+  outline: 3px solid var(--yellow);
+}
+
+details .summary {
+  text-decoration: underline;
+}
+
+details .arrow {
+  margin-right: .35em;
+  font-style: normal;
+}

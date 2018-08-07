@@ -1,5 +1,6 @@
 @import 'SummaryAreas--all.pcss';
 @import 'SummaryArea/SummaryArea.pcss';
+@import 'SectionVideo/SectionVideo.pcss';
 
 .SummaryAreas__heading {
   font-size: 2.8rem;
@@ -14,5 +15,26 @@
 @media (--kit-medium) {
   .SummaryAreas__heading {
     font-size: 4rem;
+  }
+}
+
+#homepage-video.SectionVideo {
+  border-top: 0;
+}
+
+#homepage-video {
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+
+  & .SectionVideo__content {
+    margin-top: 1rem;
+
+    & p {
+      font-size: 90%;
+      line-height: 1;
+      margin: 0;
+      padding: 8px;
+      background-color: var(--grey-4);
+    }
   }
 }

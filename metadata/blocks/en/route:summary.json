@@ -4,6 +4,10 @@
   "blocks": [
     "summary-intro"
   ],
+  "side_blocks": [
+    "homepage-video",
+    "homepage-video-transcript"
+  ],
   "collections": [
     "preparing-collection",
     "reaching-collection"
