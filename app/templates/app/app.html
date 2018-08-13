@@ -77,12 +77,15 @@
     {% if app.production -%}
       {% set landbot_UID_for_env = 'H-60807-TQH645RWSKIUNBG5' -%}
     {% else -%}
-      {% set landbot_UID_for_env = 'H-60790-1KP638ND0602BQHE' -%}
+      {% set landbot_UID_for_env = 'H-69420-QXKS6S2Y11PKIKR9' -%}
     {% endif -%}
 
     var Landbot_UID = '{{ env.LANDBOT_UID }}' || '{{ landbot_UID_for_env }}';
     var LandbotLiveConfig = { index: 'https://landbot.io/u/' + Landbot_UID + '/index.html', accent: '#005ea5' };
+
+    {% if req.query.ao -%}
     setTimeout(function(){ LandbotLivechat.open(); }, 3000);
+    {% endif -%}
   </script>
   <script src="https://static.helloumi.com/umiwebchat/umiwebchat.js?v=1531837735161" defer></script>
 {% endif %}
