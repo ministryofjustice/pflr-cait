@@ -3,13 +3,13 @@
   "_id": "route:professional_mediation",
   "_isa": "view:reaching",
   "blocks": [
+    "professional-mediation-video",
     "professional-mediation-step-1",
     "professional-mediation-step-2",
     "professional-mediation-step-3",
     "professional-mediation-step-4",
     "professional-mediation-other",
     "professional-mediation-unsuitable",
-    "professional-mediation-video",
     "professional-mediation-resources"
   ],
   "cons": [

@@ -3,12 +3,12 @@
   "_id": "route:going_to_court",
   "_isa": "view:reaching",
   "blocks": [
+    "going-to-court-video",
     "going-to-court-step--alternatives",
     "going-to-court-step--lawyer",
     "going-to-court-step--miam",
     "going-to-court-step--apply",
     "going-to-court-step--attend",
-    "going-to-court-video",
     "going-to-court-resources"
   ],
   "cons": [
