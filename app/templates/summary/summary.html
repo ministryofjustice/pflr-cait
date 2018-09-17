@@ -9,32 +9,13 @@
 {% block grid_content %}
 
   <div class="{{ govukClassname('grid-row') }}">
-  <div class="{{ govukClassname('column-one-half') }}">
+  <div class="{{ govukClassname('column-two-thirds') }}">
   <h1 class="summary__heading {{ govukClassname('heading-xlarge') }}">{{ getFormattedProp(route.id, 'heading') }}</h1>
   <p class="summary__lede">{{ getFormattedProp(route.id, 'lede') }}</p>
   <p class="summary__lede summary__lede--additional">{{ getFormattedProp(route.id, 'lede_additional') | safe }}</p>
   <div class="{{ govukClassname('govuk-govspeak') }}">
   {{ Block.Group(blocks=route.blocks) }}
   </div>
-  </div>
-  <div class="{{ govukClassname('column-one-half') }}">
-    <!-- Begin MailChimp Signup Form -->
-    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-    <div id="mc_embed_signup">
-      <form action="https://justice.us19.list-manage.com/subscribe/post?u=0c0c6120336cce4bc4737e936&amp;id=48607bc98b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <h3 class="gv-u-heading-large">Get this information in 4 <span style="white-space: nowrap">bite-sized</span> daily emails</h3>
-        <div id="mc_embed_signup_scroll">
-          <p class="email-info">Sign up for tips on how to prepare to make child arrangements, guidance on what your options are and videos of what’s involved.</p>
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0c0c6120336cce4bc4737e936_48607bc98b" tabindex="-1" value=""></div>
-          <div class="clear">
-            <input type="submit" value="Sign up now &rsaquo;" name="subscribe" id="mc-embedded-subscribe" class="CallToAction__link CallToAction__link--section gv-c-button">
-          </div>
-        </div>
-      </form>
-    </div>
-    <!--End mc_embed_signup-->
-    {{ Block.Group(blocks=route.side_blocks) }}
   </div>
   </div>
   {% for collection in route.collections %}
