@@ -3,11 +3,11 @@
   "_id": "route:collaborative_law",
   "_isa": "view:reaching",
   "blocks": [
+    "collaborative-law-video",
     "collaborative-law-step-1",
     "collaborative-law-step-2",
     "collaborative-law-step-3",
     "collaborative-law-step-4",
-    "collaborative-law-video",
     "collaborative-law-resources"
   ],
   "cons": [

@@ -3,8 +3,8 @@
   "_id": "route:lawyer_negotiation",
   "_isa": "view:reaching",
   "blocks": [
-    "lawyer-negotiation-process",
-    "lawyer-negotiation-video"
+    "lawyer-negotiation-video",
+    "lawyer-negotiation-process"
   ],
   "cons": [
     "can be a more expensive process",
