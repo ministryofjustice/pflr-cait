@@ -1,0 +1,26 @@
+{% from 'components/CallToAction/CallToAction.njk' import CallToAction with context %}
+
+{% macro FmcStep(name, depth=2) %}
+{% set stepCount = counter('step') + 1 %}
+<div id="step-{{ name }}" class="Step Step-{{ stepCount }} Step--{{ name }}" data-block-name="{{name}}">
+<h{{ depth}} class="Step__heading {{ govukClassname('heading-medium') }}">
+<span class="Step__count Step__count--{{ name }}">Step <span class="Step__count__counter">{{ stepCount }}</span><span aria-label=" - "></span></span>{{ getFormattedProp(name, ['heading_short', 'heading']) | safe }}</h{{ depth}}>
+<div class="Step__content {{ govukClassname('govuk-govspeak') }}">
+{{ getFormattedBody(name, 'body') | safe }}
+</div>
+
+{% set call_to_action = getFormattedProp(name, 'call_to_action') %}
+
+<form class="content-form" action="{{ getFormattedProp(name, 'call_to_action_url') }}" target="_blank">
+  <input type="hidden" name="di" value="5">
+  <div class="gv-c-form-group">
+    <label for="pc"><span class="gv-c-form-group__label gv-c-form-group__label--bold">Enter your postcode</span></label>
+    <input class="form-control-1-3 form-control-experiment" type="text" value="" name="pc" id="pc">
+  </div>
+  <p class="CallToAction{% if modifier %} CallToAction--{{ modifier }}{% endif %}">
+    <input type="submit" name="commit" value="{{ call_to_action }}" class="CallToAction__link{% if modifier %} CallToAction__link--{{ modifier }}{% endif %} {{ govukClassname('button') }}"/>
+  </p>
+</form>
+
+</div>
+{% endmacro %}

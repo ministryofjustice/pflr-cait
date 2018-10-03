@@ -10,7 +10,8 @@
   "components/SectionArea/SectionArea.njk",
   "components/SectionResources/SectionResources.njk",
   "components/SectionVideo/SectionVideo.njk",
-  "components/Step/Step.njk"
+  "components/Step/Step.njk",
+  "components/Step/FmcStep.njk"
 ]) }}
 
 {% block page_title %}{{ getFormattedProp(route.id, 'heading') }}{% if route.id != 'route:index' %} - {{ getFormattedProp('route:summary', 'heading') }}{% endif %}{% endblock %}
@@ -74,5 +75,9 @@
     this.href += addition
   })
   </script>
+{% endif %}
+
+{% if env.GA_TRACKING_ID %}
+<script>ga('require', 'outboundFormTracker');</script>
 {% endif %}
 {% endblock %}
