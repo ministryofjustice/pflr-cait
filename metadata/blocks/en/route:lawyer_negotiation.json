@@ -26,5 +26,6 @@
   "summary_lede": "!route:lawyer_negotiation#lede!",
   "title": "",
   "url": "/lawyer-negotiation",
-  "usp": "Your relationship is still difficult and you’d prefer not to meet, or there’s a lack of trust."
+  "usp": "Your relationship is still difficult and you’d prefer not to meet, or there’s a lack of trust.",
+  "shareable": true
 }
