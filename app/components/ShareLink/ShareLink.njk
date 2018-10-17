@@ -1,0 +1,18 @@
+{% macro ShareLink(name) %}
+  {% set pageName = getBlockProp(name, 'heading') | lower %}
+  {% set link     = (req.servername + getRouteUrl(name)) + '?utm_source=share' %}
+
+  {% set subject = ('I want to share this page about ' + pageName + ' with you') | urlencode %}
+  {% set lede    = getBlockProp(name, 'lede') | urlencode %}
+  {% set footer  = ('Find out more about ' + pageName + ' on this page: ' + link) | urlencode %}
+
+  {% if getBlockProp(name, 'lede_additional') %}
+    {% set lede = lede + '%0D%0A' + (getBlockProp(name, 'lede_additional') | urlencode) %}
+  {% endif %}
+
+  {% set body = lede + '%0D%0A%0D%0A' + footer %}
+
+  <div class="ShareLink">
+    <a href="mailto:?to=&body={{ body }}&subject={{ subject }}">Share this page by email</a>
+  </div>
+{% endmacro %}

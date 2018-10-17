@@ -25,6 +25,9 @@
   </div>
 
   <div class="{{ govukClassname('column-one-third') }}">
+    {% if route.shareable %}
+    {{ Block.ShareLink(route.id) }}
+    {% endif %}
     {{ Block.ProsCons(route.id, modifier='header', level=2) }}
   </div>
 </div>

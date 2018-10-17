@@ -32,5 +32,6 @@
   "summary_lede": "!route:collaborative_law#lede!",
   "title": "",
   "url": "/collaborative-law",
-  "usp": "You can still communicate with the other parent but may have complex legal issues to resolve."
+  "usp": "You can still communicate with the other parent but may have complex legal issues to resolve.",
+  "shareable": true
 }
