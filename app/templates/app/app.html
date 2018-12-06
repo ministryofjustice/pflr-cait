@@ -76,24 +76,6 @@
     this.href += addition
   })
   </script>
-
-  <script src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
-  <script>
-    {% if app.production -%}
-    {% set landbot_UID_for_env = 'H-94848-JHM265K4DMB32UB7' -%}
-    {% else -%}
-    {% set landbot_UID_for_env = 'H-86701-NSU1LIPWIKTXXTXX' -%}
-    {% endif -%}
-
-    var Landbot_UID = '{{ env.LANDBOT_UID }}' || '{{ landbot_UID_for_env }}';
-    var myLandbotLivechat = new LandbotLivechat({
-      index: 'https://landbot.io/u/' + Landbot_UID + '/index.html', accent: '#005ea5'
-    });
-
-    if (!/Mobi|Android/i.test(navigator.userAgent)) {
-      setTimeout(function(){ myLandbotLivechat.open(); }, 3000);
-    }
-  </script>
 {% endif %}
 
 {% if env.GA_TRACKING_ID %}
