@@ -22,6 +22,12 @@
     <p>{{ route.usp | safe }}</p>
     </div>
     {% endif %}
+
+    {% if route.id == 'route:professional_mediation' %}
+    <div role="note" aria-label="Information" class="area__information {{govukClassname('inset')}}">
+      <p><strong>If you’ve been invited to mediation, <a href="{{ getRouteUrl('route:professional_mediation_other_parent') }}">find out what it means for you</a>.</strong></p>
+    </div>
+    {% endif %}
   </div>
 
   <div class="{{ govukClassname('column-one-third') }}">
