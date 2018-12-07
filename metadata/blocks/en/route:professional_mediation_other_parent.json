@@ -1,0 +1,21 @@
+{
+  "_blockType": "Route",
+  "_id": "route:professional_mediation_other_parent",
+  "_isa": "view:reaching",
+  "blocks": [
+    "professional-mediation-other-parent--should-i-go",
+    "professional-mediation-other-parent--what-happens",
+    "professional-mediation-other-parent--costs",
+    "professional-mediation-video",
+    "professional-mediation-resources"
+  ],
+  "heading": "If the other parent wants you to go to mediation",
+  "lede": "You may have been contacted by a mediator or the other parent may have asked you to try mediation. It’s important to understand what mediation is and how it could help your situation.",
+  "lede_additional": "The other parent may have approached a professional mediator because they want help to reach a decision about arrangements for your children. Or you may have been invited to a ‘Mediation Information and Assessment Meeting’ or ‘MIAM’, which is a legal requirement before the other parent can apply to court.",
+  "slug": "professional_mediation_other_parent",
+  "summary_lede": "!route:professional_mediation_other_parent#lede!",
+  "summary_lede_additional": "The other parent may have approached a professional mediator because they want help to reach a decision about arrangements for your children. Or you may have been invited to a ‘Mediation Information and Assessment Meeting’ or ‘MIAM’, which is a legal requirement before the other parent can apply to court.",
+  "title": "",
+  "url": "/professional-mediation-other-parent",
+  "usp": ""
+}
