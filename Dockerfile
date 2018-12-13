@@ -16,7 +16,6 @@ RUN yarn install --ignore-scripts --ignore-optional
 
 COPY app ./app
 COPY lib ./lib
-COPY public ./public
 
 RUN yarn build
 

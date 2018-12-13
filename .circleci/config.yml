@@ -1,0 +1,121 @@
+# Ruby CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-ruby/ for more details
+#
+version: 2
+
+references:
+  app_containers: &app_containers
+    docker:
+      - image: circleci/node:8.4.0
+        environment:
+          ENV: test
+  cloud_container: &cloud_container
+    docker:
+      - image: ${ECR_ENDPOINT}/cloud-platform/tools:circleci
+        environment:
+          GITHUB_TEAM_NAME_SLUG: family-justice
+
+
+jobs:
+  test:
+    <<: *app_containers
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - run: yarn install --ignore-optional
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      - run: yarn lint
+      - run: yarn test:unit
+
+  build:
+    <<: *cloud_container
+    steps:
+      - checkout
+
+      - setup_remote_docker:
+          docker_layer_caching: true
+
+      - run:
+          name: build docker image
+          command: |
+            export BUILD_DATE=$(date -Is) >> $BASH_ENV
+            source $BASH_ENV
+
+            docker build \
+              --build-arg VERSION_NUMBER=${CIRCLE_BUILD_NUM} \
+              --build-arg COMMIT_ID=${CIRCLE_SHA1} \
+              --build-arg BUILD_DATE=${BUILD_DATE} \
+              --build-arg BUILD_TAG=${CIRCLE_BRANCH} \
+              -t app .
+
+      - run:
+          name: push docker image
+          command: |
+            login="$(aws ecr get-login --region eu-west-1 --no-include-email)"
+            ${login}
+
+            docker tag app "${ECR_ENDPOINT}/${GITHUB_TEAM_NAME_SLUG}/${CIRCLE_PROJECT_REPONAME}:${CIRCLE_SHA1}"
+            docker push "${ECR_ENDPOINT}/${GITHUB_TEAM_NAME_SLUG}/${CIRCLE_PROJECT_REPONAME}:${CIRCLE_SHA1}"
+
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              docker tag app "${ECR_ENDPOINT}/${GITHUB_TEAM_NAME_SLUG}/${CIRCLE_PROJECT_REPONAME}:latest"
+              docker push "${ECR_ENDPOINT}/${GITHUB_TEAM_NAME_SLUG}/${CIRCLE_PROJECT_REPONAME}:latest"
+            fi
+
+  deploy_staging:
+    <<: *cloud_container
+    steps:
+      - checkout
+
+      - run:
+          name: kubectl use context
+          command: |
+            setup-kube-auth
+            kubectl config use-context staging
+
+      - deploy:
+          name: rolling update image to staging
+          command: |
+            export BUILD_DATE=$(date -Is) >> $BASH_ENV
+            source $BASH_ENV
+
+            kubectl set image -n fj-cait-staging \
+                    deployment/fj-cait-deployment-staging \
+                    fj-cait-web-staging="${ECR_ENDPOINT}/${GITHUB_TEAM_NAME_SLUG}/${CIRCLE_PROJECT_REPONAME}:${CIRCLE_SHA1}"
+
+            kubectl annotate -n fj-cait-staging \
+                    deployment/fj-cait-deployment-staging \
+                    kubernetes.io/change-cause="${BUILD_DATE} set image ${CIRCLE_PROJECT_REPONAME}:${CIRCLE_SHA1} via CircleCI"
+
+
+workflows:
+  version: 2
+
+  test-build-deploy:
+    jobs:
+      - test
+      - build:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
+      - deploy_staging:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
