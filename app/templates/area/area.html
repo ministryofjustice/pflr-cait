@@ -24,9 +24,11 @@
     {% endif %}
 
     {% if route.id == 'route:professional_mediation' %}
-    <div role="note" aria-label="Information" class="area__information {{govukClassname('inset')}}">
-      <p><strong>If you’ve been invited to mediation, <a href="{{ getRouteUrl('route:professional_mediation_other_parent') }}">find out what it means for you</a>.</strong></p>
-    </div>
+    <p><strong>If you’ve been invited to mediation, <a href="{{ getRouteUrl('route:professional_mediation_other_parent') }}">find out what it means for you</a>.</strong></p>
+    {% endif %}
+
+    {% if route.id == 'route:going_to_court' %}
+    <p><strong>If the other parent has applied to court, <a href="{{ getRouteUrl('route:going_to_court_other_parent') }}">find out what it means for you</a>.</strong></p>
     {% endif %}
   </div>
 

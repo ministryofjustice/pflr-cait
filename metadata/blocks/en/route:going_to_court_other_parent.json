@@ -1,0 +1,21 @@
+{
+  "_blockType": "Route",
+  "_id": "route:going_to_court_other_parent",
+  "_isa": "view:reaching",
+  "blocks": [
+    "going-to-court-other-parent--before",
+    "going-to-court-other-parent--after",
+    "going-to-court-other-parent--going",
+    "going-to-court-other-parent--video",
+    "going-to-court-resources"
+  ],
+  "heading": "If the other parent is applying to court",
+  "lede": "The other parent may have told you they will take you to court or you may have received court papers. It’s important to understand what the court process might involve.",
+  "lede_additional": "",
+  "slug": "going_to_court_other_parent",
+  "summary_lede": "!route:going_to_court_other_parent#lede!",
+  "summary_lede_additional": "",
+  "title": "",
+  "url": "/going-to-court-other-parent",
+  "usp": ""
+}
