@@ -4,9 +4,9 @@ Private Family Law - Child Arrangements Information Tool
 
 ## Pre-requisites
 
-  [Node 8.4.0](https://nodejs.org)
+  [Node 10.15.2](https://nodejs.org)
 
-  [Yarn 0.27.5](https://yarnpkg.com)
+  [Yarn 1.12](https://yarnpkg.com)
 
 ## Optional
 
