@@ -2,14 +2,6 @@
 
 Private Family Law - Child Arrangements Information Tool
 
-## PRIVATE REPO
-
-**This repo is private until the service reaches public beta.**
-
-The service will not go into public beta until there is confidence that the guidance/information contained in the service is accurate.
-
-That confidence is dependent upon sign off by Policy and Legal (and confirmation that the service is not at odds with any ministerial steer).
-
 ## Pre-requisites
 
   [Node 8.4.0](https://nodejs.org)

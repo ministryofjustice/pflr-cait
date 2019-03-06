@@ -22,9 +22,20 @@
     <p>{{ route.usp | safe }}</p>
     </div>
     {% endif %}
+
+    {% if route.id == 'route:professional_mediation' %}
+    <p><strong>If you’ve been invited to mediation, <a href="{{ getRouteUrl('route:professional_mediation_other_parent') }}">find out what it means for you</a>.</strong></p>
+    {% endif %}
+
+    {% if route.id == 'route:going_to_court' %}
+    <p><strong>If the other parent has applied to court, <a href="{{ getRouteUrl('route:going_to_court_other_parent') }}">find out what it means for you</a>.</strong></p>
+    {% endif %}
   </div>
 
   <div class="{{ govukClassname('column-one-third') }}">
+    {% if route.shareable %}
+    {{ Block.ShareLink(route.id) }}
+    {% endif %}
     {{ Block.ProsCons(route.id, modifier='header', level=2) }}
   </div>
 </div>
