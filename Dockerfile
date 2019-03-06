@@ -1,8 +1,4 @@
-FROM node:8.4.0
-
-# Install yarn
-RUN curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 0.27.5
-RUN ln -sf /root/.yarn/bin/yarn /usr/local/bin/yarn
+FROM node:10.15.2
 
 # Create app directory
 RUN mkdir -p /usr/app
