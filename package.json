@@ -2,13 +2,13 @@
   "name": "pflr-cait",
   "version": "1.0.8",
   "engines": {
-    "node": "8.4.0"
+    "node": "^10.15.2"
   },
   "main": "lib/start.js",
   "repository": {},
   "license": "MIT",
   "dependencies": {
-    "pflr-express-kit": "https://github.com/ministryofjustice/pflr-express-kit.git#v0.0.23",
+    "pflr-express-kit": "https://github.com/ministryofjustice/pflr-express-kit.git#v0.0.24",
     "uuid": "^3.1.0"
   },
   "scripts": {
