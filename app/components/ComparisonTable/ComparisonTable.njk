@@ -1,0 +1,111 @@
+{% macro ComparisonTable() %}
+  <div  class="govuk-width-container" role="region" aria-labelledby="table-caption" tabindex="0">
+    <table class="govuk-table responsive-table-four responsive-table-four-v3">
+      <caption id="table-caption" class="govuk-table__caption visually-hidden">Dates and amounts</caption>
+
+      <thead>
+        <tr class="responsive-table-four-tr">
+          <th>Option</th>
+          <th scope="col"><a href="{{ getRouteUrl('route:negotiating_between_parents') }}">Mediation tools and services</a></th>
+          <th scope="col"><a href="{{ getRouteUrl('route:professional_mediation') }}">Professional mediation</a></th>
+          <th scope="col"><a href="{{ getRouteUrl('route:lawyer_negotiation') }}">Lawyer negotiation</a></th>
+          <th scope="col"><a href="{{ getRouteUrl('route:collaborative_law') }}"">Collaborative law</a></th>
+          <th scope="col"><a href="{{ getRouteUrl('route:going_to_court') }}">Going to court</a></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="responsive-table-four-tr">
+          <th class="{{ govukClassname('gv-c-table__header') }}" scope="row">Average starting costs</th>
+          <td scope="col" class="{{ govukClassname('govuk-table__cell') }}">Free to £150</td>
+          <td scope="col" class="{{ govukClassname('govuk-table__cell') }}">£90 per person</td>
+          <td scope="col" class="{{ govukClassname('govuk-table__cell') }}">£110 per hour</td>
+          <td scope="col" class="{{ govukClassname('govuk-table__cell') }}">£110 per hour</td>
+          <td scope="col" class="{{ govukClassname('govuk-table__cell') }}">£305 if there&#39;re no safety concerns</td>
+        </tr>
+
+        <tr class="responsive-table-four-tr">
+          <th class="{{ govukClassname('gv-c-table__header') }}" scope="row">Average time it takes</th>
+          <td class="{{ govukClassname('govuk-table__cell') }}">Own pace</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">3-5 sessions</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">TBC</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">TBC</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">6 months</td>
+        </tr>
+
+        <tr class="responsive-table-four-tr">
+          <th class="{{ govukClassname('gv-c-table__header') }}" scope="row">How  much can you speak</th>
+          <td class="{{ govukClassname('govuk-table__cell') }}">As much as you like</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">As much as you like</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">Your lawyer speaks for you</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">Your lawyer will help you to prepare</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">Only when the judge asks you to</td>
+        </tr>
+
+        <tr class="responsive-table-four-tr">
+          <th class="{{ govukClassname('gv-c-table__header') }}" scope="row">Long-term success rate</th>
+          <td class="{{ govukClassname('govuk-table__cell') }}">TBC</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">69%</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">TBC</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">TBC</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">14%</td>
+        </tr>
+
+        <tr class="responsive-table-four-tr">
+          <th class="{{ govukClassname('gv-c-table__header') }}" scope="row">Who decides</th>
+          <td class="{{ govukClassname('govuk-table__cell') }}">You and the other parent</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">You and the other parent</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">You and the other parent</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">You and the other parent</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">Judge or magistrate</td>
+        </tr>
+
+        <tr class="responsive-table-four-tr">
+          <th class="{{ govukClassname('gv-c-table__header') }}" scope="row">Legally binding</th>
+          <td class="{{ govukClassname('govuk-table__cell') }}">No</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">No</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">No</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">No</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">Yes</td>
+        </tr>
+
+        <tr class="responsive-table-four-tr">
+          <th class="{{ govukClassname('gv-c-table__header') }}" scope="row">Adaptable arrangements</th>
+          <td class="{{ govukClassname('govuk-table__cell') }}">Yes</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">Yes</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">Yes</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">Yes</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">No</td>
+        </tr>
+
+        <tr class="responsive-table-four-tr">
+          <th class="{{ govukClassname('gv-c-table__header') }}" scope="row">Legally enforceable</th>
+          <td class="{{ govukClassname('govuk-table__cell') }}">No</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">No</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">No</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">No</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">No</td>
+        </tr>
+
+        <tr class="responsive-table-four-tr">
+          <th class="{{ govukClassname('gv-c-table__header') }}" scope="row">Appointment location, dates and times to suit you</th>
+          <td class="{{ govukClassname('govuk-table__cell') }}">Yes</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">Yes</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">Yes</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">Yes</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">No</td>
+        </tr>
+
+        <tr class="responsive-table-four-tr">
+          <th class="{{ govukClassname('gv-c-table__header') }}" scope="row">Help you manage conflict with the other parent</th>
+          <td class="{{ govukClassname('govuk-table__cell') }}">Yes</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">Yes</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">Yes</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">Yes</td>
+          <td class="{{ govukClassname('govuk-table__cell') }}">No</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+{% endmacro %}
+
