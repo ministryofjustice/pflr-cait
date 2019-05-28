@@ -298,8 +298,13 @@ The following locations are linted:
 
   auxilliary json files
 
-## Deploying
+## Deploy to kubernetes cloud platform
 
-Please see the [PFLR Cait entry in the MoJ Ops Manual](https://opsmanual.dsd.io/run_books/pflr_cait.html)
+Refer to the [deploy repository](https://github.com/ministryofjustice/fj-cait-deploy)
 
-The corresponding repo holding environment variables for deployment is [pflr-cait-deploy](https://github.com/ministryofjustice/pflr-cait-deploy)
+## Ops Manual (deprecated)
+
+There is a [PFLR Cait entry in the MoJ Ops Manual](https://opsmanual.dsd.io/run_books/pflr_cait.html)
+
+Please note the ops manual has some references to the old template deploy.  
+This has now been replaced with kubernetes (see above), but other than that, the ops manual is accurate and the service has not changed its architecture or code base.
