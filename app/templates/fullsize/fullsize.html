@@ -9,10 +9,9 @@
 <div class="{{ govukClassname('grid-row') }}">
     <div class="{{ govukClassname('column-full') }}">
         {{ Block.PageHeader(route.id, heading_size='xlarge') }}
+        {{ Block.Group(blocks=route.blocks) }}
     </div>
 </div>
-
-{{ Block.Group(blocks=route.blocks) }}
 
 <nav class="AreaLinks" data-block-name="{{ collection }}">
     <div class="AreaLinks__overview">
