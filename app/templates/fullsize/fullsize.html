@@ -1,0 +1,22 @@
+{% extends 'templates/about/about.html' %}
+
+{% block stylesheet %}
+{{ super() }}
+<link href="{{ asset_path }}stylesheets/fullsize.css" media="screen" rel="stylesheet">
+{% endblock %}
+
+{% block grid_content %}
+<div class="{{ govukClassname('grid-row') }}">
+    <div class="{{ govukClassname('column-full') }}">
+        {{ Block.PageHeader(route.id, heading_size='xlarge') }}
+        {{ Block.Group(blocks=route.blocks) }}
+    </div>
+</div>
+
+<nav class="AreaLinks" data-block-name="{{ collection }}">
+    <div class="AreaLinks__overview">
+        <h3 class="AreaLinks__overview__heading {{ govukClassname('gv-u-heading-large') }}">{{ Block.String('AreaLinks__overview__heading') }}</h3>
+        <p><a href="{{ getRouteUrl('route:summary') }}" class="AreaLinks__overview__link" data-link-type="site-nav">{{ Block.String('AreaLinks__overview__link') }}</a></p>
+    </div>
+</nav>
+{% endblock %}

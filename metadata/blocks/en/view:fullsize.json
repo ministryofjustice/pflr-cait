@@ -1,0 +1,7 @@
+{
+  "_blockType": "View",
+  "_id": "view:fullsize",
+  "breadcrumbs": true,
+  "static": true,
+  "template": "fullsize"
+}
