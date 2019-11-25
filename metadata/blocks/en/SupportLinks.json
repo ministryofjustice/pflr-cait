@@ -7,16 +7,16 @@
       "linkType": "footer-feedback"
     },
     {
-      "route": "route:cookies"
+      "route": "route:accessibility"
     },
     {
-      "route": "route:terms_conditions"
+      "route": "route:cookies"
     },
     {
       "route": "route:privacy"
     },
     {
-      "link": "Built by [MoJ Digital](https://mojdigital.blog.gov.uk/about/)"
+      "route": "route:terms_conditions"
     }
   ]
 }

@@ -1,0 +1,8 @@
+{
+  "_blockType": "Section",
+  "_id": "accessibility-6-third-parties",
+  "blocks": [],
+  "body": "This online service uses third-party video content hosted by Youtube. The accessibility of this content lies with the third-party provider, but the embedded videos meet basic accessibility standards, including accessible buttons to play the video, captions for audio and surrounding text as an alternative.\r\n\r\nThis service also uses a third-party supplied service to collect feedback. This service is ‘skinned’ to look like our website, but some parts of it do not meet [Web Content Accessibility Guidelines version 2.1](https://www.w3.org/TR/WCAG21/) standards because:\r\n\r\n- incorrect heading tags are used\r\n- clicking the labels does not move the cursor into the corresponding text area\r\n- when using the keyboard, the radio button becomes invisible\r\n\r\nThe third-party supplied feedback form is one part of our overall approach to collecting feedback. We'll continue to carry out further testing as we develop the service and we plan to reassess the feedback form by April 2020.",
+  "heading": "Third-party supplied content",
+  "lede": ""
+}
