@@ -1,0 +1,8 @@
+{
+  "_blockType": "Section",
+  "_id": "accessibility-2-about",
+  "blocks": [],
+  "body": "We used [GOV.UK Elements](https://govuk-elements.herokuapp.com) to build this service. GOV.UK Elements has now been replaced by the [GOV.UK Design System](https://design-system.service.gov.uk), but we will still carry out major bug fixes and security patches.\r\n\r\nBasic tests were performed on this online service on 7 November 2019. These tests were carried out by the Ministry of Justice.\r\n\r\nWe tested the homepage, the privacy policy, cookies and the terms and conditions.\r\n\r\nWe also tested interaction with third-party content, including embedded video content.\r\n\r\n- getting emotional support\r\n- professional mediation\r\n- lawyer negotiation\r\n- collaborative law\r\n- going to court",
+  "heading": "About the accessibility of this online service",
+  "lede": ""
+}

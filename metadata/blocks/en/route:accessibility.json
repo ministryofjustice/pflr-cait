@@ -1,0 +1,19 @@
+{
+  "_blockType": "Route",
+  "_id": "route:accessibility",
+  "_isa": "view:about",
+  "blocks": [
+    "accessibility-1-using-service",
+    "accessibility-2-about",
+    "accessibility-3-formats",
+    "accessibility-4-technical-info",
+    "accessibility-5-non-compliance",
+    "accessibility-6-third-parties",
+    "accessibility-7-reporting",
+    "accessibility-8-enforcement"
+  ],
+  "heading": "Accessibility",
+  "lede": "",
+  "title": "",
+  "url": "/about/accessibility"
+}
