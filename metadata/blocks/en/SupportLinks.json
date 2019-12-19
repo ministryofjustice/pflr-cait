@@ -3,11 +3,8 @@
   "_id": "SupportLinks",
   "links": [
     {
-      "link": "[Give feedback](https://www.surveymonkey.co.uk/r/72MRZH6)",
+      "link": "[Give feedback](https://www.research.net/r/LZJH8FK)",
       "linkType": "footer-feedback"
-    },
-    {
-      "route": "route:accessibility"
     },
     {
       "route": "route:cookies"
