@@ -4,6 +4,13 @@ Private Family Law - Child Arrangements Information Tool
 
 ## Pre-requisites
 
+  [Node Version Manager](https://github.com/nvm-sh/nvm)
+
+```
+brew install nvm
+nvm install 10.15.2
+```
+
   [Node 10.15.2](https://nodejs.org)
 
   [Yarn 1.12](https://yarnpkg.com)
@@ -90,7 +97,7 @@ If you do add or remove a module, please run the dockerised prepush tests to con
 
 - `spec`
 
-  Miscellaneous tests (ie. ones that do not reside in the same directory as  the code they’re testing) 
+  Miscellaneous tests (ie. ones that do not reside in the same directory as the code they’re testing)
 
 - `Dockerfile`
 
