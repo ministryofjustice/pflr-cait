@@ -7,6 +7,9 @@
       "linkType": "footer-feedback"
     },
     {
+      "route": "route:accessibility"
+    },
+    {
       "route": "route:cookies"
     },
     {
