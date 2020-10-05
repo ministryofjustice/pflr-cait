@@ -12,7 +12,7 @@ references:
           ENV: test
   cloud_container: &cloud_container
     docker:
-      - image: ${ECR_ENDPOINT}/cloud-platform/tools:circleci
+      - image: ${ECR_ENDPOINT}/cloud-platform/tools:1.21
         environment:
           GITHUB_TEAM_NAME_SLUG: family-justice
 
