@@ -18,6 +18,11 @@
 
 {% block page_title %}{{ getFormattedProp(route.id, 'heading') }}{% if route.id != 'route:index' %} - {{ getFormattedProp('route:summary', 'heading') }}{% endif %}{% endblock %}
 
+{% block head %}
+{{ super() }}
+<meta name="google-site-verification" content="Ed6XKLFCCovwl_3gUpR5owg8AvgINOhiWWNGeJhHyio"/>
+{% endblock %}
+
 {% block content %}
 {{ super() }}
 {{ FeedbackSimplified() }}
