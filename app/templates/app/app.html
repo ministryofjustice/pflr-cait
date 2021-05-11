@@ -21,6 +21,9 @@
 {% block head %}
 {{ super() }}
 <meta name="google-site-verification" content="Ed6XKLFCCovwl_3gUpR5owg8AvgINOhiWWNGeJhHyio"/>
+{% if route.id == 'route:comparison_table' %}
+<meta name="robots" content="noindex, nofollow"/>
+{% endif %}
 {% endblock %}
 
 {% block content %}
