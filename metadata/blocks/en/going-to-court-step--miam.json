@@ -1,7 +1,7 @@
 {
   "_blockType": "Step",
   "_id": "going-to-court-step--miam",
-  "body": "Before applying for a court order you must attend a [MIAM]({app:urls:route:professional_mediation}), unless [you're exempt](https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam/miams-exemptions/).\r\n\r\nThe MIAM will assess whether mediation is right for you and if you can agree arrangements out of court.\r\n\r\nYou will need to [find a mediator](https://www.familymediationcouncil.org.uk/find-local-mediator/) to book a MIAM.\r\n\r\nOnly authorised mediators can carry out a MIAM. Check with the mediator before you book.",
+  "body": "Before applying for a court order you must attend a [MIAM]({app:urls:route:professional_mediation}), unless [you're exempt](https://apply-to-court-about-child-arrangements.service.justice.gov.uk/about/miam_exemptions).\r\n\r\nThe MIAM will assess whether mediation is right for you and if you can agree arrangements out of court.\r\n\r\nYou will need to [find a mediator](https://www.familymediationcouncil.org.uk/find-local-mediator/) to book a MIAM.\r\n\r\nOnly authorised mediators can carry out a MIAM. Check with the mediator before you book.",
   "cost": "Average cost of MIAM per person",
   "cost_amount": "£90",
   "cost_description": "Estimated fees may vary depending on your location and the experience of the mediator. Some mediators offer reductions if you’re unemployed or on a low income. It may also be cheaper if you attend together. If you or the other parent are eligible for legal aid you both will qualify for a free MIAM. ",
