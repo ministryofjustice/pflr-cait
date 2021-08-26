@@ -4,16 +4,16 @@ Private Family Law - Child Arrangements Information Tool
 
 ## Pre-requisites
 
-  [Node Version Manager](https://github.com/nvm-sh/nvm)
-
 ```
 brew install nvm
-nvm install 10.15.2
+nvm install 12.12.0
 ```
 
-  [Node 10.15.2](https://nodejs.org)
+  [Node Version Manager](https://github.com/nvm-sh/nvm)
 
-  [Yarn 1.12](https://yarnpkg.com)
+  [Node 12.12.0](https://nodejs.org)
+
+  [Yarn >= 1.12](https://yarnpkg.com)
 
 ## Optional
 
