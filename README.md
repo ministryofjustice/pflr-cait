@@ -6,12 +6,12 @@ Private Family Law - Child Arrangements Information Tool
 
 ```
 brew install nvm
-nvm install 12.12.0
+nvm install 12.22.6
 ```
 
   [Node Version Manager](https://github.com/nvm-sh/nvm)
 
-  [Node 12.12.0](https://nodejs.org)
+  [Node 12.22.6](https://nodejs.org)
 
   [Yarn >= 1.12](https://yarnpkg.com)
 
