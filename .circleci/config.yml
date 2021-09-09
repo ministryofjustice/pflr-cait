@@ -7,7 +7,7 @@ version: 2
 references:
   app_containers: &app_containers
     docker:
-      - image: circleci/node:12.12.0
+      - image: circleci/node:12.22.6
         environment:
           ENV: test
   cloud_container: &cloud_container
