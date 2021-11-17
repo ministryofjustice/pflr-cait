@@ -1,5 +1,7 @@
 # PFLR CAIT
 
+[![CI and CD](https://github.com/ministryofjustice/pflr-cait/actions/workflows/test-build-deploy.yml/badge.svg)](https://github.com/ministryofjustice/pflr-cait/actions/workflows/test-build-deploy.yml)
+
 Private Family Law - Child Arrangements Information Tool
 
 ## Pre-requisites
