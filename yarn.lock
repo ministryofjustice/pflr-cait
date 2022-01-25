@@ -551,9 +551,10 @@
     "@wdio/logger" "5.16.10"
     deepmerge "^4.0.0"
 
-"HTML_CodeSniffer@git+https://github.com/squizlabs/HTML_CodeSniffer.git#master":
+"HTML_CodeSniffer@https://github.com/squizlabs/HTML_CodeSniffer#master":
   version "2.5.1"
-  resolved "git+https://github.com/squizlabs/HTML_CodeSniffer.git#aebdff845441ee99252a80d45d65f4ac27f998d7"
+  uid aebdff845441ee99252a80d45d65f4ac27f998d7
+  resolved "https://github.com/squizlabs/HTML_CodeSniffer#aebdff845441ee99252a80d45d65f4ac27f998d7"
 
 JSV@^4.0.x:
   version "4.0.2"
@@ -9302,9 +9303,9 @@ trim-newlines@^2.0.0:
   integrity sha1-tAPQuRvlDDMd/EuC7s6yLD3hbSA=
 
 trim-off-newlines@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/trim-off-newlines/-/trim-off-newlines-1.0.1.tgz#9f9ba9d9efa8764c387698bcbfeb2c848f11adb3"
-  integrity sha1-n5up2e+odkw4dpi8v+sshI8RrbM=
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/trim-off-newlines/-/trim-off-newlines-1.0.3.tgz#8df24847fcb821b0ab27d58ab6efec9f2fe961a1"
+  integrity sha512-kh6Tu6GbeSNMGfrrZh6Bb/4ZEHV1QlB4xNDBeog8Y9/QwFlKTRyWvY3Fs9tRDAMZliVUwieMgEdIeL/FtqjkJg==
 
 trim-right@^1.0.1:
   version "1.0.1"
