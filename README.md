@@ -158,7 +158,7 @@ Installing the project's node modules also sets the repo's `hooksPath` to `.gith
 
     - ensures that all necessary files are linted and tested
 
-    - ensures that commits are not made to the master branch
+    - ensures that commits are not made to the main branch
 
   NB. can be skipped by passing `--no-verify` flag
 
