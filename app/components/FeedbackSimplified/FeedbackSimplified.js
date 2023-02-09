@@ -27,6 +27,7 @@ if (window.jQuery) {
 
     toggleFeedbackAriaState($feedbackFollowup, $feedbackQuestion)
     const helpfulPayload = helpfulEvent($response.data('response'))
+    ga('create', 'UA-91035505-5');
     ga('send', 'event', helpfulPayload)
   })
 }
