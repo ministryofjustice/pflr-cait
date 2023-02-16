@@ -20,6 +20,13 @@
 
 {# Everything in this block will be injected as high as possible in the HEAD tag #}
 {% block stylesheet %}
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5PVGN2P');</script>
+<!-- End Google Tag Manager -->
 {% if ENV == 'staging' %}
 <script src="https://www.googleoptimize.com/optimize.js?id=OPT-PJSMHMK"></script>
 {% elseif ENV == 'prod' %}
@@ -36,6 +43,13 @@
 {% endif %}
 {% endblock %}
 
+{% block body_start %}
+{{ super() }}
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PVGN2P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+{% endblock %}
 {% block content %}
 {{ super() }}
 {{ FeedbackSimplified() }}
@@ -75,6 +89,7 @@
 
       toggleFeedbackAriaState($feedbackFollowup, $feedbackQuestion);
       var helpfulPayload = helpfulEvent($response.data('response'));
+      ga('create', 'UA-91035505-5');
       ga('send', 'event', helpfulPayload);
     });
   }
@@ -97,7 +112,5 @@
   </script>
 {% endif %}
 
-{% if env.GA_TRACKING_ID %}
 <script>ga('require', 'outboundFormTracker');</script>
-{% endif %}
 {% endblock %}
