@@ -82,7 +82,7 @@ jobs:
             --build-arg APP_GIT_COMMIT=${{ github.sha }} \
             --build-arg APP_VERSION=${{ github.run_number }} \
             -t app .
-          docker push ${{ vars.ECR_NAME }}:${{ github.sha }}, ${{ vars.ECR_NAME }}:latest
+          docker push ${{ vars.ECR_URL }}:${{ github.sha }}, ${{ vars.ECR_URL }}:latest
 
   deploy-staging:
     runs-on: ubuntu-latest
