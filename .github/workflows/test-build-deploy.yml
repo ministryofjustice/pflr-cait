@@ -10,7 +10,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-
   test:
     runs-on: ubuntu-latest
     steps:
@@ -83,7 +82,7 @@ jobs:
             --build-arg APP_GIT_COMMIT=${{ github.sha }} \
             --build-arg APP_VERSION=${{ github.run_number }} \
             -t app .
-          docker push ${{ vars.ECR_NAME }}:${{ github.sha }}, ${{ vars.ECR_NAME }}:staging.latest
+          docker push ${{ vars.ECR_NAME }}:${{ github.sha }}, ${{ vars.ECR_NAME }}:latest
 
   deploy-staging:
     runs-on: ubuntu-latest
